@@ -20,18 +20,22 @@ public class DialogueManager : MonoBehaviour
 {
 
     private Queue<SingleDialogue> dialogues;
+    //components of ui
     [SerializeField] private TextMeshProUGUI _nameText;
     [SerializeField] private TextMeshProUGUI _dialogueText;
     [SerializeField] private Image _portrait;
     [SerializeField] private Animator _animator;
     [SerializeField] private AudioSource _voicer;
-    [SerializeField] private float _chatSpeed = 0f;
-    [SerializeField] private bool _autoAdvance = false;
     [SerializeField] private GameObject _buttonSound;
     [SerializeField] private Image _buttonPrompt;
-    [SerializeField] private GameObject _NPCDialogue;
     [SerializeField] private GameObject _playerResponses;
     [SerializeField] private GameObject[] _responseButtons;
+    //dialogue settings
+    [SerializeField] private float _chatSpeed = 0f;
+    [SerializeField] private bool _autoAdvance = false;
+    
+    [SerializeField] private GameObject _NPCDialogue;
+    
     private GameObject currentRef;
     private BranchingDialogue currentBranchDialogue;
     private bool isOpen = false;
@@ -187,7 +191,8 @@ public class DialogueManager : MonoBehaviour
 
 
     /// <summary>
-    /// ends the dialogue mode, and sets the text box to go off-screen.
+    /// transitions to either displaying next choices or exits dialogue
+    /// mode, depending on whether or not more chunks are referenced.
     /// </summary>
     public void EndDialogue()
     {
@@ -202,12 +207,14 @@ public class DialogueManager : MonoBehaviour
                 _playerResponses.SetActive(true);
                 for(int i = 0; i < _responseButtons.Length; i++)
                 {
+                    //sets buttons to each choice for this chunk of dialogue
                     if (i < currentBranchDialogue.Responses.Length)
                     {
                         _responseButtons[i].SetActive(true);
                         _responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = currentBranchDialogue.Responses[i].Response;
                         _responseButtons[i].GetComponent<DialogueGiver>().DialogueToGive = currentBranchDialogue.Responses[i].ResultingDialogue;
                     }
+                    //hides any extra buttons
                     else
                     {
                         _responseButtons[i].SetActive(false);
@@ -215,6 +222,7 @@ public class DialogueManager : MonoBehaviour
                 }
 
             }
+            //ends dialogue if no choices available for this chunk
             else
             {
                 IsOpen = false;
