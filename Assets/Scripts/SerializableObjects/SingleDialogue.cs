@@ -13,6 +13,7 @@ public class SingleDialogue
 
     public UnityEvent[] EventsToInvoke { get => _eventsToInvoke; set => _eventsToInvoke = value; }
     public string sentences { get => _sentences; set => _sentences = value; }
+    public CharacterData TalkerData { get => _talkerData; set => _talkerData = value; }
 }
 
 [System.Serializable]
