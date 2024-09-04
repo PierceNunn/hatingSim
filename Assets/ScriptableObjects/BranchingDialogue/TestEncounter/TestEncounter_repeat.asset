@@ -12,5 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7513b2aafa021e428ed16e2141cbcbb, type: 3}
   m_Name: TestEncounter_repeat
   m_EditorClassIdentifier: 
-  _dialogue: []
-  _responses: []
+  _dialogue:
+  - _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _eventsToInvoke: []
+    _sentences: yeah, that's easy peasy.
+  - _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _eventsToInvoke: []
+    _sentences: since dialogue chunks are held as ScriptableObjects, they can lead
+      into each other...
+  - _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _eventsToInvoke: []
+    _sentences: ...looping dialogue over and over and over!
+  _responses:
+  - _response: '[continue]'
+    _resultingDialogue: {fileID: 11400000}
+  - _response: how about saving choices?
+    _resultingDialogue: {fileID: 11400000, guid: c30006843d283ff4a871aee052a7c198, type: 2}

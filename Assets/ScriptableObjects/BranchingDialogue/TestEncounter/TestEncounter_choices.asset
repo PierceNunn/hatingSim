@@ -12,5 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7513b2aafa021e428ed16e2141cbcbb, type: 3}
   m_Name: TestEncounter_choices
   m_EditorClassIdentifier: 
-  _dialogue: []
+  _dialogue:
+  - _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _eventsToInvoke: []
+    _sentences: eeyup! it's fairly simple.
+  - _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _eventsToInvoke: []
+    _sentences: each line of dialogue has a parameter for unity events.
+  - _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _eventsToInvoke: []
+    _sentences: it works in the same way that UI buttons do, basically.
   _responses: []
