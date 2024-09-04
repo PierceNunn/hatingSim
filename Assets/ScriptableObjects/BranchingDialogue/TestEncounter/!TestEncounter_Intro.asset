@@ -10,18 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7513b2aafa021e428ed16e2141cbcbb, type: 3}
-  m_Name: TestEncounter_choices
+  m_Name: '!TestEncounter_Intro'
   m_EditorClassIdentifier: 
   _dialogue:
   - _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
     _eventsToInvoke: []
-    _sentences: eeyup! it's fairly simple.
+    _sentences: hello! this is a test of the branching dialogue system.
   - _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
     _eventsToInvoke: []
-    _sentences: each line of dialogue has a parameter for unity events.
+    _sentences: something something nothingburger placeholder maclunky
   - _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
     _eventsToInvoke: []
-    _sentences: it works in the same way that UI buttons do, basically.
+    _sentences: how about you?
   _responses:
-  - _response: How about ending dialogue?
-    _resultingDialogue: {fileID: 11400000, guid: a7b2d605135a9d941afd3ebffd3bc858, type: 2}
+  - _response: Can you repeat dialogue?
+    _resultingDialogue: {fileID: 11400000, guid: 753cc21532c02f7448b9ec4dd6527cd0, type: 2}
+  - _response: Can choices be saved?
+    _resultingDialogue: {fileID: 0}

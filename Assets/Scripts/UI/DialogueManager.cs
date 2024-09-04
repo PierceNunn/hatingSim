@@ -105,6 +105,11 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+    public void OnContinue()
+    {
+        DisplayNextSentence();
+    }
+
     /// <summary>
     /// Displays the next sentence in the queue.
     /// </summary>
