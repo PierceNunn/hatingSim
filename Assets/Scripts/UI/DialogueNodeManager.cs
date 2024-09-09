@@ -31,6 +31,7 @@ public class DialogueManager : MonoBehaviour
 
     private GameObject currentRef;
     private DialogueNode currentBranchDialogue;
+    private DialogueNodeGraph currentNodeGraph;
     private bool isOpen = false;
     private bool isTyping = false;
     private string sentence;
@@ -76,8 +77,9 @@ public class DialogueManager : MonoBehaviour
         IsOpen = true;
         _NPCDialogue.SetActive(true);
         _playerResponses.SetActive(false);
-        currentBranchDialogue = branchDialogue.findIntroNode().NextNode as DialogueNode;
-        SingleDialogue dialogue = currentBranchDialogue.Dialogue;
+        currentNodeGraph = branchDialogue;
+        DialogueNode temp = branchDialogue.findIntroNode().NextNode as DialogueNode;
+        SingleDialogue dialogue = temp.Dialogue;
         _autoAdvance = willAutoAdvance;
         currentRef = NPC;
         //clear queue
@@ -107,7 +109,12 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void DisplayNextSentence()
     {
-        Node nextBranchDialogue = currentBranchDialogue.NextNode;
+
+        Node nextBranchDialogue;
+        if (currentBranchDialogue == null)
+            nextBranchDialogue = currentNodeGraph.findIntroNode().NextNode;
+        else
+            nextBranchDialogue = currentBranchDialogue.NextNode;
         if (nextBranchDialogue.GetType().ToString().Equals("DialogueNode"))
         {
             currentBranchDialogue = nextBranchDialogue as DialogueNode;
