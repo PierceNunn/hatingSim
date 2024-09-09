@@ -9,6 +9,7 @@ public class JSONConverter : MonoBehaviour
     {
         string json = JsonUtility.ToJson(_dialogueToConvert);
         print(json);
+        System.IO.File.WriteAllText(Application.persistentDataPath + "/TestData.json", json);
     }
 
 }
