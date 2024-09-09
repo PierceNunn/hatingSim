@@ -10,6 +10,7 @@ public class LinkedNode : Node {
 	private Node nextNode;
 
     public Node NextNode { get => nextNode; set => nextNode = value; }
+    public Node LastNode { get => _lastNode; set => _lastNode = value; }
 
     // Use this for initialization
     protected override void Init() {

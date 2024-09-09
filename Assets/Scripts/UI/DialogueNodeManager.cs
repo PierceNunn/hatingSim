@@ -72,13 +72,13 @@ public class DialogueManager : MonoBehaviour
     /// <param name="dialogue">A SingleDialogue array containing information for the initialized conversation.</param>
     /// <param name="NPC">The GameObject which initiates the conversation.</param>
     /// <param name="willAutoAdvance">Determines if dialogue will advance automatically.</param>
-    public void StartDialogue(DialogueNodeGraph branchDialogue, GameObject NPC, bool willAutoAdvance)
+    public void StartDialogue(DialogueNode branchDialogue, GameObject NPC, bool willAutoAdvance)
     {
         IsOpen = true;
         _NPCDialogue.SetActive(true);
         _playerResponses.SetActive(false);
-        currentNodeGraph = branchDialogue;
-        DialogueNode temp = branchDialogue.findIntroNode().NextNode as DialogueNode;
+        currentNodeGraph = branchDialogue.graph as DialogueNodeGraph;
+        DialogueNode temp = currentNodeGraph.findIntroNode().NextNode as DialogueNode;
         SingleDialogue dialogue = temp.Dialogue;
         _autoAdvance = willAutoAdvance;
         currentRef = NPC;
@@ -232,7 +232,7 @@ public class DialogueManager : MonoBehaviour
                     ChoiceNode temp = branchNode.nextNodes[i] as ChoiceNode;
                     _responseButtons[i].SetActive(true);
                     _responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = temp.ChoiceLabel;
-                    //_responseButtons[i].GetComponent<DialogueGiver>().DialogueToGive = temp.NextNode;
+                    _responseButtons[i].GetComponent<DialogueGiver>().DialogueToGive = temp.NextNode as DialogueNode;
                 }
                 //hides any extra buttons
                 else
