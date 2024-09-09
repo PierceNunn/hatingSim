@@ -17,10 +17,12 @@ MonoBehaviour:
   ports:
     keys:
     - _startNode
+    - _testString
     values:
     - _fieldName: _startNode
       _node: {fileID: -6794858767199001616}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: DialogueNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
       connections:
       - fieldName: _lastNode
         node: {fileID: -5417227671731538971}
@@ -29,7 +31,17 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: _testString
+      _node: {fileID: -6794858767199001616}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
   _startNode: {fileID: 0}
+  _testString: hallo!
 --- !u!114 &-5417227671731538971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,7 +87,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 0}
     _eventsToInvoke: []
-    _sentences: 
+    _sentences: hello wow did it work? i hope so
   _nextNode: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -107,7 +119,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -72, y: -248}
+  position: {x: -1016, y: -184}
   ports:
     keys:
     - _nextNode
@@ -124,7 +136,10 @@ MonoBehaviour:
     - _fieldName: _lastNode
       _node: {fileID: 3272640551260247202}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: _responses 0
+        node: {fileID: 7788138463558857724}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -169,7 +184,10 @@ MonoBehaviour:
       _node: {fileID: 7788138463558857724}
       _typeQualifiedName: XNode.Node[], XNode, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 3272640551260247202}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
