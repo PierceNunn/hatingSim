@@ -109,16 +109,22 @@ public class DialogueManager : MonoBehaviour
     {
         Node nextBranchDialogue = currentBranchDialogue.NextNode;
         if (nextBranchDialogue.GetType().ToString().Equals("DialogueNode"))
-            //wip
-        currentBranchDialogue = currentBranchDialogue.NextNode;
-        if (convoLen == 0) //end dialogue if remaining length is 0
+        {
+            currentBranchDialogue = nextBranchDialogue as DialogueNode;
+        }
+        else if(nextBranchDialogue.GetType().ToString().Equals("DialogueBranchNode"))
+        {
+            SetUpDialogueChoices(nextBranchDialogue as DialogueBranchNode);
+            return;
+        }
+        else
         {
             EndDialogue();
             return; //if ending don't run rest of the function
         }
 
         //dequeue element from each queue
-        SingleDialogue dialogue = dialogues.Dequeue();
+        SingleDialogue dialogue = currentBranchDialogue.Dialogue;
         sentence = dialogue.sentences;
         string nameTag = dialogue.TalkerData.CharacterName;
         Sprite talkIMG = dialogue.TalkerData.CharacterPortrait;
@@ -193,39 +199,42 @@ public class DialogueManager : MonoBehaviour
 
             //animator.SetBool("isOpen", false);
             Debug.Log("End of convo");
-            if (currentBranchDialogue.Responses.Length > 0)
-            {
-                _playerResponses.SetActive(true);
-                for (int i = 0; i < _responseButtons.Length; i++)
-                {
-                    //sets buttons to each choice for this chunk of dialogue
-                    if (i < currentBranchDialogue.Responses.Length)
-                    {
-                        _responseButtons[i].SetActive(true);
-                        _responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = currentBranchDialogue.Responses[i].Response;
-                        _responseButtons[i].GetComponent<DialogueGiver>().DialogueToGive = currentBranchDialogue.Responses[i].ResultingDialogue;
-                    }
-                    //hides any extra buttons
-                    else
-                    {
-                        _responseButtons[i].SetActive(false);
-                    }
-                }
 
-            }
-            //ends dialogue if no choices available for this chunk
-            else
-            {
-                IsOpen = false;
-                //FindObjectOfType<PlayerController>().talking = false;
-                _NPCDialogue.SetActive(false);
-                _playerResponses.SetActive(false);
-            }
+            IsOpen = false;
+            //FindObjectOfType<PlayerController>().talking = false;
+            _NPCDialogue.SetActive(false);
+            _playerResponses.SetActive(false);
+
 
         }
 
 
 
+    }
+
+    void SetUpDialogueChoices(DialogueBranchNode branchNode)
+    {
+        if (branchNode.nextNodes.Length > 0)
+        {
+            _playerResponses.SetActive(true);
+            for (int i = 0; i < _responseButtons.Length; i++)
+            {
+                //sets buttons to each choice for this chunk of dialogue
+                if (i < branchNode.nextNodes.Length)
+                {
+                    ChoiceNode temp = branchNode.nextNodes[i] as ChoiceNode;
+                    _responseButtons[i].SetActive(true);
+                    _responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = temp.ChoiceLabel;
+                    //_responseButtons[i].GetComponent<DialogueGiver>().DialogueToGive = temp.NextNode;
+                }
+                //hides any extra buttons
+                else
+                {
+                    _responseButtons[i].SetActive(false);
+                }
+            }
+
+        }
     }
 
 }
