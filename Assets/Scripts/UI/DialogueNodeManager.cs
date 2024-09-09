@@ -31,11 +31,10 @@ public class DialogueManager : MonoBehaviour
 
     private GameObject currentRef;
     private DialogueNode currentBranchDialogue;
-    private DialogueNodeGraph currentNodeGraph;
+    private Node nextBranchDialogue;
     private bool isOpen = false;
     private bool isTyping = false;
     private string sentence;
-    private int convoLen = 0;
 
     public bool IsOpen { get => isOpen; set => isOpen = value; }
 
@@ -72,14 +71,13 @@ public class DialogueManager : MonoBehaviour
     /// <param name="dialogue">A SingleDialogue array containing information for the initialized conversation.</param>
     /// <param name="NPC">The GameObject which initiates the conversation.</param>
     /// <param name="willAutoAdvance">Determines if dialogue will advance automatically.</param>
-    public void StartDialogue(DialogueNode branchDialogue, GameObject NPC, bool willAutoAdvance)
+    public void StartDialogue(LinkedNode branchDialogue, GameObject NPC, bool willAutoAdvance)
     {
         IsOpen = true;
         _NPCDialogue.SetActive(true);
         _playerResponses.SetActive(false);
-        currentNodeGraph = branchDialogue.graph as DialogueNodeGraph;
-        DialogueNode temp = currentNodeGraph.findIntroNode().NextNode as DialogueNode;
-        SingleDialogue dialogue = temp.Dialogue;
+        currentBranchDialogue = branchDialogue.NextNode as DialogueNode;
+        SingleDialogue dialogue = currentBranchDialogue.Dialogue;
         _autoAdvance = willAutoAdvance;
         currentRef = NPC;
         //clear queue
@@ -91,9 +89,11 @@ public class DialogueManager : MonoBehaviour
         _nameText.text = dialogue.TalkerData.CharacterName;
         _portrait.sprite = dialogue.TalkerData.CharacterPortrait;
         _portrait.SetNativeSize(); //just in case any portraits have different dimensions
-        convoLen = 1;//dialogue.Length + 1;
 
-
+        if (branchDialogue.GetType().ToString().Equals("DialogueNode"))
+            nextBranchDialogue = branchDialogue;
+        else
+            nextBranchDialogue = branchDialogue.NextNode;
         //display the first sentence
         DisplayNextSentence();
 
@@ -109,12 +109,12 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void DisplayNextSentence()
     {
+        if(nextBranchDialogue == null)
+        {
+            EndDialogue();
+            return;
+        }
 
-        Node nextBranchDialogue;
-        if (currentBranchDialogue == null)
-            nextBranchDialogue = currentNodeGraph.findIntroNode().NextNode;
-        else
-            nextBranchDialogue = currentBranchDialogue.NextNode;
         if (nextBranchDialogue.GetType().ToString().Equals("DialogueNode"))
         {
             currentBranchDialogue = nextBranchDialogue as DialogueNode;
@@ -124,10 +124,11 @@ public class DialogueManager : MonoBehaviour
             SetUpDialogueChoices(nextBranchDialogue as DialogueBranchNode);
             return;
         }
-        else
+        else if (nextBranchDialogue.GetType().ToString().Equals("ChoiceNode"))
         {
-            EndDialogue();
-            return; //if ending don't run rest of the function
+            LinkedNode t = nextBranchDialogue as LinkedNode;
+            nextBranchDialogue = t.NextNode;
+            return;
         }
 
         //dequeue element from each queue
@@ -158,6 +159,8 @@ public class DialogueManager : MonoBehaviour
         {
             e.Invoke();
         }
+
+        nextBranchDialogue = currentBranchDialogue.NextNode;
     }
 
     /// <summary>

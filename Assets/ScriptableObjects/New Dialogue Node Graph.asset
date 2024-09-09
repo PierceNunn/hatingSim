@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9186905639893598207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1992, y: 184}
+  ports:
+    keys:
+    - _nextNode
+    - _lastNode
+    values:
+    - _fieldName: _nextNode
+      _node: {fileID: -9186905639893598207}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _lastNode
+      _node: {fileID: -9186905639893598207}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -4763624597222839109}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _eventsToInvoke: []
+    _sentences: forzorrrszzz
 --- !u!114 &-6794858767199001616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16,9 +60,18 @@ MonoBehaviour:
   position: {x: -72, y: -360}
   ports:
     keys:
-    - _startNode
+    - _lastNode
+    - _nextNode
     values:
-    - _fieldName: _startNode
+    - _fieldName: _lastNode
+      _node: {fileID: -6794858767199001616}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
       _node: {fileID: -6794858767199001616}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
@@ -29,7 +82,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  _startNode: {fileID: 0}
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
 --- !u!114 &-5417227671731538971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,7 +107,7 @@ MonoBehaviour:
       _node: {fileID: -5417227671731538971}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: _startNode
+      - fieldName: _nextNode
         node: {fileID: -6794858767199001616}
         reroutePoints: []
       _direction: 1
@@ -77,6 +131,97 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
     _eventsToInvoke: []
     _sentences: hello wow did it work? i hope so
+--- !u!114 &-5343466263640644442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a68762aa58cc082459ffd018c2258b02, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1256, y: -24}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: -5343466263640644442}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _responses 2
+        node: {fileID: 7788138463558857724}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: -5343466263640644442}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: -4763624597222839109}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _choiceLabel: end dialogue
+--- !u!114 &-4763624597222839109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1672, y: 120}
+  ports:
+    keys:
+    - _nextNode
+    - _lastNode
+    values:
+    - _fieldName: _nextNode
+      _node: {fileID: -4763624597222839109}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: -9186905639893598207}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _lastNode
+      _node: {fileID: -4763624597222839109}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -5343466263640644442}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _eventsToInvoke: []
+    _sentences: kk bye
 --- !u!114 &-3305992810296234519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,7 +282,7 @@ MonoBehaviour:
   m_Name: Choice
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1256, y: -200}
+  position: {x: -1256, y: -168}
   ports:
     keys:
     - _lastNode
@@ -157,7 +302,10 @@ MonoBehaviour:
     - _fieldName: _nextNode
       _node: {fileID: -2828873500993248240}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 5409985321494387650}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -186,6 +334,9 @@ MonoBehaviour:
   - {fileID: -2828873500993248240}
   - {fileID: -3305992810296234519}
   - {fileID: 5409985321494387650}
+  - {fileID: -5343466263640644442}
+  - {fileID: -4763624597222839109}
+  - {fileID: -9186905639893598207}
 --- !u!114 &3272640551260247202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,7 +403,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1640, y: -168}
+  position: {x: -1704, y: -152}
   ports:
     keys:
     - _nextNode
@@ -272,7 +423,10 @@ MonoBehaviour:
     - _fieldName: _lastNode
       _node: {fileID: 5409985321494387650}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -2828873500993248240}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -347,6 +501,7 @@ MonoBehaviour:
     - _responses 0
     - _lastNode
     - _responses 1
+    - _responses 2
     values:
     - _fieldName: _responses
       _node: {fileID: 7788138463558857724}
@@ -392,10 +547,24 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
+    - _fieldName: _responses 2
+      _node: {fileID: 7788138463558857724}
+      _typeQualifiedName: XNode.Node[], XNode, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: -5343466263640644442}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
   _lastNode: {fileID: 0}
   _responses:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   nextNodes:
   - {fileID: 6550825359078019188}
   - {fileID: -2828873500993248240}
+  - {fileID: -5343466263640644442}

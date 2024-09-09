@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class DialogueGiver : MonoBehaviour
 {
-    [SerializeField] private DialogueNode _dialogueToGive;
+    [SerializeField] private LinkedNode _dialogueToGive;
     [SerializeField] private bool _giveDialogueOnStart;
 
-    public DialogueNode DialogueToGive { get => _dialogueToGive; set => _dialogueToGive = value; }
+    public LinkedNode DialogueToGive { get => _dialogueToGive; set => _dialogueToGive = value; }
 
     private void Start()
     {
