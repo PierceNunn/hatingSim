@@ -1,17 +1,10 @@
-/*****************************************************************************
-// File Name : DialogueManager.cs
-// Author : Pierce Nunnelley
-// Creation Date : March 23, 2024
-//
-// Brief Description : This script controls the Dialogue UI and displays
-dialogue.
-*****************************************************************************/
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Events;
+using XNode;
 
 /// <summary>
 /// controls the text box and displays dialogue and profile images for conversations.
@@ -19,7 +12,6 @@ using UnityEngine.Events;
 public class DialogueManager : MonoBehaviour
 {
 
-    private Queue<SingleDialogue> dialogues;
     //components of ui
     [SerializeField] private TextMeshProUGUI _nameText;
     [SerializeField] private TextMeshProUGUI _dialogueText;
@@ -33,25 +25,18 @@ public class DialogueManager : MonoBehaviour
     //dialogue settings
     [SerializeField] private float _chatSpeed = 0f;
     [SerializeField] private bool _autoAdvance = false;
-    
+
     [SerializeField] private GameObject _NPCDialogue;
-    
+
     private GameObject currentRef;
-    private BranchingDialogue currentBranchDialogue;
+    private DialogueNode currentBranchDialogue;
+    private Node nextBranchDialogue;
     private bool isOpen = false;
     private bool isTyping = false;
     private string sentence;
-    private int convoLen = 0;
 
     public bool IsOpen { get => isOpen; set => isOpen = value; }
 
-    /// <summary>
-    /// sets each queue as a new empty queue.
-    /// </summary>
-    void Start()
-    {
-        dialogues = new Queue<SingleDialogue>();
-    }
 
     /// <summary>
     /// Displays the next sentence when the assigned Interact key is pressed.
@@ -78,32 +63,25 @@ public class DialogueManager : MonoBehaviour
     /// <param name="dialogue">A SingleDialogue array containing information for the initialized conversation.</param>
     /// <param name="NPC">The GameObject which initiates the conversation.</param>
     /// <param name="willAutoAdvance">Determines if dialogue will advance automatically.</param>
-    public void StartDialogue(BranchingDialogue branchDialogue, GameObject NPC, bool willAutoAdvance)
+    public void StartDialogue(LinkedNode branchDialogue, GameObject NPC, bool willAutoAdvance)
     {
         IsOpen = true;
-        _NPCDialogue.SetActive(true) ;
+        _NPCDialogue.SetActive(true);
         _playerResponses.SetActive(false);
-        currentBranchDialogue = branchDialogue;
-        SingleDialogue[] dialogue = branchDialogue.Dialogue;
+        currentBranchDialogue = branchDialogue.NextNode as DialogueNode;
+        SingleDialogue dialogue = currentBranchDialogue.Dialogue;
         _autoAdvance = willAutoAdvance;
         currentRef = NPC;
-        //clear queue
-        dialogues.Clear();
-        //set queue to new queue
-        dialogues = new Queue<SingleDialogue>();
 
         //set ui components to what they should be for the first dialogue
-        _nameText.text = dialogue[0].TalkerData.CharacterName;
-        _portrait.sprite = dialogue[0].TalkerData.CharacterPortrait;
+        _nameText.text = dialogue.TalkerData.CharacterName;
+        _portrait.sprite = dialogue.TalkerData.CharacterPortrait;
         _portrait.SetNativeSize(); //just in case any portraits have different dimensions
-        convoLen = dialogue.Length + 1;
 
-        //enqueue all elements in order
-        foreach (SingleDialogue line in dialogue)
-        {
-            dialogues.Enqueue(line);
-        }
-
+        if (branchDialogue.GetType().ToString().Equals("DialogueNode"))
+            nextBranchDialogue = branchDialogue;
+        else
+            nextBranchDialogue = branchDialogue.NextNode;
         //display the first sentence
         DisplayNextSentence();
 
@@ -119,15 +97,32 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void DisplayNextSentence()
     {
-        convoLen--; //lower remaining length by 1
-        if (convoLen == 0) //end dialogue if remaining length is 0
+        if(nextBranchDialogue == null) //ends conversation if no more nodes
         {
             EndDialogue();
-            return; //if ending don't run rest of the function
+            return;
         }
 
-        //dequeue element from each queue
-        SingleDialogue dialogue = dialogues.Dequeue();
+        if (nextBranchDialogue.GetType().ToString().Equals("DialogueNode"))
+        {
+            //if next node is a DialogueNode next sentence can display normally
+            currentBranchDialogue = nextBranchDialogue as DialogueNode;
+        }
+        else if(nextBranchDialogue.GetType().ToString().Equals("DialogueBranchNode"))
+        {
+            //if next node is DialogueBranch set up dialogue choices
+            SetUpDialogueChoices(nextBranchDialogue as DialogueBranchNode);
+            return;
+        }
+        else if (nextBranchDialogue.GetType().ToString().Equals("ChoiceNode"))
+        {
+            //if next node is a choice proceed to the next node
+            LinkedNode t = nextBranchDialogue as LinkedNode;
+            nextBranchDialogue = t.NextNode;
+            return;
+        }
+
+        SingleDialogue dialogue = currentBranchDialogue.Dialogue;
         sentence = dialogue.sentences;
         string nameTag = dialogue.TalkerData.CharacterName;
         Sprite talkIMG = dialogue.TalkerData.CharacterPortrait;
@@ -154,6 +149,8 @@ public class DialogueManager : MonoBehaviour
         {
             e.Invoke();
         }
+
+        nextBranchDialogue = currentBranchDialogue.NextNode;
     }
 
     /// <summary>
@@ -175,7 +172,7 @@ public class DialogueManager : MonoBehaviour
             {
                 int randomVChoice = Random.Range(0, voice.Length);
                 //_voicer.clip = voice[randomVChoice];
-               // _voicer.Play();
+                // _voicer.Play();
             }
 
             yield return new WaitForSeconds(_chatSpeed); //wait until the next letter
@@ -199,42 +196,46 @@ public class DialogueManager : MonoBehaviour
         StopAllCoroutines();
         if (IsOpen)
         {
-            
+
             //animator.SetBool("isOpen", false);
             Debug.Log("End of convo");
-            if (currentBranchDialogue.Responses.Length > 0)
-            {
-                _playerResponses.SetActive(true);
-                for(int i = 0; i < _responseButtons.Length; i++)
-                {
-                    //sets buttons to each choice for this chunk of dialogue
-                    if (i < currentBranchDialogue.Responses.Length)
-                    {
-                        _responseButtons[i].SetActive(true);
-                        _responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = currentBranchDialogue.Responses[i].Response;
-                        _responseButtons[i].GetComponent<DialogueGiver>().DialogueToGive = currentBranchDialogue.Responses[i].ResultingDialogue;
-                    }
-                    //hides any extra buttons
-                    else
-                    {
-                        _responseButtons[i].SetActive(false);
-                    }
-                }
 
-            }
-            //ends dialogue if no choices available for this chunk
-            else
-            {
-                IsOpen = false;
-                //FindObjectOfType<PlayerController>().talking = false;
-                _NPCDialogue.SetActive(false);
-                _playerResponses.SetActive(false);
-            }
-            
+            IsOpen = false;
+            //FindObjectOfType<PlayerController>().talking = false;
+            _NPCDialogue.SetActive(false);
+            _playerResponses.SetActive(false);
+
+
         }
 
 
 
     }
 
-}*/
+    void SetUpDialogueChoices(DialogueBranchNode branchNode)
+    {
+        if (branchNode.nextNodes.Length > 0)
+        {
+            _playerResponses.SetActive(true);
+            for (int i = 0; i < _responseButtons.Length; i++)
+            {
+                //sets buttons to each choice for this chunk of dialogue
+                if (i < branchNode.nextNodes.Length)
+                {
+                    ChoiceNode temp = branchNode.nextNodes[i] as ChoiceNode;
+                    _responseButtons[i].SetActive(true);
+                    _responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = temp.ChoiceLabel;
+                    _responseButtons[i].GetComponent<DialogueGiver>().DialogueToGive = temp.NextNode as DialogueNode;
+                }
+                //hides any extra buttons
+                else
+                {
+                    _responseButtons[i].SetActive(false);
+                }
+            }
+
+        }
+    }
+
+}
+
