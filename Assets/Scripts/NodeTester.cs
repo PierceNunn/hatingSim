@@ -11,6 +11,8 @@ public class NodeTester : MonoBehaviour
         IntroNode testNode = _testGraph.findIntroNode();
         DialogueNode testDNode = testNode.NextNode as DialogueNode;
         print(testDNode.Dialogue.sentences);
+        DialogueNode testDNodeTwo = testDNode.NextNode as DialogueNode;
+        print(testDNodeTwo.Dialogue.sentences);
     }
 
 

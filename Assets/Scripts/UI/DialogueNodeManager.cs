@@ -1,17 +1,10 @@
-/*****************************************************************************
-// File Name : DialogueManager.cs
-// Author : Pierce Nunnelley
-// Creation Date : March 23, 2024
-//
-// Brief Description : This script controls the Dialogue UI and displays
-dialogue.
-*****************************************************************************/
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Events;
+using XNode;
 
 /// <summary>
 /// controls the text box and displays dialogue and profile images for conversations.
@@ -33,11 +26,11 @@ public class DialogueManager : MonoBehaviour
     //dialogue settings
     [SerializeField] private float _chatSpeed = 0f;
     [SerializeField] private bool _autoAdvance = false;
-    
+
     [SerializeField] private GameObject _NPCDialogue;
-    
+
     private GameObject currentRef;
-    private BranchingDialogue currentBranchDialogue;
+    private DialogueNode currentBranchDialogue;
     private bool isOpen = false;
     private bool isTyping = false;
     private string sentence;
@@ -78,13 +71,13 @@ public class DialogueManager : MonoBehaviour
     /// <param name="dialogue">A SingleDialogue array containing information for the initialized conversation.</param>
     /// <param name="NPC">The GameObject which initiates the conversation.</param>
     /// <param name="willAutoAdvance">Determines if dialogue will advance automatically.</param>
-    public void StartDialogue(BranchingDialogue branchDialogue, GameObject NPC, bool willAutoAdvance)
+    public void StartDialogue(DialogueNodeGraph branchDialogue, GameObject NPC, bool willAutoAdvance)
     {
         IsOpen = true;
-        _NPCDialogue.SetActive(true) ;
+        _NPCDialogue.SetActive(true);
         _playerResponses.SetActive(false);
-        currentBranchDialogue = branchDialogue;
-        SingleDialogue[] dialogue = branchDialogue.Dialogue;
+        currentBranchDialogue = branchDialogue.findIntroNode().NextNode as DialogueNode;
+        SingleDialogue dialogue = currentBranchDialogue.Dialogue;
         _autoAdvance = willAutoAdvance;
         currentRef = NPC;
         //clear queue
@@ -93,16 +86,11 @@ public class DialogueManager : MonoBehaviour
         dialogues = new Queue<SingleDialogue>();
 
         //set ui components to what they should be for the first dialogue
-        _nameText.text = dialogue[0].TalkerData.CharacterName;
-        _portrait.sprite = dialogue[0].TalkerData.CharacterPortrait;
+        _nameText.text = dialogue.TalkerData.CharacterName;
+        _portrait.sprite = dialogue.TalkerData.CharacterPortrait;
         _portrait.SetNativeSize(); //just in case any portraits have different dimensions
-        convoLen = dialogue.Length + 1;
+        convoLen = 1;//dialogue.Length + 1;
 
-        //enqueue all elements in order
-        foreach (SingleDialogue line in dialogue)
-        {
-            dialogues.Enqueue(line);
-        }
 
         //display the first sentence
         DisplayNextSentence();
@@ -119,7 +107,10 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void DisplayNextSentence()
     {
-        convoLen--; //lower remaining length by 1
+        Node nextBranchDialogue = currentBranchDialogue.NextNode;
+        if (nextBranchDialogue.GetType().ToString().Equals("DialogueNode"))
+            //wip
+        currentBranchDialogue = currentBranchDialogue.NextNode;
         if (convoLen == 0) //end dialogue if remaining length is 0
         {
             EndDialogue();
@@ -175,7 +166,7 @@ public class DialogueManager : MonoBehaviour
             {
                 int randomVChoice = Random.Range(0, voice.Length);
                 //_voicer.clip = voice[randomVChoice];
-               // _voicer.Play();
+                // _voicer.Play();
             }
 
             yield return new WaitForSeconds(_chatSpeed); //wait until the next letter
@@ -199,13 +190,13 @@ public class DialogueManager : MonoBehaviour
         StopAllCoroutines();
         if (IsOpen)
         {
-            
+
             //animator.SetBool("isOpen", false);
             Debug.Log("End of convo");
             if (currentBranchDialogue.Responses.Length > 0)
             {
                 _playerResponses.SetActive(true);
-                for(int i = 0; i < _responseButtons.Length; i++)
+                for (int i = 0; i < _responseButtons.Length; i++)
                 {
                     //sets buttons to each choice for this chunk of dialogue
                     if (i < currentBranchDialogue.Responses.Length)
@@ -230,11 +221,12 @@ public class DialogueManager : MonoBehaviour
                 _NPCDialogue.SetActive(false);
                 _playerResponses.SetActive(false);
             }
-            
+
         }
 
 
 
     }
 
-}*/
+}
+
