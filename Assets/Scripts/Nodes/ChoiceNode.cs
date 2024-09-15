@@ -3,7 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using XNode;
 
+/*
+ * ChoiceNode is basically just used to define each choice in a dialogue branch
+ * ChoiceNode itself doesn't do much, besides storing the label for the button
+ * the player presses for the dialogue choice
+ * However it also allows for more modular choices (i.e. ItemChoiceNode, which
+ * inherits from ChoiceNode but requires a specific item to be obtained to be
+ * choosable)
+ */
 public class ChoiceNode : LinkedNode {
+	//the text to appear on the button for this choice
 	[SerializeField] private string _choiceLabel;
 
     public string ChoiceLabel { get => _choiceLabel; set => _choiceLabel = value; }
