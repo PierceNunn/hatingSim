@@ -384,6 +384,7 @@ MonoBehaviour:
   _nextNode: {fileID: 0}
   _dialogue:
     _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _portraitID: 
     _eventsToInvoke: []
     _sentences: why do i need 2 boxes here
 --- !u!1 &302769720
@@ -623,6 +624,7 @@ MonoBehaviour:
   _nextNode: {fileID: 0}
   _dialogue:
     _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _portraitID: 
     _eventsToInvoke: []
     _sentences: let's do a little dialogue looping bc i'm silly like that
 --- !u!114 &459083016
@@ -760,6 +762,7 @@ MonoBehaviour:
   _nextNode: {fileID: 0}
   _dialogue:
     _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _portraitID: gaze
     _eventsToInvoke: []
     _sentences: 'hi i keep having to make these things
 
@@ -809,6 +812,7 @@ MonoBehaviour:
   _nextNode: {fileID: 0}
   _dialogue:
     _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _portraitID: 
     _eventsToInvoke: []
     _sentences: me too kid
 --- !u!1 &689153795
@@ -1190,7 +1194,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f3bb1a33620ce1f4681f6a5b798975db, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b5b7e814f2228f3469e2d5571adcfe76, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1405,6 +1409,7 @@ MonoBehaviour:
   _nextNode: {fileID: 0}
   _dialogue:
     _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _portraitID: 
     _eventsToInvoke: []
     _sentences: 'oghhh cool item bro '
 --- !u!1 &832688550
@@ -2989,6 +2994,7 @@ MonoBehaviour:
   _nextNode: {fileID: 0}
   _dialogue:
     _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _portraitID: scowl
     _eventsToInvoke: []
     _sentences: just let this one work PLEASE
 --- !u!1 &1704416878
@@ -4228,6 +4234,7 @@ MonoBehaviour:
   _nextNode: {fileID: 0}
   _dialogue:
     _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _portraitID: 
     _eventsToInvoke: []
     _sentences: me too...
 --- !u!1660057539 &9223372036854775807

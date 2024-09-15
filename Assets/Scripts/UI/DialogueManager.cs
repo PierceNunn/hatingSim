@@ -75,7 +75,7 @@ public class DialogueManager : MonoBehaviour
 
         //set ui components to what they should be for the first dialogue
         _nameText.text = dialogue.TalkerData.CharacterName;
-        _portrait.sprite = dialogue.TalkerData.CharacterPortrait;
+        _portrait.sprite = dialogue.TalkerData.GetPortraitByID(dialogue.PortraitID);
         _portrait.SetNativeSize(); //just in case any portraits have different dimensions
 
         if (branchDialogue.GetType().ToString().Equals("DialogueNode"))
@@ -130,7 +130,7 @@ public class DialogueManager : MonoBehaviour
         //pull current talker's name out of the SingleDialogue's TalkerData
         string nameTag = dialogue.TalkerData.CharacterName;
         //pull current talker's portrait out of the SingleDialogue's TalkerData
-        Sprite talkIMG = dialogue.TalkerData.CharacterPortrait;
+        Sprite talkIMG = dialogue.TalkerData.GetPortraitByID(dialogue.PortraitID);
         AudioClip[] voice = null;// dialogue.voice.clips;
         UnityEvent[] actions = dialogue.EventsToInvoke;
 
