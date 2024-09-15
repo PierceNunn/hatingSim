@@ -60,14 +60,14 @@ public class DialogueManager : MonoBehaviour
     /// <summary>
     /// initializes a conversation from an outside source.
     /// </summary>
-    /// <param name="dialogue">A SingleDialogue array containing information for the initialized conversation.</param>
+    /// <param name="branchDialogue">The current node of dialogue.</param>
     /// <param name="NPC">The GameObject which initiates the conversation.</param>
     /// <param name="willAutoAdvance">Determines if dialogue will advance automatically.</param>
     public void StartDialogue(LinkedNode branchDialogue, GameObject NPC, bool willAutoAdvance)
     {
         IsOpen = true;
-        _NPCDialogue.SetActive(true);
-        _playerResponses.SetActive(false);
+        _NPCDialogue.SetActive(true); //show text box
+        _playerResponses.SetActive(false); //hide choice buttons
         currentBranchDialogue = branchDialogue.NextNode as DialogueNode;
         SingleDialogue dialogue = currentBranchDialogue.Dialogue;
         _autoAdvance = willAutoAdvance;
@@ -79,8 +79,10 @@ public class DialogueManager : MonoBehaviour
         _portrait.SetNativeSize(); //just in case any portraits have different dimensions
 
         if (branchDialogue.GetType().ToString().Equals("DialogueNode"))
+            //displays input node if it's a dialogueNode
             nextBranchDialogue = branchDialogue;
         else
+            //displays input node's next node if it isn't dialogue
             nextBranchDialogue = branchDialogue.NextNode;
         //display the first sentence
         DisplayNextSentence();
@@ -121,19 +123,23 @@ public class DialogueManager : MonoBehaviour
             nextBranchDialogue = t.NextNode;
             return;
         }
-
+        //pull SingleDialogue data out of current node
         SingleDialogue dialogue = currentBranchDialogue.Dialogue;
+        //pull current dialogue text out of the SingleDialogue data
         sentence = dialogue.sentences;
+        //pull current talker's name out of the SingleDialogue's TalkerData
         string nameTag = dialogue.TalkerData.CharacterName;
+        //pull current talker's portrait out of the SingleDialogue's TalkerData
         Sprite talkIMG = dialogue.TalkerData.CharacterPortrait;
         AudioClip[] voice = null;// dialogue.voice.clips;
         UnityEvent[] actions = dialogue.EventsToInvoke;
 
-
+        //print dialogue text (for debug mostly)
         print(sentence);
 
-        //coroutine for sentence so it can appear letter by letter
+        //Stop all coroutines to prevent complications
         StopAllCoroutines();
+        //Start coroutine to type out dialogue text
         StartCoroutine(TypeSentence(sentence, voice));
         //update ui elements
         _nameText.text = nameTag;
@@ -145,11 +151,13 @@ public class DialogueManager : MonoBehaviour
 
         //_buttonPrompt.enabled = false;
 
+        //invoke UnityEvents tied to dialogue node
         foreach (UnityEvent e in actions)
         {
             e.Invoke();
         }
 
+        //prepare next node for next call of DisplayNextSentence
         nextBranchDialogue = currentBranchDialogue.NextNode;
     }
 
@@ -163,11 +171,14 @@ public class DialogueManager : MonoBehaviour
     {
         isTyping = true;
 
+        //start textbox empty
         _dialogueText.text = "";
+
         foreach (char letter in sentence.ToCharArray())
         {
             _dialogueText.text += letter; //add letters of sentence individually
-            //clip isn't played for specific characters or when no voice is available
+
+            //clip isn't played for specific chars or when no voice is available
             if (voice != null && letter != " "[0] && letter != ","[0] && letter != "'"[0])
             {
                 int randomVChoice = Random.Range(0, voice.Length);
@@ -175,7 +186,8 @@ public class DialogueManager : MonoBehaviour
                 // _voicer.Play();
             }
 
-            yield return new WaitForSeconds(_chatSpeed); //wait until the next letter
+            //wait pre-specified time until printing the next letter
+            yield return new WaitForSeconds(_chatSpeed);
         }
 
         isTyping = false;
@@ -189,10 +201,11 @@ public class DialogueManager : MonoBehaviour
 
     /// <summary>
     /// transitions to either displaying next choices or exits dialogue
-    /// mode, depending on whether or not more chunks are referenced.
+    /// mode, depending on whether or not more nodes are referenced.
     /// </summary>
     public void EndDialogue()
     {
+        //stop all coroutines to prevent complications
         StopAllCoroutines();
         if (IsOpen)
         {
@@ -214,8 +227,10 @@ public class DialogueManager : MonoBehaviour
 
     void SetUpDialogueChoices(DialogueBranchNode branchNode)
     {
+        //first check if there are any choices set up
         if (branchNode.nextNodes.Length > 0)
         {
+            //show choice buttons
             _playerResponses.SetActive(true);
             for (int i = 0; i < _responseButtons.Length; i++)
             {
@@ -224,9 +239,13 @@ public class DialogueManager : MonoBehaviour
                 {
                     ChoiceNode temp = branchNode.nextNodes[i] as ChoiceNode;
                     _responseButtons[i].SetActive(true);
+
+                    //check if choice requires item
                     if(temp.GetType().ToString().Equals("ItemChoiceNode"))
                     {
                         ItemChoiceNode tempChoice = temp as ItemChoiceNode;
+
+                        //locks choice if required item not obtained
                         if(PlayerPrefs.GetInt(tempChoice.RequiredItem, 0) != 1)
                         {
                             _responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text
@@ -235,6 +254,7 @@ public class DialogueManager : MonoBehaviour
                             continue;
                         }
                     }
+                    //sets button text and stored node to choice's data
                     _responseButtons[i].GetComponent<Button>().interactable = true;
                     _responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = temp.ChoiceLabel;
                     _responseButtons[i].GetComponent<DialogueGiver>().DialogueToGive = temp.NextNode as DialogueNode;
