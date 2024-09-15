@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using XNode;
 
+//doesn't inherit from LinkedNode like the others due to having multiple "nextNodes"
 public class DialogueBranchNode : Node {
 	[Output] [SerializeField] private Node _lastNode;
 	[Input(dynamicPortList = true)] [SerializeField] private Node[] _responses;
@@ -14,6 +15,7 @@ public class DialogueBranchNode : Node {
 		nextNodes = new Node[_responses.Length];
 		for(int i = 0; i < _responses.Length; i++)
         {
+			//gets each node in the _responses input and adds them to nextNodes
 			NodePort nextPort = GetInputPort("_responses " + i).Connection;
 			if (nextPort != null)
 			{
