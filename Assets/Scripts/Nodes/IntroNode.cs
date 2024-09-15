@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using XNode;
 
+/*
+ * IntroNode is a very simple node, clearly
+ * it mostly just exists to be searched for as the entry point
+ */
 public class IntroNode : LinkedNode
 {
 
@@ -11,12 +15,5 @@ public class IntroNode : LinkedNode
     protected override void Init()
 	{
 		base.Init();
-	}
-
-	// Return the correct value of an output port when requested
-	public override object GetValue(NodePort port)
-	{
-
-		return null; // Replace this
 	}
 }
