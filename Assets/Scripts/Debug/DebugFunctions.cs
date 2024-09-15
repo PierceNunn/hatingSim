@@ -16,4 +16,9 @@ public class DebugFunctions : MonoBehaviour
             PlayerPrefs.SetInt(c.ItemID, 0);
         }
     }
+
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
