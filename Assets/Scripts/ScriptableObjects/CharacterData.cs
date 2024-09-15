@@ -21,4 +21,16 @@ public class CharacterData : ScriptableObject
     public Sprite DefaultCharacterPortrait { get => _defaultCharacterPortrait; set => _defaultCharacterPortrait = value; }
     public RandomizedAudio CharacterVoice { get => _characterVoice; set => _characterVoice = value; }
     public Portrait[] Portraits { get => _portraits; set => _portraits = value; }
+
+    public Sprite GetPortraitByID(string id)
+    {
+        foreach(Portrait p in _portraits)
+        {
+            if(p.PortraitID.Equals(id))
+            {
+                return p.PortraitImage;
+            }
+        }
+        return _defaultCharacterPortrait;
+    }
 }
