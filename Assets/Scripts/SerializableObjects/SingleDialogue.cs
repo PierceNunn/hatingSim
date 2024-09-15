@@ -20,9 +20,3 @@ public class SingleDialogue
     public string sentences { get => _sentences; set => _sentences = value; }
     public CharacterData TalkerData { get => _talkerData; set => _talkerData = value; }
 }
-
-[System.Serializable]
-public class MultiDialogue // for easy storage of repeat interacts
-{
-    public SingleDialogue[] dialogue;
-}
