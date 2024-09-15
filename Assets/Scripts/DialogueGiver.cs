@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using XNode;
 
 public class DialogueGiver : MonoBehaviour
 {
     [SerializeField] private LinkedNode _dialogueToGive;
     [SerializeField] private bool _giveDialogueOnStart;
+    [SerializeField] private SceneGraph _test;
 
     public LinkedNode DialogueToGive { get => _dialogueToGive; set => _dialogueToGive = value; }
 
