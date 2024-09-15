@@ -3,7 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using XNode;
 
-[NodeWidth(304)]
+/*
+ * DialogueNode is basically the heart of the node-based dialogue system
+ * Since it inherits from LinkedNode all it really needs is to store a field
+ * for the existing SingleDialogue type
+ */
+
+[NodeWidth(304)] //makes these nodes wider for convenience
 public class DialogueNode : LinkedNode {
 	[SerializeField] private SingleDialogue _dialogue;
 
