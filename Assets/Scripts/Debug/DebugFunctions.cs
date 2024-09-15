@@ -16,6 +16,17 @@ public class DebugFunctions : MonoBehaviour
             PlayerPrefs.SetInt(c.ItemID, 0);
         }
     }
+    public void GainAllItems()
+    {
+        CollectibleItem[] itemsToGain =
+        Resources.LoadAll<CollectibleItem>("Items");
+
+        foreach (CollectibleItem c in itemsToGain)
+        {
+            PlayerPrefs.SetInt(c.ItemID, 1);
+        }
+    }
+
 
     public void ReloadScene()
     {
