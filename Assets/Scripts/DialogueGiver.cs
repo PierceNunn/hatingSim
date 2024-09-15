@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using XNode;
 
 public class DialogueGiver : MonoBehaviour
 {
@@ -18,6 +19,10 @@ public class DialogueGiver : MonoBehaviour
     }
     public void InitiateDialogue()
     {
+        if(GetComponent<DialogueSceneGraph>() != null)
+        {
+            _dialogueToGive = GetComponent<DialogueSceneGraph>().graph.findIntroNode();
+        }
         FindObjectOfType<DialogueManager>().StartDialogue(DialogueToGive, gameObject, false);
     }
 }
