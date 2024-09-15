@@ -2,6 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * CharacterData stores, unsurprisingly, data related to a specific character
+ * this includes name, portraits, and audio clips
+ * combining all of this into a single asset makes referencing characters in
+ * things like dialogue much more convenient as all related assets are bundled
+ * together
+ */
 [CreateAssetMenu]
 public class CharacterData : ScriptableObject
 {
