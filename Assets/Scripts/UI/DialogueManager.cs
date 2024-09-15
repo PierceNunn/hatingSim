@@ -224,6 +224,18 @@ public class DialogueManager : MonoBehaviour
                 {
                     ChoiceNode temp = branchNode.nextNodes[i] as ChoiceNode;
                     _responseButtons[i].SetActive(true);
+                    if(temp.GetType().ToString().Equals("ItemChoiceNode"))
+                    {
+                        ItemChoiceNode tempChoice = temp as ItemChoiceNode;
+                        if(PlayerPrefs.GetInt(tempChoice.RequiredItem, 0) != 1)
+                        {
+                            _responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text
+                                = "LOCKED";
+                            _responseButtons[i].GetComponent<Button>().interactable = false;
+                            continue;
+                        }
+                    }
+                    _responseButtons[i].GetComponent<Button>().interactable = true;
                     _responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = temp.ChoiceLabel;
                     _responseButtons[i].GetComponent<DialogueGiver>().DialogueToGive = temp.NextNode as DialogueNode;
                 }
