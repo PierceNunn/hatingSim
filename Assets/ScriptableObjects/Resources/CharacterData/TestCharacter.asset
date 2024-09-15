@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: TestCharacter
   m_EditorClassIdentifier: 
   _characterName: testman
-  _characterPortrait: {fileID: 21300000, guid: b5b7e814f2228f3469e2d5571adcfe76, type: 3}
+  _defaultCharacterPortrait: {fileID: 0}
+  _portraits:
+  - _portraitImage: {fileID: 0}
+    _portraitID: 
   _characterVoice: {fileID: 11400000, guid: 51b09c5049ef8d3468f748c25aa672ba, type: 2}
