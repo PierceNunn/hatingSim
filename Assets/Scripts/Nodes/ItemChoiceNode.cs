@@ -10,7 +10,7 @@ using XNode;
  */
 public class ItemChoiceNode : ChoiceNode
 {
-    [SerializeField] private string _requiredItem;
+    [SerializeField] private CollectibleItem _requiredItem;
 
-    public string RequiredItem { get => _requiredItem; set => _requiredItem = value; }
+    public CollectibleItem RequiredItem { get => _requiredItem; set => _requiredItem = value; }
 }
