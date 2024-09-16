@@ -247,7 +247,7 @@ public class DialogueManager : MonoBehaviour
 
                         //locks choice if required item not obtained
                         //0 is false and 1 is true due to PP not supporting bools
-                        if(PlayerPrefs.GetInt(tempChoice.RequiredItem, 0) != 1)
+                        if(PlayerPrefs.GetInt(tempChoice.RequiredItem.ItemID, 0) != 1)
                         {
                             _responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text
                                 = "LOCKED";

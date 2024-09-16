@@ -19,6 +19,8 @@ public class DebugFunctions : MonoBehaviour
             //using 0 as false and 1 as true as PP doesn't support bools
             PlayerPrefs.SetInt(c.ItemID, 0);
         }
+
+        print("item data cleared successfully");
     }
     /// <summary>
     /// Sets all CollectibleItem objects as found.
@@ -34,6 +36,8 @@ public class DebugFunctions : MonoBehaviour
             //using 0 as false and 1 as true as PP doesn't support bools
             PlayerPrefs.SetInt(c.ItemID, 1);
         }
+
+        print("hoarder mode enabled");
     }
 
     /// <summary>
@@ -42,5 +46,7 @@ public class DebugFunctions : MonoBehaviour
     public void ReloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+        print("reloading! cover me!");
     }
 }
