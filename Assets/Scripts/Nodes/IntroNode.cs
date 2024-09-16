@@ -8,6 +8,7 @@ using XNode;
  * it mostly just exists to be searched for as the entry point
  */
 [NodeTint("#997d5f")]
+[NodeWidth(100)]
 public class IntroNode : LinkedNode
 {
 
