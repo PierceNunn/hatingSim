@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 37562791}
   - component: {fileID: 37562790}
   - component: {fileID: 37562792}
+  - component: {fileID: 37562793}
   m_Layer: 0
   m_Name: temp_NPC
   m_TagString: Untagged
@@ -252,6 +253,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &37562793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37562789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dbc6e78a5bcd14badc6b5408a7e14a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &569947309
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,6 +276,9 @@ GameObject:
   - component: {fileID: 569947311}
   - component: {fileID: 569947310}
   - component: {fileID: 569947312}
+  - component: {fileID: 569947313}
+  - component: {fileID: 569947314}
+  - component: {fileID: 569947315}
   m_Layer: 0
   m_Name: temp_MC
   m_TagString: Untagged
@@ -364,6 +380,111 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &569947313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569947309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d3132f3ff9df434aaa326c79e8c93b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactText: {fileID: 1586019214}
+  player: {fileID: 569947309}
+  playerInput: {fileID: 569947315}
+--- !u!60 &569947314
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569947309}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.19, y: -0.12}
+      - {x: 0.19999999, y: -0.099999994}
+      - {x: 0.19999999, y: 0.11}
+      - {x: 0.16, y: 0.22999999}
+      - {x: 0.07, y: 0.26999998}
+      - {x: -0.049999997, y: 0.26999998}
+      - {x: -0.12, y: 0.25}
+      - {x: -0.17, y: 0.13}
+      - {x: -0.17, y: -0.099999994}
+      - {x: -0.16, y: -0.14}
+      - {x: -0.12, y: -0.26999998}
+      - {x: -0.08, y: -0.29}
+      - {x: 0.08, y: -0.29}
+      - {x: 0.13, y: -0.26999998}
+      - {x: 0.13, y: -0.17999999}
+  m_UseDelaunayMesh: 0
+--- !u!114 &569947315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569947309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: ceb6b6912d79f804394bce7c4e9e2b9e, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: UI
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1571835359
 GameObject:
   m_ObjectHideFlags: 0
