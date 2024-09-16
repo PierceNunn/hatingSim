@@ -10,6 +10,7 @@ using XNode;
  */
 
 [NodeWidth(304)] //makes these nodes wider for convenience
+[NodeTint("#7a4674")]
 public class DialogueNode : LinkedNode {
 	[SerializeField] private SingleDialogue _dialogue;
 

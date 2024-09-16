@@ -11,6 +11,8 @@ using XNode;
  * inherits from ChoiceNode but requires a specific item to be obtained to be
  * choosable)
  */
+
+[NodeTint("#46677a")]
 public class ChoiceNode : LinkedNode {
 	//the text to appear on the button for this choice
 	[SerializeField] private string _choiceLabel;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using XNode;
 
+[NodeTint("#49467a")]
 //doesn't inherit from LinkedNode like the others due to having multiple "nextNodes"
 public class DialogueBranchNode : Node {
 	[Output] [SerializeField] private Node _lastNode;

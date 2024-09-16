@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 834054692}
-  position: {x: -2232, y: -392}
+  position: {x: -2216, y: -488}
   ports:
     keys:
     - _lastNode
@@ -564,7 +564,7 @@ MonoBehaviour:
   m_Name: Choice
   m_EditorClassIdentifier: 
   graph: {fileID: 834054692}
-  position: {x: -1848, y: 104}
+  position: {x: -1864, y: 88}
   ports:
     keys:
     - _lastNode
@@ -2107,7 +2107,7 @@ MonoBehaviour:
   m_Name: Intro
   m_EditorClassIdentifier: 
   graph: {fileID: 834054692}
-  position: {x: -584, y: -264}
+  position: {x: -552, y: -216}
   ports:
     keys:
     - _lastNode
