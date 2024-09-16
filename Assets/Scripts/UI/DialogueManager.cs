@@ -131,7 +131,7 @@ public class DialogueManager : MonoBehaviour
         string nameTag = dialogue.TalkerData.CharacterName;
         //pull current talker's portrait out of the SingleDialogue's TalkerData
         Sprite talkIMG = dialogue.TalkerData.GetPortraitByID(dialogue.PortraitID);
-        AudioClip[] voice = null;// dialogue.voice.clips;
+        AudioClip[] voice = dialogue.TalkerData.CharacterVoice.clips;
         UnityEvent[] actions = dialogue.EventsToInvoke;
 
         //print dialogue text (for debug mostly)
@@ -182,8 +182,8 @@ public class DialogueManager : MonoBehaviour
             if (voice != null && letter != " "[0] && letter != ","[0] && letter != "'"[0])
             {
                 int randomVChoice = Random.Range(0, voice.Length);
-                //_voicer.clip = voice[randomVChoice];
-                // _voicer.Play();
+                _voicer.clip = voice[randomVChoice];
+                _voicer.Play();
             }
 
             //wait pre-specified time until printing the next letter
