@@ -6,6 +6,7 @@ public class CameraController : MonoBehaviour
 {
     Camera cam;
     [SerializeField] private GameObject bgCam;
+    [SerializeField] private bool _enforceRatio;
     [SerializeField] private float targetRatioX = 4;
     [SerializeField] private float targetRatioY = 3;
     Rect rect;
@@ -14,18 +15,20 @@ public class CameraController : MonoBehaviour
 
     void Start()
     {
-        scaleRatio();
+        cam = GetComponent<Camera>();
+        rect = cam.rect;
         Invoke("SetUIRenderCamera", 0.01f);
     }
     void Update()
     {
         rect = cam.rect;
         bgCam.GetComponent<Camera>().depth = cam.depth - 1;
-        
-        scaleRatio();
 
         gameObject.transform.position = 
             FindObjectOfType<PlayerMovement>().transform.position;
+
+        if(_enforceRatio)
+            scaleRatio();
     }
     void scaleRatio()
     {
@@ -34,7 +37,6 @@ public class CameraController : MonoBehaviour
         float ratioScale = currentRatio / targetRatio;
         if (ratioScale < 1f)
         {
-            cam = GetComponent<Camera>();
             rect = cam.rect;
             rect.width = 1f;
             rect.height = ratioScale;
