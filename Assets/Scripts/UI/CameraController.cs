@@ -21,7 +21,11 @@ public class CameraController : MonoBehaviour
     {
         rect = cam.rect;
         bgCam.GetComponent<Camera>().depth = cam.depth - 1;
+        
         scaleRatio();
+
+        gameObject.transform.position = 
+            FindObjectOfType<PlayerMovement>().transform.position;
     }
     void scaleRatio()
     {

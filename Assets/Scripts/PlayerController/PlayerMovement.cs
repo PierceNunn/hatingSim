@@ -67,6 +67,5 @@ public class PlayerMovement : MonoBehaviour
         
         rb.velocity = direction * speed;
 
-        cam.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -10);
     }
 }
