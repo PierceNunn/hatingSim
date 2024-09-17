@@ -26,16 +26,23 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    private void Select_started(InputAction.CallbackContext obj)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-
+        if(collision.gameObject.GetComponent<InteractableEntity>() != null)
+        {
+            interactObject = collision.gameObject;
+            interactText.gameObject.SetActive(true);
+        }
     }
 
-    //changes the [Space] text when in an item's hit box
-    public void InteractTextChange(bool x)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        interactText.gameObject.SetActive(x);
+        if(collision.gameObject == interactObject)
+        {
+            interactObject = null;
+        }
     }
+
 
     public void OnMove(InputValue iValue)
     {

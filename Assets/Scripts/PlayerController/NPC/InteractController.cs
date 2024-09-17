@@ -17,13 +17,13 @@ public class InteractController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            pM.InteractTextChange(true);
+            //pM.InteractTextChange(true);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        pM.InteractTextChange(false);
+        //pM.InteractTextChange(false);
     }
 
     void Update()
