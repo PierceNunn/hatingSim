@@ -49,6 +49,11 @@ public class PlayerMovement : MonoBehaviour
             interactObject.GetComponent<InteractableEntity>().OnInteract();
     }
 
+    public void OnContinue()
+    {
+        FindObjectOfType<DialogueManager>().OnContinue();
+    }
+
 
     public void OnMove(InputValue iValue)
     {
