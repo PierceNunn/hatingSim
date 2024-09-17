@@ -5,20 +5,17 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     Camera cam;
-    public GameObject cam2;
-    public float targetRatioX = 4;
-    public float targetRatioY = 3;
+    [SerializeField] private GameObject bgCam;
+    [SerializeField] private float targetRatioX = 4;
+    [SerializeField] private float targetRatioY = 3;
     Rect rect;
-    GameObject bgCam;
-    public float shakeDuration = 1;
-    public float shakeMagnitude = 1;
+    [SerializeField] private float shakeDuration = 1;
+    [SerializeField] private float shakeMagnitude = 1;
 
     void Start()
     {
-        bgCam = cam2;
         scaleRatio();
         Invoke("SetUIRenderCamera", 0.01f);
-
     }
     void Update()
     {
