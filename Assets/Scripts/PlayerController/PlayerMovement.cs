@@ -40,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
         if(collision.gameObject == interactObject)
         {
             interactObject = null;
+            interactText.gameObject.SetActive(false);
         }
     }
 
