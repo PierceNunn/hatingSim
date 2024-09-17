@@ -19,11 +19,7 @@ public class CameraController : MonoBehaviour
     }
     void Update()
     {
-
-        float margin = 0.2f;
         rect = cam.rect;
-        // setup the rectangle
-        //cam.rect = new Rect(margin, 0.0f, 1.0f - margin * 2.0f, 1.0f);
         bgCam.GetComponent<Camera>().depth = cam.depth - 1;
         scaleRatio();
     }
@@ -69,25 +65,17 @@ public class CameraController : MonoBehaviour
     }
     public void shakeCam(float dur, float mag)
     {
-        if (true)//PlayerPrefs.GetInt("ShakeCamEnabled") == 1)
-        {
-            StartCoroutine(Shake(dur, mag));
-        }
+        StartCoroutine(Shake(dur, mag));
 
     }
     public void shakeCam()
     {
-        if (PlayerPrefs.GetInt("ShakeCamEnabled") == 1)
-        {
-            StartCoroutine(Shake(shakeDuration, shakeMagnitude));
-        }
+        StartCoroutine(Shake(shakeDuration, shakeMagnitude));
     }
 
     public IEnumerator Shake(float duration, float magnitude)
     {
         Vector3 orignalPosition = transform.position;
-        float elapsed = 0f;
-
         while (magnitude > 0f)
         {
             float x = Random.Range(-1f, 1f) * magnitude;
