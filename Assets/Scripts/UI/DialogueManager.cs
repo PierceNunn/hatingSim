@@ -220,7 +220,6 @@ public class DialogueManager : MonoBehaviour
             //FindObjectOfType<PlayerController>().talking = false;
             _NPCDialogue.SetActive(false);
             _playerResponses.SetActive(false);
-            FindObjectOfType<PlayerInput>().actions.FindActionMap("UI").Disable();
             FindObjectOfType<PlayerInput>().actions.FindActionMap("Player").Enable();
 
 
