@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemHandler : MonoBehaviour
+public class ItemHandler : InteractableEntity
 {
     /*
      * ItemHandler is basically just an intermediary for the CollectibleItem
@@ -10,6 +10,11 @@ public class ItemHandler : MonoBehaviour
      * into a scene
      */
     [SerializeField] private CollectibleItem _itemData;
+
+    override public void OnInteract()
+    {
+        CollectItem();
+    }
 
     public void CollectItem()
     {
