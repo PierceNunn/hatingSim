@@ -11,6 +11,11 @@ public class ItemHandler : InteractableEntity
      */
     [SerializeField] private CollectibleItem _itemData;
 
+    override public void OnInteract()
+    {
+        CollectItem();
+    }
+
     public void CollectItem()
     {
         //flags item as found in PlayerPrefs

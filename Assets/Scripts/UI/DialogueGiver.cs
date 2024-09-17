@@ -23,6 +23,11 @@ public class DialogueGiver : InteractableEntity
             Invoke("InitiateDialogue", 1f);
         }
     }
+
+    override public void OnInteract()
+    {
+        Invoke("InitiateDialogue", 0f);
+    }
     public void InitiateDialogue()
     {
         //if there's a graph on the object get the Intro Node from there
