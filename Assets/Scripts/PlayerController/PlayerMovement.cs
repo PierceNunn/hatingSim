@@ -43,6 +43,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void OnSelect()
+    {
+        if (interactObject != null)
+            interactObject.GetComponent<InteractableEntity>().OnInteract();
+    }
+
 
     public void OnMove(InputValue iValue)
     {
