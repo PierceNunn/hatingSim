@@ -8,9 +8,6 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private TMP_Text interactText;
 
-    [SerializeField] private GameObject cam;
-
-
     private Rigidbody2D rb;
 
     private Vector2 direction;
