@@ -11,8 +11,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject cam;
 
-    [SerializeField] private PlayerInput playerInput;
-
 
     private Rigidbody2D rb;
 
@@ -20,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private int speed;
 
-    private InputAction move;
     private InputAction select;
 
     void Start()
@@ -28,10 +25,9 @@ public class PlayerMovement : MonoBehaviour
         rb = player.GetComponent<Rigidbody2D>();
         interactText.gameObject.SetActive(false);
 
-        move = playerInput.actions["Move"];
-        select = playerInput.actions["Select"];
+        //select = playerInput.actions["Select"];
 
-        select.started += Select_started;
+        //select.started += Select_started;
     }
 
     private void Select_started(InputAction.CallbackContext obj)
@@ -45,11 +41,16 @@ public class PlayerMovement : MonoBehaviour
         interactText.gameObject.SetActive(x);
     }
 
+    public void OnMove(InputValue iValue)
+    {
+        direction = iValue.Get<Vector2>();
+    }
+
 
 
     void Update()
     {
-        direction = move.ReadValue<Vector2>();
+        
         rb.velocity = direction * speed;
 
         cam.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
