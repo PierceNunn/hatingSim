@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemHandler : MonoBehaviour
+public class ItemHandler : InteractableEntity
 {
     /*
      * ItemHandler is basically just an intermediary for the CollectibleItem
