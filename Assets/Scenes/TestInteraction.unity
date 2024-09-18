@@ -352,7 +352,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1571835363}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &569947312
@@ -395,7 +396,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactText: {fileID: 1586019214}
-  cam: {fileID: 1843314817}
   speed: 4
 --- !u!114 &569947315
 MonoBehaviour:
@@ -751,7 +751,7 @@ GameObject:
   - component: {fileID: 1571835361}
   - component: {fileID: 1571835360}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: interactPrompt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -796,7 +796,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1571835362
 Canvas:
   m_ObjectHideFlags: 0
@@ -806,7 +806,7 @@ Canvas:
   m_GameObject: {fileID: 1571835359}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -827,19 +827,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571835359}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.005214907, y: 0.005214907, z: 0.015644722}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1586019213}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 569947311}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.01, y: 0.25333333}
+  m_SizeDelta: {x: 800, y: 449.8615}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1586019212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,7 +1399,6 @@ SceneRoots:
   - {fileID: 569947311}
   - {fileID: 37562791}
   - {fileID: 942846547}
-  - {fileID: 1571835363}
   - {fileID: 1992448927}
   - {fileID: 1900338664}
   - {fileID: 839513266}
