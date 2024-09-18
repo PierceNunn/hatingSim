@@ -8,7 +8,7 @@ using XNode;
  * the InitiateDialogue function also needs to be called to push the stored
  * dialogue to the text box/UI
  */
-public class DialogueGiver : InteractableEntity
+public class DialogueGiver : MonoBehaviour
 {
     [SerializeField] private LinkedNode _dialogueToGive;
     [SerializeField] private bool _giveDialogueOnStart;
@@ -22,11 +22,6 @@ public class DialogueGiver : InteractableEntity
         {
             Invoke("InitiateDialogue", 1f);
         }
-    }
-
-    override public void OnInteract()
-    {
-        Invoke("InitiateDialogue", 0f);
     }
     public void InitiateDialogue()
     {

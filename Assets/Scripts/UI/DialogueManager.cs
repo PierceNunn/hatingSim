@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Events;
-using UnityEngine.InputSystem;
 using XNode;
 
 /// <summary>
@@ -66,8 +65,6 @@ public class DialogueManager : MonoBehaviour
     /// <param name="willAutoAdvance">Determines if dialogue will advance automatically.</param>
     public void StartDialogue(LinkedNode branchDialogue, GameObject NPC, bool willAutoAdvance)
     {
-        FindObjectOfType<PlayerInput>().actions.FindActionMap("UI").Enable();
-        FindObjectOfType<PlayerInput>().actions.FindActionMap("Player").Disable();
         IsOpen = true;
         _NPCDialogue.SetActive(true); //show text box
         _playerResponses.SetActive(false); //hide choice buttons
@@ -220,7 +217,6 @@ public class DialogueManager : MonoBehaviour
             //FindObjectOfType<PlayerController>().talking = false;
             _NPCDialogue.SetActive(false);
             _playerResponses.SetActive(false);
-            FindObjectOfType<PlayerInput>().actions.FindActionMap("Player").Enable();
 
 
         }

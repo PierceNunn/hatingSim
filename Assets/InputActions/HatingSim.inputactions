@@ -94,15 +94,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Continue",
-                    "type": "Button",
-                    "id": "d99000ee-56cb-435f-bb45-152a8f015b55",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -523,17 +514,6 @@
                     "action": "TrackedDeviceOrientation",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "dab74dfb-70f2-4805-9503-665e03128fff",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Continue",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         },
@@ -542,7 +522,7 @@
             "id": "769be80e-c333-45b2-a0e0-6965b4f2573f",
             "actions": [
                 {
-                    "name": "q",
+                    "name": "Continue",
                     "type": "Button",
                     "id": "bd2ef5b7-e9ac-4a87-8f8b-7e84cc270e39",
                     "expectedControlType": "Button",
@@ -577,7 +557,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "q",
+                    "action": "Continue",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
