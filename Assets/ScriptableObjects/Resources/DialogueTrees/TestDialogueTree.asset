@@ -42,6 +42,7 @@ MonoBehaviour:
   _nextNode: {fileID: 0}
   _dialogue:
     _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _portraitID: 
     _eventsToInvoke: []
     _sentences: forzorrrszzz
 --- !u!114 &-6794858767199001616
@@ -129,6 +130,7 @@ MonoBehaviour:
   _nextNode: {fileID: 0}
   _dialogue:
     _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _portraitID: 
     _eventsToInvoke: []
     _sentences: hello wow did it work? i hope so
 --- !u!114 &-5343466263640644442
@@ -220,6 +222,7 @@ MonoBehaviour:
   _nextNode: {fileID: 0}
   _dialogue:
     _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _portraitID: 
     _eventsToInvoke: []
     _sentences: kk bye
 --- !u!114 &-3305992810296234519
@@ -267,6 +270,7 @@ MonoBehaviour:
   _nextNode: {fileID: 0}
   _dialogue:
     _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _portraitID: 
     _eventsToInvoke: []
     _sentences: option one picked
 --- !u!114 &-2172239855680714592
@@ -313,7 +317,7 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _choiceLabel: item has
-  _requiredItem: skivididi
+  _requiredItem: {fileID: 11400000, guid: cbd77d4b6d65fb544b878ef91c117457, type: 2}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,6 +393,7 @@ MonoBehaviour:
   _nextNode: {fileID: 0}
   _dialogue:
     _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _portraitID: 
     _eventsToInvoke: []
     _sentences: hooray!! it working! hooraayy!!!!
 --- !u!114 &5409985321494387650
@@ -436,6 +441,7 @@ MonoBehaviour:
   _nextNode: {fileID: 0}
   _dialogue:
     _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _portraitID: 
     _eventsToInvoke: []
     _sentences: option two picked
 --- !u!114 &6550825359078019188
@@ -567,5 +573,5 @@ MonoBehaviour:
   - {fileID: 0}
   nextNodes:
   - {fileID: 6550825359078019188}
-  - {fileID: 0}
+  - {fileID: -2172239855680714592}
   - {fileID: -5343466263640644442}

@@ -8,50 +8,62 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private TMP_Text interactText;
 
-    [SerializeField] private GameObject player;
-    [SerializeField] private GameObject cam;
-
-    [SerializeField] private PlayerInput playerInput;
-
-
     private Rigidbody2D rb;
 
     private Vector2 direction;
 
-    [SerializeField] private int speed;
+    private GameObject interactObject;
 
-    private InputAction move;
-    private InputAction select;
+    [SerializeField] private int speed;
 
     void Start()
     {
-        rb = player.GetComponent<Rigidbody2D>();
+        rb = gameObject.GetComponent<Rigidbody2D>();
         interactText.gameObject.SetActive(false);
 
-        move = playerInput.actions["Move"];
-        select = playerInput.actions["Select"];
-
-        select.started += Select_started;
     }
 
-    private void Select_started(InputAction.CallbackContext obj)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-
+        if(collision.gameObject.GetComponent<InteractableEntity>() != null)
+        {
+            interactObject = collision.gameObject;
+            interactText.gameObject.SetActive(true);
+        }
     }
 
-    //changes the [Space] text when in an item's hit box
-    public void InteractTextChange(bool x)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        interactText.gameObject.SetActive(x);
+        if(collision.gameObject == interactObject)
+        {
+            interactObject = null;
+            interactText.gameObject.SetActive(false);
+        }
+    }
+
+    public void OnSelect()
+    {
+        if (interactObject != null)
+            interactObject.GetComponent<InteractableEntity>().OnInteract();
+    }
+
+    public void OnContinue()
+    {
+        FindObjectOfType<DialogueManager>().OnContinue();
+    }
+
+
+    public void OnMove(InputValue iValue)
+    {
+        direction = iValue.Get<Vector2>();
     }
 
 
 
     void Update()
     {
-        direction = move.ReadValue<Vector2>();
+        
         rb.velocity = direction * speed;
 
-        cam.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
     }
 }
