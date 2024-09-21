@@ -13,6 +13,4 @@ public class DayDependantHandler : MonoBehaviour
 
     [SerializeField] private int _availableDay;
     [SerializeField] private DayPhases _availableTime;
-
-
 }
