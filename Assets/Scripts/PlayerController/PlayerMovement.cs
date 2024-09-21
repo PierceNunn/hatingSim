@@ -14,12 +14,21 @@ public class PlayerMovement : MonoBehaviour
 
     private GameObject interactObject;
 
+    private bool canMove;
+
+    private bool mapOpen;
+
+    [SerializeField] private GameObject mapUI;
+
     [SerializeField] private int speed;
 
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         interactText.gameObject.SetActive(false);
+        mapOpen = false;
+        mapUI.SetActive(mapOpen);
+        canMove = true;
 
     }
 
@@ -55,7 +64,21 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnMove(InputValue iValue)
     {
-        direction = iValue.Get<Vector2>();
+        if (canMove)
+        {
+            direction = iValue.Get<Vector2>();
+        }
+        else
+        {
+            direction = Vector2.zero;
+        }
+    }
+
+    public void OnMap()
+    {
+        mapOpen = !mapOpen;
+        canMove = !mapOpen;
+        mapUI.SetActive(mapOpen);
     }
 
 
