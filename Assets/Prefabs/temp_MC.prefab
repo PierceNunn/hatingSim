@@ -217,7 +217,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &5824660215498957042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,6 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactText: {fileID: 3853604282316068929}
+  mapUI: {fileID: 8763791736460070941, guid: f17629fceabc37648965dc4320e9ca7d, type: 3}
   speed: 4
 --- !u!114 &505728791417425265
 MonoBehaviour:
