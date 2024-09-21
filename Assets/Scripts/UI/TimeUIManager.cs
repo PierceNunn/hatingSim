@@ -31,7 +31,7 @@ public class TimeUIManager : MonoBehaviour
 
     public static void AdvanceTime()
     {
-        if((int)currentTime + 1 > Enum.GetNames(typeof(DayPhases)).Length)
+        if((int)currentTime + 1 >= Enum.GetNames(typeof(DayPhases)).Length)
         {
             currentTime = 0;
             currentDay += 1;
@@ -46,6 +46,11 @@ public class TimeUIManager : MonoBehaviour
         
     }
 
+    public static void RestartTime()
+    {
+        PlayerPrefs.SetInt("currentDay", 0);
+        PlayerPrefs.SetInt("currentTime", 0);
+    }
     void UpdateTimeUI()
     {
         currentDay = PlayerPrefs.GetInt("currentDay", 0);

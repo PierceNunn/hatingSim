@@ -49,4 +49,9 @@ public class DebugFunctions : MonoBehaviour
 
         print("reloading! cover me!");
     }
+
+    public void AdvanceTime()
+    {
+        TimeUIManager.AdvanceTime();
+    }
 }
