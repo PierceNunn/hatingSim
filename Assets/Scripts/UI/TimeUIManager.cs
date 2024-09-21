@@ -16,10 +16,11 @@ public class TimeUIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _timeDisplay;
 
     private static int currentDay;
+    private static DayPhases currentTime;
     
     void Start()
     {
-        
+        UpdateTimeUI();
     }
 
     void Update()
@@ -29,6 +30,8 @@ public class TimeUIManager : MonoBehaviour
 
     void UpdateTimeUI()
     {
-
+        currentDay = PlayerPrefs.GetInt("currentDay", 0);
+        currentTime = (DayPhases)PlayerPrefs.GetInt("currentTime", 0);
+        _timeDisplay.text = "Day " + currentDay + ", time " + currentTime;
     }
 }
