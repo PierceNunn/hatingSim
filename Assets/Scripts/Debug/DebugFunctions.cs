@@ -54,4 +54,9 @@ public class DebugFunctions : MonoBehaviour
     {
         TimeUIManager.AdvanceTime();
     }
+
+    public void RestartTime()
+    {
+        TimeUIManager.RestartTime();
+    }
 }
