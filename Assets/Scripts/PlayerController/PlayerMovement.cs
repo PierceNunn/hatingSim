@@ -64,14 +64,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnMove(InputValue iValue)
     {
-        if (canMove)
-        {
-            direction = iValue.Get<Vector2>();
-        }
-        else
-        {
-            direction = Vector2.zero;
-        }
+       direction = iValue.Get<Vector2>();
     }
 
     public void OnMap()
@@ -85,8 +78,14 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        
-        rb.velocity = direction * speed;
+        if (canMove)
+        {
+            rb.velocity = direction * speed;
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
+        }
 
     }
 }
