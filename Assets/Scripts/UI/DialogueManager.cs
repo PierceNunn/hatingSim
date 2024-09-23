@@ -102,7 +102,8 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void DisplayNextSentence()
     {
-        if(nextBranchDialogue == null) //ends conversation if no more nodes
+        StopAllCoroutines();
+        if (nextBranchDialogue == null) //ends conversation if no more nodes
         {
             EndDialogue();
             return;
@@ -125,12 +126,14 @@ public class DialogueManager : MonoBehaviour
         }
         else if(nextNodeType.Equals("DialogueBranchNode"))
         {
+            print("dialogue branch node");
             //if next node is DialogueBranch set up dialogue choices
             SetUpDialogueChoices(nextBranchDialogue as DialogueBranchNode);
             return;
         }
         else if (nextNodeType.Equals("ChoiceNode"))
         {
+            print("choice node");
             //if next node is a choice proceed to the next node
             LinkedNode t = nextBranchDialogue as LinkedNode;
             nextBranchDialogue = t.NextNode;

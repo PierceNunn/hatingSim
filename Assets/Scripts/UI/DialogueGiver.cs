@@ -26,7 +26,7 @@ public class DialogueGiver : InteractableEntity
 
     override public void OnInteract()
     {
-        Invoke("InitiateDialogue", 0f);
+        Invoke("InitiateDialogue", 0.1f);
     }
     public void InitiateDialogue()
     {
