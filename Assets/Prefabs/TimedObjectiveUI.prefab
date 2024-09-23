@@ -187,7 +187,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _availableDay: 0
   _availableTime: 0
-  _timeDependantEntity: {fileID: 1801514301306376163}
+  _timeDependantEntities:
+  - {fileID: 1801514301306376163}
 --- !u!1 &3718437145924786909
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +240,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _availableDay: 1
   _availableTime: 0
-  _timeDependantEntity: {fileID: 6090650440811981569}
+  _timeDependantEntities:
+  - {fileID: 6090650440811981569}
 --- !u!1 &5438091953981131809
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,4 +671,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _availableDay: 0
   _availableTime: 1
-  _timeDependantEntity: {fileID: 5438091953981131809}
+  _timeDependantEntities:
+  - {fileID: 5438091953981131809}

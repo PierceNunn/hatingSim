@@ -448,7 +448,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _availableDay: 1
   _availableTime: 0
-  _timeDependantEntity: {fileID: 3266733282938889620}
+  _timeDependantEntities:
+  - {fileID: 3266733282938889620}
 --- !u!1 &5477403748126471123
 GameObject:
   m_ObjectHideFlags: 0
