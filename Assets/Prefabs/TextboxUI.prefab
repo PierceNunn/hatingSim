@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -347,6 +347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogueToGive: {fileID: 0}
   _giveDialogueOnStart: 0
+  _onlyAllowDialogueOnce: 0
 --- !u!1 &1976956961244587657
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,7 +475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -531,6 +532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogueToGive: {fileID: 0}
   _giveDialogueOnStart: 0
+  _onlyAllowDialogueOnce: 0
 --- !u!1 &2408495524631986782
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,7 +654,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 5954621508717792306}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.41906664
+  m_Size: 0.41906667
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -777,7 +779,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2235557664159140766}
   m_HandleRect: {fileID: 4846276479944541737}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1529,7 +1531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1586,6 +1588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogueToGive: {fileID: 0}
   _giveDialogueOnStart: 0
+  _onlyAllowDialogueOnce: 0
 --- !u!1 &5736500918044821310
 GameObject:
   m_ObjectHideFlags: 0
