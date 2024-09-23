@@ -12,6 +12,11 @@ public class ItemHandler : InteractableEntity
     [SerializeField] private CollectibleItem _itemData;
     [SerializeField] private bool _destroyOnInteract = true;
 
+    public void Start()
+    {
+        if (PlayerPrefs.GetInt(_itemData.ItemID, 0) == 1 && _destroyOnInteract)
+            Destroy(gameObject);
+    }
     override public void OnInteract()
     {
         Invoke("CollectItem", 0.1f);
