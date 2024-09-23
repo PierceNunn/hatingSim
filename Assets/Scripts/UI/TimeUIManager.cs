@@ -9,7 +9,7 @@ public class TimeUIManager : MonoBehaviour
     public enum DayPhases
     {
         morning,
-        noon,
+        //noon,
         evening
     }
 
