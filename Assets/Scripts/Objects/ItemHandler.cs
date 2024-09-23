@@ -21,5 +21,6 @@ public class ItemHandler : InteractableEntity
         //flags item as found in PlayerPrefs
         //(0 is false and 1 is true due to PP not supporting bools)
         PlayerPrefs.SetInt(_itemData.ItemID, 1);
+        print("item " + _itemData.ItemID + " collected");
     }
 }
