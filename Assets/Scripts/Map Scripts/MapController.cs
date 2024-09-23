@@ -14,4 +14,9 @@ public class MapController : MonoBehaviour
     {
         SceneManager.LoadScene("Classroom");
     }
+
+    public void LoadScene(string sceneToLoad)
+    {
+        SceneManager.LoadScene(sceneToLoad);
+    }
 }
