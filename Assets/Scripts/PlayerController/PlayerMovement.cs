@@ -26,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         interactText.gameObject.SetActive(false);
-        mapOpen = false;
         
         canMove = true;
         debugUI = FindObjectOfType<DebugFunctions>().gameObject.transform.parent.gameObject;
