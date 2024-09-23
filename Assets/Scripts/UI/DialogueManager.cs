@@ -72,14 +72,14 @@ public class DialogueManager : MonoBehaviour
         _NPCDialogue.SetActive(true); //show text box
         _playerResponses.SetActive(false); //hide choice buttons
         currentBranchDialogue = branchDialogue.NextNode as DialogueNode;
-        SingleDialogue dialogue = currentBranchDialogue.Dialogue;
+        //SingleDialogue dialogue = currentBranchDialogue.Dialogue;
         _autoAdvance = willAutoAdvance;
         currentRef = NPC;
 
         //set ui components to what they should be for the first dialogue
-        _nameText.text = dialogue.TalkerData.CharacterName;
-        _portrait.sprite = dialogue.TalkerData.GetPortraitByID(dialogue.PortraitID);
-        _portrait.SetNativeSize(); //just in case any portraits have different dimensions
+       // _nameText.text = dialogue.TalkerData.CharacterName;
+       // _portrait.sprite = dialogue.TalkerData.GetPortraitByID(dialogue.PortraitID);
+       // _portrait.SetNativeSize(); //just in case any portraits have different dimensions
 
         if (branchDialogue.GetType().ToString().Equals("DialogueNode"))
             //displays input node if it's a dialogueNode
@@ -102,25 +102,38 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void DisplayNextSentence()
     {
-        if(nextBranchDialogue == null) //ends conversation if no more nodes
+        StopAllCoroutines();
+        if (nextBranchDialogue == null) //ends conversation if no more nodes
         {
             EndDialogue();
             return;
         }
 
-        if (nextBranchDialogue.GetType().ToString().Equals("DialogueNode"))
+        string nextNodeType = nextBranchDialogue.GetType().ToString();
+        if (nextNodeType.Equals("DialogueNode"))
         {
             //if next node is a DialogueNode next sentence can display normally
             currentBranchDialogue = nextBranchDialogue as DialogueNode;
         }
-        else if(nextBranchDialogue.GetType().ToString().Equals("DialogueBranchNode"))
+        else if (nextNodeType.Equals("ItemGiverNode"))
         {
+            //first give player item defined in node
+            ItemGiverNode temp = nextBranchDialogue as ItemGiverNode;
+            PlayerPrefs.SetInt(temp.ItemToGive.ItemID, 1);
+            print("item " + temp.ItemToGive.ItemID + " obtained");
+            //then next sentence can display normally
+            currentBranchDialogue = nextBranchDialogue as DialogueNode;
+        }
+        else if(nextNodeType.Equals("DialogueBranchNode"))
+        {
+            print("dialogue branch node");
             //if next node is DialogueBranch set up dialogue choices
             SetUpDialogueChoices(nextBranchDialogue as DialogueBranchNode);
             return;
         }
-        else if (nextBranchDialogue.GetType().ToString().Equals("ChoiceNode"))
+        else if (nextNodeType.Equals("ChoiceNode"))
         {
+            print("choice node");
             //if next node is a choice proceed to the next node
             LinkedNode t = nextBranchDialogue as LinkedNode;
             nextBranchDialogue = t.NextNode;

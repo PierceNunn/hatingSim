@@ -6,7 +6,7 @@ public class DayDependantHandler : MonoBehaviour
 {
     [SerializeField] private int _availableDay;
     [SerializeField] private TimeUIManager.DayPhases _availableTime;
-    [SerializeField] private GameObject _timeDependantEntity;
+    [SerializeField] private GameObject[] _timeDependantEntities;
 
     private void Update()
     {
@@ -16,8 +16,23 @@ public class DayDependantHandler : MonoBehaviour
     void CheckIfAvailableNow()
     {
         if (PlayerPrefs.GetInt("currentDay", 0) == _availableDay && PlayerPrefs.GetInt("currentTime", 0) == (int)_availableTime)
-            _timeDependantEntity.SetActive(true);
+        {
+            foreach (GameObject g in _timeDependantEntities)
+            {
+                if (g != null)
+                    g.SetActive(true);
+            }
+                
+        }
+            
         else
-            _timeDependantEntity.SetActive(false);
+        {
+            foreach (GameObject g in _timeDependantEntities)
+            {
+                if (g != null)
+                    g.SetActive(false);
+            }
+                
+        }
     }
 }

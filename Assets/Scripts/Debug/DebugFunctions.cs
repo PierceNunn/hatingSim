@@ -8,7 +8,7 @@ public class DebugFunctions : MonoBehaviour
     /// <summary>
     /// Sets all CollectibleItem objects as not found.
     /// </summary>
-    public void ClearItemData()
+    public static void ClearItemData()
     {
         //finds all CollectibleItems in Resources folder
         CollectibleItem[] itemsToClear = 
@@ -25,7 +25,7 @@ public class DebugFunctions : MonoBehaviour
     /// <summary>
     /// Sets all CollectibleItem objects as found.
     /// </summary>
-    public void GainAllItems()
+    public static void GainAllItems()
     {
         //finds all CollectibleItems in Resources folder
         CollectibleItem[] itemsToGain =
@@ -50,12 +50,12 @@ public class DebugFunctions : MonoBehaviour
         print("reloading! cover me!");
     }
 
-    public void AdvanceTime()
+    public static void AdvanceTime()
     {
         TimeUIManager.AdvanceTime();
     }
 
-    public void RestartTime()
+    public static void RestartTime()
     {
         TimeUIManager.RestartTime();
     }

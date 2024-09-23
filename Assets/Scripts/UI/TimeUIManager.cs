@@ -9,7 +9,7 @@ public class TimeUIManager : MonoBehaviour
     public enum DayPhases
     {
         morning,
-        noon,
+        //noon,
         evening
     }
 
@@ -50,6 +50,8 @@ public class TimeUIManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("currentDay", 0);
         PlayerPrefs.SetInt("currentTime", 0);
+        currentDay = 0;
+        currentTime = (DayPhases)0;
     }
     void UpdateTimeUI()
     {

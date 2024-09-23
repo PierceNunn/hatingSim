@@ -323,7 +323,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 526098151452931160}
         m_TargetAssemblyTypeName: DialogueGiver, Assembly-CSharp
-        m_MethodName: InitiateDialogue
+        m_MethodName: OnInteract
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -507,7 +507,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7525249067949760001}
         m_TargetAssemblyTypeName: DialogueGiver, Assembly-CSharp
-        m_MethodName: InitiateDialogue
+        m_MethodName: OnInteract
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1562,7 +1562,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 685889409050205857}
         m_TargetAssemblyTypeName: DialogueGiver, Assembly-CSharp
-        m_MethodName: InitiateDialogue
+        m_MethodName: OnInteract
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

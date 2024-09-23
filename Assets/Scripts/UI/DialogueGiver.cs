@@ -12,6 +12,7 @@ public class DialogueGiver : InteractableEntity
 {
     [SerializeField] private LinkedNode _dialogueToGive;
     [SerializeField] private bool _giveDialogueOnStart;
+    [SerializeField] private bool _onlyAllowDialogueOnce;
 
     public LinkedNode DialogueToGive { get => _dialogueToGive; 
         set => _dialogueToGive = value; }
@@ -26,7 +27,7 @@ public class DialogueGiver : InteractableEntity
 
     override public void OnInteract()
     {
-        Invoke("InitiateDialogue", 0f);
+        Invoke("InitiateDialogue", 0.1f);
     }
     public void InitiateDialogue()
     {
@@ -37,5 +38,8 @@ public class DialogueGiver : InteractableEntity
         }
         //send the stored Intro Node to the DialogueManager
         FindObjectOfType<DialogueManager>().StartDialogue(DialogueToGive, gameObject, false);
+
+        if (_onlyAllowDialogueOnce)
+            Destroy(gameObject);
     }
 }
