@@ -16,9 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool canMove;
 
-    private bool mapOpen;
-
-    [SerializeField] private GameObject mapUI;
+    private GameObject mapUI;
 
     private GameObject debugUI;
 
@@ -29,9 +27,11 @@ public class PlayerMovement : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody2D>();
         interactText.gameObject.SetActive(false);
         mapOpen = false;
-        mapUI.SetActive(mapOpen);
+        
         canMove = true;
         debugUI = FindObjectOfType<DebugFunctions>().gameObject.transform.parent.gameObject;
+        mapUI = FindObjectOfType<MapController>().gameObject;
+        OnMap();
         OnDebug();
     }
 
@@ -79,9 +79,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnMap()
     {
-        mapOpen = !mapOpen;
-        canMove = !mapOpen;
-        mapUI.SetActive(mapOpen);
+        if(mapUI != null)
+        {
+            canMove = mapUI.activeSelf;
+            mapUI.SetActive(!mapUI.activeSelf);
+        }
+        
     }
 
     public void OnDebug()
