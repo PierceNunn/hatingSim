@@ -285,6 +285,58 @@ MonoBehaviour:
     _portraitID: 
     _eventsToInvoke: []
     _sentences: okay, ouch...
+--- !u!114 &166037641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7099594b8ff43884ca052fb7144ba301, type: 3}
+  m_Name: Item Giver
+  m_EditorClassIdentifier: 
+  graph: {fileID: 930503445}
+  position: {x: -3752, y: -360}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 166037641}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 1983361814}
+        reroutePoints: []
+      - fieldName: _nextNode
+        node: {fileID: 733103812}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 166037641}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 1107054586}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: e1ffb7c4a4921c441b52e9390ffd8a1a, type: 2}
+    _portraitID: 
+    _eventsToInvoke: []
+    _sentences: this node gives item(?)
+  _itemToGive: {fileID: 11400000, guid: 34cbb2ea540e65d4caa5fc60a91a6921, type: 2}
 --- !u!114 &233831009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,7 +570,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 1107054586}
+        node: {fileID: 166037641}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -3558,25 +3610,12 @@ MonoBehaviour:
   - {fileID: 1983361814}
   - {fileID: 1107054586}
   - {fileID: 1484021814}
+  - {fileID: 166037641}
 --- !u!1 &1098825803 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3815087175735763677, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
   m_PrefabInstance: {fileID: 1837010423}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1098825804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1098825803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb57f5f17f828c24b9bd65d16cd8e14a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _itemData: {fileID: 11400000, guid: 34cbb2ea540e65d4caa5fc60a91a6921, type: 2}
-  _destroyOnInteract: 1
 --- !u!114 &1098825805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3651,7 +3690,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 930503445}
-  position: {x: -3608, y: -24}
+  position: {x: -3880, y: -88}
   ports:
     keys:
     - _lastNode
@@ -3662,10 +3701,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: 1983361814}
-        reroutePoints: []
-      - fieldName: _nextNode
-        node: {fileID: 733103812}
+        node: {fileID: 166037641}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -3854,7 +3890,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 930503445}
-  position: {x: -4047.3086, y: -8.755662}
+  position: {x: -4200, y: -104}
   ports:
     keys:
     - _lastNode
@@ -4234,9 +4270,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3815087175735763677, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1098825805}
-    - targetCorrespondingSourceObject: {fileID: 3815087175735763677, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1098825804}
   m_SourcePrefab: {fileID: 100100000, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
 --- !u!114 &1846730931
 MonoBehaviour:
@@ -4701,7 +4734,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 1107054586}
+        node: {fileID: 166037641}
         reroutePoints: []
       _direction: 0
       _connectionType: 0

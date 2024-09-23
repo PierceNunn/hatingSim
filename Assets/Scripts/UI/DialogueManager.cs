@@ -108,18 +108,28 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        if (nextBranchDialogue.GetType().ToString().Equals("DialogueNode"))
+        string nextNodeType = nextBranchDialogue.GetType().ToString();
+        if (nextNodeType.Equals("DialogueNode"))
         {
             //if next node is a DialogueNode next sentence can display normally
             currentBranchDialogue = nextBranchDialogue as DialogueNode;
         }
-        else if(nextBranchDialogue.GetType().ToString().Equals("DialogueBranchNode"))
+        else if (nextNodeType.Equals("ItemGiverNode"))
+        {
+            //first give player item defined in node
+            ItemGiverNode temp = nextBranchDialogue as ItemGiverNode;
+            PlayerPrefs.SetInt(temp.ItemToGive.ItemID, 1);
+            print("item " + temp.ItemToGive.ItemID + " obtained");
+            //then next sentence can display normally
+            currentBranchDialogue = nextBranchDialogue as DialogueNode;
+        }
+        else if(nextNodeType.Equals("DialogueBranchNode"))
         {
             //if next node is DialogueBranch set up dialogue choices
             SetUpDialogueChoices(nextBranchDialogue as DialogueBranchNode);
             return;
         }
-        else if (nextBranchDialogue.GetType().ToString().Equals("ChoiceNode"))
+        else if (nextNodeType.Equals("ChoiceNode"))
         {
             //if next node is a choice proceed to the next node
             LinkedNode t = nextBranchDialogue as LinkedNode;
