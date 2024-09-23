@@ -148,6 +148,9 @@ MonoBehaviour:
       - fieldName: _nextNode
         node: {fileID: 233831009}
         reroutePoints: []
+      - fieldName: _nextNode
+        node: {fileID: 1983361814}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -298,7 +301,7 @@ MonoBehaviour:
   m_Name: Item Giver
   m_EditorClassIdentifier: 
   graph: {fileID: 930503445}
-  position: {x: -3752, y: -360}
+  position: {x: -3496, y: 184}
   ports:
     keys:
     - _lastNode
@@ -308,9 +311,6 @@ MonoBehaviour:
       _node: {fileID: 166037641}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: _nextNode
-        node: {fileID: 1983361814}
-        reroutePoints: []
       - fieldName: _nextNode
         node: {fileID: 733103812}
         reroutePoints: []
@@ -4734,7 +4734,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 166037641}
+        node: {fileID: 13317445}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
