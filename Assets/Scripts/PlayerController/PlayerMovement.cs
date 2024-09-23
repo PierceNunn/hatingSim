@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private GameObject mapUI;
 
+    private GameObject debugUI;
+
     [SerializeField] private int speed;
 
     void Start()
@@ -29,7 +31,8 @@ public class PlayerMovement : MonoBehaviour
         mapOpen = false;
         mapUI.SetActive(mapOpen);
         canMove = true;
-
+        debugUI = FindObjectOfType<DebugFunctions>().gameObject.transform.parent.gameObject;
+        OnDebug();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -79,6 +82,12 @@ public class PlayerMovement : MonoBehaviour
         mapOpen = !mapOpen;
         canMove = !mapOpen;
         mapUI.SetActive(mapOpen);
+    }
+
+    public void OnDebug()
+    {
+        if (debugUI != null)
+            debugUI.SetActive(!debugUI.activeSelf);
     }
 
 
