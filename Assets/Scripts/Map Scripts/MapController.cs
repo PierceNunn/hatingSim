@@ -19,4 +19,10 @@ public class MapController : MonoBehaviour
     {
         SceneManager.LoadScene(sceneToLoad);
     }
+
+    public void AdvanceTime()
+    {
+        TimeUIManager.AdvanceTime();
+        LoadScene(SceneManager.GetActiveScene().name);
+    }
 }

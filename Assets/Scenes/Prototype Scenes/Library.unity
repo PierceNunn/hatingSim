@@ -148,9 +148,6 @@ MonoBehaviour:
       - fieldName: _nextNode
         node: {fileID: 233831009}
         reroutePoints: []
-      - fieldName: _nextNode
-        node: {fileID: 1983361814}
-        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -3607,10 +3604,10 @@ MonoBehaviour:
   - {fileID: 733103812}
   - {fileID: 135416739}
   - {fileID: 1939660854}
-  - {fileID: 1983361814}
   - {fileID: 1107054586}
   - {fileID: 1484021814}
   - {fileID: 166037641}
+  - {fileID: 1652813996}
 --- !u!1 &1098825803 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3815087175735763677, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
@@ -4034,6 +4031,51 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _choiceLabel: awesome!
+--- !u!114 &1652813996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 930503445}
+  position: {x: -3288, y: -344}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 1652813996}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 1939660854}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 1652813996}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: e1ffb7c4a4921c441b52e9390ffd8a1a, type: 2}
+    _portraitID: 
+    _eventsToInvoke: []
+    _sentences: it's okay this evidence is optional
 --- !u!1001 &1724237964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4262,6 +4304,10 @@ PrefabInstance:
     - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: _dialogueToGive
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+      propertyPath: _onlyAllowDialogueOnce
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4545,7 +4591,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 1983361814}
+        node: {fileID: 1652813996}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -4699,54 +4745,6 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _choiceLabel: i don't care
---- !u!114 &1983361814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 930503445}
-  position: {x: -3272, y: -344}
-  ports:
-    keys:
-    - _lastNode
-    - _nextNode
-    values:
-    - _fieldName: _lastNode
-      _node: {fileID: 1983361814}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: 1939660854}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: _nextNode
-      _node: {fileID: 1983361814}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _lastNode
-        node: {fileID: 13317445}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _lastNode: {fileID: 0}
-  _nextNode: {fileID: 0}
-  _dialogue:
-    _talkerData: {fileID: 11400000, guid: e1ffb7c4a4921c441b52e9390ffd8a1a, type: 2}
-    _portraitID: 
-    _eventsToInvoke: []
-    _sentences: but i will
 --- !u!1001 &412682756813930909
 PrefabInstance:
   m_ObjectHideFlags: 0
