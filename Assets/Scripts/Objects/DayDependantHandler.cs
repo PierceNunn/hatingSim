@@ -18,13 +18,21 @@ public class DayDependantHandler : MonoBehaviour
         if (PlayerPrefs.GetInt("currentDay", 0) == _availableDay && PlayerPrefs.GetInt("currentTime", 0) == (int)_availableTime)
         {
             foreach (GameObject g in _timeDependantEntities)
-                g.SetActive(true);
+            {
+                if (g != null)
+                    g.SetActive(true);
+            }
+                
         }
             
         else
         {
             foreach (GameObject g in _timeDependantEntities)
-                g.SetActive(false);
+            {
+                if (g != null)
+                    g.SetActive(false);
+            }
+                
         }
     }
 }
