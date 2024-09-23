@@ -2236,7 +2236,10 @@ MonoBehaviour:
     - _fieldName: _lastNode
       _node: {fileID: 246309938}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 398884148}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -2475,7 +2478,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 1001855848}
+        node: {fileID: 246309938}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -2543,7 +2546,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 593730786}
-  position: {x: -7848, y: -1128}
+  position: {x: -7848, y: -1144}
   ports:
     keys:
     - _lastNode
@@ -2886,7 +2889,7 @@ MonoBehaviour:
   m_Name: Item Giver
   m_EditorClassIdentifier: 
   graph: {fileID: 593730786}
-  position: {x: -8264, y: -1112}
+  position: {x: -8184, y: -1128}
   ports:
     keys:
     - _lastNode
@@ -2914,7 +2917,7 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 0}
+    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
     _eventsToInvoke: []
     _sentences: she ran off... good sign.
@@ -3115,10 +3118,7 @@ MonoBehaviour:
     - _fieldName: _lastNode
       _node: {fileID: 1001855848}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: 398884148}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -4315,7 +4315,7 @@ MonoBehaviour:
   _nextNode: {fileID: 0}
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
-    _portraitID: 
+    _portraitID: sad
     _eventsToInvoke: []
     _sentences: (...i failed to make her look bad...)
 --- !u!1001 &1959213296
