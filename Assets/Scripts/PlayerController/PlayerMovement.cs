@@ -53,7 +53,14 @@ public class PlayerMovement : MonoBehaviour
     public void OnSelect()
     {
         if (interactObject != null)
-            interactObject.GetComponent<InteractableEntity>().OnInteract();
+        {
+            InteractableEntity[] toInteract = interactObject.GetComponents<InteractableEntity>();
+            foreach(InteractableEntity i in toInteract)
+            {
+                i.OnInteract();
+            }
+        }
+            
     }
 
     public void OnContinue()
