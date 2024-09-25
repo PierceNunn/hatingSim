@@ -450,9 +450,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de5dcb7aece92b4fa07f3fceeb0c493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newPos:
-  - {x: -22, y: -1.75}
-  toArea: 0
+  toArea: {fileID: 783771323}
+  player: {fileID: 1584303790}
 --- !u!1 &576594605
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,10 +477,11 @@ Transform:
   m_GameObject: {fileID: 576594605}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.233374, y: -2.690722, z: -0.25168812}
+  m_LocalPosition: {x: -20.1, y: -2.690722, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 783771324}
   - {fileID: 1410121240}
   - {fileID: 1788874767}
   - {fileID: 2140962796}
@@ -2461,6 +2461,37 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!1 &783771323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 783771324}
+  m_Layer: 0
+  m_Name: toLibrary
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &783771324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783771323}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.909, y: 0.682, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 576594606}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &906847321
 GameObject:
   m_ObjectHideFlags: 0
@@ -6918,7 +6949,7 @@ Transform:
   m_GameObject: {fileID: 1303768736}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.233374, y: -2.690722, z: -0.25168812}
+  m_LocalPosition: {x: -15, y: -2, z: -0.25168812}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9325,6 +9356,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1584303790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2233722199138905243, guid: 57a0dc5369a351c45827fa15fe49f8a9, type: 3}
+  m_PrefabInstance: {fileID: 1786884796}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1786884796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9347,11 +9383,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2739359754935771968, guid: 57a0dc5369a351c45827fa15fe49f8a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22
+      value: 1.84
       objectReference: {fileID: 0}
     - target: {fileID: 2739359754935771968, guid: 57a0dc5369a351c45827fa15fe49f8a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.75
+      value: 10.2
       objectReference: {fileID: 0}
     - target: {fileID: 2739359754935771968, guid: 57a0dc5369a351c45827fa15fe49f8a9, type: 3}
       propertyPath: m_LocalPosition.z

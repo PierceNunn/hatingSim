@@ -6,9 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class TileMapTeleport : MonoBehaviour
 {
-
-    [SerializeField] private Vector2[] newPos;
-    [SerializeField] private int toArea;
+    [SerializeField] private GameObject toArea;
+    [SerializeField] private GameObject player;
 
     void Start()
     {
@@ -17,7 +16,7 @@ public class TileMapTeleport : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       
+        player.transform.position = toArea.transform.position;  
     }
 
 
