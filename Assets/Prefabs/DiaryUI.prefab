@@ -143,6 +143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5144368297427871328}
+  - component: {fileID: 7231434309412462600}
   m_Layer: 0
   m_Name: DiaryUIHandler
   m_TagString: Untagged
@@ -165,6 +166,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3280546269757462371}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7231434309412462600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2566824809987301466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15ce032b4671d444aa73613ff1f2129c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _displayedCharacters:
+  - {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+  - {fileID: 11400000, guid: 99337e2b133086343bd350261fb8171f, type: 2}
+  - {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+  - {fileID: 11400000, guid: e1ffb7c4a4921c441b52e9390ffd8a1a, type: 2}
+  _characterName: {fileID: 359177940277159836}
+  _characterImage: {fileID: 4656392151720967121}
+  _evidenceImages: []
 --- !u!1 &3299166549052087281
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +942,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6033681418191822895}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7231434309412462600}
+        m_TargetAssemblyTypeName: DiaryUIHandler, Assembly-CSharp
+        m_MethodName: DisplayLastCharacter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6021579166205005127
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,7 +1075,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2999513081594659924}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7231434309412462600}
+        m_TargetAssemblyTypeName: DiaryUIHandler, Assembly-CSharp
+        m_MethodName: DisplayNextCharacter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6781420220047871451
 GameObject:
   m_ObjectHideFlags: 0
