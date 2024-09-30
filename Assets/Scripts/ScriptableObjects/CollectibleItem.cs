@@ -10,4 +10,9 @@ public class CollectibleItem : ScriptableObject
 
     public string ItemID { get => _itemID; set => _itemID = value; }
     public Sprite ItemImage { get => _itemImage; set => _itemImage = value; }
+    
+    public static bool IsItemCollected(string itemID)
+    {
+        return PlayerPrefs.GetInt(itemID, 0) == 1 ? false : true;
+    }
 }
