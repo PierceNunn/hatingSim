@@ -42,11 +42,22 @@ public class DiaryUIHandler : MonoBehaviour
         _characterName.text = currentChar.CharacterName;
         _characterImage.sprite = currentChar.DefaultCharacterPortrait;
 
-        UpdateEvidenceDisplay();
+        UpdateEvidenceDisplay(currentChar);
     }
 
-    private void UpdateEvidenceDisplay()
+    private void UpdateEvidenceDisplay(CharacterData currentChar)
     {
-        //update displayed evidence
+        for(int i = 0; i < _evidenceImages.Length; i++)
+        {
+            if(currentChar.RelevantEvidence.Length > i)
+            {
+                _evidenceImages[i].enabled = true;
+                _evidenceImages[i].sprite = currentChar.RelevantEvidence[i].ItemImage;
+            }
+            else
+            {
+                _evidenceImages[i].enabled = false;
+            }
+        }
     }
 }
