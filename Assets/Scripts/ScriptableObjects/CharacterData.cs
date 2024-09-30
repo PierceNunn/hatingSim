@@ -16,11 +16,13 @@ public class CharacterData : ScriptableObject
     [SerializeField] private Sprite _defaultCharacterPortrait;
     [SerializeField] private Portrait[] _portraits;
     [SerializeField] private RandomizedAudio _characterVoice;
+    [SerializeField] private CollectibleItem[] _relevantEvidence;
 
     public string CharacterName { get => _characterName; set => _characterName = value; }
     public Sprite DefaultCharacterPortrait { get => _defaultCharacterPortrait; set => _defaultCharacterPortrait = value; }
     public RandomizedAudio CharacterVoice { get => _characterVoice; set => _characterVoice = value; }
     public Portrait[] Portraits { get => _portraits; set => _portraits = value; }
+    public CollectibleItem[] RelevantEvidence { get => _relevantEvidence; set => _relevantEvidence = value; }
 
     public Sprite GetPortraitByID(string id)
     {
