@@ -41,6 +41,7 @@ public class DiaryUIHandler : MonoBehaviour
 
         _characterName.text = currentChar.CharacterName;
         _characterImage.sprite = currentChar.DefaultCharacterPortrait;
+        _characterImage.SetNativeSize();
 
         UpdateEvidenceDisplay(currentChar);
     }
