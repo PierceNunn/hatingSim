@@ -53,6 +53,12 @@ public class DiaryUIHandler : MonoBehaviour
             {
                 _evidenceImages[i].enabled = true;
                 _evidenceImages[i].sprite = currentChar.RelevantEvidence[i].ItemImage;
+
+                if(CollectibleItem.IsItemCollected(currentChar.RelevantEvidence[i]))
+                    _evidenceImages[i].color = Color.black;
+                else
+                    _evidenceImages[i].color = Color.white;
+
             }
             else
             {
