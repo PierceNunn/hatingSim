@@ -13,6 +13,18 @@ public class DiaryUIHandler : MonoBehaviour
 
     private int charIndex = 0;
 
+    public void DisplayNextCharacter()
+    {
+        charIndex = charIndex + 1 >= _displayedCharacters.Length ? 0 : charIndex + 1;
+        UpdateDiaryDisplay();
+    }
+
+    public void DisplayLastCharacter()
+    {
+        charIndex = charIndex - 1 < 0 ? _displayedCharacters.Length : charIndex - 1;
+        UpdateDiaryDisplay();
+    }
+
     private void UpdateDiaryDisplay()
     {
         CharacterData currentChar;
