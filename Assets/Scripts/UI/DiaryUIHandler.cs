@@ -38,7 +38,9 @@ public class DiaryUIHandler : MonoBehaviour
 
     public void DisplayCharacterInfo(int index)
     {
-
+        currentChar = _displayedCharacters[index];
+        _characterName.text = currentChar.CharacterName;
+        UpdateEvidenceDisplay(currentChar);
     }
 
     public void DisplayLastCharacter()
