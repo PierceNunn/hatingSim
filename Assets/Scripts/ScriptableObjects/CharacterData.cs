@@ -13,6 +13,7 @@ using UnityEngine;
 public class CharacterData : ScriptableObject
 {
     [SerializeField] private string _characterName;
+    [TextArea(3, 10)] [SerializeField] private string _characterBio;
     [SerializeField] private Sprite _defaultCharacterPortrait;
     [SerializeField] private Portrait[] _portraits;
     [SerializeField] private RandomizedAudio _characterVoice;
@@ -23,6 +24,7 @@ public class CharacterData : ScriptableObject
     public RandomizedAudio CharacterVoice { get => _characterVoice; set => _characterVoice = value; }
     public Portrait[] Portraits { get => _portraits; set => _portraits = value; }
     public CollectibleItem[] RelevantEvidence { get => _relevantEvidence; set => _relevantEvidence = value; }
+    public string CharacterBio { get => _characterBio; set => _characterBio = value; }
 
     public Sprite GetPortraitByID(string id)
     {

@@ -8,15 +8,46 @@ public class DiaryUIHandler : MonoBehaviour
 {
     [SerializeField] private CharacterData[] _displayedCharacters;
     [SerializeField] private TextMeshProUGUI _characterName;
+    [SerializeField] private TextMeshProUGUI _characterBio;
     [SerializeField] private Image _characterImage;
     [SerializeField] private Image[] _evidenceImages;
+    [SerializeField] private Image[] _characterButtons;
 
     private int charIndex = 0;
+    private CharacterData currentChar;
+
+    private void Start()
+    {
+        SetUpDiaryUI();
+    }
 
     public void DisplayNextCharacter()
     {
         charIndex = charIndex + 1 >= _displayedCharacters.Length ? 0 : charIndex + 1;
         UpdateDiaryDisplay();
+    }
+
+    private void SetUpDiaryUI()
+    {
+        for(int i = 0; i < _displayedCharacters.Length; i++)
+        {
+            _characterButtons[i].gameObject.SetActive(true);
+            _characterButtons[i].sprite = _displayedCharacters[i].DefaultCharacterPortrait;
+        }
+    }
+
+    public void DisplayCharacterInfo(int index)
+    {
+        currentChar = _displayedCharacters[index];
+        _characterName.text = currentChar.CharacterName;
+        _characterBio.text = currentChar.CharacterBio;
+        UpdateEvidenceDisplay(currentChar);
+    }
+
+    public void DisplayEvidenceInfo(int index)
+    {
+        _characterName.text = currentChar.RelevantEvidence[index].ItemID;
+        _characterBio.text = currentChar.RelevantEvidence[index].ItemBio;
     }
 
     public void DisplayLastCharacter()
