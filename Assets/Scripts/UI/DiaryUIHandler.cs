@@ -8,8 +8,10 @@ public class DiaryUIHandler : MonoBehaviour
 {
     [SerializeField] private CharacterData[] _displayedCharacters;
     [SerializeField] private TextMeshProUGUI _characterName;
+    [SerializeField] private TextMeshProUGUI _characterBio;
     [SerializeField] private Image _characterImage;
     [SerializeField] private Image[] _evidenceImages;
+    [SerializeField] private Button[] _characterButtons;
 
     private int charIndex = 0;
 
@@ -17,6 +19,16 @@ public class DiaryUIHandler : MonoBehaviour
     {
         charIndex = charIndex + 1 >= _displayedCharacters.Length ? 0 : charIndex + 1;
         UpdateDiaryDisplay();
+    }
+
+    private void SetUpDiaryUI()
+    {
+
+    }
+
+    public void DisplayCharacterInfo(int index)
+    {
+
     }
 
     public void DisplayLastCharacter()
