@@ -40,7 +40,13 @@ public class DiaryUIHandler : MonoBehaviour
     {
         currentChar = _displayedCharacters[index];
         _characterName.text = currentChar.CharacterName;
+        _characterBio.text = currentChar.CharacterBio;
         UpdateEvidenceDisplay(currentChar);
+    }
+
+    public void DisplayEvidenceInfo(int index)
+    {
+        _characterName.text = currentChar.RelevantEvidence[index].ItemID;
     }
 
     public void DisplayLastCharacter()
