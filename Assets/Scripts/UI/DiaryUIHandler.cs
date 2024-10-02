@@ -11,9 +11,15 @@ public class DiaryUIHandler : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _characterBio;
     [SerializeField] private Image _characterImage;
     [SerializeField] private Image[] _evidenceImages;
-    [SerializeField] private Button[] _characterButtons;
+    [SerializeField] private Image[] _characterButtons;
 
     private int charIndex = 0;
+    private CharacterData currentChar;
+
+    private void Start()
+    {
+        SetUpDiaryUI();
+    }
 
     public void DisplayNextCharacter()
     {
@@ -23,7 +29,11 @@ public class DiaryUIHandler : MonoBehaviour
 
     private void SetUpDiaryUI()
     {
-
+        for(int i = 0; i < _displayedCharacters.Length; i++)
+        {
+            _characterButtons[i].gameObject.SetActive(true);
+            _characterButtons[i].sprite = _displayedCharacters[i].DefaultCharacterPortrait;
+        }
     }
 
     public void DisplayCharacterInfo(int index)
