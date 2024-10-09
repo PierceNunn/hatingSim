@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour
     {
         cam = GetComponent<Camera>();
         rect = cam.rect;
-        //REPLACE INVOKE
+        // !! REPLACE INVOKE !!
         Invoke("SetUIRenderCamera", 0.01f);
     }
     void Update()
