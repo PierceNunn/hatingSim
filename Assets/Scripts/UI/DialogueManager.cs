@@ -42,7 +42,7 @@ public class DialogueManager : MonoBehaviour
     /// <summary>
     /// Displays the next sentence when the assigned Interact key is pressed.
     /// </summary>
-    public void OnInteract()
+    public void OnContinue()
     {
         if (IsOpen && !_autoAdvance)
         {
@@ -92,10 +92,6 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    public void OnContinue()
-    {
-        DisplayNextSentence();
-    }
 
     /// <summary>
     /// Displays the next sentence in the queue.
