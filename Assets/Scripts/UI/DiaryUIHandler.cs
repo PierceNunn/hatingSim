@@ -17,6 +17,7 @@ public class DiaryUIHandler : MonoBehaviour
 
     private void Start()
     {
+        //i like to split "setup" functions out of Start for reusability
         SetUpDiaryUI();
     }
 
@@ -31,18 +32,22 @@ public class DiaryUIHandler : MonoBehaviour
 
     public void DisplayCharacterInfo(int index)
     {
+        //set all relevant text/images in UI to character's info
         currentChar = _displayedCharacters[index];
         _characterName.text = currentChar.CharacterName;
         _characterBio.text = currentChar.CharacterBio;
+        //show relevant evidence in UI as well
         UpdateEvidenceDisplay(currentChar);
     }
 
     public void DisplayEvidenceInfo(int index)
     {
+        //show name and bio of clicked on evidence
         _characterName.text = currentChar.RelevantEvidence[index].ItemID;
         _characterBio.text = currentChar.RelevantEvidence[index].ItemBio;
     }
 
+    //show all the relevant evidence in the diary UI
     private void UpdateEvidenceDisplay(CharacterData currentChar)
     {
         for(int i = 0; i < _evidenceImages.Length; i++)
@@ -52,6 +57,7 @@ public class DiaryUIHandler : MonoBehaviour
                 _evidenceImages[i].enabled = true;
                 _evidenceImages[i].sprite = currentChar.RelevantEvidence[i].ItemImage;
 
+                //make collectible sillohette if not collected
                 if(CollectibleItem.IsItemCollected(currentChar.RelevantEvidence[i]))
                     _evidenceImages[i].color = Color.black;
                 else
