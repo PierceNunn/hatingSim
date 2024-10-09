@@ -13,18 +13,11 @@ public class DiaryUIHandler : MonoBehaviour
     [SerializeField] private Image[] _evidenceImages;
     [SerializeField] private Image[] _characterButtons;
 
-    private int charIndex = 0;
     private CharacterData currentChar;
 
     private void Start()
     {
         SetUpDiaryUI();
-    }
-
-    public void DisplayNextCharacter()
-    {
-        charIndex = charIndex + 1 >= _displayedCharacters.Length ? 0 : charIndex + 1;
-        UpdateDiaryDisplay();
     }
 
     private void SetUpDiaryUI()
@@ -48,33 +41,6 @@ public class DiaryUIHandler : MonoBehaviour
     {
         _characterName.text = currentChar.RelevantEvidence[index].ItemID;
         _characterBio.text = currentChar.RelevantEvidence[index].ItemBio;
-    }
-
-    public void DisplayLastCharacter()
-    {
-        charIndex = charIndex - 1 < 0 ? _displayedCharacters.Length : charIndex - 1;
-        UpdateDiaryDisplay();
-    }
-
-    private void UpdateDiaryDisplay()
-    {
-        CharacterData currentChar;
-
-        try
-        {
-            currentChar = _displayedCharacters[charIndex];
-        }
-        catch
-        {
-            print("invalid character reference in DiaryUIHandler!!");
-            return;
-        }
-
-        _characterName.text = currentChar.CharacterName;
-        _characterImage.sprite = currentChar.DefaultCharacterPortrait;
-        _characterImage.SetNativeSize();
-
-        UpdateEvidenceDisplay(currentChar);
     }
 
     private void UpdateEvidenceDisplay(CharacterData currentChar)
