@@ -17,6 +17,7 @@ public class CameraController : MonoBehaviour
     {
         cam = GetComponent<Camera>();
         rect = cam.rect;
+        // !! REPLACE INVOKE !!
         Invoke("SetUIRenderCamera", 0.01f);
     }
     void Update()
@@ -30,6 +31,8 @@ public class CameraController : MonoBehaviour
         if(_enforceRatio)
             scaleRatio();
     }
+
+    //adds black borders on the game window to enforce the defined ratio
     void scaleRatio()
     {
         float targetRatio = targetRatioX / targetRatioY;
@@ -79,6 +82,7 @@ public class CameraController : MonoBehaviour
         StartCoroutine(Shake(shakeDuration, shakeMagnitude));
     }
 
+    //shaking camera effect
     public IEnumerator Shake(float duration, float magnitude)
     {
         Vector3 orignalPosition = transform.position;

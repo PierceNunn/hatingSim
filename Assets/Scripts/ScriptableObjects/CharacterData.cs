@@ -17,6 +17,7 @@ public class CharacterData : ScriptableObject
     [SerializeField] private Sprite _defaultCharacterPortrait;
     [SerializeField] private Portrait[] _portraits;
     [SerializeField] private RandomizedAudio _characterVoice;
+    //relevantEvidence is just for display in the diary, doesn't affect gameplay
     [SerializeField] private CollectibleItem[] _relevantEvidence;
 
     public string CharacterName { get => _characterName; set => _characterName = value; }
@@ -26,6 +27,12 @@ public class CharacterData : ScriptableObject
     public CollectibleItem[] RelevantEvidence { get => _relevantEvidence; set => _relevantEvidence = value; }
     public string CharacterBio { get => _characterBio; set => _characterBio = value; }
 
+    /// <summary>
+    /// gets a portrait of the character from its associated ID. if no match is
+    /// found, the default portrait is returned.
+    /// </summary>
+    /// <param name="id">the ID to find the portrait by.</param>
+    /// <returns>the portrait associated with the ID.</returns>
     public Sprite GetPortraitByID(string id)
     {
         foreach(Portrait p in _portraits)
@@ -35,6 +42,7 @@ public class CharacterData : ScriptableObject
                 return p.PortraitImage;
             }
         }
+        Debug.Log("no portrait matching ID found, returning default");
         return _defaultCharacterPortrait;
     }
 }

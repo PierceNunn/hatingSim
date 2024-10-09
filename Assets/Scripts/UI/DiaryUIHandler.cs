@@ -13,18 +13,12 @@ public class DiaryUIHandler : MonoBehaviour
     [SerializeField] private Image[] _evidenceImages;
     [SerializeField] private Image[] _characterButtons;
 
-    private int charIndex = 0;
     private CharacterData currentChar;
 
     private void Start()
     {
+        //i like to split "setup" functions out of Start for reusability
         SetUpDiaryUI();
-    }
-
-    public void DisplayNextCharacter()
-    {
-        charIndex = charIndex + 1 >= _displayedCharacters.Length ? 0 : charIndex + 1;
-        UpdateDiaryDisplay();
     }
 
     private void SetUpDiaryUI()
@@ -38,45 +32,22 @@ public class DiaryUIHandler : MonoBehaviour
 
     public void DisplayCharacterInfo(int index)
     {
+        //set all relevant text/images in UI to character's info
         currentChar = _displayedCharacters[index];
         _characterName.text = currentChar.CharacterName;
         _characterBio.text = currentChar.CharacterBio;
+        //show relevant evidence in UI as well
         UpdateEvidenceDisplay(currentChar);
     }
 
     public void DisplayEvidenceInfo(int index)
     {
+        //show name and bio of clicked on evidence
         _characterName.text = currentChar.RelevantEvidence[index].ItemID;
         _characterBio.text = currentChar.RelevantEvidence[index].ItemBio;
     }
 
-    public void DisplayLastCharacter()
-    {
-        charIndex = charIndex - 1 < 0 ? _displayedCharacters.Length : charIndex - 1;
-        UpdateDiaryDisplay();
-    }
-
-    private void UpdateDiaryDisplay()
-    {
-        CharacterData currentChar;
-
-        try
-        {
-            currentChar = _displayedCharacters[charIndex];
-        }
-        catch
-        {
-            print("invalid character reference in DiaryUIHandler!!");
-            return;
-        }
-
-        _characterName.text = currentChar.CharacterName;
-        _characterImage.sprite = currentChar.DefaultCharacterPortrait;
-        _characterImage.SetNativeSize();
-
-        UpdateEvidenceDisplay(currentChar);
-    }
-
+    //show all the relevant evidence in the diary UI
     private void UpdateEvidenceDisplay(CharacterData currentChar)
     {
         for(int i = 0; i < _evidenceImages.Length; i++)
@@ -86,6 +57,7 @@ public class DiaryUIHandler : MonoBehaviour
                 _evidenceImages[i].enabled = true;
                 _evidenceImages[i].sprite = currentChar.RelevantEvidence[i].ItemImage;
 
+                //make collectible sillohette if not collected
                 if(CollectibleItem.IsItemCollected(currentChar.RelevantEvidence[i]))
                     _evidenceImages[i].color = Color.black;
                 else

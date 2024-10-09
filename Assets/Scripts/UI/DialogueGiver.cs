@@ -21,12 +21,14 @@ public class DialogueGiver : InteractableEntity
     {
         if(_giveDialogueOnStart)
         {
+            // !! REPLACE INVOKE !!
             Invoke("InitiateDialogue", 1f);
         }
     }
 
     override public void OnInteract()
     {
+        // !! REPLACE INVOKE !!
         Invoke("InitiateDialogue", 0.1f);
     }
     public void InitiateDialogue()

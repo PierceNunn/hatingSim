@@ -7,7 +7,7 @@ public class CollectibleItem : ScriptableObject
 {
     [SerializeField] private string _itemID; //ID to store data under in PlayerPrefs
     [SerializeField] private Sprite _itemImage; //image to represent item
-    [TextArea(3, 10)] [SerializeField] private string _itemBio;
+    [TextArea(3, 10)] [SerializeField] private string _itemBio; //bio for diaryUI
 
     public string ItemID { get => _itemID; set => _itemID = value; }
     public Sprite ItemImage { get => _itemImage; set => _itemImage = value; }
