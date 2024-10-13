@@ -7,11 +7,11 @@ using UnityEngine.SceneManagement;
 public class TileMapTeleport : MonoBehaviour
 {
     [SerializeField] private GameObject toArea;
-    [SerializeField] private GameObject player;
+    private GameObject player;
 
     void Start()
     {
-        
+        player = FindObjectOfType<PlayerMovement>().gameObject;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
