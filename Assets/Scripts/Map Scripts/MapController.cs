@@ -9,35 +9,46 @@ public class MapController : MonoBehaviour
 
     private GameObject player;
 
+    private PlayerMovement pM;
+
     void Start()
     {
         player = FindObjectOfType<PlayerMovement>().gameObject;
+
+        pM = FindObjectOfType<PlayerMovement>();
+
     }
 
 
     public void Courtyard()
     {
-        player.transform.position = locations[0].transform.position;
+        TeleportPlayer(0);
     }
 
     public void Library()
     {
-        player.transform.position = locations[1].transform.position;
+        TeleportPlayer(1);
     }
 
     public void Gym()
     {
-        player.transform.position = locations[2].transform.position;
+        TeleportPlayer(2);
     }
 
     public void Classroom()
     {
-        player.transform.position = locations[3].transform.position;
+        TeleportPlayer(3);
     }
 
     public void Store()
     {
-        player.transform.position = locations[4].transform.position;
+        TeleportPlayer(4);
+    }
+
+    private void TeleportPlayer(int x)
+    {
+        player.transform.position = locations[x].transform.position;
+        pM.OnMap();
     }
 
     public void LoadScene(string sceneToLoad)
