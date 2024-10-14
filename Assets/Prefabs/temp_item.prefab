@@ -73,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1407839381
+  m_SortingLayer: 7
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 14a951600adbba342a4442d4ae32ea14, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemData: {fileID: 11400000, guid: cbd77d4b6d65fb544b878ef91c117457, type: 2}
+  _destroyOnInteract: 1
 --- !u!114 &7626681000128023384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,3 +160,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogueToGive: {fileID: -2784211394801061301, guid: 0dff62c7780b6bd46ae7fc25a47f83e1, type: 2}
   _giveDialogueOnStart: 0
+  _onlyAllowDialogueOnce: 0
