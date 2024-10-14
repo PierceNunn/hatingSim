@@ -258,7 +258,7 @@ public class DialogueManager : MonoBehaviour
                     {
                         ItemChoiceNode tempChoice = temp as ItemChoiceNode;
 
-                        if(tempChoice.IsSelectable())
+                        if(!tempChoice.IsSelectable())
                         {
                             _responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text
                                     = "LOCKED";
