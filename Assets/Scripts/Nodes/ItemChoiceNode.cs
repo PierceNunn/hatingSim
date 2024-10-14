@@ -10,7 +10,19 @@ using XNode;
  */
 public class ItemChoiceNode : ChoiceNode
 {
-    [SerializeField] private CollectibleItem _requiredItem;
+    [SerializeField] private CollectibleItem[] _requiredItem;
 
-    public CollectibleItem RequiredItem { get => _requiredItem; set => _requiredItem = value; }
+    public CollectibleItem[] RequiredItem { get => _requiredItem; set => _requiredItem = value; }
+
+    public override bool IsSelectable()
+    {
+        foreach(CollectibleItem c in RequiredItem)
+        {
+            if(PlayerPrefs.GetInt(c.ItemID, 0) != 1)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
 }

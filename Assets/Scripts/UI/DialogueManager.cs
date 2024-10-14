@@ -120,6 +120,10 @@ public class DialogueManager : MonoBehaviour
             //then next sentence can display normally
             currentBranchDialogue = nextBranchDialogue as DialogueNode;
         }
+        else if (nextNodeType.Equals("AutoDialogueBranchNode"))
+        {
+            AutoSelectDialogueChoices(nextBranchDialogue as DialogueBranchNode);
+        }
         else if(nextNodeType.Equals("DialogueBranchNode"))
         {
             print("dialogue branch node");
@@ -238,6 +242,19 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+    void AutoSelectDialogueChoices(DialogueBranchNode branchNode)
+    {
+        foreach(ChoiceNode c in branchNode.nextNodes)
+        {
+            //automatically choose the first available dialogue option in the node
+            if(c.IsSelectable())
+            {
+                StartDialogue(c.NextNode as DialogueNode, currentRef, _autoAdvance);
+                return;
+            }
+        }
+    }
+
     void SetUpDialogueChoices(DialogueBranchNode branchNode)
     {
         //first check if there are any choices set up
@@ -258,15 +275,14 @@ public class DialogueManager : MonoBehaviour
                     {
                         ItemChoiceNode tempChoice = temp as ItemChoiceNode;
 
-                        //locks choice if required item not obtained
-                        //0 is false and 1 is true due to PP not supporting bools
-                        if(PlayerPrefs.GetInt(tempChoice.RequiredItem.ItemID, 0) != 1)
+                        if(!tempChoice.IsSelectable())
                         {
                             _responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text
-                                = "LOCKED";
+                                    = "LOCKED";
                             _responseButtons[i].GetComponent<Button>().interactable = false;
                             continue;
                         }
+                        
                     }
                     //sets button text and stored node to choice's data
                     _responseButtons[i].GetComponent<Button>().interactable = true;
