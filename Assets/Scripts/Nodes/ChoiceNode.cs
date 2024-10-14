@@ -19,6 +19,11 @@ public class ChoiceNode : LinkedNode {
 
     public string ChoiceLabel { get => _choiceLabel; set => _choiceLabel = value; }
 
+	public virtual bool IsSelectable()
+    {
+		return true; // regular choice node is always selectable
+    }
+
     // Use this for initialization
     protected override void Init() {
 		base.Init();

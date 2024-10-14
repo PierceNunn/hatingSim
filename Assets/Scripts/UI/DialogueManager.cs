@@ -258,17 +258,7 @@ public class DialogueManager : MonoBehaviour
                     {
                         ItemChoiceNode tempChoice = temp as ItemChoiceNode;
 
-                        bool choiceAvailable = true;
-                        //locks choice if required item not obtained
-                        //0 is false and 1 is true due to PP not supporting bools
-                        for(int j = 0; j < tempChoice.RequiredItem.Length; j++)
-                        {
-                            if (PlayerPrefs.GetInt(tempChoice.RequiredItem[j].ItemID, 0) != 1)
-                            {
-                                choiceAvailable = false;
-                            }
-                        }
-                        if(!choiceAvailable)
+                        if(tempChoice.IsSelectable())
                         {
                             _responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text
                                     = "LOCKED";
