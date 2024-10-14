@@ -317,7 +317,10 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _choiceLabel: item has
-  _requiredItem: {fileID: 11400000, guid: cbd77d4b6d65fb544b878ef91c117457, type: 2}
+  _requiredItem:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0

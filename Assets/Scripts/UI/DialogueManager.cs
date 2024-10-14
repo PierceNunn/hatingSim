@@ -240,7 +240,14 @@ public class DialogueManager : MonoBehaviour
 
     void AutoSelectDialogueChoices(DialogueBranchNode branchNode)
     {
-
+        foreach(ChoiceNode c in branchNode.nextNodes)
+        {
+            //automatically choose the first available dialogue option in the node
+            if(c.IsSelectable())
+            {
+                StartDialogue(c.NextNode as DialogueNode, currentRef, _autoAdvance);
+            }
+        }
     }
 
     void SetUpDialogueChoices(DialogueBranchNode branchNode)
