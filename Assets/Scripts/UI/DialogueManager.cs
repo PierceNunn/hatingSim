@@ -238,6 +238,11 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+    void AutoSelectDialogueChoices(DialogueBranchNode branchNode)
+    {
+
+    }
+
     void SetUpDialogueChoices(DialogueBranchNode branchNode)
     {
         //first check if there are any choices set up
