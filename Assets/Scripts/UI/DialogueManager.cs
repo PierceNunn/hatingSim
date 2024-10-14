@@ -120,6 +120,10 @@ public class DialogueManager : MonoBehaviour
             //then next sentence can display normally
             currentBranchDialogue = nextBranchDialogue as DialogueNode;
         }
+        else if (nextNodeType.Equals("AutoDialogueBranchNode"))
+        {
+            AutoSelectDialogueChoices(nextBranchDialogue as DialogueBranchNode);
+        }
         else if(nextNodeType.Equals("DialogueBranchNode"))
         {
             print("dialogue branch node");
