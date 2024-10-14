@@ -250,6 +250,7 @@ public class DialogueManager : MonoBehaviour
             if(c.IsSelectable())
             {
                 StartDialogue(c.NextNode as DialogueNode, currentRef, _autoAdvance);
+                return;
             }
         }
     }
