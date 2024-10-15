@@ -44,7 +44,8 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _choiceLabel: Mars's Roomate
-  _requiredItem: {fileID: 11400000, guid: af442575fe4aa1849a14b56eb72f666f, type: 2}
+  _requiredItem:
+  - {fileID: 11400000, guid: af442575fe4aa1849a14b56eb72f666f, type: 2}
 --- !u!114 &-8603128809100240538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1951,7 +1952,8 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _choiceLabel: Last Week
-  _requiredItem: {fileID: 11400000, guid: f6f1e06dbb77abb44a2b3a1c73e74e55, type: 2}
+  _requiredItem:
+  - {fileID: 11400000, guid: f6f1e06dbb77abb44a2b3a1c73e74e55, type: 2}
 --- !u!114 &5291844738560849401
 MonoBehaviour:
   m_ObjectHideFlags: 0
