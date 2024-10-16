@@ -270,6 +270,7 @@ public class DialogueManager : MonoBehaviour
                     ChoiceNode temp = branchNode.nextNodes[i] as ChoiceNode;
                     _responseButtons[i].SetActive(true);
 
+                    //make button "locked" if corresponding choice is labeled as not selectable
                     if(!temp.IsSelectable())
                     {
                         _responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text
