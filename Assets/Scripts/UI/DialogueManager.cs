@@ -189,22 +189,13 @@ public class DialogueManager : MonoBehaviour
 
         _dialogueText.maxVisibleCharacters = 0;
         _dialogueText.text = sentence;
+        char[] sentenceCharArray = sentence.ToCharArray();
 
-        for(int i = 0; i < sentence.ToCharArray().Length; i++)
+        for (int i = 0; i < sentenceCharArray.Length; i++)
         {
+            char letter = sentenceCharArray[i];
 
             _dialogueText.maxVisibleCharacters++;
-            yield return new WaitForSeconds(_chatSpeed);
-        }
-        
-        /*
-        //start textbox empty
-        _dialogueText.text = "";
-        
-
-        foreach (char letter in sentence.ToCharArray())
-        {
-            _dialogueText.text += letter; //add letters of sentence individually
 
             //clip isn't played for specific chars or when no voice is available
             if (voice != null && letter != " "[0] && letter != ","[0] && letter != "'"[0])
@@ -219,12 +210,12 @@ public class DialogueManager : MonoBehaviour
         }
 
         isTyping = false;
+
         if (_autoAdvance) //go straight to next sentence if autoAdvance is on
         {
             DisplayNextSentence();
         }
         //_buttonPrompt.enabled = true;
-        */
     }
 
 
