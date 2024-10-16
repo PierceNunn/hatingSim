@@ -18,7 +18,7 @@ public class ItemChoiceNode : ChoiceNode
     {
         foreach(CollectibleItem c in RequiredItem)
         {
-            if(PlayerPrefs.GetInt(c.ItemID, 0) != 1)
+            if(CollectibleItem.IsItemCollected(c))
             {
                 return false;
             }
