@@ -50,7 +50,8 @@ public class DialogueManager : MonoBehaviour
             {
                 isTyping = false;
                 StopAllCoroutines();
-                _dialogueText.text = sentence;
+
+                _dialogueText.maxVisibleCharacters = sentence.ToCharArray().Length;
                 //_buttonPrompt.enabled = true;
             }
             else
@@ -72,14 +73,8 @@ public class DialogueManager : MonoBehaviour
         _NPCDialogue.SetActive(true); //show text box
         _playerResponses.SetActive(false); //hide choice buttons
         currentBranchDialogue = branchDialogue.NextNode as DialogueNode;
-        //SingleDialogue dialogue = currentBranchDialogue.Dialogue;
         _autoAdvance = willAutoAdvance;
         currentRef = NPC;
-
-        //set ui components to what they should be for the first dialogue
-       // _nameText.text = dialogue.TalkerData.CharacterName;
-       // _portrait.sprite = dialogue.TalkerData.GetPortraitByID(dialogue.PortraitID);
-       // _portrait.SetNativeSize(); //just in case any portraits have different dimensions
 
         if (branchDialogue.GetType().ToString().Equals("DialogueNode"))
             //displays input node if it's a dialogueNode
@@ -139,6 +134,8 @@ public class DialogueManager : MonoBehaviour
             nextBranchDialogue = t.NextNode;
             return;
         }
+        //if node isn't of above types then it's a dialogueNode
+
         //pull SingleDialogue data out of current node
         SingleDialogue dialogue = currentBranchDialogue.Dialogue;
         //pull current dialogue text out of the SingleDialogue data
@@ -187,12 +184,15 @@ public class DialogueManager : MonoBehaviour
     {
         isTyping = true;
 
-        //start textbox empty
-        _dialogueText.text = "";
+        _dialogueText.maxVisibleCharacters = 0;
+        _dialogueText.text = sentence;
+        char[] sentenceCharArray = sentence.ToCharArray();
 
-        foreach (char letter in sentence.ToCharArray())
+        for (int i = 0; i < sentenceCharArray.Length; i++)
         {
-            _dialogueText.text += letter; //add letters of sentence individually
+            char letter = sentenceCharArray[i];
+
+            _dialogueText.maxVisibleCharacters++;
 
             //clip isn't played for specific chars or when no voice is available
             if (voice != null && letter != " "[0] && letter != ","[0] && letter != "'"[0])
@@ -207,6 +207,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         isTyping = false;
+
         if (_autoAdvance) //go straight to next sentence if autoAdvance is on
         {
             DisplayNextSentence();
@@ -230,7 +231,6 @@ public class DialogueManager : MonoBehaviour
             Debug.Log("End of convo");
 
             IsOpen = false;
-            //FindObjectOfType<PlayerController>().talking = false;
             _NPCDialogue.SetActive(false);
             _playerResponses.SetActive(false);
             FindObjectOfType<PlayerInput>().actions.FindActionMap("Player").Enable();
