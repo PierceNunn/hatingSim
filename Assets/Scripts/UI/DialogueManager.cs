@@ -20,7 +20,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private AudioSource _voicer;
     [SerializeField] private GameObject _buttonSound;
-    [SerializeField] private Image _buttonPrompt;
+    //[SerializeField] private Image _buttonPrompt;
     [SerializeField] private GameObject _playerResponses;
     [SerializeField] private GameObject[] _responseButtons;
     //dialogue settings
@@ -51,7 +51,7 @@ public class DialogueManager : MonoBehaviour
                 isTyping = false;
                 StopAllCoroutines();
                 _dialogueText.text = sentence;
-                _buttonPrompt.enabled = true;
+                //_buttonPrompt.enabled = true;
             }
             else
                 DisplayNextSentence();
