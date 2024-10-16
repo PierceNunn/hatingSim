@@ -15,6 +15,6 @@ public class CollectibleItem : ScriptableObject
 
     public static bool IsItemCollected(CollectibleItem item)
     {
-        return PlayerPrefs.GetInt(item.ItemID, 0) == 1 ? false : true;
+        return PlayerPrefs.GetInt(item.ItemID, 0) == 1 ? true : false;
     }
 }
