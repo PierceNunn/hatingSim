@@ -50,7 +50,7 @@ public class DialogueManager : MonoBehaviour
             {
                 isTyping = false;
                 StopAllCoroutines();
-                _dialogueText.text = sentence;
+                _dialogueText.maxVisibleCharacters = sentence.ToCharArray().Length;
                 _buttonPrompt.enabled = true;
             }
             else
