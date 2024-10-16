@@ -187,8 +187,20 @@ public class DialogueManager : MonoBehaviour
     {
         isTyping = true;
 
+        _dialogueText.maxVisibleCharacters = 0;
+        _dialogueText.text = sentence;
+
+        for(int i = 0; i < sentence.ToCharArray().Length; i++)
+        {
+
+            _dialogueText.maxVisibleCharacters++;
+            yield return new WaitForSeconds(_chatSpeed);
+        }
+        
+        /*
         //start textbox empty
         _dialogueText.text = "";
+        
 
         foreach (char letter in sentence.ToCharArray())
         {
@@ -212,6 +224,7 @@ public class DialogueManager : MonoBehaviour
             DisplayNextSentence();
         }
         //_buttonPrompt.enabled = true;
+        */
     }
 
 
