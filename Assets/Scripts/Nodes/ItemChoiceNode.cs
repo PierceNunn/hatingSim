@@ -16,9 +16,10 @@ public class ItemChoiceNode : ChoiceNode
 
     public override bool IsSelectable()
     {
+        Debug.Log("ItemChoiceNode");
         foreach(CollectibleItem c in RequiredItem)
         {
-            if(CollectibleItem.IsItemCollected(c))
+            if(!CollectibleItem.IsItemCollected(c))
             {
                 return false;
             }

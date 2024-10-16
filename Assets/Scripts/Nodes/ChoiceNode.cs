@@ -21,6 +21,7 @@ public class ChoiceNode : LinkedNode {
 
 	public virtual bool IsSelectable()
     {
+		Debug.Log("choice node");
 		return true; // regular choice node is always selectable
     }
 
