@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Name: Item Choice
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -5208, y: -344}
+  position: {x: -5208, y: -520}
   ports:
     keys:
     - _lastNode
@@ -124,7 +124,10 @@ MonoBehaviour:
     - _fieldName: _nextNode
       _node: {fileID: -8963252543944076918}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: -513174745232046128}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -231,7 +234,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  nextNodes: []
+  nextNodes:
+  - {fileID: -8963252543944076918}
+  - {fileID: -9082430195968300878}
+  - {fileID: -7930734155757879171}
+  - {fileID: 472458495143500441}
 --- !u!114 &-8019113294725946288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,7 +329,8 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _choiceLabel: Mars's Notebook
-  _requiredItem: []
+  _requiredItem:
+  - {fileID: 0}
 --- !u!114 &-7887235611328581154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,6 +620,54 @@ MonoBehaviour:
     _portraitID: 
     _eventsToInvoke: []
     _sentences: Something happening to her?
+--- !u!114 &-4397373968155858803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -5848, y: -552}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: -4397373968155858803}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -513174745232046128}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: -4397373968155858803}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 7475667036346135187}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 40ed206def608d1439557800f07a115d, type: 2}
+    _portraitID: 
+    _eventsToInvoke: []
+    _sentences: Ah... Monstart
 --- !u!114 &-2293509838923798819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -756,6 +812,54 @@ MonoBehaviour:
     _portraitID: 
     _eventsToInvoke: []
     _sentences: ... I don't want to expose her lifestyle
+--- !u!114 &-513174745232046128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -5528, y: -552}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: -513174745232046128}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -8963252543944076918}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: -513174745232046128}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: -4397373968155858803}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _portraitID: 
+    _eventsToInvoke: []
+    _sentences: She's been buying unhealthy amounts of this energy drink
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -795,6 +899,9 @@ MonoBehaviour:
   - {fileID: -9082430195968300878}
   - {fileID: -7930734155757879171}
   - {fileID: 472458495143500441}
+  - {fileID: -513174745232046128}
+  - {fileID: -4397373968155858803}
+  - {fileID: 7475667036346135187}
 --- !u!114 &49973406943112234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1264,6 +1371,52 @@ MonoBehaviour:
     _portraitID: 
     _eventsToInvoke: []
     _sentences: Is there ever a day where you <i>aren't</i> in the gym?
+--- !u!114 &7475667036346135187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -6168, y: -552}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 7475667036346135187}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -4397373968155858803}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 7475667036346135187}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 40ed206def608d1439557800f07a115d, type: 2}
+    _portraitID: 
+    _eventsToInvoke: []
+    _sentences: I've been trying to encourage her to switch to something healthier,
+      like protein shakes, but she won't budge
 --- !u!114 &8953379923711010529
 MonoBehaviour:
   m_ObjectHideFlags: 0
