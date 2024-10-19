@@ -58,4 +58,9 @@ public class DebugFunctions : MonoBehaviour
     {
         TimeUIManager.RestartTime();
     }
+
+    public static void SaveItems()
+    {
+        GameManager.instance.SaveCollectedItems();
+    }
 }
