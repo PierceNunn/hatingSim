@@ -88,6 +88,9 @@ public class PlayerMovement : MonoBehaviour
         else
             animator.SetBool("isWalking", false);
 
+        animator.SetFloat("InputX", direction.x);
+        animator.SetFloat("InputY", direction.y);
+
     }
 
 
