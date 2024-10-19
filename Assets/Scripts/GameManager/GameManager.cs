@@ -33,9 +33,12 @@ public class GameManager : MonoBehaviour
             //flags item as found in PlayerPrefs
             //(0 is false and 1 is true due to PP not supporting bools)
             PlayerPrefs.SetInt(item.ItemID, sessionCollectedItems[item] ? 1 : 0);
+            print("saved " + item.ItemID + " as " + sessionCollectedItems[item]);
         }
 
         //wipe sessionCollectedItems afterwards
         sessionCollectedItems = new Dictionary<CollectibleItem, bool>();
+
+        print("saved!");
     }
 }
