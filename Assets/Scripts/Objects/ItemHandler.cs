@@ -12,6 +12,8 @@ public class ItemHandler : InteractableEntity
     [SerializeField] private CollectibleItem _itemData;
     [SerializeField] private bool _destroyOnInteract = true;
 
+    private float collectItemWaitTime = 0.1f;
+
     public void Start()
     {
         if (PlayerPrefs.GetInt(_itemData.ItemID, 0) == 1 && _destroyOnInteract)
@@ -19,15 +21,14 @@ public class ItemHandler : InteractableEntity
     }
     override public void OnInteract()
     {
-        Invoke("CollectItem", 0.1f);
+        StartCoroutine(CollectItem());
     }
 
-    public void CollectItem()
+    IEnumerator CollectItem()
     {
-        //flags item as found in PlayerPrefs
-        //(0 is false and 1 is true due to PP not supporting bools)
-        PlayerPrefs.SetInt(_itemData.ItemID, 1);
-        print("item " + _itemData.ItemID + " collected");
+        yield return new WaitForSeconds(collectItemWaitTime);
+
+        _itemData.CollectItem();
         if (_destroyOnInteract)
             Destroy(gameObject);
     }

@@ -33,8 +33,7 @@ public class DebugFunctions : MonoBehaviour
 
         foreach (CollectibleItem c in itemsToGain)
         {
-            //using 0 as false and 1 as true as PP doesn't support bools
-            PlayerPrefs.SetInt(c.ItemID, 1);
+            c.CollectItem();
         }
 
         print("hoarder mode enabled");
@@ -58,5 +57,10 @@ public class DebugFunctions : MonoBehaviour
     public static void RestartTime()
     {
         TimeUIManager.RestartTime();
+    }
+
+    public static void SaveItems()
+    {
+        GameManager.instance.SaveCollectedItems();
     }
 }

@@ -13,8 +13,23 @@ public class CollectibleItem : ScriptableObject
     public Sprite ItemImage { get => _itemImage; set => _itemImage = value; }
     public string ItemBio { get => _itemBio; set => _itemBio = value; }
 
+    public void CollectItem(bool collect = true)
+    {
+        GameManager.instance.CollectUnsavedItem(this, collect);
+        Debug.Log("item " + ItemID + " collected (temp)");
+        
+    }
     public static bool IsItemCollected(CollectibleItem item)
     {
-        return PlayerPrefs.GetInt(item.ItemID, 0) == 1 ? true : false;
+        try
+        {
+            return GameManager.instance.SessionCollectedItems[item];
+        }
+        catch
+        {
+            return PlayerPrefs.GetInt(item.ItemID, 0) == 1 ? true : false;
+        }
+        
     }
+
 }

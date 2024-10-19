@@ -110,8 +110,7 @@ public class DialogueManager : MonoBehaviour
         {
             //first give player item defined in node
             ItemGiverNode temp = nextBranchDialogue as ItemGiverNode;
-            PlayerPrefs.SetInt(temp.ItemToGive.ItemID, 1);
-            print("item " + temp.ItemToGive.ItemID + " obtained");
+            temp.ItemToGive.CollectItem();
             //then next sentence can display normally
             currentBranchDialogue = nextBranchDialogue as DialogueNode;
         }
