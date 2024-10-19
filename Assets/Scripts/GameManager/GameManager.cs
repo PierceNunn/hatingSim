@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
+    private Dictionary<CollectibleItem, bool> sessionCollectedItems;
+
     private void Awake()
     {
         if (instance == null)
@@ -15,5 +17,11 @@ public class GameManager : MonoBehaviour
             Destroy(this);
 
         DontDestroyOnLoad(this);
+    }
+
+
+    public void CollectUnsavedItem(CollectibleItem item, bool status = true)
+    {
+        sessionCollectedItems.Add(item, status);
     }
 }
