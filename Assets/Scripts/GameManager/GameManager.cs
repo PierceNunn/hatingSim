@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
 
     private Dictionary<CollectibleItem, bool> sessionCollectedItems;
 
+    public Dictionary<CollectibleItem, bool> SessionCollectedItems { get => sessionCollectedItems; set => sessionCollectedItems = value; }
+
     private void Awake()
     {
         if (instance == null)
@@ -22,22 +24,22 @@ public class GameManager : MonoBehaviour
 
     public void CollectUnsavedItem(CollectibleItem item, bool status = true)
     {
-        sessionCollectedItems.Add(item, status);
+        SessionCollectedItems.Add(item, status);
     }
 
     public void SaveCollectedItems()
     {
         print("saving!");
-        foreach(CollectibleItem item in sessionCollectedItems.Keys)
+        foreach(CollectibleItem item in SessionCollectedItems.Keys)
         {
             //flags item as found in PlayerPrefs
             //(0 is false and 1 is true due to PP not supporting bools)
-            PlayerPrefs.SetInt(item.ItemID, sessionCollectedItems[item] ? 1 : 0);
-            print("saved " + item.ItemID + " as " + sessionCollectedItems[item]);
+            PlayerPrefs.SetInt(item.ItemID, SessionCollectedItems[item] ? 1 : 0);
+            print("saved " + item.ItemID + " as " + SessionCollectedItems[item]);
         }
 
         //wipe sessionCollectedItems afterwards
-        sessionCollectedItems = new Dictionary<CollectibleItem, bool>();
+        SessionCollectedItems = new Dictionary<CollectibleItem, bool>();
 
         print("saved!");
     }

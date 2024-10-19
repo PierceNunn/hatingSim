@@ -21,7 +21,15 @@ public class CollectibleItem : ScriptableObject
     }
     public static bool IsItemCollected(CollectibleItem item)
     {
-        return PlayerPrefs.GetInt(item.ItemID, 0) == 1 ? true : false;
+        try
+        {
+            return GameManager.instance.SessionCollectedItems[item];
+        }
+        catch
+        {
+            return PlayerPrefs.GetInt(item.ItemID, 0) == 1 ? true : false;
+        }
+        
     }
 
 }
