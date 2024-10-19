@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    private Vector2 moveInput;
+    private Vector2 direction;
 
     private GameObject interactObject;
 
@@ -79,17 +79,18 @@ public class PlayerMovement : MonoBehaviour
     //direction = iValue.Get<Vector2>();
     //}
 
-    public void Move(InputAction.CallbackContext context)
+    public void OnMove(InputValue iValue)
     {
-        animator.SetBool("isWalking", true);
+        direction = iValue.Get<Vector2>();
 
-        if (context.canceled)
-        {
+        if(direction.x != 0)
+            animator.SetBool("isWalking", true);
+        else
             animator.SetBool("isWalking", false);
-        }
-        moveInput = context.ReadValue<Vector2>();
-        animator.SetFloat("InputX", moveInput.x);
-        animator.SetFloat("InputY", moveInput.y);
+
+        animator.SetFloat("InputX", direction.x);
+        animator.SetFloat("InputY", direction.y);
+
     }
 
 
@@ -115,7 +116,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (canMove)
         {
-            rb.velocity = moveInput * speed;
+            rb.velocity = direction * speed;
         }
         else
         {
