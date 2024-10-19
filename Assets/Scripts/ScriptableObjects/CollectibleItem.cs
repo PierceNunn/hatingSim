@@ -13,11 +13,11 @@ public class CollectibleItem : ScriptableObject
     public Sprite ItemImage { get => _itemImage; set => _itemImage = value; }
     public string ItemBio { get => _itemBio; set => _itemBio = value; }
 
-    public void CollectItem()
+    public void CollectItem(bool collect = true)
     {
         //flags item as found in PlayerPrefs
         //(0 is false and 1 is true due to PP not supporting bools)
-        PlayerPrefs.SetInt(ItemID, 1);
+        PlayerPrefs.SetInt(ItemID, collect ? 1 : 0);
         Debug.Log("item " + ItemID + " collected");
         
     }
