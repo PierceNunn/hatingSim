@@ -13,8 +13,17 @@ public class CollectibleItem : ScriptableObject
     public Sprite ItemImage { get => _itemImage; set => _itemImage = value; }
     public string ItemBio { get => _itemBio; set => _itemBio = value; }
 
+    public void CollectItem()
+    {
+        //flags item as found in PlayerPrefs
+        //(0 is false and 1 is true due to PP not supporting bools)
+        PlayerPrefs.SetInt(ItemID, 1);
+        Debug.Log("item " + ItemID + " collected");
+        
+    }
     public static bool IsItemCollected(CollectibleItem item)
     {
         return PlayerPrefs.GetInt(item.ItemID, 0) == 1 ? true : false;
     }
+
 }
