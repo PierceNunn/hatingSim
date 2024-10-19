@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: 5824660215498957042}
   - component: {fileID: 505728791417425265}
   - component: {fileID: 9186241289304721189}
+  - component: {fileID: 3158034996473999941}
   m_Layer: 6
   m_Name: temp_MC
   m_TagString: Player
@@ -245,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: ceb6b6912d79f804394bce7c4e9e2b9e, type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -303,13 +304,13 @@ MonoBehaviour:
     m_ActionName: Player/Continue[/Keyboard/c]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2233722199138905243}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 5824660215498957042}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -321,6 +322,18 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: c8d870ce-7ab4-407d-88f2-91ede46593bb
     m_ActionName: Player/Select[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d99000ee-56cb-435f-bb45-152a8f015b55
+    m_ActionName: UI/Continue[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ca3ccf0b-f7c0-4198-9f0c-7707006ee12f
+    m_ActionName: Player/Map[/Keyboard/m]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7a90b685-93e5-4889-8cf7-43f9da16b697
+    m_ActionName: Player/Debug[/Keyboard/backquote]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -371,6 +384,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!95 &3158034996473999941
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2233722199138905243}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 28a4c45730f5a794c9e5c3c960e6bd44, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8454810504637740926
 GameObject:
   m_ObjectHideFlags: 0
