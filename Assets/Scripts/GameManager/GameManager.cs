@@ -24,4 +24,16 @@ public class GameManager : MonoBehaviour
     {
         sessionCollectedItems.Add(item, status);
     }
+
+    public void SaveCollectedItems()
+    {
+        print("saving!");
+        foreach(CollectibleItem item in sessionCollectedItems.Keys)
+        {
+            item.CollectItem(sessionCollectedItems[item]);
+        }
+
+        //wipe sessionCollectedItems afterwards
+        sessionCollectedItems = new Dictionary<CollectibleItem, bool>();
+    }
 }
