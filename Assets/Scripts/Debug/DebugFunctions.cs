@@ -33,7 +33,7 @@ public class DebugFunctions : MonoBehaviour
 
         foreach (CollectibleItem c in itemsToGain)
         {
-            c.CollectItem()
+            c.CollectItem();
         }
 
         print("hoarder mode enabled");
