@@ -24,7 +24,14 @@ public class GameManager : MonoBehaviour
 
     public void CollectUnsavedItem(CollectibleItem item, bool status = true)
     {
-        SessionCollectedItems.Add(item, status);
+        try
+        {
+            SessionCollectedItems.Add(item, status);
+        }
+        catch
+        {
+            print("Couldn't add requested item; it already has a value queued for saving. Save and try again.");
+        }
     }
 
     public void SaveCollectedItems()
