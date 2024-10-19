@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    private Vector2 direction;
+    private Vector2 moveInput;
 
     private GameObject interactObject;
 
@@ -20,11 +20,14 @@ public class PlayerMovement : MonoBehaviour
 
     private GameObject debugUI;
 
+    private Animator animator;
+
     [SerializeField] private int speed;
 
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         interactText.gameObject.SetActive(false);
         
         canMove = true;
@@ -70,13 +73,27 @@ public class PlayerMovement : MonoBehaviour
         FindObjectOfType<DialogueManager>().OnContinue();
     }
 
+    //Changing this to better work with the animator stuff with code I already have, if you need this function feel free to tell me and ill fix it -Alison
+    //public void OnMove(InputValue iValue)
+    //{
+    //direction = iValue.Get<Vector2>();
+    //}
 
-    public void OnMove(InputValue iValue)
+    public void Move(InputAction.CallbackContext context)
     {
-       direction = iValue.Get<Vector2>();
+        animator.SetBool("isWalking", true);
+
+        if (context.canceled)
+        {
+            animator.SetBool("isWalking", false);
+        }
+        moveInput = context.ReadValue<Vector2>();
+        animator.SetFloat("InputX", moveInput.x);
+        animator.SetFloat("InputY", moveInput.y);
     }
 
-    public void OnMap()
+
+        public void OnMap()
     {
         if(mapUI != null)
         {
@@ -98,7 +115,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (canMove)
         {
-            rb.velocity = direction * speed;
+            rb.velocity = moveInput * speed;
         }
         else
         {
