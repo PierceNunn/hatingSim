@@ -15,10 +15,8 @@ public class CollectibleItem : ScriptableObject
 
     public void CollectItem(bool collect = true)
     {
-        //flags item as found in PlayerPrefs
-        //(0 is false and 1 is true due to PP not supporting bools)
-        PlayerPrefs.SetInt(ItemID, collect ? 1 : 0);
-        Debug.Log("item " + ItemID + " collected");
+        GameManager.instance.CollectUnsavedItem(this, collect);
+        Debug.Log("item " + ItemID + " collected (temp)");
         
     }
     public static bool IsItemCollected(CollectibleItem item)

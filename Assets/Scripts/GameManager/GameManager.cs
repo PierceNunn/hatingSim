@@ -30,7 +30,9 @@ public class GameManager : MonoBehaviour
         print("saving!");
         foreach(CollectibleItem item in sessionCollectedItems.Keys)
         {
-            item.CollectItem(sessionCollectedItems[item]);
+            //flags item as found in PlayerPrefs
+            //(0 is false and 1 is true due to PP not supporting bools)
+            PlayerPrefs.SetInt(item.ItemID, sessionCollectedItems[item] ? 1 : 0);
         }
 
         //wipe sessionCollectedItems afterwards
