@@ -83,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
     {
         direction = iValue.Get<Vector2>();
 
-        if(direction.x != 0)
+        if(direction.x != 0 || direction.y != 0)
             animator.SetBool("isWalking", true);
         else
             animator.SetBool("isWalking", false);
