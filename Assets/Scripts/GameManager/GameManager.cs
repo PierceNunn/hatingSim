@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
-    private Dictionary<CollectibleItem, bool> sessionCollectedItems;
+    private Dictionary<CollectibleItem, bool> sessionCollectedItems = new Dictionary<CollectibleItem, bool>();
 
     public Dictionary<CollectibleItem, bool> SessionCollectedItems { get => sessionCollectedItems; set => sessionCollectedItems = value; }
 
