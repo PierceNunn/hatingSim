@@ -483,6 +483,56 @@ MonoBehaviour:
     _eventsToInvoke: []
     _sentences: <i>Anyways, this investigation could get messy if I have to talk
       to Courtney</i>
+--- !u!114 &-7415019848329476712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7099594b8ff43884ca052fb7144ba301, type: 3}
+  m_Name: Item Giver
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -6904, y: -376}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: -7415019848329476712}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 755062485509236554}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: -7415019848329476712}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 3206617885220224785}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _portraitID: 
+    _eventsToInvoke: []
+    _sentences: <i>I know Courtney likes to hang out around the Gym, maybe I'll find
+      her there</i>
+  _itemToGive: {fileID: 11400000, guid: df1fa7e30fb8a08428e78aa09cb3b72b, type: 2}
 --- !u!114 &-7305203868612540628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -914,55 +964,6 @@ MonoBehaviour:
     _portraitID: scowl
     _eventsToInvoke: []
     _sentences: That's like, the same thing
---- !u!114 &-1512505651065035067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -6904, y: -376}
-  ports:
-    keys:
-    - _lastNode
-    - _nextNode
-    values:
-    - _fieldName: _lastNode
-      _node: {fileID: -1512505651065035067}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: 755062485509236554}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: _nextNode
-      _node: {fileID: -1512505651065035067}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _lastNode
-        node: {fileID: 3206617885220224785}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _lastNode: {fileID: 0}
-  _nextNode: {fileID: 0}
-  _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
-    _portraitID: 
-    _eventsToInvoke: []
-    _sentences: <i>I know Courtney likes to hang out around the Gym, maybe I'll find
-      her there</i>
 --- !u!114 &-1121712341094121088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1214,7 +1215,6 @@ MonoBehaviour:
   - {fileID: 7917020914091447251}
   - {fileID: -179231143445299108}
   - {fileID: 755062485509236554}
-  - {fileID: -1512505651065035067}
   - {fileID: 6016741303166628488}
   - {fileID: 8324265006844862257}
   - {fileID: 1646757495529334910}
@@ -1232,6 +1232,7 @@ MonoBehaviour:
   - {fileID: 8926229707878356761}
   - {fileID: 7048342923148767465}
   - {fileID: -8159761023727212484}
+  - {fileID: -7415019848329476712}
 --- !u!114 &390838844776758992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1317,7 +1318,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: -1512505651065035067}
+        node: {fileID: -7415019848329476712}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -1790,10 +1791,10 @@ MonoBehaviour:
         node: {fileID: 2632708453363086620}
         reroutePoints: []
       - fieldName: _nextNode
-        node: {fileID: -1512505651065035067}
+        node: {fileID: 4153645177453152587}
         reroutePoints: []
       - fieldName: _nextNode
-        node: {fileID: 4153645177453152587}
+        node: {fileID: -7415019848329476712}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -2589,4 +2590,6 @@ MonoBehaviour:
   _responses:
   - {fileID: 0}
   - {fileID: 0}
-  nextNodes: []
+  nextNodes:
+  - {fileID: 1858819348584761176}
+  - {fileID: 7048342923148767465}
