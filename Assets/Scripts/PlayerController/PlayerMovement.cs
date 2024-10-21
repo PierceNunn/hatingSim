@@ -34,7 +34,6 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         interactText.gameObject.SetActive(false);
         
-        canMove = true;
         debugUI = FindObjectOfType<DebugFunctions>().gameObject.transform.parent.gameObject;
         mapUI = FindObjectOfType<MapController>().gameObject;
         menuUI = FindObjectOfType<MenuUIManager>().gameObject;
@@ -42,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
         OnDebug();
         OnMenu();
         Diary();
+        canMove = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -135,7 +135,6 @@ public class PlayerMovement : MonoBehaviour
         {
             OnMenu();
             diaryUI.SetActive(!diaryUI.activeSelf);
-            canMove = mapUI.activeSelf;
         }
     }
 
