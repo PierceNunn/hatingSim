@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd7b410b85f41154abcea74e0197c688, type: 3}
-  m_Name: New Character Data
+  m_Name: Weird Kid
   m_EditorClassIdentifier: 
-  _characterName: PC
+  _characterName: Weird Kid
   _characterBio: 
-  _defaultCharacterPortrait: {fileID: 21300000, guid: 29be204760f22c641bcf79c511619e5a, type: 3}
+  _defaultCharacterPortrait: {fileID: 21300000, guid: b33a58db715a490429002278c5ab6696, type: 3}
   _portraits:
-  - _portraitImage: {fileID: 0}
-    _portraitID: thought
-  _characterVoice: {fileID: 11400000, guid: c42c0773132972a41ab949133b0b4dfd, type: 2}
+  - _portraitImage: {fileID: 21300000, guid: 32683c5b4129ebe468526f0cc1754ffe, type: 3}
+    _portraitID: shocked
+  _characterVoice: {fileID: 11400000, guid: 51b09c5049ef8d3468f748c25aa672ba, type: 2}
   _relevantEvidence: []
