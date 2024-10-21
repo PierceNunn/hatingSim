@@ -48,7 +48,7 @@ public class MapController : MonoBehaviour
     private void TeleportPlayer(int x)
     {
         player.transform.position = locations[x].transform.position;
-        pM.Map();
+        pM.OnMap();
     }
 
     public void LoadScene(string sceneToLoad)

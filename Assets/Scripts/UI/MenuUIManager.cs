@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class MenuUIManager : MonoBehaviour
 {
-    private PlayerMovement pM;
-
+    // Start is called before the first frame update
     void Start()
     {
-        pM = FindObjectOfType<PlayerMovement>();
+        
     }
 
+    // Update is called once per frame
     void Update()
     {
         
