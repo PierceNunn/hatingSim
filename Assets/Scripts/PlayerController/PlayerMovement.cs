@@ -20,9 +20,9 @@ public class PlayerMovement : MonoBehaviour
 
     private GameObject debugUI;
 
-    [SerializeField] private GameObject menuUI;
+    private GameObject menuUI;
 
-    private GameObject diaryUI;
+    [SerializeField] private GameObject diaryUI;
 
     private Animator animator;
 
@@ -38,9 +38,10 @@ public class PlayerMovement : MonoBehaviour
         debugUI = FindObjectOfType<DebugFunctions>().gameObject.transform.parent.gameObject;
         mapUI = FindObjectOfType<MapController>().gameObject;
         menuUI = FindObjectOfType<MenuUIManager>().gameObject;
-        OnMap();
+        Map();
         OnDebug();
         OnMenu();
+        Diary();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -100,10 +101,11 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-        public void OnMap()
+        public void Map()
     {
         if(mapUI != null)
         {
+            OnMenu();
             canMove = mapUI.activeSelf;
             mapUI.SetActive(!mapUI.activeSelf);
         }
@@ -122,8 +124,18 @@ public class PlayerMovement : MonoBehaviour
     {
         if(menuUI != null)
         {
-            canMove = mapUI.activeSelf;
+            canMove = menuUI.activeSelf;
             menuUI.SetActive(!menuUI.activeSelf);
+        }
+    }
+
+    public void Diary()
+    {
+        if (diaryUI != null)
+        {
+            OnMenu();
+            diaryUI.SetActive(!diaryUI.activeSelf);
+            canMove = mapUI.activeSelf;
         }
     }
 
