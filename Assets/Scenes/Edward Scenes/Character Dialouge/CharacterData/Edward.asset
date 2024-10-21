@@ -10,13 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd7b410b85f41154abcea74e0197c688, type: 3}
-  m_Name: New Character Data 1
+  m_Name: Edward
   m_EditorClassIdentifier: 
-  _characterName: Edward's Classmate
+  _characterName: Edward
   _characterBio: 
-  _defaultCharacterPortrait: {fileID: 21300000, guid: 32683c5b4129ebe468526f0cc1754ffe, type: 3}
-  _portraits:
-  - _portraitImage: {fileID: 21300000, guid: b33a58db715a490429002278c5ab6696, type: 3}
-    _portraitID: angry
-  _characterVoice: {fileID: 11400000, guid: bd7c52dc97b7ba841a9b37a0e4763cd9, type: 2}
+  _defaultCharacterPortrait: {fileID: 21300000, guid: 173b3653a62613940ba4f7c8a6e6cfdb, type: 3}
+  _portraits: []
+  _characterVoice: {fileID: 11400000, guid: 146b9f28ada49f646aa6b972b9a3b751, type: 2}
   _relevantEvidence: []
