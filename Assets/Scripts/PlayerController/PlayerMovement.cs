@@ -20,7 +20,9 @@ public class PlayerMovement : MonoBehaviour
 
     private GameObject debugUI;
 
-    private GameObject menuUI;
+    [SerializeField] private GameObject menuUI;
+
+    private GameObject diaryUI;
 
     private Animator animator;
 
@@ -120,6 +122,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(menuUI != null)
         {
+            canMove = mapUI.activeSelf;
             menuUI.SetActive(!menuUI.activeSelf);
         }
     }
