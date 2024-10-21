@@ -49,6 +49,53 @@ MonoBehaviour:
     _eventsToInvoke: []
     _sentences: Huh? Wait, what? We've been doing just fine until now! I know I slept
       through my alarm during our last date, but you said you were okay with that!
+--- !u!114 &-8796869620073593828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7099594b8ff43884ca052fb7144ba301, type: 3}
+  m_Name: Item Giver
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1464, y: -232}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: -8796869620073593828}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 7746689295249272650}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: -8796869620073593828}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _portraitID: 
+    _eventsToInvoke: []
+    _sentences: No! I have something! This was just a minor slip up. What I meant
+      to show you was...
+  _itemToGive: {fileID: 11400000, guid: 1447aa285a9c36547a1e0813d294dcbe, type: 2}
 --- !u!114 &-8738346769768924351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,55 +373,6 @@ MonoBehaviour:
     _portraitID: 
     _eventsToInvoke: []
     _sentences: Look, Mars. I brought you out here for a reason
---- !u!114 &-7341273612293219400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -968, y: -312}
-  ports:
-    keys:
-    - _lastNode
-    - _nextNode
-    values:
-    - _fieldName: _lastNode
-      _node: {fileID: -7341273612293219400}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: -4240901908856021048}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: _nextNode
-      _node: {fileID: -7341273612293219400}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _lastNode
-        node: {fileID: -7231590594427177600}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _lastNode: {fileID: 0}
-  _nextNode: {fileID: 0}
-  _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
-    _portraitID: 
-    _eventsToInvoke: []
-    _sentences: No! I have something! This was just a minor slip up. What I meant
-      to show you was...
 --- !u!114 &-7231590594427177600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,7 +386,7 @@ MonoBehaviour:
   m_Name: Auto Dialogue Branch
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1192, y: -296}
+  position: {x: -872, y: -296}
   ports:
     keys:
     - _lastNode
@@ -402,7 +400,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: -7341273612293219400}
+        node: {fileID: -4240901908856021048}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -937,7 +935,7 @@ MonoBehaviour:
   m_Name: Choice
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1448, y: -56}
+  position: {x: -1128, y: -56}
   ports:
     keys:
     - _lastNode
@@ -957,7 +955,10 @@ MonoBehaviour:
     - _fieldName: _nextNode
       _node: {fileID: -4731978561588003391}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: -1930718817556271682}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -1098,7 +1099,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: -7341273612293219400}
+        node: {fileID: -7231590594427177600}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -1385,6 +1386,53 @@ MonoBehaviour:
   _choiceLabel: Mars's Notebook
   _requiredItem:
   - {fileID: 11400000, guid: 38158ab0cdfb89e4b9d9d8415ea1fb0f, type: 2}
+--- !u!114 &-1930718817556271682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7099594b8ff43884ca052fb7144ba301, type: 3}
+  m_Name: Item Giver
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1464, y: 40}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: -1930718817556271682}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -4731978561588003391}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: -1930718817556271682}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _portraitID: 
+    _eventsToInvoke: []
+    _sentences: No! I have something! This was just a minor slip up. What I meant
+      to show you was...
+  _itemToGive: {fileID: 11400000, guid: 07a9557d51582ee4397e5f4eff90802b, type: 2}
 --- !u!114 &-842646958530909900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1574,7 +1622,6 @@ MonoBehaviour:
   - {fileID: -2549927981118218529}
   - {fileID: -5544032859221488674}
   - {fileID: -4240901908856021048}
-  - {fileID: -7341273612293219400}
   - {fileID: -3962655721539862270}
   - {fileID: -809144936800761237}
   - {fileID: -6781804985011950582}
@@ -1585,6 +1632,8 @@ MonoBehaviour:
   - {fileID: -4731978561588003391}
   - {fileID: 7746689295249272650}
   - {fileID: 7597362115345259696}
+  - {fileID: -1930718817556271682}
+  - {fileID: -8796869620073593828}
 --- !u!114 &291220177616001361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2250,7 +2299,7 @@ MonoBehaviour:
   m_Name: Item Choice
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1448, y: -408}
+  position: {x: -1128, y: -408}
   ports:
     keys:
     - _lastNode
@@ -2388,7 +2437,7 @@ MonoBehaviour:
   m_Name: Item Choice
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1448, y: -232}
+  position: {x: -1128, y: -232}
   ports:
     keys:
     - _lastNode
@@ -2408,7 +2457,10 @@ MonoBehaviour:
     - _fieldName: _nextNode
       _node: {fileID: 7746689295249272650}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: -8796869620073593828}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
