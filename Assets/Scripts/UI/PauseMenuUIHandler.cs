@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class PauseMenuUIHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void ResumeGame()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DisplayEvidence()
     {
-        
+
+    }
+
+    public void SaveGame()
+    {
+
+    }
+
+    public void OpenMap()
+    {
+
+    }
+
+    public void ReturnToMainMenu()
+    {
+
     }
 }
