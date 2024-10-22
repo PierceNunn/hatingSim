@@ -6,17 +6,17 @@ public class PauseMenuUIHandler : MonoBehaviour
 {
     public void ResumeGame()
     {
-
+        transform.parent.gameObject.SetActive(!transform.parent.gameObject.activeSelf);
     }
 
     public void DisplayEvidence()
     {
-
+        
     }
 
     public void SaveGame()
     {
-
+        GameManager.instance.SaveCollectedItems();
     }
 
     public void OpenMap()
