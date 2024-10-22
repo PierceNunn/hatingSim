@@ -13,8 +13,14 @@ MonoBehaviour:
   m_Name: Mars
   m_EditorClassIdentifier: 
   _characterName: Mars
-  _characterBio: 
+  _characterBio: Pamela "Mars" Douglas, an aspiring game designer who spends a lot
+    of her time in the library
   _defaultCharacterPortrait: {fileID: 21300000, guid: af29d2431bc71994db5c4fbc9c9f30e9, type: 3}
   _portraits: []
   _characterVoice: {fileID: 11400000, guid: b2f3dc572edc412489ad24cb733a94dd, type: 2}
-  _relevantEvidence: []
+  _relevantEvidence:
+  - {fileID: 11400000, guid: 38158ab0cdfb89e4b9d9d8415ea1fb0f, type: 2}
+  - {fileID: 11400000, guid: 9cf1893d0b9ffe84c8ba176905e7f083, type: 2}
+  - {fileID: 11400000, guid: 052fefa47e49e5341bc953e9e4710896, type: 2}
+  - {fileID: 11400000, guid: 735b9a0218adb2a449a647847974f465, type: 2}
+  - {fileID: 11400000, guid: 998a5bd755d64d94ebb4f82990c079f1, type: 2}
