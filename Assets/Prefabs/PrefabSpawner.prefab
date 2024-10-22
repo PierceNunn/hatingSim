@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1441666960527101645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8556428628115731052}
+  - component: {fileID: 5110160489878443282}
+  m_Layer: 0
+  m_Name: PrefabSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8556428628115731052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441666960527101645}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5110160489878443282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441666960527101645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c39e73df37c39944993f9ac3e65e4b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameObjectsToSpawn:
+  - {fileID: 9020808745558476810, guid: f82dd5240a0ef354b9ce7900e46ed812, type: 3}
+  - {fileID: 3817532344321278859, guid: e2983a1eb66a61949b00a901601cbd09, type: 3}
+  - {fileID: 3581441077092293602, guid: 72eeaafbd9535434bbb79be423cda479, type: 3}
+  - {fileID: 5130988250546431992, guid: db0b7e5273692b744bb19f4135be9414, type: 3}
+  - {fileID: 6259093098604576402, guid: 64fd598f83952e64b82e21f4d3734fcb, type: 3}
+  - {fileID: 8587322321071655203, guid: fc70b29cc2c3ae649ad26a6e04e6556a, type: 3}
+  - {fileID: 3314298438306256426, guid: 766c0f43461298e4ea95c59883974abe, type: 3}
+  - {fileID: 8763791736460070941, guid: f17629fceabc37648965dc4320e9ca7d, type: 3}
