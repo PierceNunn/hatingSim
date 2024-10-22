@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MapController : MonoBehaviour
 {
     [SerializeField] private GameObject[] locations;
+    [SerializeField] private GameObject _UIContents;
 
     private GameObject player;
 
@@ -17,6 +18,11 @@ public class MapController : MonoBehaviour
 
         pM = FindObjectOfType<PlayerMovement>();
 
+    }
+
+    public void ToggleVisibility()
+    {
+        _UIContents.SetActive(!_UIContents.activeSelf);
     }
 
 
