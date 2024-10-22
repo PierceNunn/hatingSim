@@ -49,8 +49,7 @@ public class DialogueGiver : InteractableEntity
             //send the stored Intro Node to the DialogueManager
             FindObjectOfType<DialogueManager>().StartDialogue(DialogueToGive, Npc, false);
 
-            if (_onlyAllowDialogueOnce)
-                Destroy(gameObject);
+            
         }
         
     }
@@ -63,5 +62,8 @@ public class DialogueGiver : InteractableEntity
             TimeUIManager.AdvanceTime();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
+        if (_onlyAllowDialogueOnce)
+            Destroy(gameObject);
     }
 }
