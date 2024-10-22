@@ -39,8 +39,8 @@ public class PlayerMovement : MonoBehaviour
         menuUI = FindObjectOfType<MenuUIManager>().gameObject;
         Map();
         OnDebug();
-        OnMenu();
         Diary();
+        OnMenu();
         canMove = true;
     }
 
@@ -90,14 +90,16 @@ public class PlayerMovement : MonoBehaviour
     {
         direction = iValue.Get<Vector2>();
 
-        if(direction.x != 0 || direction.y != 0)
-            animator.SetBool("isWalking", true);
-        else
-            animator.SetBool("isWalking", false);
+        if (canMove)
+        {
+            if (direction.x != 0 || direction.y != 0)
+                animator.SetBool("isWalking", true);
+            else
+                animator.SetBool("isWalking", false);
 
-        animator.SetFloat("InputX", direction.x);
-        animator.SetFloat("InputY", direction.y);
-
+            animator.SetFloat("InputX", direction.x);
+            animator.SetFloat("InputY", direction.y);
+        }
     }
 
 
@@ -105,7 +107,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if(mapUI != null)
         {
-            OnMenu();
             canMove = mapUI.activeSelf;
             mapUI.SetActive(!mapUI.activeSelf);
         }
@@ -122,7 +123,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnMenu()
     {
-        if(menuUI != null)
+        if(menuUI != null && diaryUI.activeSelf == false && mapUI.activeSelf == false)
         {
             canMove = menuUI.activeSelf;
             menuUI.SetActive(!menuUI.activeSelf);
@@ -133,7 +134,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (diaryUI != null)
         {
-            OnMenu();
+            canMove = diaryUI.activeSelf;
             diaryUI.SetActive(!diaryUI.activeSelf);
         }
     }
