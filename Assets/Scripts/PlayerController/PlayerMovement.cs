@@ -38,9 +38,9 @@ public class PlayerMovement : MonoBehaviour
         mapUI = FindObjectOfType<MapController>().gameObject;
         menuUI = FindObjectOfType<MenuUIManager>().gameObject;
         diaryUI = FindObjectOfType<DiaryUIHandler>().gameObject;
-        Map();
+        //Map();
         OnDebug();
-        Diary();
+        //Diary();
         OnMenu();
         canMove = true;
     }
@@ -124,11 +124,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnMenu()
     {
-        if(menuUI != null && diaryUI.activeSelf == false && mapUI.activeSelf == false)
+        /*if(menuUI != null && diaryUI.activeSelf == false && mapUI.activeSelf == false)
         {
             canMove = menuUI.activeSelf;
             menuUI.SetActive(!menuUI.activeSelf);
-        }
+        }*/
+        menuUI.SetActive(!menuUI.activeSelf);
     }
 
     public void Diary()

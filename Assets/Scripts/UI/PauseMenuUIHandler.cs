@@ -21,7 +21,7 @@ public class PauseMenuUIHandler : MonoBehaviour
 
     public void OpenMap()
     {
-
+        FindObjectOfType<MapController>().ToggleVisibility();
     }
 
     public void ReturnToMainMenu()
