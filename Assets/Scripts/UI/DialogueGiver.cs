@@ -59,6 +59,7 @@ public class DialogueGiver : InteractableEntity
     {
         if(_advanceDayAfterTalk)
         {
+            print("advance day");
             TimeUIManager.AdvanceTime();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
