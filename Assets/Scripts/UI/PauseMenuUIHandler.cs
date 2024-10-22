@@ -11,7 +11,7 @@ public class PauseMenuUIHandler : MonoBehaviour
 
     public void DisplayEvidence()
     {
-        
+        FindObjectOfType<DiaryUIHandler>().ToggleVisibility();
     }
 
     public void SaveGame()
