@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenuUIHandler : MonoBehaviour
 {
@@ -26,6 +27,6 @@ public class PauseMenuUIHandler : MonoBehaviour
 
     public void ReturnToMainMenu()
     {
-
+        SceneManager.LoadScene("TitleScreen");
     }
 }
