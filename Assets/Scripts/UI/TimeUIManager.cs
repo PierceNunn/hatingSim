@@ -43,6 +43,8 @@ public class TimeUIManager : MonoBehaviour
 
         PlayerPrefs.SetInt("currentDay", currentDay);
         PlayerPrefs.SetInt("currentTime", (int)currentTime);
+
+        GameManager.instance.SaveCollectedItems();
         
     }
 

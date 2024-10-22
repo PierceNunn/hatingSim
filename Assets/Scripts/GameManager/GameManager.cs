@@ -30,7 +30,9 @@ public class GameManager : MonoBehaviour
         }
         catch
         {
-            print("Couldn't add requested item; it already has a value queued for saving. Save and try again.");
+            SessionCollectedItems.Remove(item);
+            print("Item was already queued for saving, removing and readding");
+            SessionCollectedItems.Add(item, status);
         }
     }
 
