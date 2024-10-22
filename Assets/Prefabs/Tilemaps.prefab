@@ -215,7 +215,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toArea: {fileID: 5410560038262518073}
-  player: {fileID: 0}
 --- !u!1 &865260632681016931
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,7 +510,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toArea: {fileID: 6477086254490719886}
-  player: {fileID: 0}
 --- !u!1 &1206192829772257985
 GameObject:
   m_ObjectHideFlags: 0
@@ -10782,7 +10780,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toArea: {fileID: 8676846219741950801}
-  player: {fileID: 0}
 --- !u!1 &4363705896642833795
 GameObject:
   m_ObjectHideFlags: 0
@@ -11029,7 +11026,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toArea: {fileID: 4363705896642833795}
-  player: {fileID: 0}
 --- !u!1 &4696259158277718541
 GameObject:
   m_ObjectHideFlags: 0
@@ -11263,7 +11259,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toArea: {fileID: 3494345695542448554}
-  player: {fileID: 0}
 --- !u!1 &5410560038262518073
 GameObject:
   m_ObjectHideFlags: 0
@@ -11590,7 +11585,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toArea: {fileID: 2903416333055869947}
-  player: {fileID: 0}
 --- !u!1 &5804331672234027445
 GameObject:
   m_ObjectHideFlags: 0
@@ -15715,7 +15709,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toArea: {fileID: 1828663602797858820}
-  player: {fileID: 0}
 --- !u!1 &7382358963404324351
 GameObject:
   m_ObjectHideFlags: 0
@@ -15757,6 +15750,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6268014596660894549}
   - component: {fileID: 3187056742262232712}
+  - component: {fileID: 1068890150324198943}
   m_Layer: 0
   m_Name: Tilemaps
   m_TagString: Untagged
@@ -15796,6 +15790,24 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!114 &1068890150324198943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7545647886430989045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3344c9a80c13c4689bb3ed57eec0cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mapTeleportLocationList:
+  - {fileID: 7382358963404324351}
+  - {fileID: 6477086254490719886}
+  - {fileID: 4089918507336803900}
+  - {fileID: 2903416333055869947}
+  - {fileID: 1828663602797858820}
 --- !u!1 &8606086217263685335
 GameObject:
   m_ObjectHideFlags: 0
@@ -16081,7 +16093,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toArea: {fileID: 4089918507336803900}
-  player: {fileID: 0}
 --- !u!1 &8676846219741950801
 GameObject:
   m_ObjectHideFlags: 0
