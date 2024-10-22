@@ -33,15 +33,19 @@ public class DialogueGiver : InteractableEntity
     }
     public void InitiateDialogue()
     {
-        //if there's a graph on the object get the Intro Node from there
-        if(GetComponent<DialogueSceneGraph>() != null)
+        if(this.isActiveAndEnabled)
         {
-            _dialogueToGive = GetComponent<DialogueSceneGraph>().graph.findIntroNode();
-        }
-        //send the stored Intro Node to the DialogueManager
-        FindObjectOfType<DialogueManager>().StartDialogue(DialogueToGive, gameObject, false);
+            //if there's a graph on the object get the Intro Node from there
+            if (GetComponent<DialogueSceneGraph>() != null)
+            {
+                _dialogueToGive = GetComponent<DialogueSceneGraph>().graph.findIntroNode();
+            }
+            //send the stored Intro Node to the DialogueManager
+            FindObjectOfType<DialogueManager>().StartDialogue(DialogueToGive, gameObject, false);
 
-        if (_onlyAllowDialogueOnce)
-            Destroy(gameObject);
+            if (_onlyAllowDialogueOnce)
+                Destroy(gameObject);
+        }
+        
     }
 }
