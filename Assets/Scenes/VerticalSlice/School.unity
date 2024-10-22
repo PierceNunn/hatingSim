@@ -166,6 +166,122 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _choiceLabel: No
+--- !u!114 &39937336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a68762aa58cc082459ffd018c2258b02, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  graph: {fileID: 2077239404}
+  position: {x: -5347.9277, y: 5351.9644}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 39937336}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _responses 0
+        node: {fileID: 261801162}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 39937336}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 1056716927}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _choiceLabel: yes
+--- !u!114 &261801162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca805975a1aafa94fafb42aface00349, type: 3}
+  m_Name: Dialogue Branch
+  m_EditorClassIdentifier: 
+  graph: {fileID: 2077239404}
+  position: {x: -5096, y: 5320}
+  ports:
+    keys:
+    - _lastNode
+    - _responses
+    - _responses 0
+    - _responses 1
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 261801162}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 1350187654}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _responses
+      _node: {fileID: 261801162}
+      _typeQualifiedName: XNode.Node[], XNode, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _responses 0
+      _node: {fileID: 261801162}
+      _typeQualifiedName: XNode.Node[], XNode, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 39937336}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: _responses 1
+      _node: {fileID: 261801162}
+      _typeQualifiedName: XNode.Node[], XNode, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 2013835549}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  _lastNode: {fileID: 0}
+  _responses:
+  - {fileID: 0}
+  - {fileID: 0}
+  nextNodes:
+  - {fileID: 39937336}
+  - {fileID: 2013835549}
 --- !u!114 &507778844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,6 +389,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1733229160805202425, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
       insertIndex: -1
       addedObject: {fileID: 596891178}
+    - targetCorrespondingSourceObject: {fileID: 999953832760916125, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1997943939}
   m_SourcePrefab: {fileID: 100100000, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
 --- !u!1 &596891177 stripped
 GameObject:
@@ -518,6 +637,122 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57a0dc5369a351c45827fa15fe49f8a9, type: 3}
+--- !u!114 &1020042774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5265981211fa83345b2bb423259b3874, type: 3}
+  m_Name: Auto Dialogue Branch
+  m_EditorClassIdentifier: 
+  graph: {fileID: 2077239404}
+  position: {x: -4088, y: 5432}
+  ports:
+    keys:
+    - _lastNode
+    - _responses
+    - _responses 0
+    - _responses 1
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 1020042774}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 1847005651}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _responses
+      _node: {fileID: 1020042774}
+      _typeQualifiedName: XNode.Node[], XNode, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _responses 0
+      _node: {fileID: 1020042774}
+      _typeQualifiedName: XNode.Node[], XNode, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 1841822157}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: _responses 1
+      _node: {fileID: 1020042774}
+      _typeQualifiedName: XNode.Node[], XNode, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 1029909814}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  _lastNode: {fileID: 0}
+  _responses:
+  - {fileID: 0}
+  - {fileID: 0}
+  nextNodes:
+  - {fileID: 1841822157}
+  - {fileID: 1029909814}
+--- !u!114 &1029909814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a68762aa58cc082459ffd018c2258b02, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  graph: {fileID: 2077239404}
+  position: {x: -4264, y: 5640}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 1029909814}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _responses 1
+        node: {fileID: 1020042774}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 1029909814}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 1678117352}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _choiceLabel: no items?
 --- !u!114 &1029945783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -562,6 +797,94 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _choiceLabel: No Items?
+--- !u!114 &1036472130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c9ec5cae99d3a43bccab74bade3ab1, type: 3}
+  m_Name: Intro
+  m_EditorClassIdentifier: 
+  graph: {fileID: 2077239404}
+  position: {x: -3095.5288, y: 5392.3403}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 1036472130}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 1036472130}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 1847005651}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+--- !u!114 &1056716927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 2077239404}
+  position: {x: -5880, y: 5368}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 1056716927}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 39937336}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 1056716927}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 1695354745}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _portraitID: 
+    _eventsToInvoke: []
+    _sentences: <i>and now we wait...</i>
 --- !u!114 &1142938785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -634,6 +957,54 @@ MonoBehaviour:
   nextNodes:
   - {fileID: 1786908732}
   - {fileID: 1029945783}
+--- !u!114 &1350187654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 2077239404}
+  position: {x: -4712, y: 5288}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 1350187654}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 1841822157}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 1350187654}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 261801162}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _portraitID: 
+    _eventsToInvoke: []
+    _sentences: (proceed to confrontation?)
 --- !u!114 &1398992511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,6 +1102,113 @@ MonoBehaviour:
   - {fileID: 12754756}
   - {fileID: 507778844}
   - {fileID: 1854052093}
+--- !u!114 &1678117352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 2077239404}
+  position: {x: -4648, y: 5720}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 1678117352}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 1029909814}
+        reroutePoints: []
+      - fieldName: _nextNode
+        node: {fileID: 2013835549}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 1678117352}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _portraitID: 
+    _eventsToInvoke: []
+    _sentences: <i>...i think i need more dirt...</i>
+--- !u!114 &1695354745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 2077239404}
+  position: {x: -6201.353, y: 5377.01}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 1695354745}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 1056716927}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 1695354745}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _portraitID: 
+    _eventsToInvoke:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5405796842319331831, guid: f82dd5240a0ef354b9ce7900e46ed812, type: 3}
+          m_TargetAssemblyTypeName: TimeUIManager, Assembly-CSharp
+          m_MethodName: AdvanceTime
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    _sentences: (several hours later)
 --- !u!114 &1786908732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -827,6 +1305,98 @@ MonoBehaviour:
     _portraitID: 
     _eventsToInvoke: []
     _sentences: (ready for confrontation?)
+--- !u!114 &1841822157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a68762aa58cc082459ffd018c2258b02, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  graph: {fileID: 2077239404}
+  position: {x: -4392, y: 5416}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 1841822157}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _responses 0
+        node: {fileID: 1020042774}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 1841822157}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 1350187654}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _choiceLabel: '!! ADD REQUIRED EVIDENCE HERE'
+--- !u!114 &1847005651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 2077239404}
+  position: {x: -3749.9658, y: 5421.272}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 1847005651}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 1036472130}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 1847005651}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 1020042774}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _portraitID: 
+    _eventsToInvoke: []
+    _sentences: <i>This is where I'm supposed to meet Edward...</i>
 --- !u!114 &1854052093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -934,6 +1504,24 @@ MonoBehaviour:
     _portraitID: 
     _eventsToInvoke: []
     _sentences: <i>This is where I'm supposed to meet up with Mars...</i>
+--- !u!1 &1997943937 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 999953832760916125, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
+  m_PrefabInstance: {fileID: 596891176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1997943939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997943937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89fd93d376b209245b9986800c851503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 2077239404}
 --- !u!114 &2011369322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -974,6 +1562,50 @@ MonoBehaviour:
       _dynamic: 0
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
+--- !u!114 &2013835549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a68762aa58cc082459ffd018c2258b02, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  graph: {fileID: 2077239404}
+  position: {x: -5270.8716, y: 5504.2427}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 2013835549}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _responses 1
+        node: {fileID: 261801162}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 2013835549}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 1678117352}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _choiceLabel: no
 --- !u!114 &2039244215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1022,6 +1654,31 @@ MonoBehaviour:
     _portraitID: 
     _eventsToInvoke: []
     _sentences: <i>... I think I need to gather more dirt... </i>
+--- !u!114 &2077239404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ccb35c5bbd66af46aaca8a93ac99937, type: 3}
+  m_Name: GateMorning two-graph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1847005651}
+  - {fileID: 1020042774}
+  - {fileID: 1029909814}
+  - {fileID: 1678117352}
+  - {fileID: 1841822157}
+  - {fileID: 1350187654}
+  - {fileID: 261801162}
+  - {fileID: 39937336}
+  - {fileID: 2013835549}
+  - {fileID: 1056716927}
+  - {fileID: 1695354745}
+  - {fileID: 1036472130}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
