@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     private GameObject menuUI;
 
-    [SerializeField] private GameObject diaryUI;
+    private GameObject diaryUI;
 
     private Animator animator;
 
@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
         debugUI = FindObjectOfType<DebugFunctions>().gameObject.transform.parent.gameObject;
         mapUI = FindObjectOfType<MapController>().gameObject;
         menuUI = FindObjectOfType<MenuUIManager>().gameObject;
+        diaryUI = FindObjectOfType<DiaryUIHandler>().gameObject;
         Map();
         OnDebug();
         Diary();

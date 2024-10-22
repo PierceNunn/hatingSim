@@ -6,7 +6,7 @@ public class PrefabSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] _gameObjectsToSpawn;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         foreach(GameObject g in _gameObjectsToSpawn)
         {
