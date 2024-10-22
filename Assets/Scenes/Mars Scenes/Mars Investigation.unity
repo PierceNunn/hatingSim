@@ -223,6 +223,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Final Edward
       objectReference: {fileID: 0}
+    - target: {fileID: 6192705579797070270, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.84375
+      objectReference: {fileID: 0}
     - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: _dialogueToGive
       value: 
@@ -5941,6 +5945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Final Mars
       objectReference: {fileID: 0}
+    - target: {fileID: 6192705579797070270, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.125
+      objectReference: {fileID: 0}
     - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: _dialogueToGive
       value: 
@@ -6161,7 +6169,7 @@ MonoBehaviour:
     _eventsToInvoke:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2083268537}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: MapController, Assembly-CSharp
           m_MethodName: Confrontation
           m_Mode: 1
@@ -7709,17 +7717,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 793779006}
---- !u!114 &2083268537 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3887462177086790445, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
-  m_PrefabInstance: {fileID: 6846685610540164401}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef53e34160e76ab47a6b47f5f2b6944c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2101354428 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8622133033906000857, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
@@ -8166,7 +8163,7 @@ PrefabInstance:
     - target: {fileID: 2684694349337010157, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2083268537}
+      objectReference: {fileID: 0}
     - target: {fileID: 2684694349337010157, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Library
@@ -25067,7 +25064,7 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4205032891646791475, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
-      insertIndex: 3
+      insertIndex: 2
       addedObject: {fileID: 429068622}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1135554051818519499, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
