@@ -23,32 +23,41 @@ public class MapController : MonoBehaviour
     public void Courtyard()
     {
         TeleportPlayer(0);
+        pM.Map();
     }
 
     public void Library()
     {
         TeleportPlayer(1);
+        pM.Map();
     }
 
     public void Gym()
     {
         TeleportPlayer(2);
+        pM.Map();
     }
 
     public void Classroom()
     {
         TeleportPlayer(3);
+        pM.Map();
     }
 
     public void Store()
     {
         TeleportPlayer(4);
+        pM.Map();
+    }
+
+    public void Confrontation()
+    {
+        TeleportPlayer(5);
     }
 
     private void TeleportPlayer(int x)
     {
         player.transform.position = locations[x].transform.position;
-        pM.Map();
     }
 
     public void LoadScene(string sceneToLoad)
