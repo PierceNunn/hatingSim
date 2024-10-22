@@ -222,7 +222,7 @@ MonoBehaviour:
   _gameObjectsToSpawn:
   - {fileID: 9020808745558476810, guid: f82dd5240a0ef354b9ce7900e46ed812, type: 3}
   - {fileID: 3817532344321278859, guid: e2983a1eb66a61949b00a901601cbd09, type: 3}
-  - {fileID: 7545647886430989045, guid: eea023235d028304b91539a2ca094962, type: 3}
+  - {fileID: 8785643896282210644, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
   - {fileID: 3581441077092293602, guid: 72eeaafbd9535434bbb79be423cda479, type: 3}
   - {fileID: 5130988250546431992, guid: db0b7e5273692b744bb19f4135be9414, type: 3}
   - {fileID: 6259093098604576402, guid: 64fd598f83952e64b82e21f4d3734fcb, type: 3}
@@ -255,6 +255,10 @@ PrefabInstance:
     - target: {fileID: 2233722199138905243, guid: 57a0dc5369a351c45827fa15fe49f8a9, type: 3}
       propertyPath: m_Name
       value: temp_MC
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233722199138905243, guid: 57a0dc5369a351c45827fa15fe49f8a9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2739359754935771968, guid: 57a0dc5369a351c45827fa15fe49f8a9, type: 3}
       propertyPath: m_LocalPosition.x
