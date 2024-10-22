@@ -282,6 +282,7 @@ public class DialogueManager : MonoBehaviour
                     _responseButtons[i].GetComponent<Button>().interactable = true;
                     _responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = temp.ChoiceLabel;
                     _responseButtons[i].GetComponent<DialogueGiver>().DialogueToGive = temp.NextNode as DialogueNode;
+                    _responseButtons[i].GetComponent<DialogueGiver>().Npc = currentRef;
                 }
                 //hides any extra buttons
                 else

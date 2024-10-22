@@ -591,6 +591,7 @@ MonoBehaviour:
   _dialogueToGive: {fileID: 0}
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
+  _advanceDayAfterTalk: 0
 --- !u!1 &1135554051818519499
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,6 +957,7 @@ MonoBehaviour:
   _dialogueToGive: {fileID: 0}
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
+  _advanceDayAfterTalk: 0
 --- !u!1 &2443357693370346140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1536,6 +1538,10 @@ PrefabInstance:
       propertyPath: _dialogueToGive
       value: 
       objectReference: {fileID: -3761291175763431140, guid: fdb4a2adcc65b33459b1a87e8d514374, type: 2}
+    - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+      propertyPath: _advanceDayAfterTalk
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: _onlyAllowDialogueOnce
       value: 1
