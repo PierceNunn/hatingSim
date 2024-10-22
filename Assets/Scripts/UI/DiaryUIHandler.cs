@@ -12,6 +12,7 @@ public class DiaryUIHandler : MonoBehaviour
     [SerializeField] private Image _characterImage;
     [SerializeField] private Image[] _evidenceImages;
     [SerializeField] private Image[] _characterButtons;
+    [SerializeField] private GameObject _uiContents;
 
     private CharacterData currentChar;
 
@@ -28,6 +29,11 @@ public class DiaryUIHandler : MonoBehaviour
             _characterButtons[i].gameObject.SetActive(true);
             _characterButtons[i].sprite = _displayedCharacters[i].DefaultCharacterPortrait;
         }
+    }
+
+    public void ToggleVisibility()
+    {
+        _uiContents.SetActive(!_uiContents.activeSelf);
     }
 
     public void DisplayCharacterInfo(int index)
