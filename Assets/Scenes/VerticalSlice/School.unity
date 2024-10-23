@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Name: Choice
   m_EditorClassIdentifier: 
   graph: {fileID: 2077239404}
-  position: {x: -5347.9277, y: 5351.9644}
+  position: {x: -5400, y: 5336}
   ports:
     keys:
     - _lastNode
@@ -372,6 +372,54 @@ MonoBehaviour:
   nextNodes:
   - {fileID: 39937336}
   - {fileID: 2013835549}
+--- !u!114 &441800840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e5abaecaebe87c4d80a575c0f223782, type: 3}
+  m_Name: Item Choice
+  m_EditorClassIdentifier: 
+  graph: {fileID: 2077239404}
+  position: {x: -4392, y: 5288}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 441800840}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _responses 0
+        node: {fileID: 1020042774}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 441800840}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 1350187654}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _choiceLabel: items!
+  _requiredItem:
+  - {fileID: 11400000, guid: 922d2eeffee8b144f94e982ba4acb69d, type: 2}
+  - {fileID: 11400000, guid: 08abf66752b8cd5438feed57695e4b88, type: 2}
+  - {fileID: 11400000, guid: 0de473ddee59b194c801149b4f07be2c, type: 2}
 --- !u!114 &507778844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -788,7 +836,7 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 1841822157}
+        node: {fileID: 441800840}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -811,7 +859,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   nextNodes:
-  - {fileID: 1841822157}
+  - {fileID: 0}
   - {fileID: 1029909814}
 --- !u!114 &1029909814
 MonoBehaviour:
@@ -1085,7 +1133,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: 1841822157}
+        node: {fileID: 441800840}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1409,50 +1457,6 @@ MonoBehaviour:
     _portraitID: 
     _eventsToInvoke: []
     _sentences: (ready for confrontation?)
---- !u!114 &1841822157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a68762aa58cc082459ffd018c2258b02, type: 3}
-  m_Name: Choice
-  m_EditorClassIdentifier: 
-  graph: {fileID: 2077239404}
-  position: {x: -4392, y: 5416}
-  ports:
-    keys:
-    - _lastNode
-    - _nextNode
-    values:
-    - _fieldName: _lastNode
-      _node: {fileID: 1841822157}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _responses 0
-        node: {fileID: 1020042774}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: _nextNode
-      _node: {fileID: 1841822157}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _lastNode
-        node: {fileID: 1350187654}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _lastNode: {fileID: 0}
-  _nextNode: {fileID: 0}
-  _choiceLabel: '!! ADD REQUIRED EVIDENCE HERE'
 --- !u!114 &1847005651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1775,7 +1779,6 @@ MonoBehaviour:
   - {fileID: 1020042774}
   - {fileID: 1029909814}
   - {fileID: 1678117352}
-  - {fileID: 1841822157}
   - {fileID: 1350187654}
   - {fileID: 261801162}
   - {fileID: 39937336}
@@ -1783,6 +1786,7 @@ MonoBehaviour:
   - {fileID: 1056716927}
   - {fileID: 1695354745}
   - {fileID: 1036472130}
+  - {fileID: 441800840}
 --- !u!1001 &7226323735316539467
 PrefabInstance:
   m_ObjectHideFlags: 0
