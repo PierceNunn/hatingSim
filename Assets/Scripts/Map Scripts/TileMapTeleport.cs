@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TileMapTeleport : MonoBehaviour
 {
+    //VERTICAL SLICE YAY!!!!!!!!!!
     [SerializeField] private GameObject toArea;
     private GameObject player;
 
