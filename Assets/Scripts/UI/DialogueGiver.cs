@@ -17,6 +17,7 @@ public class DialogueGiver : InteractableEntity
     [SerializeField] private bool _advanceDayAfterTalk = false;
 
     private GameObject npc;
+    private float waitTime = 0f;
 
     public LinkedNode DialogueToGive { get => _dialogueToGive; 
         set => _dialogueToGive = value; }
@@ -27,15 +28,15 @@ public class DialogueGiver : InteractableEntity
         Npc = gameObject;
         if(_giveDialogueOnStart)
         {
-            // !! REPLACE INVOKE !!
-            Invoke("InitiateDialogue", 1f);
+            waitTime = 1f;
+            StartCoroutine(WaitThenInitiateDialogue());
         }
     }
 
     override public void OnInteract()
     {
-        // !! REPLACE INVOKE !!
-        Invoke("InitiateDialogue", 0.1f);
+        waitTime = 0.1f;
+        StartCoroutine(WaitThenInitiateDialogue());
     }
     public void InitiateDialogue()
     {
@@ -65,5 +66,11 @@ public class DialogueGiver : InteractableEntity
 
         if (_onlyAllowDialogueOnce)
             Destroy(gameObject);
+    }
+
+    IEnumerator WaitThenInitiateDialogue()
+    {
+        yield return new WaitForSeconds(waitTime);
+        InitiateDialogue();
     }
 }
