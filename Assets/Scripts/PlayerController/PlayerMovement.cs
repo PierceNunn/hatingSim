@@ -103,17 +103,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
-        public void Map()
-    {
-        if(mapUI != null)
-        {
-            canMove = mapUI.activeSelf;
-            mapUI.SetActive(!mapUI.activeSelf);
-        }
-        
-    }
-
     public void OnDebug()
     {
         if (debugUI != null)
@@ -131,18 +120,6 @@ public class PlayerMovement : MonoBehaviour
         }*/
         menuUI.SetActive(!menuUI.activeSelf);
     }
-
-    public void Diary()
-    {
-        if (diaryUI != null)
-        {
-            canMove = diaryUI.activeSelf;
-            diaryUI.SetActive(!diaryUI.activeSelf);
-        }
-    }
-
-
-
     void Update()
     {
         if (canMove)
