@@ -59,6 +59,6 @@ public class TimeUIManager : MonoBehaviour
     {
         currentDay = PlayerPrefs.GetInt("currentDay", 0);
         currentTime = (DayPhases)PlayerPrefs.GetInt("currentTime", 0);
-        _timeDisplay.text = "Day " + currentDay + ", time " + currentTime;
+        _timeDisplay.text = "Day " + (currentDay + 1) + "\n(" + currentTime + ")";
     }
 }
