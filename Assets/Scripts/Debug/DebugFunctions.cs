@@ -18,6 +18,7 @@ public class DebugFunctions : MonoBehaviour
         {
             //using 0 as false and 1 as true as PP doesn't support bools
             PlayerPrefs.SetInt(c.ItemID, 0);
+            c.CollectItem(false);
         }
 
         print("item data cleared successfully");
