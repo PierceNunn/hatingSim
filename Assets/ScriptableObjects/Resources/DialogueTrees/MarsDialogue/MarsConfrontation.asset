@@ -1993,7 +1993,10 @@ MonoBehaviour:
     - _fieldName: _nextNode
       _node: {fileID: -5862384611208430438}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 5931257865799741483}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -3818,9 +3821,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   nextNodes:
-  - {fileID: -8143145587492742491}
-  - {fileID: -4185126095249707515}
-  - {fileID: 4807705569617617409}
+  - {fileID: -1812817407378815573}
+  - {fileID: 6878457239755770945}
+  - {fileID: -2720166455136196982}
 --- !u!114 &-2720166455136196982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4291,9 +4294,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   nextNodes:
-  - {fileID: -3586072618619474558}
-  - {fileID: 2147462225347724870}
-  - {fileID: -1412686373173146844}
+  - {fileID: -8143145587492742491}
+  - {fileID: -4185126095249707515}
+  - {fileID: 4807705569617617409}
 --- !u!114 &-2181984737967487550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5300,9 +5303,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   nextNodes:
-  - {fileID: -4370391099173025230}
-  - {fileID: 872435190697663149}
-  - {fileID: -8576977866368910949}
+  - {fileID: -3586072618619474558}
+  - {fileID: 2147462225347724870}
+  - {fileID: -1412686373173146844}
 --- !u!114 &-173891450385729233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6381,7 +6384,10 @@ MonoBehaviour:
     - _fieldName: _nextNode
       _node: {fileID: 2425365855589122263}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 5931257865799741483}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -6768,9 +6774,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   nextNodes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: -4370391099173025230}
+  - {fileID: 872435190697663149}
+  - {fileID: -8576977866368910949}
 --- !u!114 &3265483066831483496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7969,6 +7975,12 @@ MonoBehaviour:
       connections:
       - fieldName: _nextNode
         node: {fileID: 3049105594293145692}
+        reroutePoints: []
+      - fieldName: _nextNode
+        node: {fileID: -5862384611208430438}
+        reroutePoints: []
+      - fieldName: _nextNode
+        node: {fileID: 2425365855589122263}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
