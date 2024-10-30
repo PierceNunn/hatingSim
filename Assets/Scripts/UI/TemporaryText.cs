@@ -5,11 +5,12 @@ using TMPro;
 
 public class TemporaryText : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI text;
+    private TextMeshProUGUI text;
 
     void Start()
     {
-        StartCoroutine(FadeTextToZeroAlpha(10f, text));
+        text = gameObject.GetComponent<TextMeshProUGUI>();
+        StartCoroutine(FadeTextToZeroAlpha(5f, text));
     }
 
     public IEnumerator FadeTextToZeroAlpha(float t, TextMeshProUGUI i)
@@ -20,5 +21,6 @@ public class TemporaryText : MonoBehaviour
             i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a - (Time.deltaTime / t));
             yield return null;
         }
+        Destroy(transform.parent.gameObject);
     }
 }
