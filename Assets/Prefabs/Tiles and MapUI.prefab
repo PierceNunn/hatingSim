@@ -1613,6 +1613,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MarsInvestigation
       objectReference: {fileID: 0}
+    - target: {fileID: 4077485141739295580, guid: 5c7373fa451e61343ae2982d94f5b420, type: 3}
+      propertyPath: _onlyAllowDialogueOnce
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5740274633215629911, guid: 5c7373fa451e61343ae2982d94f5b420, type: 3}
       propertyPath: m_LocalPosition.x
       value: 53.1
