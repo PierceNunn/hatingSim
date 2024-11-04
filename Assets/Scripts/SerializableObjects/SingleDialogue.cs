@@ -15,7 +15,7 @@ public class SingleDialogue
     [SerializeField] private string _portraitID;
     [TextArea(4, 10)] //set size of text field in editor
     [SerializeField] private string _sentences;
-    [SerializeField] private Enums.CameraEffects _cameraEffect;
+    [SerializeField] private Enums.CameraEffects _cameraEffect = Enums.CameraEffects.none;
     [SerializeField] private UnityEvent[] _eventsToInvoke; //for calling events mid-conversation
     
 
