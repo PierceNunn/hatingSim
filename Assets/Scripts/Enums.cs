@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class Enums : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public enum CameraEffects
     {
-        
-    }
+        none,
+        screenShake,
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
