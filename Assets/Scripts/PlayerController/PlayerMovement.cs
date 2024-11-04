@@ -34,10 +34,18 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         interactText.gameObject.SetActive(false);
         
-        debugUI = FindObjectOfType<DebugFunctions>().gameObject.transform.parent.gameObject;
-        mapUI = FindObjectOfType<MapController>().gameObject;
-        menuUI = FindObjectOfType<MenuUIManager>().gameObject;
-        diaryUI = FindObjectOfType<DiaryUIHandler>().gameObject;
+        
+        try
+        {
+            debugUI = FindObjectOfType<DebugFunctions>().gameObject.transform.parent.gameObject;
+            menuUI = FindObjectOfType<MenuUIManager>().gameObject;
+            diaryUI = FindObjectOfType<DiaryUIHandler>().gameObject;
+            mapUI = FindObjectOfType<MapController>().gameObject;
+        }
+        catch
+        {
+            Debug.LogWarning("Unable to find 1 or more UI elements. Some inputs/menus may be broken.");
+        }
         //Map();
         OnDebug();
         //Diary();
@@ -118,7 +126,15 @@ public class PlayerMovement : MonoBehaviour
             canMove = menuUI.activeSelf;
             menuUI.SetActive(!menuUI.activeSelf);
         }*/
-        menuUI.SetActive(!menuUI.activeSelf);
+        try
+        {
+            menuUI.SetActive(!menuUI.activeSelf);
+        }
+        catch
+        {
+            Debug.LogWarning("unable to access pause menu. menu prefab may not be in scene or instantiated.");
+        }
+        
     }
     void Update()
     {
