@@ -18,7 +18,7 @@ public class TileMapTeleport : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        player.transform.position = toArea.transform.position;  
+        player.transform.position = toArea.transform.position;
     }
 
     public CollectibleItem ReturnDependant()

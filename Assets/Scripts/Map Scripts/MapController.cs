@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MapController : MonoBehaviour
 {
     [SerializeField] private GameObject[] locations;
+    [SerializeField] private GameObject[] insideLocations;
     [SerializeField] private CollectibleItem[] dependantItems;
     [SerializeField] private GameObject _UIContents;
 
@@ -20,6 +21,10 @@ public class MapController : MonoBehaviour
         pM = FindObjectOfType<PlayerMovement>();
 
         locations = FindObjectOfType<MapTeleportLocations>().MapTeleportLocationList;
+
+        insideLocations = FindObjectOfType<MapTeleportLocations>().InsideLocationList;
+
+        LocationDependants();
 
     }
 
@@ -69,15 +74,18 @@ public class MapController : MonoBehaviour
     {
         for(int i = 0;  i < locations.Length; i++)
         {
-            dependantItems[i] = locations[i].GetComponent<TileMapTeleport>().ReturnDependant();
+            dependantItems[i] = insideLocations[i].GetComponent<TileMapTeleport>().ReturnDependant();
         }
     }
 
 
 
-    public void ItemChecker()
+    public void LocationUpdater()
     {
-        
+        for (int i = 0; i < locations.Length; i++)
+        {
+            insideLocations[i].SetActive(CollectibleItem.IsItemCollected(dependantItems[i]));
+        }
     }
 
     public void LoadScene(string sceneToLoad)

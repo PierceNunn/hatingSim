@@ -244,6 +244,11 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _choiceLabel: yes
+--- !u!1 &74299959 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8346772854180024322, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
+  m_PrefabInstance: {fileID: 596891176}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &185113513
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,6 +945,30 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[20].second.m_TileSpriteIndex
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 7093808091764066937, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
+      propertyPath: _insideLocationList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093808091764066937, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
+      propertyPath: _insideLocationList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1398044350}
+    - target: {fileID: 7093808091764066937, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
+      propertyPath: _insideLocationList.Array.data[1]
+      value: 
+      objectReference: {fileID: 1398044352}
+    - target: {fileID: 7093808091764066937, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
+      propertyPath: _insideLocationList.Array.data[2]
+      value: 
+      objectReference: {fileID: 1398044351}
+    - target: {fileID: 7093808091764066937, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
+      propertyPath: _insideLocationList.Array.data[3]
+      value: 
+      objectReference: {fileID: 596891179}
+    - target: {fileID: 7093808091764066937, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
+      propertyPath: _mapTeleportLocationList.Array.data[2]
+      value: 
+      objectReference: {fileID: 74299959}
     - target: {fileID: 7272246813954212841, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
       propertyPath: m_Size.x
       value: 68
@@ -16684,6 +16713,21 @@ MonoBehaviour:
     _portraitID: 
     _eventsToInvoke: []
     _sentences: (proceed to confrontation?)
+--- !u!1 &1398044350 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6964030416534354437, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
+  m_PrefabInstance: {fileID: 596891176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1398044351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2822059117654117569, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
+  m_PrefabInstance: {fileID: 596891176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1398044352 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2002347988747045553, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
+  m_PrefabInstance: {fileID: 596891176}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1398992511
 MonoBehaviour:
   m_ObjectHideFlags: 0
