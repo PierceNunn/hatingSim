@@ -105,6 +105,7 @@ public class DialogueManager : MonoBehaviour
         {
             //if next node is a DialogueNode next sentence can display normally
             currentBranchDialogue = nextBranchDialogue as DialogueNode;
+            PlayCameraEffect(currentBranchDialogue);
         }
         else if (nextNodeType.Equals("ItemGiverNode"))
         {
@@ -171,6 +172,21 @@ public class DialogueManager : MonoBehaviour
 
         //prepare next node for next call of DisplayNextSentence
         nextBranchDialogue = currentBranchDialogue.NextNode;
+    }
+
+    public void PlayCameraEffect(DialogueNode node)
+    {
+        switch(node.Dialogue.CameraEffect)
+        {
+            case (Enums.CameraEffects.screenShake):
+                //add screen shake player here
+                print("screen shake");
+                return;
+            default:
+                print("no camera effect");
+                return;
+
+        }
     }
 
     /// <summary>
