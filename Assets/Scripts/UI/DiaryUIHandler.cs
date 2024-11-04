@@ -27,7 +27,7 @@ public class DiaryUIHandler : MonoBehaviour
         for(int i = 0; i < _displayedCharacters.Length; i++)
         {
             _characterButtons[i].gameObject.SetActive(true);
-            _characterButtons[i].sprite = _displayedCharacters[i].DefaultCharacterPortrait;
+            _characterButtons[i].sprite = _displayedCharacters[i].CharacterIcon;
         }
     }
 

@@ -14,6 +14,7 @@ public class CharacterData : ScriptableObject
 {
     [SerializeField] private string _characterName;
     [TextArea(3, 10)] [SerializeField] private string _characterBio;
+    [SerializeField] private Sprite _characterIcon;
     [SerializeField] private Sprite _defaultCharacterPortrait;
     [SerializeField] private Portrait[] _portraits;
     [SerializeField] private RandomizedAudio _characterVoice;
@@ -26,6 +27,7 @@ public class CharacterData : ScriptableObject
     public Portrait[] Portraits { get => _portraits; set => _portraits = value; }
     public CollectibleItem[] RelevantEvidence { get => _relevantEvidence; set => _relevantEvidence = value; }
     public string CharacterBio { get => _characterBio; set => _characterBio = value; }
+    public Sprite CharacterIcon { get => _characterIcon; set => _characterIcon = value; }
 
     /// <summary>
     /// gets a portrait of the character from its associated ID. if no match is
