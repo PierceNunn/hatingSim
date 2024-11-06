@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class MapController : MonoBehaviour
 {
     [SerializeField] private GameObject[] locations;
-    [SerializeField] private GameObject[] insideLocations;
-    [SerializeField] private CollectibleItem[] dependantItems;
+    //[SerializeField] private GameObject[] outdoorTeleports;
+    //[SerializeField] private CollectibleItem[] dependantItems;
     [SerializeField] private GameObject _UIContents;
 
     private GameObject player;
+
+    //private int currentDay;
 
     private PlayerMovement pM;
 
@@ -22,11 +24,29 @@ public class MapController : MonoBehaviour
 
         locations = FindObjectOfType<MapTeleportLocations>().MapTeleportLocationList;
 
-        insideLocations = FindObjectOfType<MapTeleportLocations>().InsideLocationList;
+        //NewDay();
 
-        LocationDependants();
+        //LocationDependants();
 
     }
+
+   // public void NewDay()
+    //{
+    //    currentDay = PlayerPrefs.GetInt("currentDay", 0);
+
+    //    if (currentDay == 0)
+     //   {
+     //       outdoorTeleports = FindObjectOfType<MapTeleportLocations>().OutDoorTeleportersMars;
+     //   }
+      //  else if (currentDay == 1)
+     //   {
+      //      outdoorTeleports = FindObjectOfType<MapTeleportLocations>().OutDoorTeleportersEd;
+     //   }
+     //   else if (currentDay == 2)
+     //   {
+     //       outdoorTeleports = FindObjectOfType<MapTeleportLocations>().OutDoorTeleportersCourt;
+      //  }
+   // }
 
     public void ToggleVisibility()
     {
@@ -70,23 +90,23 @@ public class MapController : MonoBehaviour
         player.transform.position = newPlayerPos;
     }
 
-    private void LocationDependants()
-    {
-        for(int i = 0;  i < locations.Length; i++)
-        {
-            dependantItems[i] = insideLocations[i].GetComponent<TileMapTeleport>().ReturnDependant();
-        }
-    }
+    //private void LocationDependants()
+    //{
+    //    for(int i = 0;  i < locations.Length; i++)
+    //    {
+    //        dependantItems[i] = outdoorTeleports[i].GetComponent<TileMapTeleport>().ReturnDependant();
+    //    }
+    //}
 
 
 
-    public void LocationUpdater()
-    {
-        for (int i = 0; i < locations.Length; i++)
-        {
-            insideLocations[i].SetActive(CollectibleItem.IsItemCollected(dependantItems[i]));
-        }
-    }
+    //public void LocationUpdater()
+    //{
+    //    for (int i = 0; i < locations.Length; i++)
+    //    {
+     //       outdoorTeleports[i].SetActive(CollectibleItem.IsItemCollected(dependantItems[i]));
+     //   }
+   // }
 
     public void LoadScene(string sceneToLoad)
     {

@@ -7,8 +7,7 @@ public class TileMapTeleport : MonoBehaviour
 {
     //VERTICAL SLICE YAY!!!!!!!!!!
     [SerializeField] private GameObject toArea;
-    [SerializeField] private CollectibleItem dependantItem;
-    private int day;
+    //private int day;
     private GameObject player;
 
     void Start()
@@ -18,13 +17,19 @@ public class TileMapTeleport : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Teleport();
+
+    }
+
+    public void Teleport()
+    {
         player.transform.position = toArea.transform.position;
     }
 
-    public CollectibleItem ReturnDependant()
-    {
-        return dependantItem;
-    }
+    //public CollectibleItem ReturnDependant()
+   // {
+   //     return dependantItem;
+    //}
 
 
     void Update()
