@@ -23,6 +23,7 @@ public class DialogueManager : MonoBehaviour
     //[SerializeField] private Image _buttonPrompt;
     [SerializeField] private GameObject _playerResponses;
     [SerializeField] private GameObject[] _responseButtons;
+    [SerializeField] private Scrollbar _scrollbar;
     //dialogue settings
     [SerializeField] private float _chatSpeed = 0f;
     [SerializeField] private bool _autoAdvance = false;
@@ -35,6 +36,8 @@ public class DialogueManager : MonoBehaviour
     private bool isOpen = false;
     private bool isTyping = false;
     private string sentence;
+
+    private int minOptionsForScroll = 5;
 
     public bool IsOpen { get => isOpen; set => isOpen = value; }
 
@@ -278,6 +281,11 @@ public class DialogueManager : MonoBehaviour
         {
             //show choice buttons
             _playerResponses.SetActive(true);
+
+            //enable or disable scrollBar if needed
+            _scrollbar.interactable =
+                branchNode.nextNodes.Length >= minOptionsForScroll;
+
             for (int i = 0; i < _responseButtons.Length; i++)
             {
                 //sets buttons to each choice for this chunk of dialogue
