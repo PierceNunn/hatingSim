@@ -2,14 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class TimeUIManager : MonoBehaviour
 {
-    
-
 
     [SerializeField] private TextMeshProUGUI _timeDisplay;
+    [SerializeField] private Image _dayPhaseDisplay;
+    [SerializeField] private Sprite[] _dayPhaseSprites;
 
     private static int currentDay;
     private static Enums.DayPhases currentTime;
@@ -54,6 +55,7 @@ public class TimeUIManager : MonoBehaviour
     {
         currentDay = PlayerPrefs.GetInt("currentDay", 0);
         currentTime = (Enums.DayPhases)PlayerPrefs.GetInt("currentTime", 0);
-        _timeDisplay.text = "Day " + (currentDay + 1) + "\n(" + currentTime + ")";
+        _timeDisplay.text = "Day " + currentDay;
+        _dayPhaseDisplay.sprite = _dayPhaseSprites[(int)currentTime];
     }
 }
