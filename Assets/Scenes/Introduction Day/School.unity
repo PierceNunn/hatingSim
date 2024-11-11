@@ -348,11 +348,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 14a951600adbba342a4442d4ae32ea14, type: 3}
     - target: {fileID: 2260235136453692932, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 68.99
+      value: 54.34
       objectReference: {fileID: 0}
     - target: {fileID: 2260235136453692932, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 67.43
+      value: 76.74
       objectReference: {fileID: 0}
     - target: {fileID: 2260235136453692932, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -392,7 +392,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6192705579797070270, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.125
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6192705579797070270, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: _dialogueToGive
@@ -707,8 +711,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i> and now we wait... </i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!1001 &596891176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16586,8 +16591,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>and now we wait...</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!213 &1057567447
 Sprite:
   m_ObjectHideFlags: 0
@@ -16921,8 +16927,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: (proceed to confrontation?)
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1398992511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17168,8 +17175,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>...i think i need more dirt...</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1695354745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17213,6 +17221,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
+    _sentences: (several hours later)
+    _cameraEffect: 0
     _eventsToInvoke:
     - m_PersistentCalls:
         m_Calls:
@@ -17228,7 +17238,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    _sentences: (several hours later)
 --- !u!114 &1786908732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17533,8 +17542,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: (ready for confrontation?)
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1847005651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17581,8 +17591,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>This is where I'm supposed to meet Edward...</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1854052093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17626,6 +17637,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
+    _sentences: (several hours later)
+    _cameraEffect: 0
     _eventsToInvoke:
     - m_PersistentCalls:
         m_Calls:
@@ -17641,7 +17654,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    _sentences: (several hours later)
 --- !u!114 &1878213911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17688,8 +17700,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>This is where I'm supposed to meet up with Mars...</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!1001 &1918371912
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18176,8 +18189,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>... I think I need to gather more dirt... </i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &2077239404
 MonoBehaviour:
   m_ObjectHideFlags: 0
