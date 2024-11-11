@@ -86,9 +86,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "You were saying that you\u2019re friend won\u2019t hear the end
       of it right? Stop lying, you ain\u2019t gonna do Jack!!!"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-7958091716839672067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,9 +136,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 1a3dd8e17ceb56d45a1633d44f47445c, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Haven\u2019t you heard of the rumors about some secret Handbook
       account?"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-6546943016724476074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,9 +186,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Hmmm, interesting, write the name on this piece of paper so I don\u2019t
       forget."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-6529083572860561868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,10 +236,11 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>I hand him a piece of paper with a pen, and after a few seconds
       of writing, he hands the paper back to me. I can investigate this name before
       my meet-up with Edward.</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-5616010614113813682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,8 +287,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 1a3dd8e17ceb56d45a1633d44f47445c, type: 2}
     _portraitID: shocked
-    _eventsToInvoke: []
     _sentences: Yea?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-4246339624608226918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,8 +333,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 1a3dd8e17ceb56d45a1633d44f47445c, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "I know\u2026"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-2440220591191788401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -376,9 +382,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 1a3dd8e17ceb56d45a1633d44f47445c, type: 2}
     _portraitID: 
+    _sentences: Some people say that they use some type of <b>furry costume for the
+      spicy pictures.</b>
+    _cameraEffect: 0
     _eventsToInvoke: []
-    _sentences: Some people say that they use some type of furry costume for the
-      spicy pictures.
   _itemToGive: {fileID: 11400000, guid: 67fee9d08973a8d438fa102f8fa9d644, type: 2}
 --- !u!114 &-1967322546978749403
 MonoBehaviour:
@@ -426,9 +433,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 1a3dd8e17ceb56d45a1633d44f47445c, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Well if you must know, there are rumors that a student who goes here
       has a secret Handbook account that posts some pretty spicy pictures.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-1165793214690176168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -475,8 +483,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: What rumor?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,9 +561,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: ' <i>I have a feeling this might be useful. The weird kid starts
       walking away, without even saying goodbye. Not on my watch</i>'
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1516221322124733091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -601,8 +611,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "No you won\u2019t."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &3119794923473263934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,8 +660,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 1a3dd8e17ceb56d45a1633d44f47445c, type: 2}
     _portraitID: shocked
-    _eventsToInvoke: []
     _sentences: DAAAAAHHHHH, Jesus!!!!!
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &3478924233419557485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,9 +709,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 1a3dd8e17ceb56d45a1633d44f47445c, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Man, my friend better not be lying about that secret Handbook account,
       or else I\u2019m not gonna let him hear the end of it"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &6580637874347222190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -746,8 +759,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Yo!!!!!!!!
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &8957003050238111766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -794,6 +808,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: PC actually. What you were talking about you not gonna let your friend
       hear the end of it?
+    _cameraEffect: 0
+    _eventsToInvoke: []
