@@ -6,18 +6,13 @@ using TMPro;
 
 public class TimeUIManager : MonoBehaviour
 {
-    public enum DayPhases
-    {
-        morning,
-        //noon,
-        evening
-    }
+    
 
 
     [SerializeField] private TextMeshProUGUI _timeDisplay;
 
     private static int currentDay;
-    private static DayPhases currentTime;
+    private static Enums.DayPhases currentTime;
     
     void Start()
     {
@@ -31,7 +26,7 @@ public class TimeUIManager : MonoBehaviour
 
     public static void AdvanceTime()
     {
-        if((int)currentTime + 1 >= Enum.GetNames(typeof(DayPhases)).Length)
+        if((int)currentTime + 1 >= Enum.GetNames(typeof(Enums.DayPhases)).Length)
         {
             currentTime = 0;
             currentDay += 1;
@@ -53,12 +48,12 @@ public class TimeUIManager : MonoBehaviour
         PlayerPrefs.SetInt("currentDay", 0);
         PlayerPrefs.SetInt("currentTime", 0);
         currentDay = 0;
-        currentTime = (DayPhases)0;
+        currentTime = (Enums.DayPhases)0;
     }
     void UpdateTimeUI()
     {
         currentDay = PlayerPrefs.GetInt("currentDay", 0);
-        currentTime = (DayPhases)PlayerPrefs.GetInt("currentTime", 0);
+        currentTime = (Enums.DayPhases)PlayerPrefs.GetInt("currentTime", 0);
         _timeDisplay.text = "Day " + (currentDay + 1) + "\n(" + currentTime + ")";
     }
 }
