@@ -10,4 +10,10 @@ public class Enums : MonoBehaviour
         screenShake,
 
     }
+    public enum DayPhases
+    {
+        morning,
+        //noon,
+        evening
+    }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class DayDependantHandler : MonoBehaviour
 {
     [SerializeField] private int _availableDay;
-    [SerializeField] private TimeUIManager.DayPhases _availableTime;
+    [SerializeField] private Enums.DayPhases _availableTime;
     [SerializeField] private GameObject[] _timeDependantEntities; //objects that are only available during the set time
 
     private void Update()
