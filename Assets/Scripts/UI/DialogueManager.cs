@@ -147,10 +147,21 @@ public class DialogueManager : MonoBehaviour
             nextBranchDialogue = t.NextNode;
             return;
         }
-        //if node isn't of above types then it's a dialogueNode
 
-        //pull SingleDialogue data out of current node
-        SingleDialogue dialogue = currentBranchDialogue.Dialogue;
+        SingleDialogue dialogue = null;
+        try
+        {
+
+            //pull SingleDialogue data out of current node
+            dialogue = currentBranchDialogue.Dialogue;
+        }
+        catch
+        {
+            print("node is of no known type");
+            return;
+        }
+        
+         
         //pull current dialogue text out of the SingleDialogue data
         sentence = dialogue.sentences;
         //pull current talker's name out of the SingleDialogue's TalkerData
