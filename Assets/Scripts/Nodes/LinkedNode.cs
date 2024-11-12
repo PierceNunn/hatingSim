@@ -35,4 +35,9 @@ public class LinkedNode : Node {
 	public override object GetValue(NodePort port) {
 		return null; // Replace this
 	}
+
+	public virtual void OnCall()
+    {
+
+    }
 }
