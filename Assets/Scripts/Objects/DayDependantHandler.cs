@@ -9,6 +9,11 @@ public class DayDependantHandler : MonoBehaviour
     [SerializeField] private bool _availableAtTime = true;
     [SerializeField] private GameObject[] _timeDependantEntities; //objects that are only available during the set time
 
+
+    private void Awake()
+    {
+        CheckIfAvailableNow();
+    }
     private void Update()
     {
         CheckIfAvailableNow();
