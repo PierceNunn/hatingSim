@@ -782,7 +782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71de480b933a42c4095c00ed6ec07e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _availableDay: 2
+  _availableDay: 4
   _availableTime: 0
   _availableAtTime: 1
   _timeDependantEntities:
@@ -12514,6 +12514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6150376168093311944}
+  - component: {fileID: 6150376168093311945}
   m_Layer: 0
   m_Name: ConfrontationThree
   m_TagString: Untagged
@@ -13557,6 +13558,23 @@ Transform:
   - {fileID: 5141181675163138907}
   m_Father: {fileID: 3819463816183768142}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6150376168093311945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3525656125867027479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71de480b933a42c4095c00ed6ec07e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _availableDay: 3
+  _availableTime: 1
+  _availableAtTime: 1
+  _timeDependantEntities:
+  - {fileID: 7851246454694057858}
 --- !u!1 &6152441399748964479
 GameObject:
   m_ObjectHideFlags: 0
@@ -35536,6 +35554,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8452348102135909655}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7851246454694057858 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3815087175735763677, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+  m_PrefabInstance: {fileID: 6342425756407526751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7880318034785980627
 Transform:
   m_ObjectHideFlags: 0
@@ -44629,6 +44652,11 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &8393676407135224057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2016093404609702239, guid: 847d6b4ef0cd9f74ca6efffde8358c6d, type: 3}
+  m_PrefabInstance: {fileID: 8036337623253100966}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8396213501025167392
 GameObject:
   m_ObjectHideFlags: 0
@@ -44761,6 +44789,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2825476353264028856}
+  - component: {fileID: 8486269029333539876}
   m_Layer: 0
   m_Name: DayThreeInvestigation
   m_TagString: Untagged
@@ -44768,6 +44797,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8486269029333539876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8486269029333539875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71de480b933a42c4095c00ed6ec07e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _availableDay: 3
+  _availableTime: 0
+  _availableAtTime: 1
+  _timeDependantEntities:
+  - {fileID: 8393676407135224057}
 --- !u!1 &8486900361552941642
 GameObject:
   m_ObjectHideFlags: 0
