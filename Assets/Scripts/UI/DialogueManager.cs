@@ -103,6 +103,16 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
+        try
+        {
+            LinkedNode temp = nextBranchDialogue as LinkedNode;
+            temp.OnCall();
+        }
+        catch
+        {
+            print("node doesn't inherit from LinkedNode; no OnCall to call");
+        }
+
         string nextNodeType = nextBranchDialogue.GetType().ToString();
         if (nextNodeType.Equals("DialogueNode"))
         {
