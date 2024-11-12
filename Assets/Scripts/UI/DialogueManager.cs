@@ -138,6 +138,12 @@ public class DialogueManager : MonoBehaviour
             nextBranchDialogue = t.NextNode;
             return;
         }
+        else if(nextNodeType == typeof(EndingNode) || nextNodeType.BaseType == typeof(EndingNode))
+        {
+            EndDialogue();
+            print("special ending node");
+            return;
+        }
 
         SingleDialogue dialogue = null;
         try
