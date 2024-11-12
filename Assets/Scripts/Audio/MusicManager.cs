@@ -29,5 +29,7 @@ public class MusicManager : MonoBehaviour
         {
             _musicPlayer.clip = _eveningMusic;
         }
+
+        _musicPlayer.Play();
     }
 }
