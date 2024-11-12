@@ -885,6 +885,48 @@ MonoBehaviour:
   - {fileID: -5823366945021481328}
   - {fileID: -8067876525826160635}
   - {fileID: -1105380221641177903}
+  - {fileID: 2747961910034872655}
+  - {fileID: 1256644085115950769}
+--- !u!114 &1256644085115950769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 218b577389e787f48a75fda71bd918a7, type: 3}
+  m_Name: Time Advance
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1272, y: 232}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 1256644085115950769}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 2747961910034872655}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 1256644085115950769}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
 --- !u!114 &1674182878349363716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -990,6 +1032,50 @@ MonoBehaviour:
 '
     _cameraEffect: 0
     _eventsToInvoke: []
+--- !u!114 &2747961910034872655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a68762aa58cc082459ffd018c2258b02, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1016, y: 168}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 2747961910034872655}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _responses 3
+        node: {fileID: 7788138463558857724}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 2747961910034872655}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 1256644085115950769}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _choiceLabel: advance time
 --- !u!114 &3272640551260247202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1188,7 +1274,7 @@ MonoBehaviour:
   m_Name: Dialogue Branch
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -984, y: -328}
+  position: {x: -968, y: -248}
   ports:
     keys:
     - _responses
@@ -1196,6 +1282,7 @@ MonoBehaviour:
     - _lastNode
     - _responses 1
     - _responses 2
+    - _responses 3
     values:
     - _fieldName: _responses
       _node: {fileID: 7788138463558857724}
@@ -1253,8 +1340,21 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
+    - _fieldName: _responses 3
+      _node: {fileID: 7788138463558857724}
+      _typeQualifiedName: XNode.Node[], XNode, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 2747961910034872655}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
   _lastNode: {fileID: 0}
   _responses:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1262,6 +1362,7 @@ MonoBehaviour:
   - {fileID: 6550825359078019188}
   - {fileID: -2172239855680714592}
   - {fileID: -5343466263640644442}
+  - {fileID: 2747961910034872655}
 --- !u!114 &8051384467581721013
 MonoBehaviour:
   m_ObjectHideFlags: 0
