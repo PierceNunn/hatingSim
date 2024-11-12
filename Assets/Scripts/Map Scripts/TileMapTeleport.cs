@@ -9,10 +9,15 @@ public class TileMapTeleport : MonoBehaviour
     [SerializeField] private GameObject toArea;
     //private int day;
     private GameObject player;
+    [SerializeField] private bool _teleportOnStart = false;
 
     void Start()
     {
         player = FindObjectOfType<PlayerMovement>().gameObject;
+        if(_teleportOnStart && this.isActiveAndEnabled)
+        {
+            Teleport();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

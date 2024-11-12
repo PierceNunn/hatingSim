@@ -2737,6 +2737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _availableDay: 0
   _availableTime: 0
+  _availableAtTime: 1
   _timeDependantEntities:
   - {fileID: 3327447823865581190}
   - {fileID: 1733229160805202425}
@@ -4428,6 +4429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _availableDay: 0
   _availableTime: 1
+  _availableAtTime: 1
   _timeDependantEntities:
   - {fileID: 277220001479513499}
   - {fileID: 506755364044781313}
@@ -5011,6 +5013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _availableDay: 1
   _availableTime: 0
+  _availableAtTime: 1
   _timeDependantEntities:
   - {fileID: 1898236617705845479}
   - {fileID: 999953832760916125}
@@ -5167,6 +5170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _availableDay: 1
   _availableTime: 1
+  _availableAtTime: 1
   _timeDependantEntities:
   - {fileID: 3914277511078688707}
   - {fileID: 8023204217680710470}

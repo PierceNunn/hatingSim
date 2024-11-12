@@ -6,8 +6,14 @@ public class DayDependantHandler : MonoBehaviour
 {
     [SerializeField] private int _availableDay;
     [SerializeField] private Enums.DayPhases _availableTime;
+    [SerializeField] private bool _availableAtTime = true;
     [SerializeField] private GameObject[] _timeDependantEntities; //objects that are only available during the set time
 
+
+    private void Awake()
+    {
+        CheckIfAvailableNow();
+    }
     private void Update()
     {
         CheckIfAvailableNow();
@@ -21,7 +27,7 @@ public class DayDependantHandler : MonoBehaviour
             foreach (GameObject g in _timeDependantEntities)
             {
                 if (g != null)
-                    g.SetActive(true);
+                    g.SetActive(_availableAtTime);
             }
                 
         }
@@ -32,7 +38,7 @@ public class DayDependantHandler : MonoBehaviour
             foreach (GameObject g in _timeDependantEntities)
             {
                 if (g != null)
-                    g.SetActive(false);
+                    g.SetActive(!_availableAtTime);
             }
                 
         }
