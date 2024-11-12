@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using XNode;
+using UnityEngine.SceneManagement;
 
 public class TimeAdvanceNode : EndingNode {
 
@@ -9,6 +10,7 @@ public class TimeAdvanceNode : EndingNode {
     {
         base.OnCall();
         TimeUIManager.AdvanceTime();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
 }

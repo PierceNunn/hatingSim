@@ -142,6 +142,8 @@ public class DialogueManager : MonoBehaviour
         {
             EndDialogue();
             print("special ending node");
+            LinkedNode temp = nextBranchDialogue as LinkedNode;
+            temp.OnCall();
             return;
         }
 
