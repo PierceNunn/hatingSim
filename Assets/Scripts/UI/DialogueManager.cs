@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -103,14 +104,14 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        string nextNodeType = nextBranchDialogue.GetType().ToString();
-        if (nextNodeType.Equals("DialogueNode"))
+        Type nextNodeType = nextBranchDialogue.GetType();
+        if (nextNodeType == typeof(DialogueNode))
         {
             //if next node is a DialogueNode next sentence can display normally
             currentBranchDialogue = nextBranchDialogue as DialogueNode;
             PlayCameraEffect(currentBranchDialogue);
         }
-        else if (nextNodeType.Equals("ItemGiverNode"))
+        else if (nextNodeType == typeof(ItemGiverNode))
         {
             //first give player item defined in node
             ItemGiverNode temp = nextBranchDialogue as ItemGiverNode;
@@ -118,18 +119,18 @@ public class DialogueManager : MonoBehaviour
             //then next sentence can display normally
             currentBranchDialogue = nextBranchDialogue as DialogueNode;
         }
-        else if (nextNodeType.Equals("AutoDialogueBranchNode"))
+        else if (nextNodeType == typeof(AutoDialogueBranchNode))
         {
             AutoSelectDialogueChoices(nextBranchDialogue as DialogueBranchNode);
         }
-        else if(nextNodeType.Equals("DialogueBranchNode"))
+        else if(nextNodeType == typeof(DialogueBranchNode))
         {
             print("dialogue branch node");
             //if next node is DialogueBranch set up dialogue choices
             SetUpDialogueChoices(nextBranchDialogue as DialogueBranchNode);
             return;
         }
-        else if (nextNodeType.Equals("ChoiceNode"))
+        else if (nextNodeType == typeof(ChoiceNode))
         {
             print("choice node");
             //if next node is a choice proceed to the next node
@@ -137,10 +138,29 @@ public class DialogueManager : MonoBehaviour
             nextBranchDialogue = t.NextNode;
             return;
         }
-        //if node isn't of above types then it's a dialogueNode
+        else if(nextNodeType == typeof(EndingNode) || nextNodeType.BaseType == typeof(EndingNode))
+        {
+            EndDialogue();
+            print("special ending node");
+            LinkedNode temp = nextBranchDialogue as LinkedNode;
+            temp.OnCall();
+            return;
+        }
 
-        //pull SingleDialogue data out of current node
-        SingleDialogue dialogue = currentBranchDialogue.Dialogue;
+        SingleDialogue dialogue = null;
+        try
+        {
+
+            //pull SingleDialogue data out of current node
+            dialogue = currentBranchDialogue.Dialogue;
+        }
+        catch
+        {
+            print("node is of no known type");
+            return;
+        }
+        
+         
         //pull current dialogue text out of the SingleDialogue data
         sentence = dialogue.sentences;
         //pull current talker's name out of the SingleDialogue's TalkerData
@@ -215,7 +235,7 @@ public class DialogueManager : MonoBehaviour
             //clip isn't played for specific chars or when no voice is available
             if (voice != null && letter != " "[0] && letter != ","[0] && letter != "'"[0])
             {
-                int randomVChoice = Random.Range(0, voice.Length);
+                int randomVChoice = UnityEngine.Random.Range(0, voice.Length);
                 _voicer.clip = voice[randomVChoice];
                 _voicer.Play();
             }

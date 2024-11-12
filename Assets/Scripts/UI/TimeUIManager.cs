@@ -25,20 +25,25 @@ public class TimeUIManager : MonoBehaviour
         UpdateTimeUI();
     }
 
-    public static void AdvanceTime()
+    public static void AdvanceTime(int amtToAdvance = 1)
     {
-        if((int)currentTime + 1 >= Enum.GetNames(typeof(Enums.DayPhases)).Length)
+        for(int i = 0; i < amtToAdvance; i++)
         {
-            currentTime = 0;
-            currentDay += 1;
-        }
-        else
-        {
-            currentTime += 1;
-        }
+            if ((int)currentTime + 1 >= Enum.GetNames(typeof(Enums.DayPhases)).Length)
+            {
+                currentTime = 0;
+                currentDay += 1;
+            }
+            else
+            {
+                currentTime += 1;
+            }
 
+            
+        }
         PlayerPrefs.SetInt("currentDay", currentDay);
         PlayerPrefs.SetInt("currentTime", (int)currentTime);
+
 
         GameManager.instance.SaveCollectedItems();
         
