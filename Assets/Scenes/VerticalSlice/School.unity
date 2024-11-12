@@ -635,8 +635,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i> and now we wait... </i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!1001 &596891176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -645,6 +646,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 70091572645015655, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
+      propertyPath: _advanceDayAfterTalk
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 105422248864125035, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
       propertyPath: m_LocalPosition.x
       value: 62.12
@@ -16547,8 +16552,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>and now we wait...</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!213 &1057567447
 Sprite:
   m_ObjectHideFlags: 0
@@ -16882,8 +16888,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: (proceed to confrontation?)
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!1 &1398044350 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6964030416534354437, guid: 3bf31a9ac856fb845b97db19bf1d48ce, type: 3}
@@ -17144,8 +17151,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>...i think i need more dirt...</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1695354745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17189,6 +17197,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
+    _sentences: (several hours later)
+    _cameraEffect: 0
     _eventsToInvoke:
     - m_PersistentCalls:
         m_Calls:
@@ -17204,7 +17214,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    _sentences: (several hours later)
 --- !u!114 &1786908732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17523,8 +17532,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: (ready for confrontation?)
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1847005651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17571,8 +17581,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>This is where I'm supposed to meet Edward...</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1854052093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17616,6 +17627,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
+    _sentences: (several hours later)
+    _cameraEffect: 0
     _eventsToInvoke:
     - m_PersistentCalls:
         m_Calls:
@@ -17631,7 +17644,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    _sentences: (several hours later)
 --- !u!114 &1878213911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17678,8 +17690,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>This is where I'm supposed to meet up with Mars...</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1996660059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17959,8 +17972,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>... I think I need to gather more dirt... </i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &2077239404
 MonoBehaviour:
   m_ObjectHideFlags: 0
