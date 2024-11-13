@@ -431,6 +431,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4636363671842859710}
     m_Modifications:
+    - target: {fileID: 1885634724691632472, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c9b29a48321eac246aa0f0522b6a0f75, type: 3}
     - target: {fileID: 2260235136453692932, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -78.97366
@@ -474,6 +478,14 @@ PrefabInstance:
     - target: {fileID: 3815087175735763677, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: m_Name
       value: Courtney Intro
+      objectReference: {fileID: 0}
+    - target: {fileID: 6192705579797070270, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6192705579797070270, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.09375
       objectReference: {fileID: 0}
     - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: _dialogueToGive
