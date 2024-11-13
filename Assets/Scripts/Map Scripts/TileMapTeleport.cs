@@ -14,7 +14,7 @@ public class TileMapTeleport : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<PlayerMovement>().gameObject;
-        if(_teleportOnStart && this.isActiveAndEnabled)
+        if(_teleportOnStart && this.isActiveAndEnabled && IsUsable())
         {
             Teleport();
         }
@@ -22,8 +22,10 @@ public class TileMapTeleport : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Teleport();
-
+        if(IsUsable())
+        {
+            Teleport();
+        }
     }
 
     public void Teleport()
@@ -31,14 +33,9 @@ public class TileMapTeleport : MonoBehaviour
         player.transform.position = toArea.transform.position;
     }
 
-    //public CollectibleItem ReturnDependant()
-   // {
-   //     return dependantItem;
-    //}
-
-
-    void Update()
+    public virtual bool IsUsable()
     {
-        
+        //base TileMapTeleport is always usable, altered for child classes
+        return true;
     }
 }
