@@ -176,9 +176,9 @@ GameObject:
   m_Component:
   - component: {fileID: 20417133}
   - component: {fileID: 20417135}
-  - component: {fileID: 20417134}
+  - component: {fileID: 20417136}
   m_Layer: 0
-  m_Name: CourtyardToStore (2)
+  m_Name: CourtyardToLibrary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,20 +199,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1632409687}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &20417134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20417132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8de5dcb7aece92b4fa07f3fceeb0c493, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toArea: {fileID: 3838204412232242368}
-  _teleportOnStart: 0
 --- !u!61 &20417135
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -258,6 +244,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3078308, y: 2.2941284}
   m_EdgeRadius: 0
+--- !u!114 &20417136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20417132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7115c923bb1c4743b9e59b44fa94685, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toArea: {fileID: 3838204412232242368}
+  _teleportOnStart: 0
+  _daysWithRequiredItems: []
 --- !u!1 &25669173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,9 +1294,9 @@ GameObject:
   m_Component:
   - component: {fileID: 554080565}
   - component: {fileID: 554080567}
-  - component: {fileID: 554080566}
+  - component: {fileID: 554080568}
   m_Layer: 0
-  m_Name: CourtyardToStore (3)
+  m_Name: CourtyardToClassroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1316,20 +1317,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1632409687}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &554080566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 554080564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8de5dcb7aece92b4fa07f3fceeb0c493, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toArea: {fileID: 4966398330705822133}
-  _teleportOnStart: 0
 --- !u!61 &554080567
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1375,6 +1362,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.24749, y: 5.095272}
   m_EdgeRadius: 0
+--- !u!114 &554080568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554080564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7115c923bb1c4743b9e59b44fa94685, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toArea: {fileID: 4966398330705822133}
+  _teleportOnStart: 0
+  _daysWithRequiredItems: []
 --- !u!114 &596891178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3751,7 +3753,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1947627738}
   - component: {fileID: 1947627740}
-  - component: {fileID: 1947627739}
+  - component: {fileID: 1947627741}
   m_Layer: 0
   m_Name: CourtyardToStore
   m_TagString: Untagged
@@ -3774,20 +3776,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1632409687}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1947627739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1947627737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8de5dcb7aece92b4fa07f3fceeb0c493, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toArea: {fileID: 8486900361552941642}
-  _teleportOnStart: 0
 --- !u!61 &1947627740
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3833,6 +3821,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3078308, y: 1.2436905}
   m_EdgeRadius: 0
+--- !u!114 &1947627741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947627737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7115c923bb1c4743b9e59b44fa94685, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toArea: {fileID: 8486900361552941642}
+  _teleportOnStart: 0
+  _daysWithRequiredItems: []
 --- !u!1 &1987837006
 GameObject:
   m_ObjectHideFlags: 0
@@ -3843,9 +3846,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1987837007}
   - component: {fileID: 1987837009}
-  - component: {fileID: 1987837008}
+  - component: {fileID: 1987837010}
   m_Layer: 0
-  m_Name: CourtyardToStore (1)
+  m_Name: CourtyardToGym
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3866,20 +3869,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1632409687}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1987837008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987837006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8de5dcb7aece92b4fa07f3fceeb0c493, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toArea: {fileID: 8346772854709536298}
-  _teleportOnStart: 0
 --- !u!61 &1987837009
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3925,6 +3914,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3078308, y: 1.2436905}
   m_EdgeRadius: 0
+--- !u!114 &1987837010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987837006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7115c923bb1c4743b9e59b44fa94685, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toArea: {fileID: 8346772854709536298}
+  _teleportOnStart: 0
+  _daysWithRequiredItems: []
 --- !u!114 &1997943939
 MonoBehaviour:
   m_ObjectHideFlags: 0
