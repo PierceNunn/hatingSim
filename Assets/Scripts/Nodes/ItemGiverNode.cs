@@ -5,6 +5,8 @@ using UnityEngine;
 public class ItemGiverNode : DialogueNode
 {
     [SerializeField] private CollectibleItem _itemToGive;
+    [SerializeField] private bool _giveOrTakeItem = true;
 
     public CollectibleItem ItemToGive { get => _itemToGive; set => _itemToGive = value; }
+    public bool GiveOrTakeItem { get => _giveOrTakeItem; set => _giveOrTakeItem = value; }
 }
