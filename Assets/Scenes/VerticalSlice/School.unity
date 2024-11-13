@@ -1107,7 +1107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 521237347}
   - component: {fileID: 521237349}
-  - component: {fileID: 521237350}
+  - component: {fileID: 521237348}
   m_Layer: 0
   m_Name: CourtyardToStore
   m_TagString: Untagged
@@ -1130,6 +1130,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2354338129911667195}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &521237348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521237346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de5dcb7aece92b4fa07f3fceeb0c493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toArea: {fileID: 8486900361552941642}
+  _teleportOnStart: 0
 --- !u!61 &521237349
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1175,21 +1189,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3078308, y: 1.2436905}
   m_EdgeRadius: 0
---- !u!114 &521237350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521237346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5102dae89e291e449e2b196853804d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toArea: {fileID: 8486900361552941642}
-  _teleportOnStart: 0
-  dependantItem: {fileID: 11400000, guid: 1f7cddf06ea69084db8da425acd39e5a, type: 2}
 --- !u!114 &596891178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1818,7 +1817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1223382138}
   - component: {fileID: 1223382140}
-  - component: {fileID: 1223382141}
+  - component: {fileID: 1223382139}
   m_Layer: 0
   m_Name: CourtyardToStore (3)
   m_TagString: Untagged
@@ -1841,6 +1840,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2354338129911667195}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1223382139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223382137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de5dcb7aece92b4fa07f3fceeb0c493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toArea: {fileID: 4966398330705822133}
+  _teleportOnStart: 0
 --- !u!61 &1223382140
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1886,21 +1899,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.24749, y: 1.2436905}
   m_EdgeRadius: 0
---- !u!114 &1223382141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223382137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5102dae89e291e449e2b196853804d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toArea: {fileID: 4966398330705822133}
-  _teleportOnStart: 0
-  dependantItem: {fileID: 11400000, guid: 1f7cddf06ea69084db8da425acd39e5a, type: 2}
 --- !u!114 &1350187654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2610,7 +2608,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1615290026}
   - component: {fileID: 1615290028}
-  - component: {fileID: 1615290029}
+  - component: {fileID: 1615290027}
   m_Layer: 0
   m_Name: CourtyardToStore (2)
   m_TagString: Untagged
@@ -2633,6 +2631,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2354338129911667195}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1615290027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615290025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de5dcb7aece92b4fa07f3fceeb0c493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toArea: {fileID: 3838204412232242368}
+  _teleportOnStart: 0
 --- !u!61 &1615290028
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2678,21 +2690,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3078308, y: 1.2436905}
   m_EdgeRadius: 0
---- !u!114 &1615290029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1615290025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5102dae89e291e449e2b196853804d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toArea: {fileID: 3838204412232242368}
-  _teleportOnStart: 0
-  dependantItem: {fileID: 11400000, guid: c3a2eac11987dc64198aa9120e7f5511, type: 2}
 --- !u!114 &1678117352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14289,10 +14286,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Locker
       objectReference: {fileID: 0}
-    - target: {fileID: 7626681000128023384, guid: b943cda46cb931e42afddec5b223aadc, type: 3}
-      propertyPath: _dialogueToGive
-      value: 
-      objectReference: {fileID: -8933715268640880827, guid: 5661653d4d6d07147918635e94555d1b, type: 2}
     - target: {fileID: 8965123607190941239, guid: b943cda46cb931e42afddec5b223aadc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 58.61
@@ -49484,16 +49477,16 @@ PrefabInstance:
       addedObject: {fileID: 3648668257129563445}
     - targetCorrespondingSourceObject: {fileID: 5704517509010518109, guid: 847d6b4ef0cd9f74ca6efffde8358c6d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1615290026}
+      addedObject: {fileID: 521237347}
     - targetCorrespondingSourceObject: {fileID: 5704517509010518109, guid: 847d6b4ef0cd9f74ca6efffde8358c6d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 239699511}
     - targetCorrespondingSourceObject: {fileID: 5704517509010518109, guid: 847d6b4ef0cd9f74ca6efffde8358c6d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1223382138}
+      addedObject: {fileID: 1615290026}
     - targetCorrespondingSourceObject: {fileID: 5704517509010518109, guid: 847d6b4ef0cd9f74ca6efffde8358c6d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 521237347}
+      addedObject: {fileID: 1223382138}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 847d6b4ef0cd9f74ca6efffde8358c6d, type: 3}
 --- !u!4 &8056323368925994489
