@@ -22,7 +22,7 @@ public class TileMapTeleport : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(IsUsable())
+        if(collision.gameObject.CompareTag("Player") && IsUsable())
         {
             Teleport();
         }
