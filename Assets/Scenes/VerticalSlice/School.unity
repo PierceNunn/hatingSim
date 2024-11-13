@@ -15385,6 +15385,10 @@ PrefabInstance:
       propertyPath: _dialogueToGive
       value: 
       objectReference: {fileID: -8933715268640880827, guid: 5661653d4d6d07147918635e94555d1b, type: 2}
+    - target: {fileID: 8539390484868503563, guid: b943cda46cb931e42afddec5b223aadc, type: 3}
+      propertyPath: _destroyOnInteract
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8965123607190941239, guid: b943cda46cb931e42afddec5b223aadc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 58.61
@@ -50499,6 +50503,10 @@ PrefabInstance:
     - target: {fileID: 2075030873310200980, guid: 847d6b4ef0cd9f74ca6efffde8358c6d, type: 3}
       propertyPath: m_LocalPosition.y
       value: 45.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2139911423180272180, guid: 847d6b4ef0cd9f74ca6efffde8358c6d, type: 3}
+      propertyPath: _destroyOnInteract
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3670602608126716826, guid: 847d6b4ef0cd9f74ca6efffde8358c6d, type: 3}
       propertyPath: m_LocalPosition.x
