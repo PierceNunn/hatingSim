@@ -14647,6 +14647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Locker
       objectReference: {fileID: 0}
+    - target: {fileID: 7626681000128023384, guid: b943cda46cb931e42afddec5b223aadc, type: 3}
+      propertyPath: _dialogueToGive
+      value: 
+      objectReference: {fileID: -8933715268640880827, guid: 5661653d4d6d07147918635e94555d1b, type: 2}
     - target: {fileID: 8965123607190941239, guid: b943cda46cb931e42afddec5b223aadc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 58.61
@@ -14911,6 +14915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Courtney_Confrontation
       objectReference: {fileID: 0}
+    - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+      propertyPath: _dialogueToGive
+      value: 
+      objectReference: {fileID: 8026497621432984131, guid: 75e64f893fd2903488521a9b56089451, type: 2}
     - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: _advanceDayAfterTalk
       value: 1
