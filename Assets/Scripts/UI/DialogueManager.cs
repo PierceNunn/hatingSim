@@ -76,16 +76,16 @@ public class DialogueManager : MonoBehaviour
         IsOpen = true;
         _NPCDialogue.SetActive(true); //show text box
         _playerResponses.SetActive(false); //hide choice buttons
-        currentBranchDialogue = branchDialogue.NextNode as DialogueNode;
+        //currentBranchDialogue = branchDialogue.NextNode as DialogueNode;
         _autoAdvance = willAutoAdvance;
         currentRef = NPC;
 
-        if (branchDialogue.GetType().ToString().Equals("DialogueNode"))
+        if (branchDialogue.GetType().ToString().Equals("IntroNode"))
             //displays input node if it's a dialogueNode
-            nextBranchDialogue = branchDialogue;
+            nextBranchDialogue = branchDialogue.NextNode;
         else
             //displays input node's next node if it isn't dialogue
-            nextBranchDialogue = branchDialogue.NextNode;
+            nextBranchDialogue = branchDialogue;
         //display the first sentence
         DisplayNextSentence();
 
@@ -115,7 +115,7 @@ public class DialogueManager : MonoBehaviour
         {
             //first give player item defined in node
             ItemGiverNode temp = nextBranchDialogue as ItemGiverNode;
-            temp.ItemToGive.CollectItem();
+            temp.ItemToGive.CollectItem(temp.GiveOrTakeItem);
             //then next sentence can display normally
             currentBranchDialogue = nextBranchDialogue as DialogueNode;
         }
