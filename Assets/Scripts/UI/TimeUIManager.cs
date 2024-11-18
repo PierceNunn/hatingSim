@@ -43,6 +43,7 @@ public class TimeUIManager : MonoBehaviour
         }
         PlayerPrefs.SetInt("currentDay", currentDay);
         PlayerPrefs.SetInt("currentTime", (int)currentTime);
+        PlayerPrefs.SetFloat("saveGameVersion", (float)GameManager.GAME_VERSION);
 
 
         GameManager.instance.SaveCollectedItems();
@@ -53,6 +54,7 @@ public class TimeUIManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("currentDay", 0);
         PlayerPrefs.SetInt("currentTime", 0);
+        PlayerPrefs.SetFloat("saveGameVersion", (float)GameManager.GAME_VERSION);
         currentDay = 0;
         currentTime = (Enums.DayPhases)0;
     }

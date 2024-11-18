@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public const double GAME_VERSION = 0.1;
 
     public static GameManager instance;
 
@@ -50,6 +51,19 @@ public class GameManager : MonoBehaviour
         //wipe sessionCollectedItems afterwards
         SessionCollectedItems = new Dictionary<CollectibleItem, bool>();
 
+        PlayerPrefs.SetFloat("saveGameVersion", (float)GameManager.GAME_VERSION);
         print("saved!");
+    }
+
+    public bool IsSaveFromCurrentVersion()
+    {
+        float saveVersion = PlayerPrefs.GetFloat("saveGameVersion", 0f);
+
+        if((float)GAME_VERSION == saveVersion)
+        {
+            return true;
+        }
+
+        return false;
     }
 }

@@ -5,6 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class DebugFunctions : MonoBehaviour
 {
+
+    public static void EraseAllSaveData()
+    {
+        ClearItemData();
+        PlayerPrefs.DeleteAll();
+
+        PlayerPrefs.SetFloat("saveGameVersion", (float)GameManager.GAME_VERSION);
+    }
+
     /// <summary>
     /// Sets all CollectibleItem objects as not found.
     /// </summary>
@@ -16,6 +25,7 @@ public class DebugFunctions : MonoBehaviour
 
         foreach(CollectibleItem c in itemsToClear)
         {
+            
             //using 0 as false and 1 as true as PP doesn't support bools
             PlayerPrefs.SetInt(c.ItemID, 0);
             c.CollectItem(false);
