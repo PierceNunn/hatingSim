@@ -16,4 +16,5 @@ public class ItemsForDay
     public int TargetDay { get => _targetDay; set => _targetDay = value; }
     public Enums.DayPhases TargetPhase { get => _targetPhase; set => _targetPhase = value; }
     public CollectibleItem[] TargetItems { get => _targetItems; set => _targetItems = value; }
+    public IntroNode MissingItemsDialogue { get => _missingItemsDialogue; set => _missingItemsDialogue = value; }
 }
