@@ -278,7 +278,7 @@ public class DialogueManager : MonoBehaviour
             }
             catch
             {
-                Debug.LogWarning("Attempt to call EndDialogueBehavior on DialogueGiver failed. Probably not a DialogueGiver that sent the dialogue.");
+                Debug.Log("Attempt to call EndDialogueBehavior on DialogueGiver failed. Probably not a DialogueGiver that sent the dialogue.");
             }
             
 
