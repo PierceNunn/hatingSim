@@ -1525,17 +1525,17 @@ MonoBehaviour:
     _targetPhase: 0
     _targetItems:
     - {fileID: 11400000, guid: 14d768b3f4de34c4faac8c53daf43da2, type: 2}
-    _missingItemsDialogue: {fileID: 0}
+    _missingItemsDialogue: {fileID: 7219860135251043805, guid: c6df0775996b64845838677ce1bc55be, type: 2}
   - _targetDay: 2
     _targetPhase: 0
     _targetItems:
     - {fileID: 11400000, guid: 14d768b3f4de34c4faac8c53daf43da2, type: 2}
-    _missingItemsDialogue: {fileID: 8361460677730338647, guid: 4036e6a64bcb4004981a59230b2241ab, type: 2}
+    _missingItemsDialogue: {fileID: 7219860135251043805, guid: c6df0775996b64845838677ce1bc55be, type: 2}
   - _targetDay: 3
     _targetPhase: 0
     _targetItems:
     - {fileID: 11400000, guid: 14d768b3f4de34c4faac8c53daf43da2, type: 2}
-    _missingItemsDialogue: {fileID: 8361460677730338647, guid: 4036e6a64bcb4004981a59230b2241ab, type: 2}
+    _missingItemsDialogue: {fileID: 7219860135251043805, guid: c6df0775996b64845838677ce1bc55be, type: 2}
 --- !u!61 &1074775331
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1821,7 +1821,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1268079585
 Transform:
   m_ObjectHideFlags: 0
@@ -6103,7 +6103,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1839735485 &1004634934970301561
 Tilemap:
   m_ObjectHideFlags: 0
@@ -7316,7 +7316,6 @@ MonoBehaviour:
   _availableAtTime: 1
   _timeDependantEntities:
   - {fileID: 1898236618249938127}
-  - {fileID: 999953833307336373}
 --- !u!1839735485 &1319974409902655637
 Tilemap:
   m_ObjectHideFlags: 0
@@ -9066,7 +9065,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1736729089951314453
 Transform:
   m_ObjectHideFlags: 0
@@ -41291,7 +41290,6 @@ MonoBehaviour:
   _availableAtTime: 1
   _timeDependantEntities:
   - {fileID: 3327447824394901678}
-  - {fileID: 1733229161402052561}
 --- !u!483693784 &6896642000407412709
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -58620,7 +58618,6 @@ MonoBehaviour:
   _availableAtTime: 1
   _timeDependantEntities:
   - {fileID: 8393676407135224057}
-  - {fileID: 1268079584}
 --- !u!1 &8486900361552941642
 GameObject:
   m_ObjectHideFlags: 0
