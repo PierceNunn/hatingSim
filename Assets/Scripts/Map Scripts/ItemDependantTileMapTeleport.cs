@@ -21,7 +21,9 @@ public class ItemDependantTileMapTeleport : TileMapTeleport
                     //if a required item hasn't been collected, teleporter isn't usable
                     if (!CollectibleItem.IsItemCollected(item))
                     {
-                        OpenUnusableTeleportDialogue(day.MissingItemsDialogue);
+                        if(day.MissingItemsDialogue != null)
+                            OpenUnusableTeleportDialogue(day.MissingItemsDialogue);
+
                         return false;
                     }
                         
@@ -34,14 +36,6 @@ public class ItemDependantTileMapTeleport : TileMapTeleport
 
     private void OpenUnusableTeleportDialogue(IntroNode DialogueToGive)
     {
-        try
-        {
-            FindObjectOfType<DialogueManager>().StartDialogue(DialogueToGive, gameObject, false);
-        }
-        catch
-        {
-            print("day conditional has no associated dialogue for when item(s) are missing.");
-        }
-        
+        FindObjectOfType<DialogueManager>().StartDialogue(DialogueToGive, gameObject, false);
     }
 }
