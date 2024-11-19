@@ -22,7 +22,7 @@ public class ItemDependantTileMapTeleport : TileMapTeleport
                     if (!CollectibleItem.IsItemCollected(item))
                     {
                         if(day.MissingItemsDialogue != null)
-                            OpenUnusableTeleportDialogue(day.MissingItemsDialogue);
+                            DialogueToGive = day.MissingItemsDialogue;
 
                         return false;
                     }
@@ -32,10 +32,5 @@ public class ItemDependantTileMapTeleport : TileMapTeleport
         }
         //if false hasn't been called at this point the teleporter is usable
         return base.IsUsable();
-    }
-
-    private void OpenUnusableTeleportDialogue(IntroNode DialogueToGive)
-    {
-        FindObjectOfType<DialogueManager>().StartDialogue(DialogueToGive, gameObject, false);
     }
 }

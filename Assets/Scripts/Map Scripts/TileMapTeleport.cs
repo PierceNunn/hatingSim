@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TileMapTeleport : InteractableEntity
+public class TileMapTeleport : DialogueGiver
 {
     //VERTICAL SLICE YAY!!!!!!!!!!
     [SerializeField] private GameObject toArea;
@@ -13,6 +13,7 @@ public class TileMapTeleport : InteractableEntity
 
     void Start()
     {
+        Npc = gameObject;
         player = FindObjectOfType<PlayerMovement>().gameObject;
         if(_teleportOnStart && this.isActiveAndEnabled && IsUsable())
         {
@@ -23,9 +24,9 @@ public class TileMapTeleport : InteractableEntity
     public override void OnInteract()
     {
         if (IsUsable())
-        {
             Teleport();
-        }
+        else 
+            InitiateDialogue();
     }
 
     public void Teleport()

@@ -47,8 +47,13 @@ public class DialogueGiver : InteractableEntity
             {
                 _dialogueToGive = GetComponent<DialogueSceneGraph>().graph.findIntroNode();
             }
-            //send the stored Intro Node to the DialogueManager
-            FindObjectOfType<DialogueManager>().StartDialogue(DialogueToGive, Npc, false);
+
+            if (_dialogueToGive != null)
+                //send the stored Intro Node to the DialogueManager
+                FindObjectOfType<DialogueManager>().StartDialogue(DialogueToGive, Npc, false);
+            else
+                Debug.LogWarning("DialogueGiver is missing dialogue, not displaying.");
+            
 
             
         }
