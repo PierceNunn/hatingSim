@@ -8,6 +8,7 @@ public class MapController : MonoBehaviour
 {
     [SerializeField] private TileMapTeleport[] _locations;
     [SerializeField] private GameObject _UIContents;
+    [SerializeField] private Button[] _teleportButtons;
 
     private GameObject player;
 
@@ -21,11 +22,21 @@ public class MapController : MonoBehaviour
 
         _locations = FindObjectOfType<MapTeleportLocations>().MapTeleportLocationList;
 
+        UpdateTeleportButtons();
+
     }
 
     public void ToggleVisibility()
     {
         _UIContents.SetActive(!_UIContents.activeSelf);
+    }
+
+    public void UpdateTeleportButtons()
+    {
+        for(int i = 0; i < _locations.Length; i++)
+        {
+            _teleportButtons[i].interactable = _locations[i].IsUsable();
+        }
     }
 
 
@@ -34,21 +45,20 @@ public class MapController : MonoBehaviour
         TeleportPlayer(0);
     }
 
-    public void Library()
+    public void Classroom()
     {
         TeleportPlayer(1);
     }
 
-    public void Gym()
+    public void Library()
     {
         TeleportPlayer(2);
     }
 
-    public void Classroom()
+    public void Gym()
     {
         TeleportPlayer(3);
     }
-
     public void Store()
     {
         TeleportPlayer(4);
