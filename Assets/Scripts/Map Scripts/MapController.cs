@@ -40,44 +40,9 @@ public class MapController : MonoBehaviour
         }
     }
 
-
-    public void Courtyard()
-    {
-        TeleportPlayer(0);
-    }
-
-    public void Classroom()
-    {
-        TeleportPlayer(1);
-    }
-
-    public void Library()
-    {
-        TeleportPlayer(2);
-    }
-
-    public void Gym()
-    {
-        TeleportPlayer(3);
-    }
-    public void Store()
-    {
-        TeleportPlayer(4);
-    }
-
-    public void Confrontation()
-    {
-        TeleportPlayer(5);
-    }
-
-    private void TeleportPlayer(int x)
+    public void TeleportPlayer(int x)
     {
         _locations[x].OnInteract();
-    }
-
-    public void LoadScene(string sceneToLoad)
-    {
-        SceneManager.LoadScene(sceneToLoad);
     }
 
 }

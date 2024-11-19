@@ -659,12 +659,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 398071869110950919}
         m_TargetAssemblyTypeName: MapController, Assembly-CSharp
-        m_MethodName: Confrontation
-        m_Mode: 1
+        m_MethodName: TeleportPlayer
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: Lake
           m_BoolArgument: 0
@@ -792,65 +792,16 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 398071869110950919}
         m_TargetAssemblyTypeName: MapController, Assembly-CSharp
-        m_MethodName: Store
-        m_Mode: 1
+        m_MethodName: TeleportPlayer
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &4092462904915350302
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3900388057085267723}
-  - component: {fileID: 1453154970506038539}
-  m_Layer: 0
-  m_Name: SecretFinalLevel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &3900388057085267723
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4092462904915350302}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 381, y: -39.407246, z: -3.7163804}
-  m_LocalScale: {x: 0.82474226, y: 0.82474226, z: 0.82474226}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6522203449847670420}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1453154970506038539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4092462904915350302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71de480b933a42c4095c00ed6ec07e02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _availableDay: 1
-  _availableTime: 0
-  _availableAtTime: 1
-  _timeDependantEntities:
-  - {fileID: 3266733282938889620}
 --- !u!1 &4128649903331624241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,8 +1000,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 398071869110950919}
         m_TargetAssemblyTypeName: MapController, Assembly-CSharp
-        m_MethodName: Courtyard
-        m_Mode: 1
+        m_MethodName: TeleportPlayer
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1182,12 +1133,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 398071869110950919}
         m_TargetAssemblyTypeName: MapController, Assembly-CSharp
-        m_MethodName: Gym
-        m_Mode: 1
+        m_MethodName: TeleportPlayer
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1315,12 +1266,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 398071869110950919}
         m_TargetAssemblyTypeName: MapController, Assembly-CSharp
-        m_MethodName: Classroom
-        m_Mode: 1
+        m_MethodName: TeleportPlayer
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1628,7 +1579,6 @@ RectTransform:
   - {fileID: 6294281789110413482}
   - {fileID: 1073983607085618389}
   - {fileID: 8503836296843236437}
-  - {fileID: 3900388057085267723}
   m_Father: {fileID: 6307791578671664151}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2027,12 +1977,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 398071869110950919}
         m_TargetAssemblyTypeName: MapController, Assembly-CSharp
-        m_MethodName: Library
-        m_Mode: 1
+        m_MethodName: TeleportPlayer
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
