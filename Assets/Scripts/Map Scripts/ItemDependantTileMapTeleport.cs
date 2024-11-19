@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using XNode;
 
 public class ItemDependantTileMapTeleport : TileMapTeleport
 {
@@ -19,7 +20,13 @@ public class ItemDependantTileMapTeleport : TileMapTeleport
                 {
                     //if a required item hasn't been collected, teleporter isn't usable
                     if (!CollectibleItem.IsItemCollected(item))
+                    {
+                        if(day.MissingItemsDialogue != null)
+                            DialogueToGive = day.MissingItemsDialogue;
+
                         return false;
+                    }
+                        
                 }
             }
         }

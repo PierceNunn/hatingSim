@@ -272,7 +272,15 @@ public class DialogueManager : MonoBehaviour
             _NPCDialogue.SetActive(false);
             _playerResponses.SetActive(false);
             FindObjectOfType<PlayerInput>().actions.FindActionMap("Player").Enable();
-            currentRef.GetComponent<DialogueGiver>().EndDialogueBehavior();
+            try
+            {
+                currentRef.GetComponent<DialogueGiver>().EndDialogueBehavior();
+            }
+            catch
+            {
+                Debug.Log("Attempt to call EndDialogueBehavior on DialogueGiver failed. Probably not a DialogueGiver that sent the dialogue.");
+            }
+            
 
 
         }
