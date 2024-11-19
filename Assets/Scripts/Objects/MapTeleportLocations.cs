@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MapTeleportLocations : MonoBehaviour
 {
-    [SerializeField] private GameObject[] _mapTeleportLocationList;
+    [SerializeField] private TileMapTeleport[] _mapTeleportLocationList;
 
-    public GameObject[] MapTeleportLocationList { get => _mapTeleportLocationList; set => _mapTeleportLocationList = value; }
+    public TileMapTeleport[] MapTeleportLocationList { get => _mapTeleportLocationList; set => _mapTeleportLocationList = value; }
 }

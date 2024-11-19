@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MapController : MonoBehaviour
 {
-    [SerializeField] private GameObject[] locations;
+    [SerializeField] private TileMapTeleport[] _locations;
     [SerializeField] private GameObject _UIContents;
 
     private GameObject player;
@@ -19,7 +19,7 @@ public class MapController : MonoBehaviour
 
         pM = FindObjectOfType<PlayerMovement>();
 
-        locations = FindObjectOfType<MapTeleportLocations>().MapTeleportLocationList;
+        _locations = FindObjectOfType<MapTeleportLocations>().MapTeleportLocationList;
 
     }
 
@@ -61,8 +61,7 @@ public class MapController : MonoBehaviour
 
     private void TeleportPlayer(int x)
     {
-        Vector3 newPlayerPos = new Vector3(locations[x].transform.position.x, locations[x].transform.position.y, player.transform.position.z);
-        player.transform.position = newPlayerPos;
+        _locations[x].OnInteract();
     }
 
     public void LoadScene(string sceneToLoad)

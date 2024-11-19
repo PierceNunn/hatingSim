@@ -1115,6 +1115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _availableDay: 1
   _availableTime: 0
+  _availableAtTime: 1
   _timeDependantEntities:
   - {fileID: 3266733282938889620}
 --- !u!1 &4128649903331624241
@@ -2687,5 +2688,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef53e34160e76ab47a6b47f5f2b6944c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locations: []
+  _locations: []
   _UIContents: {fileID: 7531033163599527169}
