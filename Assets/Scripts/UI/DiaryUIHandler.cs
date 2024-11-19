@@ -64,7 +64,7 @@ public class DiaryUIHandler : MonoBehaviour
                 _evidenceImages[i].sprite = currentChar.RelevantEvidence[i].ItemImage;
 
                 //make collectible sillohette if not collected
-                if(CollectibleItem.IsItemCollected(currentChar.RelevantEvidence[i]))
+                if(!CollectibleItem.IsItemCollected(currentChar.RelevantEvidence[i]))
                     _evidenceImages[i].color = Color.black;
                 else
                     _evidenceImages[i].color = Color.white;

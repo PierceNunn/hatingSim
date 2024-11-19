@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TileMapTeleport : MonoBehaviour
+public class TileMapTeleport : InteractableEntity
 {
     //VERTICAL SLICE YAY!!!!!!!!!!
     [SerializeField] private GameObject toArea;
@@ -20,9 +20,9 @@ public class TileMapTeleport : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public override void OnInteract()
     {
-        if(collision.gameObject.CompareTag("Player") && IsUsable())
+        if (IsUsable())
         {
             Teleport();
         }
