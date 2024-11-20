@@ -121,14 +121,20 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnMenu()
     {
-        /*if(menuUI != null && diaryUI.activeSelf == false && mapUI.activeSelf == false)
-        {
-            canMove = menuUI.activeSelf;
-            menuUI.SetActive(!menuUI.activeSelf);
-        }*/
         try
         {
             menuUI.SetActive(!menuUI.activeSelf);
+
+            if(menuUI.activeSelf)
+            {
+                FindObjectOfType<PlayerInput>().actions.FindActionMap("UI").Enable();
+                FindObjectOfType<PlayerInput>().actions.FindActionMap("Player").Disable();
+            }
+            else
+            {
+                FindObjectOfType<PlayerInput>().actions.FindActionMap("UI").Disable();
+                FindObjectOfType<PlayerInput>().actions.FindActionMap("Player").Enable();
+            }
         }
         catch
         {
