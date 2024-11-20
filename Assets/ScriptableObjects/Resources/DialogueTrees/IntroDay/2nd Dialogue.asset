@@ -46,9 +46,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 40ed206def608d1439557800f07a115d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: 'I wanted to ask you if you considered the thing I mentioned last
       time we hung out. '
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-8705884863369740766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,8 +96,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: What exactly are we talking about?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-7995154229510749949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,8 +145,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 40ed206def608d1439557800f07a115d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: And do you remember all the details that I told you right?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-7891884815479783066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,8 +194,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Totally!!!
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-7712262772546139772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,10 +281,11 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "<i>She\u2019s what you would call a \u201CGym Bro\u201D.</i>"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-5749328784485594888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,10 +330,11 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>This beautiful muscular miss right here is my sweetheart, Courtney.</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-5098251951521973542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,9 +381,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 40ed206def608d1439557800f07a115d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Don\u2019t tell me you already forgot. The couple contest happening
       in a few days, the one you would consider joining."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-3639430867828152304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,8 +431,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Hit me.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-2249125673391166205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,8 +480,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 40ed206def608d1439557800f07a115d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "You sure? I don\u2019t think you could take a punch from m-"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-341922714237440101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,8 +529,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "\u2026"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-128888471422919829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,8 +578,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Anyways, I gotta go, got some, um, homework to get to.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -658,9 +669,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 40ed206def608d1439557800f07a115d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "I know you\u2019re not thrilled about that type of stuff but I think
       it would be pretty fun."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &751652686292954059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -705,11 +717,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>Someone that I would not usually consider a partner, but she was
       a friend of someone I knew so we started going out.</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1412429333836601414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -756,8 +769,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Cool, glad to hear it, anyways, might we get started?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1708116227165432000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -801,8 +815,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 40ed206def608d1439557800f07a115d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Sounds good! See you later!!
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1965485215972903886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -847,11 +862,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>But I just bear with it for a while if it means relaxing for a
       while.</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &2066816087175333413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -896,11 +912,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>We usually hang around this spot whenever we hang out and do all
       sorts of things, this time, we're having a picnic.</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &2319318921704660489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -947,8 +964,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: With the question, Courtney.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &4001023553570434431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -995,9 +1013,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Obviously, I know it so much in fact, that I wanted to accept your
       offer to both of us to participate in this.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &4221985666024101068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1044,8 +1063,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Yea, me too\u2026"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &4703958364562701284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1090,11 +1110,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "<i>We eat the food that Courtney prepared for us, it\u2019s mostly
       fruits and protein shakes, which I would have prepared anything else </i>"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &4863147022093287518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1141,8 +1162,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 40ed206def608d1439557800f07a115d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Oh, right\u2026"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &4872365730583713502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1189,8 +1211,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Hello Courtney, sorry I\u2019m late."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &5279586404123723464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1237,8 +1260,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Oh that\u2026"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &5547760912837730647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1285,8 +1309,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 40ed206def608d1439557800f07a115d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Hey PC, I wanted to ask you something.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &5823092165029805683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1333,8 +1358,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: O-Of course I remember it, I was just teasing you.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &6569023309457528815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1381,8 +1407,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 40ed206def608d1439557800f07a115d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Really? Oh, I love to hear it, so glad you changed your mind.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &7842032655582150822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1429,6 +1456,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 40ed206def608d1439557800f07a115d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Hey PC, no worries. I just got here myself, so don\u2019t worry
       too much."
+    _cameraEffect: 0
+    _eventsToInvoke: []

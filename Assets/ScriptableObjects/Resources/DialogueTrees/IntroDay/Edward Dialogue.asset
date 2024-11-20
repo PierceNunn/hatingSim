@@ -44,11 +44,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "<i>He\u2019s currently just standing there, listening to music without
       a care in the world.</i>"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-8897554967207133564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,9 +96,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Hey, Babe, I don\u2019t usually see you around the library often.
       How's it going?"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-7830744339724213205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,8 +146,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: 'Sweet. '
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-7755463748922505431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,8 +195,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: I could say the same thing for you.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-6894676740875552193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,8 +244,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "\u2018Cause I came here to relax, not do work."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-6365343892445092565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,8 +333,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: I was going here for that exact reason.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-5410219390096104165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,10 +380,11 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>FUCK!!!!</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-5318195168835610139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,8 +428,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Touche.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-5317768977372935780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,11 +475,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "<i>This is Edward, my OTHER other partner. Despite how Edward perceives
       himself as an edgy bad boy, he\u2019s quite nice when you get to know him.</i>"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-4154775764896973574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,10 +527,11 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "No? I wanted to ask you if you listened to that song I asked you
       about. But now that you mention it, it wouldn\u2019t be half bad to participate
       with you."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-154981413722919627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,9 +578,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Damn, actually isn't there somebody over here that can help you with
       that?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -655,8 +666,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Now that you\u2019re here, I wanted to ask you something."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &957623373128076756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -703,8 +715,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Cool, I\u2019m going to ask later and you can go ask them now."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1150653043773770748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -751,8 +764,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Oh what? Is that what you wanted to ask me about the couples contest?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1440254586311728546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -799,8 +813,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Not really.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &2185457043783506354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -847,9 +862,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "<i> Suddenly, his eyes dart in my direction. Great I wanted to avoid
       talking to him today but I guess that\u2019s not an option anymore.</i>"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &2836616862160377702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -896,9 +912,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: My classes were suddenly canceled, and I wanted to get out of the
       routine for a bit for a change.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &3742189549843476116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -945,9 +962,11 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Cool. Do you know when the <b>date</b> is?
+    _cameraEffect: 0
+    _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: e70a0cbb5e35b2f4084d8c6e545c1a6f, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &4866753630911435729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -992,11 +1011,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "<i>We usually hang out on the weekends since he\u2019s super busy
       in the week, but it\u2019s weird to see him here.</i>"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &6177516797785203245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1041,11 +1061,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>When I finally entered the library, I saw a familiar face, which
       I found strange, since he rarely came here. </i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &7254860710833890226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1092,8 +1113,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Hello Ed, weird to be seeing you around here.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &8469718636579659404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1140,8 +1162,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Why not ask them now?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &8932869302311719584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1188,8 +1211,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Oh\u2026 Sure, that would be nice\u2026"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &8969409063856848959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1236,5 +1260,6 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Cool, I guess we have something in common.
+    _cameraEffect: 0
+    _eventsToInvoke: []

@@ -44,12 +44,14 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>It seems to be a <b>poster</b> advertising the contest everyone
       keeps talking about, and on closer inspection, it says the date of the contest.</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: e07d5193921aa8d4dbe55198c915ce0d, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-5393409358110784922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,11 +168,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>It seems to be a <b>poster</b> advertising the contest everyone
       keeps talking about, and on closer inspection, it says the date of the contest.</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-4998966279882962980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,8 +217,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <b>-Contest Flyer Acquired- <b>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-4750415516936184758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,8 +263,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <b>-Contest Flyer Acquired- <b>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-2288875621267356181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,11 +383,13 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>It is a <b>poster</b> advertising the contest Courtney talked
       about, it seems like a simple enough poster, but I can take it if nobody needs
       it.</I>
+    _cameraEffect: 0
+    _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: e07d5193921aa8d4dbe55198c915ce0d, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &3889530833238400648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,8 +436,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Huh, what\u2019s this?"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &4080152676807894653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -561,6 +569,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: This got to be a mistake, maybe someone by the library has more information
       about it.
+    _cameraEffect: 0
+    _eventsToInvoke: []
