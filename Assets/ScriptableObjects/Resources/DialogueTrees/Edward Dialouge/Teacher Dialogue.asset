@@ -44,7 +44,7 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
     _sentences: "<i>Well, that is surprisingly simple to get. Being on your brand-new
       phone would not be a dead giveaway normally but I have a feeling there\u2019s
@@ -250,6 +250,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 0de473ddee59b194c801149b4f07be2c, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-7629797013860664651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,8 +581,8 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
-    _portraitID: thought
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
+    _portraitID: 
     _sentences: "<i>Since he\u2019s a teacher, he might know more things about the
       school than most people, he might give me information about Edward that I don\u2019t
       know about.</i>"

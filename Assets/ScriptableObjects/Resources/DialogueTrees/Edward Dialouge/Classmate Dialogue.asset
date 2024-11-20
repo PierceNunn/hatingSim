@@ -46,8 +46,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: I see, so they would know more about Edward, huh?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-8402797268703285753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,8 +188,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: d4d2858d76d73f040a102d62f2db787d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Sure\u2026"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-6980081278826501564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,8 +237,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Yep
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-6183735289856493441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,8 +286,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: d4d2858d76d73f040a102d62f2db787d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Oh, um, hi PC, I guess it\u2019s been going fine I guess."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-5847823312161196440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,11 +335,13 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: d4d2858d76d73f040a102d62f2db787d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: ' I have no clue, but I did recognize some of the Handbook users
       he was talking to. I tried to search them up after class, and they were, um,
       <b>quite spicy<b>.'
+    _cameraEffect: 0
+    _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 08abf66752b8cd5438feed57695e4b88, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-5008243428851898284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,9 +388,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "I just feel like he\u2019s hiding something from me, have you noticed
       anything weird about Edward?"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-4215128478419978263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -471,9 +478,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: d4d2858d76d73f040a102d62f2db787d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Although they have said that Edward is their favorite student. I
       don\u2019t know what you can get from that."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-2323225166419068452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,9 +528,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: d4d2858d76d73f040a102d62f2db787d, type: 2}
     _portraitID: angry
-    _eventsToInvoke: []
     _sentences: "Maybe? I don\u2019t think they talk more than any other teacher
       or student. "
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-1089552824909242768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,9 +578,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Great, that\u2019s great to hear. Also on a completely unrelated
       note, I wanted to ask something about Edward."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-371891485899926737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -706,8 +716,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: No reason in particular.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1134574738283905316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -754,9 +765,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: " I talked to him once or twice between classes since he\u2019s seen
       me with Edward but I don\u2019t know much about him.  Do they interact a lot?"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1194216551286762417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,8 +815,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: ...
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1442636179006552289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,8 +864,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: d4d2858d76d73f040a102d62f2db787d, type: 2}
     _portraitID: angry
-    _eventsToInvoke: []
     _sentences: "Of course you are\u2026"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1754170943862764848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -899,8 +913,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: d4d2858d76d73f040a102d62f2db787d, type: 2}
     _portraitID: angry
-    _eventsToInvoke: []
     _sentences: Something like cheating?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1881423976736307179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -947,8 +962,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: What was that?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &3462454090172568042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -995,8 +1011,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Do you know who he's texting?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &4539768992388559808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1043,8 +1060,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>Of course, his eyes should only be for their partner, hehehehehe</i>.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &4801644603658645307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1091,8 +1109,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: d4d2858d76d73f040a102d62f2db787d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Oh nothing, what is it that you want to know?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &5097805159685133938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1139,9 +1158,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: d4d2858d76d73f040a102d62f2db787d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Anyways, I have noticed that usually, during class, Edward spends
       his whole class texting on his flip phone.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &5163771289878389940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1188,8 +1208,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Hello, you are Edward\u2019s Classmate right? How's it going, man?"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &5665294405225908046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1236,9 +1257,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Edward sometimes mentions his teacher, something about talking to
       him after classes.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &5923440209349490499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1329,8 +1351,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: d4d2858d76d73f040a102d62f2db787d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Nothing more than a normal teacher would, why?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &6792665645947113432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1374,8 +1397,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: d4d2858d76d73f040a102d62f2db787d, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Hope to see you later, as late as you possibly can.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &6832293736543502786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1422,8 +1446,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: d4d2858d76d73f040a102d62f2db787d, type: 2}
     _portraitID: angry
-    _eventsToInvoke: []
     _sentences: ...
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &6887232372004756952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1470,8 +1495,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: No reason in particular.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &7996049917033152202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1560,9 +1586,10 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>Spicy internet people eh? Who knew that Edward had a liking for
       the enticing part of the internet? I could use this when I talk to him later.
       </i>.
+    _cameraEffect: 0
+    _eventsToInvoke: []

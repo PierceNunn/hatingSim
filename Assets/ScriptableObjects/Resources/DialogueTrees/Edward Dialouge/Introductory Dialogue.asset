@@ -46,8 +46,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Sorry about that, you\u2019re right"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-8194871769789786228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,9 +135,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Actually, there are a few minutes before class so now is the perfect
       time to\u2026"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-7731342075116146371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,8 +185,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: N-No problem, glad to be of service, I-I guess. See you then.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-6209969409162014930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,9 +234,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Which is kind of cute honestly, but you know why you\u2019re here,
       don\u2019t get distracted.\r\n"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-6033639401205067592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,11 +282,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "<i>I walk up to Edward but I don\u2019t think he\u2019s noticed
       me yet, he must be focused on his music too much.</i>"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-5339032352633801764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,9 +331,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Ed is hiding something, maybe I can ask some of his classmates why
       he\u2019s so distracted all the time."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-4570179364105466440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,9 +381,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Thanks, I promise it won\u2019t take long, meet me up in the park
       where we usually hang out."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-4334046026788294842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,8 +431,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: H-Huh?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-3875232457581285824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,7 +447,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1752, y: 1464}
+  position: {x: -1800, y: 1448}
   ports:
     keys:
     - _lastNode
@@ -472,10 +480,11 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: '<i>Fuck yes!!!!</i>
 
 '
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-3845425531112166128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -522,9 +531,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>Edward started walking off in a hurry, it looked like he wanted
       to stop me from seeing him so embarrassed, how cute.</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-2873393124836321588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,11 +579,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "<i>He looks away while blushing while saying this. Although he tries
       to hide this, it's very obvious he has the hots for me.</i> \n"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-2153803889799869636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -620,9 +631,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: That event from yesterday kinda opened my eyes that maybe Ed was
       hiding something.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-1381916888837618094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -669,9 +681,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: 'The sun is kinda nice today, not too bright, the air is cool and
       today should just go smoothly, leaving me with plenty of time to talk to Edward. '
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-1373557134970727730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,11 +729,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>Anyway, speaking to him gave me an idea. Maybe if I go ask people
       around campus, someone will have an idea why he has to go home before nightfall.</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-1344495037715529272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -767,8 +781,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: You should really turn that down, you could go deaf, Ed
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-1208197641972458705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,9 +830,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Well well well, look who suddenly showed up, now\u2019s a perfect
       time to interrogate Edward."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-1191997144321331198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -862,11 +878,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>I can hear a very muffled rock song coming from his headphones.
       I tap on his shoulders to get his attention.</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-1060530561490724604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -913,8 +930,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Sorry about that, you\u2019re right"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-235192377093279413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -961,10 +979,11 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Well, my classes are finally done for today, that was a complete
       bother. Might as well brought a pillow if I knew the class was such a snooze
       fest.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1061,8 +1080,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: I said that you shouldn't listen to things so loudly
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &678324919249305389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1109,10 +1129,12 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: " I always try to hang with you more but you are so <b> busy all
       the time</b>, can\u2019t you make more time for us?"
+    _cameraEffect: 0
+    _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 922d2eeffee8b144f94e982ba4acb69d, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &884258247778173517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1157,11 +1179,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>After a few moments, he sighs, stops the music from his MP3 player,
       and puts down his headphones.</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1470247682451976998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1206,12 +1229,13 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>Out of the corner of my eye, I spot Edward slouchily walking to
       class, with their headphones on and connected to his MP3 player, like he always
       does.</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1997081631218893078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1258,9 +1282,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Anyway, now that that\u2019s done with, I can finally start my little
       investigation process."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &2219515565133883313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1307,9 +1332,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Anyways, I\u2019ve been meaning to ask you if you would meet me
       after classes today, I wanted to talk to you about something important."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &2636864320898052370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1356,9 +1382,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "But before that, I gotta make it to class, I don\u2019t want to
       be late for my classes."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &2745348682712075473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1405,9 +1432,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "You know I can\u2019t babe, I\u2019m always packed late and you
       know I\u2019ve been filled with classes the rest of the day."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &3682312776503469672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1452,10 +1480,11 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "<i>It seems he didn\u2019t quite catch what I said, what a bother.</i>"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &4182671760886678684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1502,8 +1531,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: I have 30 minutes
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &4516106456892615711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1550,9 +1580,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "Well, he always looks skittish whenever I ask him about his clothes,
       I bet he\u2019s hiding something."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &5750239248308427281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1599,8 +1630,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Some time passes...
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &5982701831739392100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1645,11 +1677,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "<i>Come on, it\u2019s something very important that I need to talk
       about, come oooooooooooooooonnnn.</i>"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &6047081645351338815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1696,8 +1729,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "I can\u2019t afford anything more than that"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &7294644527374680040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1744,9 +1778,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "I\u2019m already stretched out as much as it is, and you know that
       I always leave for myself afterward so stop arguing."
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &8759715458321316315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1791,11 +1826,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: "<i>Edward starts to blush while trying to hide this fact from me
       by looking away, it\u2019s very obvious as you can tell.</i>"
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &9071157417772157044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1840,8 +1876,9 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>He looks straight at me for a moment, processing what I just said
       like it was some type of cipher.</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
