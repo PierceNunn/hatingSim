@@ -210,9 +210,11 @@ MonoBehaviour:
   _nextNode: {fileID: 0}
   _choiceLabel: Has evidence
   _requiredItem:
-  - {fileID: 11400000, guid: 9cf1893d0b9ffe84c8ba176905e7f083, type: 2}
-  - {fileID: 11400000, guid: 998a5bd755d64d94ebb4f82990c079f1, type: 2}
-  - {fileID: 11400000, guid: 735b9a0218adb2a449a647847974f465, type: 2}
+  - {fileID: 11400000, guid: a7cdb35a29126f445aabc120064d91ca, type: 2}
+  - {fileID: 11400000, guid: 6d8ab76a822bb4e47af7dd5c573b7ec6, type: 2}
+  - {fileID: 11400000, guid: ce01f3e295a48b24caee00d2cf921481, type: 2}
+  - {fileID: 11400000, guid: b833b64ab69c2f44e89bc71fbd0b7b0e, type: 2}
+  - {fileID: 11400000, guid: 244e3b048a399534483199c24e918ff1, type: 2}
 --- !u!114 &-4505933586482225231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,7 +333,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _sentences: <i>This is where I'm supposed to meet Mars...</i>
+    _sentences: <i>This is where I'm supposed to meet Courtney...</i>
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-2576142052824065337
@@ -429,7 +431,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ccb35c5bbd66af46aaca8a93ac99937, type: 3}
-  m_Name: MarsMorningGateDialogue
+  m_Name: CourtneyMorningGateDialogue
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: 7219860135251043805}
