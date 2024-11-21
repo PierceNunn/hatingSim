@@ -209,7 +209,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _choiceLabel: Has evidence
-  _requiredItem: []
+  _requiredItem:
+  - {fileID: 11400000, guid: 922d2eeffee8b144f94e982ba4acb69d, type: 2}
+  - {fileID: 11400000, guid: 08abf66752b8cd5438feed57695e4b88, type: 2}
+  - {fileID: 11400000, guid: 0de473ddee59b194c801149b4f07be2c, type: 2}
+  - {fileID: 11400000, guid: 002377c30b70fa642ab382362459b153, type: 2}
+  - {fileID: 11400000, guid: 67fee9d08973a8d438fa102f8fa9d644, type: 2}
 --- !u!114 &-4505933586482225231
 MonoBehaviour:
   m_ObjectHideFlags: 0
