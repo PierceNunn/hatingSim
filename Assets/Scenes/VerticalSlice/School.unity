@@ -263,6 +263,11 @@ MonoBehaviour:
   toArea: {fileID: 3838204412232242368}
   _teleportOnStart: 0
   _daysWithRequiredItems:
+  - _targetDay: 0
+    _targetPhase: 0
+    _targetItems:
+    - {fileID: 11400000, guid: 968e4ce317ba4b840b559cbe627a412b, type: 2}
+    _missingItemsDialogue: {fileID: 8361460677730338647, guid: 4036e6a64bcb4004981a59230b2241ab, type: 2}
   - _targetDay: 3
     _targetPhase: 0
     _targetItems:
@@ -1662,9 +1667,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1240136956}
-  - component: {fileID: 1240136959}
   - component: {fileID: 1240136958}
   - component: {fileID: 1240136957}
+  - component: {fileID: 1240136960}
   m_Layer: 0
   m_Name: LeaveConfrontation
   m_TagString: Untagged
@@ -1784,7 +1789,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1240136959
+--- !u!114 &1240136960
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1793,7 +1798,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1240136955}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8de5dcb7aece92b4fa07f3fceeb0c493, type: 3}
+  m_Script: {fileID: 11500000, guid: e7115c923bb1c4743b9e59b44fa94685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogueToGive: {fileID: 0}
@@ -1802,6 +1807,12 @@ MonoBehaviour:
   _advanceDayAfterTalk: 0
   toArea: {fileID: 780346969895616433}
   _teleportOnStart: 0
+  _daysWithRequiredItems:
+  - _targetDay: 0
+    _targetPhase: 0
+    _targetItems:
+    - {fileID: 11400000, guid: 968e4ce317ba4b840b559cbe627a412b, type: 2}
+    _missingItemsDialogue: {fileID: 5747220871975369423, guid: f07f2f3b31310194cbbc88e832bd719c, type: 2}
 --- !u!1 &1268079584
 GameObject:
   m_ObjectHideFlags: 0
@@ -42664,7 +42675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mapTeleportLocationList:
-  - {fileID: 1240136959}
+  - {fileID: 1240136960}
   - {fileID: 554080568}
   - {fileID: 20417136}
   - {fileID: 1987837010}

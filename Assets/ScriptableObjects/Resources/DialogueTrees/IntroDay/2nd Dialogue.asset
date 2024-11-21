@@ -385,6 +385,57 @@ MonoBehaviour:
       in a few days, the one you would consider joining."
     _cameraEffect: 0
     _eventsToInvoke: []
+--- !u!114 &-4057364046840771629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7099594b8ff43884ca052fb7144ba301, type: 3}
+  m_Name: Item Giver
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1080, y: 1624}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: -4057364046840771629}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 4221985666024101068}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: -4057364046840771629}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 1708116227165432000}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _portraitID: 
+    _sentences: Anyways, I gotta go, got some, um, homework to get to.
+    _cameraEffect: 0
+    _eventsToInvoke: []
+  _itemToGive: {fileID: 11400000, guid: 968e4ce317ba4b840b559cbe627a412b, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-3639430867828152304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,7 +596,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -952, y: 1592}
+  position: {x: -840, y: 1992}
   ports:
     keys:
     - _lastNode
@@ -554,10 +605,7 @@ MonoBehaviour:
     - _fieldName: _lastNode
       _node: {fileID: -128888471422919829}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: 4221985666024101068}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -565,10 +613,7 @@ MonoBehaviour:
     - _fieldName: _nextNode
       _node: {fileID: -128888471422919829}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _lastNode
-        node: {fileID: 1708116227165432000}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -623,6 +668,7 @@ MonoBehaviour:
   - {fileID: 4221985666024101068}
   - {fileID: -128888471422919829}
   - {fileID: 1708116227165432000}
+  - {fileID: -4057364046840771629}
 --- !u!114 &146448493092969076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -785,7 +831,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1291.0011, y: 1630.8734}
+  position: {x: -1448, y: 1640}
   ports:
     keys:
     - _lastNode
@@ -796,7 +842,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: -128888471422919829}
+        node: {fileID: -4057364046840771629}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1052,7 +1098,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: -128888471422919829}
+        node: {fileID: -4057364046840771629}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
