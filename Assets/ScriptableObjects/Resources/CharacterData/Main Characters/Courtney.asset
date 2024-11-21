@@ -14,7 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterName: Courtney
   _characterBio: 
+  _characterIcon: {fileID: 0}
   _defaultCharacterPortrait: {fileID: 21300000, guid: af2d518d95090ad41b5bca1524fe4cf4, type: 3}
   _portraits: []
   _characterVoice: {fileID: 11400000, guid: bef38bb2bd463004c9b7ecc404ecf42d, type: 2}
-  _relevantEvidence: []
+  _relevantEvidence:
+  - {fileID: 11400000, guid: a7cdb35a29126f445aabc120064d91ca, type: 2}
+  - {fileID: 11400000, guid: 6d8ab76a822bb4e47af7dd5c573b7ec6, type: 2}
+  - {fileID: 11400000, guid: ce01f3e295a48b24caee00d2cf921481, type: 2}
+  - {fileID: 11400000, guid: b833b64ab69c2f44e89bc71fbd0b7b0e, type: 2}
+  - {fileID: 11400000, guid: 244e3b048a399534483199c24e918ff1, type: 2}
