@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class DebugFunctions : MonoBehaviour
 {
-
+    [SerializeField] private CollectibleItem[] _specificItems;
     public static void EraseAllSaveData()
     {
         ClearItemData();
@@ -73,5 +73,15 @@ public class DebugFunctions : MonoBehaviour
     public static void SaveItems()
     {
         GameManager.instance.SaveCollectedItems();
+    }
+
+    public void AutoGainSpecifiedItems()
+    {
+        foreach(CollectibleItem c in _specificItems)
+        {
+            c.CollectItem();
+        }
+
+        print("Specified items collected");
     }
 }
