@@ -101,6 +101,57 @@ MonoBehaviour:
       expected to feel some type of anger but that\u2019s not exactly.</i>"
     _cameraEffect: 0
     _eventsToInvoke: []
+--- !u!114 &-8770275345234552744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7099594b8ff43884ca052fb7144ba301, type: 3}
+  m_Name: Item Giver
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -11672, y: 10456}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: -8770275345234552744}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -1233280069679963247}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: -8770275345234552744}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: -944720866073727145}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: daca92a28f227764dbd1d6d0a1fed20b, type: 2}
+    _portraitID: 
+    _sentences: ...
+    _cameraEffect: 0
+    _eventsToInvoke: []
+  _itemToGive: {fileID: 11400000, guid: 8548c9c555b970e48b2171e81d32e34a, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-8648177720580944610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4156,7 +4207,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 3537150211193708010}
+        node: {fileID: -8770275345234552744}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -4240,7 +4291,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: 3537150211193708010}
+        node: {fileID: -8770275345234552744}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -5017,6 +5068,7 @@ MonoBehaviour:
   - {fileID: 1869801789615009490}
   - {fileID: -6073741734838891041}
   - {fileID: 1295853735028548059}
+  - {fileID: -8770275345234552744}
 --- !u!114 &56110408120890295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7079,7 +7131,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -11688, y: 10520}
+  position: {x: -11880, y: 9976}
   ports:
     keys:
     - _lastNode
@@ -7088,10 +7140,7 @@ MonoBehaviour:
     - _fieldName: _lastNode
       _node: {fileID: 3537150211193708010}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: -1233280069679963247}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -7099,10 +7148,7 @@ MonoBehaviour:
     - _fieldName: _nextNode
       _node: {fileID: 3537150211193708010}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _lastNode
-        node: {fileID: -944720866073727145}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0

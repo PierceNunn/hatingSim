@@ -100,6 +100,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 3b7dbe62db3bae546a19c265d3c3d15c, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-8950743579874681216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -811,7 +812,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  nextNodes: []
+  nextNodes:
+  - {fileID: -6533549344271919828}
+  - {fileID: 686140851729344889}
+  - {fileID: 3698196201095031418}
+  - {fileID: -2074313891729699089}
+  - {fileID: 9124170381944041541}
 --- !u!114 &-8013209122996170992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,7 +1039,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: 2516480834734547013}
+        node: {fileID: 1388122916521359668}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1554,6 +1560,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: d548f69d85f6e5d488b848852ba42da0, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-5688316371214393199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1655,6 +1662,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: d548f69d85f6e5d488b848852ba42da0, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-5596699415839429844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2043,7 +2051,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  nextNodes: []
+  nextNodes:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &-4326169267436896300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2303,7 +2316,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  nextNodes: []
+  nextNodes:
+  - {fileID: -5596699415839429844}
+  - {fileID: 2310127278491187276}
+  - {fileID: 7229384183992489584}
+  - {fileID: -8848177452328951305}
+  - {fileID: 3085243118661043724}
 --- !u!114 &-3899149625528485955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2609,11 +2627,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   nextNodes:
-  - {fileID: -6533549344271919828}
-  - {fileID: 686140851729344889}
-  - {fileID: 3698196201095031418}
-  - {fileID: -2074313891729699089}
-  - {fileID: 9124170381944041541}
+  - {fileID: -812123201311446770}
+  - {fileID: 7627522860236495201}
+  - {fileID: 3358642513917264676}
+  - {fileID: -2990231389481773758}
+  - {fileID: 7102857321453912887}
 --- !u!114 &-3413799808056436944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2809,9 +2827,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   nextNodes:
-  - {fileID: 8415224545486305059}
-  - {fileID: 426271079467538636}
-  - {fileID: -8856718720922613235}
+  - {fileID: -6240558310330493009}
+  - {fileID: -4244821720908997548}
+  - {fileID: -7880240541460191444}
 --- !u!114 &-3213385262994426262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2862,6 +2880,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: d548f69d85f6e5d488b848852ba42da0, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-3192240838426845693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3435,6 +3454,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 3b7dbe62db3bae546a19c265d3c3d15c, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-2074313891729699089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4625,6 +4645,7 @@ MonoBehaviour:
   - {fileID: 9006337522983529846}
   - {fileID: -1740418245523576272}
   - {fileID: -7538762740485074232}
+  - {fileID: 1388122916521359668}
 --- !u!114 &117254417205961474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5093,9 +5114,60 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   nextNodes:
-  - {fileID: -8561758009047050425}
-  - {fileID: -114632677197874969}
-  - {fileID: 7509139832562383071}
+  - {fileID: -3192240838426845693}
+  - {fileID: 5426475683425832556}
+  - {fileID: -1212126055553377948}
+--- !u!114 &1388122916521359668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7099594b8ff43884ca052fb7144ba301, type: 3}
+  m_Name: Item Giver
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -3960, y: 6760}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 1388122916521359668}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 8838746086016698010}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 1388122916521359668}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: -7575298260100964416}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 40ed206def608d1439557800f07a115d, type: 2}
+    _portraitID: 
+    _sentences: "I\u2026 I don\u2019t really know what to say right now."
+    _cameraEffect: 0
+    _eventsToInvoke: []
+  _itemToGive: {fileID: 11400000, guid: edd555a92c5e2fa478d74b40842d5c4b, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &1499058126321041861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5346,6 +5418,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: d548f69d85f6e5d488b848852ba42da0, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &2310127278491187276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5405,7 +5478,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -3960, y: 6776}
+  position: {x: -4008, y: 7304}
   ports:
     keys:
     - _lastNode
@@ -5414,10 +5487,7 @@ MonoBehaviour:
     - _fieldName: _lastNode
       _node: {fileID: 2516480834734547013}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: 8838746086016698010}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -5425,10 +5495,7 @@ MonoBehaviour:
     - _fieldName: _nextNode
       _node: {fileID: 2516480834734547013}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _lastNode
-        node: {fileID: -7575298260100964416}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -5596,6 +5663,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 3b7dbe62db3bae546a19c265d3c3d15c, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &3068132867293422224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6736,11 +6804,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   nextNodes:
-  - {fileID: -5596699415839429844}
-  - {fileID: 2310127278491187276}
-  - {fileID: 7229384183992489584}
-  - {fileID: -8848177452328951305}
-  - {fileID: 3085243118661043724}
+  - {fileID: 486735170002755966}
+  - {fileID: -3836352224378822953}
+  - {fileID: -2987291630434390722}
+  - {fileID: -642761777506167716}
+  - {fileID: 6146089301086085071}
 --- !u!114 &5053323013619771520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6891,6 +6959,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 3b7dbe62db3bae546a19c265d3c3d15c, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &5253767206933813556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7606,6 +7675,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: d548f69d85f6e5d488b848852ba42da0, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &7509139832562383071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7859,7 +7929,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  nextNodes: []
+  nextNodes:
+  - {fileID: -7772354208937463107}
+  - {fileID: 7199571022036957883}
+  - {fileID: -726796189687755011}
+  - {fileID: -1811193692427165427}
+  - {fileID: -8950743579874681216}
 --- !u!114 &7737588843856854765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8337,9 +8412,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   nextNodes:
-  - {fileID: -6240558310330493009}
-  - {fileID: -4244821720908997548}
-  - {fileID: -7880240541460191444}
+  - {fileID: 6767237387208516277}
+  - {fileID: -316616542340312125}
+  - {fileID: 3906551207370322176}
 --- !u!114 &8317564252790691912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8424,9 +8499,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   nextNodes:
-  - {fileID: 8415224545486305059}
-  - {fileID: 426271079467538636}
-  - {fileID: -8856718720922613235}
+  - {fileID: -8561758009047050425}
+  - {fileID: -114632677197874969}
+  - {fileID: 7509139832562383071}
 --- !u!114 &8415224545486305059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8508,7 +8583,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 2516480834734547013}
+        node: {fileID: 1388122916521359668}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -8668,3 +8743,4 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 3b7dbe62db3bae546a19c265d3c3d15c, type: 2}
+  _giveOrTakeItem: 1
