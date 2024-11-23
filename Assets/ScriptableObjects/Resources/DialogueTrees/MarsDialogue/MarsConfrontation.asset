@@ -199,6 +199,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 1447aa285a9c36547a1e0813d294dcbe, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-8796869620073593828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,6 +251,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 1447aa285a9c36547a1e0813d294dcbe, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-8738346769768924351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2039,6 +2041,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 1447aa285a9c36547a1e0813d294dcbe, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-5578909237710246830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3526,7 +3529,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 4702937141468152825}
+        node: {fileID: 7582462176817986997}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -3790,6 +3793,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 1447aa285a9c36547a1e0813d294dcbe, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-2809297981814155031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4553,6 +4557,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 07a9557d51582ee4397e5f4eff90802b, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-1899631202468434946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5694,6 +5699,7 @@ MonoBehaviour:
   - {fileID: 6506044000231262586}
   - {fileID: -4470008363894839043}
   - {fileID: 4364084975117122564}
+  - {fileID: 7582462176817986997}
 --- !u!114 &68334448303585952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6145,6 +6151,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 07a9557d51582ee4397e5f4eff90802b, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &1447111154672637757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6487,6 +6494,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 07a9557d51582ee4397e5f4eff90802b, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &2539682938509335940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7475,7 +7483,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2792, y: 6440}
+  position: {x: 2840, y: 7048}
   ports:
     keys:
     - _lastNode
@@ -7484,10 +7492,7 @@ MonoBehaviour:
     - _fieldName: _lastNode
       _node: {fileID: 4702937141468152825}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: -3302810012024920333}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -7957,6 +7962,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 1447aa285a9c36547a1e0813d294dcbe, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &5747892823100668162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8550,6 +8556,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 07a9557d51582ee4397e5f4eff90802b, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &6616093555166193129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8903,6 +8910,55 @@ MonoBehaviour:
       computer at my desk. '
     _cameraEffect: 0
     _eventsToInvoke: []
+--- !u!114 &7582462176817986997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7099594b8ff43884ca052fb7144ba301, type: 3}
+  m_Name: Item Giver
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 2760, y: 6440}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 7582462176817986997}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -3302810012024920333}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 7582462176817986997}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _portraitID: 
+    _sentences: <i>Tomorrow will bring a new day, which means a new person to break
+      up with</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
+  _itemToGive: {fileID: 11400000, guid: 4d5a08180149d994dbb6aa5b167a3bc7, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &7597362115345259696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9532,6 +9588,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 07a9557d51582ee4397e5f4eff90802b, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &8836868901137020383
 MonoBehaviour:
   m_ObjectHideFlags: 0
