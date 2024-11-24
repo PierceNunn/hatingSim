@@ -45,6 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de5dcb7aece92b4fa07f3fceeb0c493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dialogueToGive: {fileID: 0}
+  _giveDialogueOnStart: 0
+  _onlyAllowDialogueOnce: 0
+  _advanceDayAfterTalk: 0
   toArea: {fileID: 0}
   _teleportOnStart: 0
 --- !u!61 &3702282366557013089
@@ -183,6 +187,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de5dcb7aece92b4fa07f3fceeb0c493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dialogueToGive: {fileID: 0}
+  _giveDialogueOnStart: 0
+  _onlyAllowDialogueOnce: 0
+  _advanceDayAfterTalk: 0
   toArea: {fileID: 0}
   _teleportOnStart: 0
 --- !u!61 &1209427324780077832
@@ -275,6 +283,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de5dcb7aece92b4fa07f3fceeb0c493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dialogueToGive: {fileID: 0}
+  _giveDialogueOnStart: 0
+  _onlyAllowDialogueOnce: 0
+  _advanceDayAfterTalk: 0
   toArea: {fileID: 0}
   _teleportOnStart: 0
 --- !u!61 &6814837475634866567
@@ -367,6 +379,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de5dcb7aece92b4fa07f3fceeb0c493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dialogueToGive: {fileID: 0}
+  _giveDialogueOnStart: 0
+  _onlyAllowDialogueOnce: 0
+  _advanceDayAfterTalk: 0
   toArea: {fileID: 0}
   _teleportOnStart: 0
 --- !u!61 &4992794195416348389
@@ -1128,7 +1144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5875863269196011695, guid: 1c0d910de131b6d41bea026ba1d33b40, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.084778
+      value: 24.42
       objectReference: {fileID: 0}
     - target: {fileID: 5875863269196011695, guid: 1c0d910de131b6d41bea026ba1d33b40, type: 3}
       propertyPath: m_LocalPosition.z
