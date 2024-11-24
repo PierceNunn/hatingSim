@@ -46,9 +46,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Some of my coworkers think we should have a picture of her framed
       up in here for being the number one drinker of Monstart
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-9086249461546671242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,9 +143,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Anyways, she comes in here quite often. She's actually our top buyer
       of Monstart Energy
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-8517977842134077366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,8 +301,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: You're back! What can I do for you?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-5888176732574994430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,8 +350,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: You mean that emo chick?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-5284034174091380323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,9 +399,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: She actually came in early this morning. I think she mentioned something
       about heading to the library to get some work done?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-4570326736662183274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,9 +449,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Oh, absolutely not. Not only is the taste horrendous, but I think
       it trashes your body
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-4332389878976675247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,7 +522,9 @@ MonoBehaviour:
   _responses:
   - {fileID: 0}
   - {fileID: 0}
-  nextNodes: []
+  nextNodes:
+  - {fileID: 5566281036543465045}
+  - {fileID: 7033954702413592600}
 --- !u!114 &-4291620948243114793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,8 +571,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Those are basically the same thing
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-3510710121744190214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,12 +618,14 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>If she didn't take her receipt, it's probably in a trash can around
       here. That could be some good physical evidence</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 78a5b6c0caddc6847b7ebefcdca86896, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-3387250576732482632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,8 +672,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: '!'
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-3202813737533877355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -709,8 +721,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: I'm not here to buy anything
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-2714315435507929413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -757,9 +770,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Monstart is super popular, and yet Mars is the top buyer? How often
       is she buying it?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-1372786229805188815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,8 +817,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: I'll be here until 5, if you need anything else
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-1057215979994943242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -897,8 +912,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Ah, is it sold out again?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-32508716923905548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -945,8 +961,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: I have some questions I wanted to ask you
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1042,9 +1059,11 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: What do you need?
+    _cameraEffect: 0
+    _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 0c31265a583292d40804db04a1278f93, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &745310206721523328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1135,8 +1154,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: There's one box of it left. Do you know if it's any good?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &2220728062883833951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1183,8 +1203,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Scene kid-
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &2611785577849538280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1275,9 +1296,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: She typically buys a case or two of Monstart at a time. Each case
       has about <b>18 cans</b> in it
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &4529668172432244455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1324,9 +1346,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: I didn't get much of a chance to talk to her. She skipped away with
       her Monstart before I could even hand her her receipt
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &5489687814076684746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1379,8 +1402,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: What else can I do for you?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &5566281036543465045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1473,8 +1497,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Are you ready to check out?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &5886374235829819101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1521,8 +1546,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: So, the Monstart Energy...?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &6052601885893958289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1567,11 +1593,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>If she's getting those cases even just once a week, that means
       she's drinking 2 or 3 cans a day. Otherwise, she's just hoarding Monstart</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &6643426322307504247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1658,10 +1685,12 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Most people who buy it are either <b>pulling all nighters</b> studying
       or just <b>no respect for their body</b>
+    _cameraEffect: 0
+    _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: c655312415e58c741b029f81edd2271e, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &7033954702413592600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1752,8 +1781,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: ... You know this is a store, right? Where people buy things
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &8898071728448324270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1800,8 +1830,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Mars is in here at least once a week
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &9077772169083346760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1848,6 +1879,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: That seems... excessive
+    _cameraEffect: 0
+    _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: ed8f4ada77182d04b89769c544aab3a9, type: 2}
+  _giveOrTakeItem: 1
