@@ -92,9 +92,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Whatever. I was leaving the library when it happened, so I don't
       know much
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-8192372007862890573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,9 +142,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: scowl
-    _eventsToInvoke: []
     _sentences: I don't know. I told you I don't really talk to Mars. I just work
       in here
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-8159761023727212484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,9 +192,11 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: What do you want to know about Mars?
+    _cameraEffect: 0
+    _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: d02ac6b051226fd468a0fdc7fc9ddc91, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-8157451207345910709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,9 +243,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: gaze
-    _eventsToInvoke: []
     _sentences: She just comes in and sits at a computer for a while. The only thing
       I ever really notice about her is the stack of Monstart Energy around her
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-8136297279354554928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,8 +293,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: ...
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-7981249054885021630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,8 +342,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Monstart Energy?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-7859788267472550092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,8 +391,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Just whenever I need to do work. Why?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-7706964904645615554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,8 +440,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: You come here often?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-7488700940534337866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -478,11 +487,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>Anyways, this investigation could get messy if I have to talk
       to Courtney</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-7415019848329476712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,12 +537,14 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>I know Courtney likes to hang out around the Gym, maybe I'll find
       her there</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: df1fa7e30fb8a08428e78aa09cb3b72b, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-7305203868612540628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,8 +591,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: It's an energy drink they sell at the <b>student store</b>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-6756932228202475957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,11 +638,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>It takes a certain type of person to dedicate yourself to coding.
       Or to even design games</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-6744775586519688252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -674,12 +688,14 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>I could probably find a substantial amount of evidence in the
       <b>student store</b> if I wanted to follow this lead...</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 8c0ca07e9b3c1034fba9fdef2064b4e8, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &-6673643164875347318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -726,8 +742,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: She's a scene girl, not a goth
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-6586050468457897168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -774,8 +791,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: gaze
-    _eventsToInvoke: []
     _sentences: Oh, you mean Courtney!
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-5214138173126056025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -820,11 +838,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>This isn't worth arguing over. This isn't worth arguing over.
       This isn't worth arguing over. This isn't-</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-3927495553784812914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -868,8 +887,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: scowl
-    _eventsToInvoke: []
     _sentences: Finally.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-3094896864595309083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -916,8 +936,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: ...
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-2633962783987508934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -964,8 +985,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: You want to know who her roommate is?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-2586554452894320503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1012,8 +1034,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: scowl
-    _eventsToInvoke: []
     _sentences: That's like, the same thing
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-1121712341094121088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1060,8 +1083,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Are you sure? Completely sure?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-920452322468341684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1216,9 +1240,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: gaze
-    _eventsToInvoke: []
     _sentences: Honestly, if you're concerned for Mars's wellbeing, Courtney is the
       one to ask. They're together all the time
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1329,10 +1354,11 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: scowl
-    _eventsToInvoke: []
     _sentences: I tried it during finals week last semester. That shit tastes like
       battery acid and bad life choices, I have no idea how she can drink so much
       of it
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &755062485509236554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1377,10 +1403,11 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>Oh, really? Around each other all the time?</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1026489949209267204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1427,8 +1454,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: I wanted to ask you about Mars
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1053313389412719899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1475,8 +1503,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Please?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1646757495529334910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1523,8 +1552,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: scowl
-    _eventsToInvoke: []
     _sentences: Why don't you ask her yourself?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &1858819348584761176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1617,8 +1647,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: gaze
-    _eventsToInvoke: []
     _sentences: You mean the goth girl who sits in the corner and does her homework?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &2707773768927994263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1665,8 +1696,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Oh god, you again
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &3068223028013485771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1713,9 +1745,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: scowl
-    _eventsToInvoke: []
     _sentences: Her habits? Look, dude, I don't really know much about her. We just
       both happen to be in the library a lot
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &3195001712824439647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1762,9 +1795,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: She doesn't want me to worry about her. But not knowing what happened
       just makes me worry even more
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &3206617885220224785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1817,8 +1851,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: Was there anything else you wanted to know about?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &4153645177453152587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1865,8 +1900,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: scowl
-    _eventsToInvoke: []
     _sentences: If you want to know more, I'd suggest finding Mars's roommate
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &4267518216514754229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1913,8 +1949,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: What do you want?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &4390527792906614371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1961,9 +1998,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: The librarian said she comes in here often. An athletic girl who
       talks to Mars...?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &4636200758247527738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2010,8 +2048,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: scowl
-    _eventsToInvoke: []
     _sentences: ...
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &4708100229296959277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2058,9 +2097,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: gaze
-    _eventsToInvoke: []
     _sentences: I remember hearing someone shout that Mars collapsed, and then someone
       dashed out to get her roommate
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &5209827618104769321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2151,11 +2191,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>Oh boy. That has to be an interesting dynamic. Courtney is a fitness
       junkie and Mars is, well, Mars</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &6016741303166628488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2202,8 +2243,9 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: gaze
-    _eventsToInvoke: []
     _sentences: The incident with Mars last week?
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &6417105339610461480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2292,10 +2334,11 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: <i>Not sure if that's a good or bad type of person...</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &7048342923148767465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2386,9 +2429,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9ae6516ac9acbd64a85f9f3ccbcd7eeb, type: 2}
     _portraitID: scowl
-    _eventsToInvoke: []
     _sentences: Yeah. Courtney's that jock girl that brings Mars meals sometimes.
       Hard to mistake her for anyone else
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &8089099100331164961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2519,9 +2563,10 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _eventsToInvoke: []
     _sentences: I heard from the librarian that Mars had a medical emergency last
       week. I was wondering what that was
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &8926229707878356761
 MonoBehaviour:
   m_ObjectHideFlags: 0
