@@ -248,7 +248,7 @@ MonoBehaviour:
   nextNodes:
   - {fileID: 5119463258075619698}
   - {fileID: -7584661206964537234}
-  - {fileID: 0}
+  - {fileID: -3592237735409043645}
   - {fileID: 7772956972375822921}
 --- !u!114 &-6914099303341058840
 MonoBehaviour:
@@ -542,7 +542,7 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
     _sentences: <i>It's surprising that I haven't run into Courtney yet. She's usually
       a fitness fiend, always in the gym. Maybe one of the other students here would
@@ -968,7 +968,7 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
     _sentences: <i>The gym rat looks around, expecting to be able to point out Courtney.
       However, she is nowhere to be found.</i>
@@ -1166,13 +1166,14 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
     _sentences: <i>Courtney skipping her workouts? That's a shock. I need to look
       around for her</i>
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 1f7cddf06ea69084db8da425acd39e5a, type: 2}
+  _giveOrTakeItem: 1
 --- !u!114 &5119463258075619698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1359,7 +1360,7 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
     _sentences: <i>Nobody has anything bad to say about Courtney. Are you kidding
       me? Is there nothing wrong with this woman??</i>
