@@ -174,7 +174,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 649795688267584721}
+        node: {fileID: 1538697283143787987}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -1081,7 +1081,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -6968, y: 7976}
+  position: {x: -6984, y: 8136}
   ports:
     keys:
     - _lastNode
@@ -1090,10 +1090,7 @@ MonoBehaviour:
     - _fieldName: _lastNode
       _node: {fileID: 649795688267584721}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: -8547675675628887998}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -1101,10 +1098,7 @@ MonoBehaviour:
     - _fieldName: _nextNode
       _node: {fileID: 649795688267584721}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _lastNode
-        node: {fileID: 1538697283143787987}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -1241,7 +1235,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: 649795688267584721}
+        node: {fileID: -8547675675628887998}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1263,8 +1257,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _sentences: "<i>But I\u2019ve had enough of her for today. I\u2019ll start first
-      thing tomorrow. </i>"
+    _sentences: "<i>But I\u2019ve had enough of all of them for today. I\u2019ll
+      start first thing tomorrow. </i>"
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &1631923092579388456
