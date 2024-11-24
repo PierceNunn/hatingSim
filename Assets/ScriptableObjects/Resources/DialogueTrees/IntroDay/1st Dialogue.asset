@@ -46,7 +46,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: <b>Dear PC, welcome to Gaslight, Gatekeep, Girlboss. </b>
+    _sentences: <b>Hello. Welcome to Gaslight, Gatekeep, Girlboss. </b>
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-8147300702546583483
@@ -96,7 +96,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
     _sentences: "<i>Before I moved to our usual spot, I suddenly felt something in
-      my pocket that I didn\u2019t expect to be there."
+      my pocket that I didn\u2019t expect to be there.</i>"
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-5310501356588008794
@@ -195,8 +195,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: <b>Additionally, since you gonna do a lot of talking, you can walk
-      up to NPCs and press Space to talk to them.</b>
+    _sentences: <b>Additionally, press SPACE to interact with objects and NPCs, and
+      ENTER to progress through text.</b>
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-2318316331049670071
@@ -512,8 +512,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _sentences: <i>They said they would be at our usual spot, which, if I remember
-      correctly, should be by the lake, so I would not like to keep them waiting.</i>
+    _sentences: "<i>They said they would be at our usual spot, which, if I remember
+      correctly, should be by the lake. I shouldn\u2019t keep them waiting.</i>"
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &5899420754221091468
@@ -706,8 +706,6 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _sentences: "<i>On days like this, hanging out with my beautiful girlfriend is
-      perfect. Since it\u2019s the end of the day, all of their classes should be
-      done for today.</i>"
+    _sentences: <i>On days like this, I like to hang out with a girlfriend.</i>
     _cameraEffect: 0
     _eventsToInvoke: []

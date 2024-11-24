@@ -46,7 +46,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _sentences: <i>Before I can say anything, I finally see who I bumped into.</i>
+    _sentences: <i>The girl leans over to grab her notebook and pencil, which had
+      been flung to the floor. </i>
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-8527185577903864892
@@ -84,7 +85,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: -5971988341146079200}
+        node: {fileID: 6504013998193211967}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -95,8 +96,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _sentences: "<i>She\u2019s a self-proclaimed game designer, even though that\u2019s
-      not being offered in this collage.</i>"
+    _sentences: "<i>Game design isn\u2019t even a major here, but that hasn\u2019t
+      stopped her from using every waking moment to work on her game.</i>"
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-7762778716804101803
@@ -145,7 +146,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: Well, glad to see you today, but I would like to-.
+    _sentences: Well, really nice to see you, but I gotta-
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-7591380499060589966
@@ -183,7 +184,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: -5264383823951601402}
+        node: {fileID: -2608094901613979741}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -194,7 +195,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _sentences: "<i>It\u2019s Mars, clutching her forehead, noticeably reeling back.</i>"
+    _sentences: "<i>Immediately noticing her green-streaked hair, it becomes clear
+      that I\u2019ve run head-first into another secret of mine. </i>"
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-7288066716918642305
@@ -243,7 +245,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _sentences: <i>This is Mars, another one of my beautiful partners.</i>
+    _sentences: "<i>Her name is Mars. She\u2019s a \u201Cself-proclaimed game designer\u201D.</i>"
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-6896718734991929094
@@ -292,8 +294,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: a415271ae61584c4384a749a2a6f5e4a, type: 2}
     _portraitID: 
-    _sentences: "You need to be dedicated and hard work for everything in life. Especially
-      so when you\u2019re the sole developer responsible for your game."
+    _sentences: "You need to be dedicated and work hard to get anywhere in life.
+      Especially in the indie game scene. It\u2019s a packed industry!"
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-6344965902607850541
@@ -342,8 +344,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _sentences: <i>,Whenever she becomes too intensive for my liking, my other partners
-      could fill that void.
+    _sentences: "<i>If I didn\u2019t have... others, it would probably be a much
+      larger issue for me.</i>"
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-5982791100116104763
@@ -389,62 +391,12 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _sentences: "<i>I don\u2019t usually go there because reading is for losers,
-      but it should be West of here.</i>"
+    _sentences: "<i>I don\u2019t usually go there because I don't care for books,
+      but it should be west of here.</i>"
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 962daa0bbfa445240861fffb5921cb6f, type: 2}
   _giveOrTakeItem: 1
---- !u!114 &-5971988341146079200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -1672.3405, y: 2488.0723}
-  ports:
-    keys:
-    - _lastNode
-    - _nextNode
-    values:
-    - _fieldName: _lastNode
-      _node: {fileID: -5971988341146079200}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: -8527185577903864892}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: _nextNode
-      _node: {fileID: -5971988341146079200}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _lastNode
-        node: {fileID: 6504013998193211967}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _lastNode: {fileID: 0}
-  _nextNode: {fileID: 0}
-  _dialogue:
-    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
-    _portraitID: 
-    _sentences: "<i>That hasn\u2019t stopped her from using every waking moment to
-      work on her game.</i>"
-    _cameraEffect: 0
-    _eventsToInvoke: []
 --- !u!114 &-5878181720815927340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,57 +492,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: "You\u2019re as stubborn as a mule sometimes Mars, you know that?"
-    _cameraEffect: 0
-    _eventsToInvoke: []
---- !u!114 &-5264383823951601402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -2360, y: 1896}
-  ports:
-    keys:
-    - _lastNode
-    - _nextNode
-    values:
-    - _fieldName: _lastNode
-      _node: {fileID: -5264383823951601402}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: -7591380499060589966}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: _nextNode
-      _node: {fileID: -5264383823951601402}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _lastNode
-        node: {fileID: -2608094901613979741}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _lastNode: {fileID: 0}
-  _nextNode: {fileID: 0}
-  _dialogue:
-    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
-    _portraitID: 
-    _sentences: <i>In addition, I noticed a pencil and notebook lying on the ground,
-      she must have dropped them when we bumped into each other.</i>
+    _sentences: "You\u2019re as stubborn as a mule sometimes, Mars, you know that?"
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-5031552044034696280
@@ -625,7 +527,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 780026142457671843}
+        node: {fileID: 7286432769472325574}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -728,8 +630,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: a415271ae61584c4384a749a2a6f5e4a, type: 2}
     _portraitID: 
-    _sentences: I would like to confirm our participation just in case some sort
-      of <b>sign-up deadline</b> stops us.
+    _sentences: ' I wanted to get our game plan straightened out just in case some
+      sort of <b>sign-up deadline</b> stops us.'
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 525b50094a903d94cb9520aa42c6acc1, type: 2}
@@ -780,7 +682,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: And I guess would not have it any other way, babe.
+    _sentences: 'Just keep an eye out for pedestrians, babe. '
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-2922474724236772892
@@ -829,8 +731,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _sentences: "<i>Anyway, now that she\u2019s finally gone, I can finally investigate
-      and try to find out when is this stupid competition.</i>"
+    _sentences: "<i>Anyway, now that she\u2019s gone, I can finally investigate that
+      competition.</i>"
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-2608094901613979741
@@ -857,7 +759,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: -5264383823951601402}
+        node: {fileID: -7591380499060589966}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -879,8 +781,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: You really should stop writing all the time and maybe look in front
-      of you when you are walking around.
+    _sentences: "You really should stop writing in that thing all the time. You\u2019re
+      gonna hurt yourself. "
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-895272047528527922
@@ -948,15 +850,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: -5031552044034696280}
-  - {fileID: 780026142457671843}
-  - {fileID: 8872220233473810555}
   - {fileID: 7286432769472325574}
   - {fileID: 3691451646102186994}
   - {fileID: -5878181720815927340}
   - {fileID: -895272047528527922}
   - {fileID: -9066135523195999911}
   - {fileID: -7591380499060589966}
-  - {fileID: -5264383823951601402}
   - {fileID: -2608094901613979741}
   - {fileID: 1379857081235108234}
   - {fileID: -5839733137740129548}
@@ -964,7 +863,6 @@ MonoBehaviour:
   - {fileID: -4069439074860372811}
   - {fileID: -7288066716918642305}
   - {fileID: -8527185577903864892}
-  - {fileID: -5971988341146079200}
   - {fileID: 6504013998193211967}
   - {fileID: -6344965902607850541}
   - {fileID: -7762778716804101803}
@@ -1028,7 +926,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: "<i>Don\u2019t tell me I agreed with her too\u2026</i>"
+    _sentences: "<i>Don\u2019t tell me I agreed to go with her too\u2026</i>"
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &647447307600897353
@@ -1081,55 +979,6 @@ MonoBehaviour:
       away with a pen and notebook in hand once again.</i>
     _cameraEffect: 0
     _eventsToInvoke: []
---- !u!114 &780026142457671843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -1384, y: 1560}
-  ports:
-    keys:
-    - _lastNode
-    - _nextNode
-    values:
-    - _fieldName: _lastNode
-      _node: {fileID: 780026142457671843}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: -5031552044034696280}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: _nextNode
-      _node: {fileID: 780026142457671843}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _lastNode
-        node: {fileID: 8872220233473810555}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _lastNode: {fileID: 0}
-  _nextNode: {fileID: 0}
-  _dialogue:
-    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
-    _portraitID: 
-    _sentences: <i>Well, that was a close call. </i>
-    _cameraEffect: 0
-    _eventsToInvoke: []
 --- !u!114 &1379857081235108234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1176,7 +1025,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: a415271ae61584c4384a749a2a6f5e4a, type: 2}
     _portraitID: 
-    _sentences: Why do that when I can save time by doing both?
+    _sentences: Why do that when I can multitask?
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &1575221851502034343
@@ -1324,7 +1173,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: "Oh, sure, whatever you say\u2026"
+    _sentences: "Oh, um, I\u2019ll get back to you on that\u2026"
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &3439234789060638016
@@ -1373,8 +1222,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: a415271ae61584c4384a749a2a6f5e4a, type: 2}
     _portraitID: 
-    _sentences: Um, actually, I wanted to ask you what are planning to wear for the
-      competition coming soon.
+    _sentences: "Um, actually, I wanted to ask- what you\u2019re planning to wear
+      for the competition?"
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &3691451646102186994
@@ -1473,7 +1322,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _sentences: <i> I can focus on what to do after that l find out at least that.</i>
+    _sentences: "<i>If I can figure out when it\u2019s happening I can plan around
+      it.</i>"
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &6504013998193211967
@@ -1500,7 +1350,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: -5971988341146079200}
+        node: {fileID: -8527185577903864892}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1522,8 +1372,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _sentences: <i>Her work ethic is kind of commendable in a way, and somehow very
-      attractive.</i>
+    _sentences: <i>Her work ethic is commendable, but it keeps her away from me.</i>
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &7276880776740648833
@@ -1572,8 +1421,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _sentences: <i> I heard that they gave information for student events in the
-      student library. </i>
+    _sentences: <i>I heard that they gave information for student events in the student
+      library.</i>
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &7286432769472325574
@@ -1600,7 +1449,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: 8872220233473810555}
+        node: {fileID: -5031552044034696280}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1722,56 +1571,5 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
     _sentences: "\u2026"
-    _cameraEffect: 0
-    _eventsToInvoke: []
---- !u!114 &8872220233473810555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -1736, y: 1576}
-  ports:
-    keys:
-    - _lastNode
-    - _nextNode
-    values:
-    - _fieldName: _lastNode
-      _node: {fileID: 8872220233473810555}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: 780026142457671843}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: _nextNode
-      _node: {fileID: 8872220233473810555}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _lastNode
-        node: {fileID: 7286432769472325574}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _lastNode: {fileID: 0}
-  _nextNode: {fileID: 0}
-  _dialogue:
-    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
-    _portraitID: 
-    _sentences: "<i>Sure I could have just asked her and I don\u2019t think she would
-      have asked her but I can\u2019t be embarrassed in front of my partner, anyway
-      I better-</i>"
     _cameraEffect: 0
     _eventsToInvoke: []
