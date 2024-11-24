@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public const double GAME_VERSION = 0.1;
+    public const double GAME_VERSION = 0.1001;
 
     public static GameManager instance;
 
