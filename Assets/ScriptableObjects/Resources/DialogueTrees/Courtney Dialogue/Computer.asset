@@ -613,7 +613,10 @@ MonoBehaviour:
     - _fieldName: _nextNode
       _node: {fileID: -6584543156054248945}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: -4735723979368596121}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -1177,7 +1180,10 @@ MonoBehaviour:
     - _fieldName: _lastNode
       _node: {fileID: -4735723979368596121}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -6584543156054248945}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
