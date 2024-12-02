@@ -20,6 +20,7 @@ public class CharacterData : ScriptableObject
     [SerializeField] private RandomizedAudio _characterVoice;
     //relevantEvidence is just for display in the diary, doesn't affect gameplay
     [SerializeField] private CollectibleItem[] _relevantEvidence;
+    [SerializeField] private Color _textColor = Color.black;
 
     public string CharacterName { get => _characterName; set => _characterName = value; }
     public Sprite DefaultCharacterPortrait { get => _defaultCharacterPortrait; set => _defaultCharacterPortrait = value; }
@@ -28,6 +29,7 @@ public class CharacterData : ScriptableObject
     public CollectibleItem[] RelevantEvidence { get => _relevantEvidence; set => _relevantEvidence = value; }
     public string CharacterBio { get => _characterBio; set => _characterBio = value; }
     public Sprite CharacterIcon { get => _characterIcon; set => _characterIcon = value; }
+    public Color TextColor { get => _textColor; set => _textColor = value; }
 
     /// <summary>
     /// gets a portrait of the character from its associated ID. if no match is
