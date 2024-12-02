@@ -163,6 +163,7 @@ public class DialogueManager : MonoBehaviour
          
         //pull current dialogue text out of the SingleDialogue data
         sentence = dialogue.sentences;
+        _dialogueText.color = dialogue.TalkerData.TextColor;
         //pull current talker's name out of the SingleDialogue's TalkerData
         string nameTag = dialogue.TalkerData.CharacterName;
         //pull current talker's portrait out of the SingleDialogue's TalkerData

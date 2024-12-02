@@ -50,9 +50,18 @@ public class DiaryUIHandler : MonoBehaviour
 
     public void DisplayEvidenceInfo(int index)
     {
-        //show name and bio of clicked on evidence
-        _characterName.text = currentChar.RelevantEvidence[index].ItemID;
-        _characterBio.text = currentChar.RelevantEvidence[index].ItemBio;
+        if (CollectibleItem.IsItemCollected(currentChar.RelevantEvidence[index]))
+        {
+            //show name and bio of clicked on evidence
+            _characterName.text = currentChar.RelevantEvidence[index].ItemID;
+            _characterBio.text = currentChar.RelevantEvidence[index].ItemBio;
+        }
+        else
+        {
+            _characterName.text = "???";
+            _characterBio.text = "Collect this evidence to learn more...";
+        }
+            
     }
 
     //show all the relevant evidence in the diary UI
