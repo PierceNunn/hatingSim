@@ -113,14 +113,6 @@ public class DialogueManager : MonoBehaviour
             PlayCameraEffect(currentBranchDialogue);
             currentBranchDialogue.DialoguePlayBehavior();
         }
-        /*else if (nextNodeType == typeof(ItemGiverNode))
-        {
-            //first give player item defined in node
-            ItemGiverNode temp = nextBranchDialogue as ItemGiverNode;
-            temp.ItemToGive.CollectItem(temp.GiveOrTakeItem);
-            //then next sentence can display normally
-            currentBranchDialogue = nextBranchDialogue as DialogueNode;
-        }*/
         else if (nextNodeType == typeof(AutoDialogueBranchNode))
         {
             AutoSelectDialogueChoices(nextBranchDialogue as DialogueBranchNode);
