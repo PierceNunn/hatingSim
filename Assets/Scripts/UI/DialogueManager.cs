@@ -288,9 +288,9 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    public void DisplayImage(Sprite imageToDisplay)
+    public void DisplayImage(Sprite imageToDisplay, bool showImage = true)
     {
-        _specialImage.gameObject.SetActive(true);
+        _specialImage.gameObject.SetActive(showImage);
         _specialImage.sprite = imageToDisplay;
         _specialImage.SetNativeSize();
     }

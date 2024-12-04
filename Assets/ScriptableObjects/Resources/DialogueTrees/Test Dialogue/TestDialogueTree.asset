@@ -179,7 +179,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 3272640551260247202}
+        node: {fileID: -4809149705960567254}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -194,6 +194,7 @@ MonoBehaviour:
     _cameraEffect: 0
     _eventsToInvoke: []
   _imageToDisplay: {fileID: 21300000, guid: 458fafb8c5cd73e4c9339a18017e8aa4, type: 3}
+  _showImage: 1
 --- !u!114 &-6980546319622346749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,6 +481,57 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _choiceLabel: end dialogue
+--- !u!114 &-4809149705960567254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 283558e8c3c1f4d46bb467e95f3f85ed, type: 3}
+  m_Name: Image Display
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -2744, y: -776}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: -4809149705960567254}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -7363602465152540091}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: -4809149705960567254}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 3272640551260247202}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _portraitID: 
+    _sentences: hiding image
+    _cameraEffect: 0
+    _eventsToInvoke: []
+  _imageToDisplay: {fileID: 21300000, guid: 458fafb8c5cd73e4c9339a18017e8aa4, type: 3}
+  _showImage: 0
 --- !u!114 &-4763624597222839109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -940,6 +992,7 @@ MonoBehaviour:
   - {fileID: 66191082439314630}
   - {fileID: 8574457251842185453}
   - {fileID: -7363602465152540091}
+  - {fileID: -4809149705960567254}
 --- !u!114 &66191082439314630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1217,7 +1270,7 @@ MonoBehaviour:
         node: {fileID: -5417227671731538971}
         reroutePoints: []
       - fieldName: _nextNode
-        node: {fileID: -7363602465152540091}
+        node: {fileID: -4809149705960567254}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
