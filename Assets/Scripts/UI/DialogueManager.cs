@@ -21,6 +21,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private AudioSource _voicer;
     [SerializeField] private GameObject _blackScreen;
+    [SerializeField] private Image _specialImage;
     [SerializeField] private GameObject _buttonSound;
     //[SerializeField] private Image _buttonPrompt;
     [SerializeField] private GameObject _playerResponses;
@@ -285,6 +286,13 @@ public class DialogueManager : MonoBehaviour
 
 
 
+    }
+
+    public void DisplayImage(Sprite imageToDisplay)
+    {
+        _specialImage.gameObject.SetActive(true);
+        _specialImage.sprite = imageToDisplay;
+        _specialImage.SetNativeSize();
     }
 
     void AutoSelectDialogueChoices(DialogueBranchNode branchNode)

@@ -10,6 +10,6 @@ public class ImageDisplayNode : DialogueNode {
 
     public override void DialoguePlayBehavior()
     {
-
+        FindObjectOfType<DialogueManager>().DisplayImage(_imageToDisplay);
     }
 }
