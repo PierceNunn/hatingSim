@@ -20,6 +20,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Image _portrait;
     [SerializeField] private Animator _animator;
     [SerializeField] private AudioSource _voicer;
+    [SerializeField] private GameObject _blackScreen;
     [SerializeField] private GameObject _buttonSound;
     //[SerializeField] private Image _buttonPrompt;
     [SerializeField] private GameObject _playerResponses;
@@ -205,6 +206,9 @@ public class DialogueManager : MonoBehaviour
             case (Enums.CameraEffects.screenShake):
                 //add screen shake player here
                 print("screen shake");
+                return;
+            case (Enums.CameraEffects.fadeToBlack):
+                _blackScreen.SetActive(!_blackScreen.activeSelf);
                 return;
             default:
                 print("no camera effect");
