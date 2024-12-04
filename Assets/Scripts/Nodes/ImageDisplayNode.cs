@@ -9,8 +9,9 @@ public class ImageDisplayNode : DialogueNode {
 
     public Sprite ImageToDisplay { get => _imageToDisplay; set => _imageToDisplay = value; }
 
-    public override void DialoguePlayBehavior()
+    public override void OnCall()
     {
+        base.OnCall();
         FindObjectOfType<DialogueManager>().DisplayImage(_imageToDisplay, _showImage);
     }
 }

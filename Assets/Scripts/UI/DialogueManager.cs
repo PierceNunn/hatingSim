@@ -112,7 +112,7 @@ public class DialogueManager : MonoBehaviour
             //if next node is a DialogueNode next sentence can display normally
             currentBranchDialogue = nextBranchDialogue as DialogueNode;
             PlayCameraEffect(currentBranchDialogue);
-            currentBranchDialogue.DialoguePlayBehavior();
+            currentBranchDialogue.OnCall();
         }
         else if (nextNodeType == typeof(AutoDialogueBranchNode))
         {
