@@ -15,6 +15,7 @@ public class DialogueGiver : InteractableEntity
     [SerializeField] private bool _giveDialogueOnStart;
     [SerializeField] private bool _onlyAllowDialogueOnce;
     [SerializeField] private bool _advanceDayAfterTalk = false;
+    [SerializeField] private CollectibleItem _itemToHideThis = null;
 
     private GameObject npc;
     private float waitTime = 0f;
@@ -31,6 +32,20 @@ public class DialogueGiver : InteractableEntity
             waitTime = 1f;
             StartCoroutine(WaitThenInitiateDialogue());
         }
+    }
+
+    private void LateUpdate()
+    {
+        try
+        {
+            if (CollectibleItem.IsItemCollected(_itemToHideThis))
+                gameObject.SetActive(false);
+        }
+        catch
+        {
+
+        }
+        
     }
 
     override public void OnInteract()
