@@ -26182,6 +26182,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7331683600123541223, guid: e641702cdf0bc9f4f8883782b8a190ff, type: 2}
     - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+      propertyPath: _itemToHideThis
+      value: 
+      objectReference: {fileID: 11400000, guid: 40d0e564380962f4f9ce65b2a344e6c2, type: 2}
+    - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: _giveDialogueOnStart
       value: 1
       objectReference: {fileID: 0}
