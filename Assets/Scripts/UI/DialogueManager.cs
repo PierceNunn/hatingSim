@@ -106,20 +106,21 @@ public class DialogueManager : MonoBehaviour
         }
 
         Type nextNodeType = nextBranchDialogue.GetType();
-        if (nextNodeType == typeof(DialogueNode))
+        if (nextNodeType == typeof(DialogueNode) || nextNodeType.BaseType == typeof(DialogueNode))
         {
             //if next node is a DialogueNode next sentence can display normally
             currentBranchDialogue = nextBranchDialogue as DialogueNode;
             PlayCameraEffect(currentBranchDialogue);
+            currentBranchDialogue.DialoguePlayBehavior();
         }
-        else if (nextNodeType == typeof(ItemGiverNode))
+        /*else if (nextNodeType == typeof(ItemGiverNode))
         {
             //first give player item defined in node
             ItemGiverNode temp = nextBranchDialogue as ItemGiverNode;
             temp.ItemToGive.CollectItem(temp.GiveOrTakeItem);
             //then next sentence can display normally
             currentBranchDialogue = nextBranchDialogue as DialogueNode;
-        }
+        }*/
         else if (nextNodeType == typeof(AutoDialogueBranchNode))
         {
             AutoSelectDialogueChoices(nextBranchDialogue as DialogueBranchNode);

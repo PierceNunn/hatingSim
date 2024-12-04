@@ -636,7 +636,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 3272640551260247202}
+        node: {fileID: 8574457251842185453}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -888,6 +888,7 @@ MonoBehaviour:
   - {fileID: 2747961910034872655}
   - {fileID: 1256644085115950769}
   - {fileID: 66191082439314630}
+  - {fileID: 8574457251842185453}
 --- !u!114 &66191082439314630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1165,7 +1166,7 @@ MonoBehaviour:
         node: {fileID: -5417227671731538971}
         reroutePoints: []
       - fieldName: _nextNode
-        node: {fileID: -3305992810296234519}
+        node: {fileID: 8574457251842185453}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1486,3 +1487,54 @@ MonoBehaviour:
   nextNodes:
   - {fileID: -740671965784844415}
   - {fileID: -1800774780138010368}
+--- !u!114 &8574457251842185453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7099594b8ff43884ca052fb7144ba301, type: 3}
+  m_Name: Item Giver
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -2056, y: -552}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 8574457251842185453}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -3305992810296234519}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 8574457251842185453}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 3272640551260247202}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: f7ba6712976332f4db00be41e60d440a, type: 2}
+    _portraitID: 
+    _sentences: givin item
+    _cameraEffect: 0
+    _eventsToInvoke: []
+  _itemToGive: {fileID: 11400000, guid: cbd77d4b6d65fb544b878ef91c117457, type: 2}
+  _giveOrTakeItem: 1

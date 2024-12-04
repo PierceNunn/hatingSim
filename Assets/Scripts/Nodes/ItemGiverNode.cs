@@ -9,4 +9,10 @@ public class ItemGiverNode : DialogueNode
 
     public CollectibleItem ItemToGive { get => _itemToGive; set => _itemToGive = value; }
     public bool GiveOrTakeItem { get => _giveOrTakeItem; set => _giveOrTakeItem = value; }
+
+    public override void DialoguePlayBehavior()
+    {
+        base.DialoguePlayBehavior();
+        ItemToGive.CollectItem(GiveOrTakeItem);
+    }
 }
