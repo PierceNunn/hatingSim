@@ -49,6 +49,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
   toArea: {fileID: 0}
   _teleportOnStart: 0
 --- !u!61 &3702282366557013089
@@ -191,6 +192,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
   toArea: {fileID: 0}
   _teleportOnStart: 0
 --- !u!61 &1209427324780077832
@@ -287,6 +289,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
   toArea: {fileID: 0}
   _teleportOnStart: 0
 --- !u!61 &6814837475634866567
@@ -383,6 +386,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
   toArea: {fileID: 0}
   _teleportOnStart: 0
 --- !u!61 &4992794195416348389
@@ -487,6 +491,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -4729225022852278244, guid: 1227468da1b9cd04ea44f9cd9e2c5aab, type: 2}
     - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+      propertyPath: _itemToHideThis
+      value: 
+      objectReference: {fileID: 11400000, guid: 04d3660ac4a74f34ebb366d69573c60d, type: 2}
+    - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: _giveDialogueOnStart
       value: 1
       objectReference: {fileID: 0}
@@ -532,6 +540,10 @@ PrefabInstance:
       propertyPath: _dialogueToGive
       value: 
       objectReference: {fileID: 1076107520402696259, guid: 32a47bc34065f564ab92d70079bc36df, type: 2}
+    - target: {fileID: 7626681000128023384, guid: b943cda46cb931e42afddec5b223aadc, type: 3}
+      propertyPath: _itemToHideThis
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8539390484868503563, guid: b943cda46cb931e42afddec5b223aadc, type: 3}
       propertyPath: _itemData
       value: 
@@ -966,6 +978,10 @@ PrefabInstance:
       propertyPath: _dialogueToGive
       value: 
       objectReference: {fileID: -2191578226837960526, guid: b7aed26b311b15246ae935075b064a1a, type: 2}
+    - target: {fileID: 7626681000128023384, guid: b943cda46cb931e42afddec5b223aadc, type: 3}
+      propertyPath: _itemToHideThis
+      value: 
+      objectReference: {fileID: 11400000, guid: 052fefa47e49e5341bc953e9e4710896, type: 2}
     - target: {fileID: 8539390484868503563, guid: b943cda46cb931e42afddec5b223aadc, type: 3}
       propertyPath: _itemData
       value: 
