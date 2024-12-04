@@ -34,7 +34,7 @@ public class DialogueGiver : InteractableEntity
         }
     }
 
-    private void LateUpdate()
+    private void LateUpdate() //DialogueGiver is hidden/shown in LateUpdate to ensure it overrides what DayDependantHandler does
     {
         try
         {

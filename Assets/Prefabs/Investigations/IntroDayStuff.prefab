@@ -250,6 +250,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -2318316331049670071, guid: 4d273f9b4bacec845b8c5edd136a3931, type: 2}
     - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+      propertyPath: _itemToHideThis
+      value: 
+      objectReference: {fileID: 11400000, guid: 968e4ce317ba4b840b559cbe627a412b, type: 2}
+    - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: _giveDialogueOnStart
       value: 1
       objectReference: {fileID: 0}
@@ -406,6 +410,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7220675376753588437, guid: 500faa5731eef7b47bdeaf933cc7c3dd, type: 2}
     - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+      propertyPath: _itemToHideThis
+      value: 
+      objectReference: {fileID: 11400000, guid: e07d5193921aa8d4dbe55198c915ce0d, type: 2}
+    - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: _giveDialogueOnStart
       value: 0
       objectReference: {fileID: 0}
@@ -491,6 +499,10 @@ PrefabInstance:
       propertyPath: _dialogueToGive
       value: 
       objectReference: {fileID: -7712262772546139772, guid: 9e52795e593c3934d94c69fa7d813223, type: 2}
+    - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+      propertyPath: _itemToHideThis
+      value: 
+      objectReference: {fileID: 11400000, guid: 968e4ce317ba4b840b559cbe627a412b, type: 2}
     - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: _onlyAllowDialogueOnce
       value: 1
