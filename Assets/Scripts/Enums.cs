@@ -8,6 +8,7 @@ public class Enums : MonoBehaviour
     {
         none,
         screenShake,
+        fadeToBlack
 
     }
     public enum DayPhases
