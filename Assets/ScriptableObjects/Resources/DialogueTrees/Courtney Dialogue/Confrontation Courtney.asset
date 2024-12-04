@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Name: Choice
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -6632, y: 2648}
+  position: {x: -6632, y: 2824}
   ports:
     keys:
     - _lastNode
@@ -83,7 +83,10 @@ MonoBehaviour:
     - _fieldName: _nextNode
       _node: {fileID: -9170594681415734327}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 5661487435418082174}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -1605,6 +1608,55 @@ MonoBehaviour:
       properly if I\u2019m anxious about my grades."
     _cameraEffect: 0
     _eventsToInvoke: []
+--- !u!114 &-5618054877249054141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -6936, y: 2952}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: -5618054877249054141}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 1136718725699841313}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: -5618054877249054141}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: -3694546968918738043}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
+    _portraitID: 
+    _sentences: <i>... I've failed...</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-5603035770840732250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2410,6 +2462,47 @@ MonoBehaviour:
     _sentences: Am I not trustful? I thought you cherished our relationship.
     _cameraEffect: 0
     _eventsToInvoke: []
+--- !u!114 &-3694546968918738043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e5835e669c8d0a45917d4f0eeb0ad5b, type: 3}
+  m_Name: Load Scene
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -7160, y: 2952}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: -3694546968918738043}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -5618054877249054141}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: -3694546968918738043}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _sceneToLoad: TitleScreen
 --- !u!114 &-3524923359398696470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2994,7 +3087,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 2315644528489693146}
+        node: {fileID: 390555363565533703}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -3099,7 +3192,7 @@ MonoBehaviour:
       _dynamic: 0
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
-  _choiceLabel: Court's Behavior
+  _choiceLabel: Courtney's Behavior
   _requiredItem:
   - {fileID: 11400000, guid: 6d8ab76a822bb4e47af7dd5c573b7ec6, type: 2}
 --- !u!114 &-2981532530625813208
@@ -4027,7 +4120,7 @@ MonoBehaviour:
       _dynamic: 0
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
-  _choiceLabel: Court's Behavior
+  _choiceLabel: Courtney's Behavior
   _requiredItem:
   - {fileID: 11400000, guid: 6d8ab76a822bb4e47af7dd5c573b7ec6, type: 2}
 --- !u!114 &-722494197600725853
@@ -4698,7 +4791,11 @@ MonoBehaviour:
   - {fileID: -2759511056138468010}
   - {fileID: -722494197600725853}
   - {fileID: -3040130150311825655}
-  - {fileID: 2315644528489693146}
+  - {fileID: -5618054877249054141}
+  - {fileID: -3694546968918738043}
+  - {fileID: 5661487435418082174}
+  - {fileID: 390555363565533703}
+  - {fileID: 6497738260967951601}
 --- !u!114 &117254417205961474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4896,6 +4993,50 @@ MonoBehaviour:
     _sentences: And last night?
     _cameraEffect: 0
     _eventsToInvoke: []
+--- !u!114 &390555363565533703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 218b577389e787f48a75fda71bd918a7, type: 3}
+  m_Name: Time Advance
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -6744, y: 6776}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 390555363565533703}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -3040130150311825655}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 390555363565533703}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 6497738260967951601}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _advanceTimeAmt: 1
 --- !u!114 &426271079467538636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5203,7 +5344,10 @@ MonoBehaviour:
     - _fieldName: _nextNode
       _node: {fileID: 1136718725699841313}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: -5618054877249054141}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -5559,46 +5703,6 @@ MonoBehaviour:
   _choiceLabel: Arcade Tokens
   _requiredItem:
   - {fileID: 11400000, guid: a7cdb35a29126f445aabc120064d91ca, type: 2}
---- !u!114 &2315644528489693146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87bdd9f3ddf1c834ebb9e302d08c88f2, type: 3}
-  m_Name: Ending
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -6808, y: 6792}
-  ports:
-    keys:
-    - _lastNode
-    - _nextNode
-    values:
-    - _fieldName: _lastNode
-      _node: {fileID: 2315644528489693146}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: -3040130150311825655}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: _nextNode
-      _node: {fileID: 2315644528489693146}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _lastNode: {fileID: 0}
-  _nextNode: {fileID: 0}
 --- !u!114 &2862441214325039642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5944,7 +6048,7 @@ MonoBehaviour:
       _dynamic: 0
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
-  _choiceLabel: Court's Behavior
+  _choiceLabel: Courtney's Behavior
   _requiredItem:
   - {fileID: 11400000, guid: 6d8ab76a822bb4e47af7dd5c573b7ec6, type: 2}
 --- !u!114 &3372682063016323801
@@ -6244,7 +6348,7 @@ MonoBehaviour:
       _dynamic: 0
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
-  _choiceLabel: Court's Behavior
+  _choiceLabel: Courtney's Behavior
   _requiredItem:
   - {fileID: 11400000, guid: 6d8ab76a822bb4e47af7dd5c573b7ec6, type: 2}
 --- !u!114 &3698504462592234780
@@ -7020,7 +7124,9 @@ MonoBehaviour:
   _responses:
   - {fileID: 0}
   - {fileID: 0}
-  nextNodes: []
+  nextNodes:
+  - {fileID: -9170594681415734327}
+  - {fileID: 1136718725699841313}
 --- !u!114 &5053323013619771520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7267,6 +7373,47 @@ MonoBehaviour:
   _choiceLabel: secondfuckup
   _requiredItem:
   - {fileID: 11400000, guid: 3b7dbe62db3bae546a19c265d3c3d15c, type: 2}
+--- !u!114 &5661487435418082174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e5835e669c8d0a45917d4f0eeb0ad5b, type: 3}
+  m_Name: Load Scene
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -6872, y: 2792}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 5661487435418082174}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -9170594681415734327}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 5661487435418082174}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _sceneToLoad: School
 --- !u!114 &5872093969241464045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7411,6 +7558,47 @@ MonoBehaviour:
     _sentences: ...
     _cameraEffect: 0
     _eventsToInvoke: []
+--- !u!114 &6497738260967951601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e5835e669c8d0a45917d4f0eeb0ad5b, type: 3}
+  m_Name: Load Scene
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -6968, y: 6776}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 6497738260967951601}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 390555363565533703}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 6497738260967951601}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _sceneToLoad: School
 --- !u!114 &6767237387208516277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7739,7 +7927,7 @@ MonoBehaviour:
       _dynamic: 0
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
-  _choiceLabel: Court's Behavior
+  _choiceLabel: Courtney's Behavior
   _requiredItem:
   - {fileID: 11400000, guid: 6d8ab76a822bb4e47af7dd5c573b7ec6, type: 2}
 --- !u!114 &7390603804305980775
