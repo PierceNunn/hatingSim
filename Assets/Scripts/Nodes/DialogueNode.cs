@@ -16,8 +16,6 @@ public class DialogueNode : LinkedNode {
 
     public SingleDialogue Dialogue { get => _dialogue; set => _dialogue = value; }
 
-
-
     // Use this for initialization
     protected override void Init() {
 		base.Init();

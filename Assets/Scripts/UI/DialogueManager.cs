@@ -20,6 +20,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Image _portrait;
     [SerializeField] private Animator _animator;
     [SerializeField] private AudioSource _voicer;
+    [SerializeField] private GameObject _blackScreen;
+    [SerializeField] private Image _specialImage;
     [SerializeField] private GameObject _buttonSound;
     //[SerializeField] private Image _buttonPrompt;
     [SerializeField] private GameObject _playerResponses;
@@ -105,19 +107,12 @@ public class DialogueManager : MonoBehaviour
         }
 
         Type nextNodeType = nextBranchDialogue.GetType();
-        if (nextNodeType == typeof(DialogueNode))
+        if (nextNodeType == typeof(DialogueNode) || nextNodeType.BaseType == typeof(DialogueNode))
         {
             //if next node is a DialogueNode next sentence can display normally
             currentBranchDialogue = nextBranchDialogue as DialogueNode;
             PlayCameraEffect(currentBranchDialogue);
-        }
-        else if (nextNodeType == typeof(ItemGiverNode))
-        {
-            //first give player item defined in node
-            ItemGiverNode temp = nextBranchDialogue as ItemGiverNode;
-            temp.ItemToGive.CollectItem(temp.GiveOrTakeItem);
-            //then next sentence can display normally
-            currentBranchDialogue = nextBranchDialogue as DialogueNode;
+            currentBranchDialogue.OnCall();
         }
         else if (nextNodeType == typeof(AutoDialogueBranchNode))
         {
@@ -206,6 +201,9 @@ public class DialogueManager : MonoBehaviour
                 //add screen shake player here
                 print("screen shake");
                 return;
+            case (Enums.CameraEffects.fadeToBlack):
+                _blackScreen.SetActive(!_blackScreen.activeSelf);
+                return;
             default:
                 print("no camera effect");
                 return;
@@ -288,6 +286,13 @@ public class DialogueManager : MonoBehaviour
 
 
 
+    }
+
+    public void DisplayImage(Sprite imageToDisplay, bool showImage = true)
+    {
+        _specialImage.gameObject.SetActive(showImage);
+        _specialImage.sprite = imageToDisplay;
+        _specialImage.SetNativeSize();
     }
 
     void AutoSelectDialogueChoices(DialogueBranchNode branchNode)
