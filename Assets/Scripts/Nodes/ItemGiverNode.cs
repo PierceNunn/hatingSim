@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[NodeTint("#6b3c66")]
 public class ItemGiverNode : DialogueNode
 {
     [SerializeField] private CollectibleItem _itemToGive;
