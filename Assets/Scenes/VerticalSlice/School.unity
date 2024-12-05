@@ -534,6 +534,11 @@ MonoBehaviour:
     _targetItems:
     - {fileID: 11400000, guid: c3a2eac11987dc64198aa9120e7f5511, type: 2}
     _missingItemsDialogue: {fileID: 8361460677730338647, guid: 4036e6a64bcb4004981a59230b2241ab, type: 2}
+  - _targetDay: 4
+    _targetPhase: 0
+    _targetItems:
+    - {fileID: 11400000, guid: 14d768b3f4de34c4faac8c53daf43da2, type: 2}
+    _missingItemsDialogue: {fileID: 8361460677730338647, guid: 4036e6a64bcb4004981a59230b2241ab, type: 2}
 --- !u!114 &39937336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25935,6 +25940,11 @@ MonoBehaviour:
     _targetItems:
     - {fileID: 11400000, guid: 1f7cddf06ea69084db8da425acd39e5a, type: 2}
     _missingItemsDialogue: {fileID: 8361460677730338647, guid: 4036e6a64bcb4004981a59230b2241ab, type: 2}
+  - _targetDay: 4
+    _targetPhase: 0
+    _targetItems:
+    - {fileID: 11400000, guid: 14d768b3f4de34c4faac8c53daf43da2, type: 2}
+    _missingItemsDialogue: {fileID: 8361460677730338647, guid: 4036e6a64bcb4004981a59230b2241ab, type: 2}
 --- !u!1 &577285470
 GameObject:
   m_ObjectHideFlags: 0
@@ -29334,6 +29344,11 @@ MonoBehaviour:
     _targetItems:
     - {fileID: 11400000, guid: 14d768b3f4de34c4faac8c53daf43da2, type: 2}
     _missingItemsDialogue: {fileID: 7219860135251043805, guid: 422d9bb213c2c5e43a7fed771989eda4, type: 2}
+  - _targetDay: 4
+    _targetPhase: 0
+    _targetItems:
+    - {fileID: 11400000, guid: 14d768b3f4de34c4faac8c53daf43da2, type: 2}
+    _missingItemsDialogue: {fileID: 8361460677730338647, guid: 4036e6a64bcb4004981a59230b2241ab, type: 2}
 --- !u!61 &1074775331
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33192,7 +33207,7 @@ Transform:
   m_GameObject: {fileID: 1947627737}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 85.504105, y: 71.185234, z: 0}
+  m_LocalPosition: {x: 86.31, y: 71.155, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33277,6 +33292,11 @@ MonoBehaviour:
     _targetPhase: 0
     _targetItems:
     - {fileID: 11400000, guid: 1f7cddf06ea69084db8da425acd39e5a, type: 2}
+    _missingItemsDialogue: {fileID: 8361460677730338647, guid: 4036e6a64bcb4004981a59230b2241ab, type: 2}
+  - _targetDay: 4
+    _targetPhase: 0
+    _targetItems:
+    - {fileID: 11400000, guid: 14d768b3f4de34c4faac8c53daf43da2, type: 2}
     _missingItemsDialogue: {fileID: 8361460677730338647, guid: 4036e6a64bcb4004981a59230b2241ab, type: 2}
 --- !u!4 &1955968672 stripped
 Transform:
@@ -33735,6 +33755,11 @@ MonoBehaviour:
     _targetPhase: 0
     _targetItems:
     - {fileID: 11400000, guid: df1fa7e30fb8a08428e78aa09cb3b72b, type: 2}
+    _missingItemsDialogue: {fileID: 8361460677730338647, guid: 4036e6a64bcb4004981a59230b2241ab, type: 2}
+  - _targetDay: 4
+    _targetPhase: 0
+    _targetItems:
+    - {fileID: 11400000, guid: 14d768b3f4de34c4faac8c53daf43da2, type: 2}
     _missingItemsDialogue: {fileID: 8361460677730338647, guid: 4036e6a64bcb4004981a59230b2241ab, type: 2}
 --- !u!114 &1997943939
 MonoBehaviour:
