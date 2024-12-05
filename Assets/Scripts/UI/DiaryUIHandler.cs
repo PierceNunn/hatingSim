@@ -33,7 +33,13 @@ public class DiaryUIHandler : MonoBehaviour
 
     public void ToggleVisibility()
     {
-        _uiContents.SetActive(!_uiContents.activeSelf);
+        SetVisibility(!_uiContents.activeSelf);
+        
+    }
+
+    public void SetVisibility(bool toSet)
+    {
+        _uiContents.SetActive(toSet);
         if (currentChar != null)
             UpdateEvidenceDisplay(currentChar);
     }

@@ -22,6 +22,12 @@ public class PauseMenuUIHandler : MonoBehaviour
         transform.parent.gameObject.SetActive(!transform.parent.gameObject.activeSelf);
     }
 
+    public void HideAllSubMenus()
+    {
+        FindObjectOfType<DiaryUIHandler>().SetVisibility(false);
+        FindObjectOfType<MapController>().SetVisibility(false);
+    }
+
     public void DisplayEvidence()
     {
         FindObjectOfType<DiaryUIHandler>().ToggleVisibility();
