@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Name: Choice
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -6632, y: 2824}
+  position: {x: -6632, y: 2776}
   ports:
     keys:
     - _lastNode
@@ -85,7 +85,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 5661487435418082174}
+        node: {fileID: -312237336003357454}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -3140,7 +3140,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 824, y: -24}
+  position: {x: 888, y: -56}
   ports:
     keys:
     - _lastNode
@@ -4374,6 +4374,9 @@ MonoBehaviour:
       - fieldName: _nextNode
         node: {fileID: 8026497621432984131}
         reroutePoints: []
+      - fieldName: _nextNode
+        node: {fileID: -9170594681415734327}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -4674,7 +4677,6 @@ MonoBehaviour:
   - {fileID: -3040130150311825655}
   - {fileID: -5618054877249054141}
   - {fileID: -3694546968918738043}
-  - {fileID: 5661487435418082174}
   - {fileID: 390555363565533703}
   - {fileID: 6497738260967951601}
   - {fileID: 1595728985730982925}
@@ -7372,47 +7374,6 @@ MonoBehaviour:
   _choiceLabel: secondfuckup
   _requiredItem:
   - {fileID: 11400000, guid: 3b7dbe62db3bae546a19c265d3c3d15c, type: 2}
---- !u!114 &5661487435418082174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e5835e669c8d0a45917d4f0eeb0ad5b, type: 3}
-  m_Name: Load Scene
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -7160, y: 2792}
-  ports:
-    keys:
-    - _lastNode
-    - _nextNode
-    values:
-    - _fieldName: _lastNode
-      _node: {fileID: 5661487435418082174}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: -9170594681415734327}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: _nextNode
-      _node: {fileID: 5661487435418082174}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _lastNode: {fileID: 0}
-  _nextNode: {fileID: 0}
-  _sceneToLoad: School
 --- !u!114 &5872093969241464045
 MonoBehaviour:
   m_ObjectHideFlags: 0

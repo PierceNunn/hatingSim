@@ -977,7 +977,9 @@ MonoBehaviour:
   _responses:
   - {fileID: 0}
   - {fileID: 0}
-  nextNodes: []
+  nextNodes:
+  - {fileID: 3364322459916712725}
+  - {fileID: 6235222658544898236}
 --- !u!114 &-7614924901558965607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5115,7 +5117,6 @@ MonoBehaviour:
   - {fileID: 1505361366634305981}
   - {fileID: 3925185872630401194}
   - {fileID: 1084051308661425221}
-  - {fileID: 5609081012675947170}
   - {fileID: -5196573666875764222}
 --- !u!114 &56110408120890295
 MonoBehaviour:
@@ -7478,7 +7479,7 @@ MonoBehaviour:
   m_Name: Choice
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -6856, y: 5992}
+  position: {x: -6856, y: 5976}
   ports:
     keys:
     - _lastNode
@@ -7500,7 +7501,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 5609081012675947170}
+        node: {fileID: 6011268201674539831}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -8500,47 +8501,6 @@ MonoBehaviour:
       taking this seriously, so we can talk when you ACTUALLY want to talk.
     _cameraEffect: 0
     _eventsToInvoke: []
---- !u!114 &5609081012675947170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e5835e669c8d0a45917d4f0eeb0ad5b, type: 3}
-  m_Name: Load Scene
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -7080, y: 5992}
-  ports:
-    keys:
-    - _lastNode
-    - _nextNode
-    values:
-    - _fieldName: _lastNode
-      _node: {fileID: 5609081012675947170}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: 3364322459916712725}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: _nextNode
-      _node: {fileID: 5609081012675947170}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _lastNode: {fileID: 0}
-  _nextNode: {fileID: 0}
-  _sceneToLoad: School
 --- !u!114 &5722382070443183529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8870,6 +8830,9 @@ MonoBehaviour:
       connections:
       - fieldName: _nextNode
         node: {fileID: -3761291175763431140}
+        reroutePoints: []
+      - fieldName: _nextNode
+        node: {fileID: 3364322459916712725}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
