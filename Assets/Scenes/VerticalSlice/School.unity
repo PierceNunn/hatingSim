@@ -35289,7 +35289,7 @@ PrefabInstance:
       objectReference: {fileID: -3761291175763431140, guid: fdb4a2adcc65b33459b1a87e8d514374, type: 2}
     - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: _advanceDayAfterTalk
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: _onlyAllowDialogueOnce
@@ -49424,6 +49424,10 @@ PrefabInstance:
       objectReference: {fileID: 8026497621432984131, guid: 75e64f893fd2903488521a9b56089451, type: 2}
     - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: _advanceDayAfterTalk
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+      propertyPath: _onlyAllowDialogueOnce
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -96536,6 +96540,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4441531500119389789}
     m_Modifications:
+    - target: {fileID: 1597480537247434171, guid: 1c0d910de131b6d41bea026ba1d33b40, type: 3}
+      propertyPath: _advanceDayAfterTalk
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1597480537247434171, guid: 1c0d910de131b6d41bea026ba1d33b40, type: 3}
       propertyPath: _onlyAllowDialogueOnce
       value: 1
