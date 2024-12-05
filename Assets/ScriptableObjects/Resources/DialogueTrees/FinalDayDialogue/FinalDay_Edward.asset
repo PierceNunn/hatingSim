@@ -926,7 +926,7 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 5875917871250660236}
+        node: {fileID: 905588207662604765}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -949,7 +949,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   nextNodes:
-  - {fileID: 5875917871250660236}
+  - {fileID: 0}
   - {fileID: -6738451266421958620}
 --- !u!114 &-674556526920464439
 MonoBehaviour:
@@ -1077,7 +1077,6 @@ MonoBehaviour:
   - {fileID: -1740839861221475933}
   - {fileID: -4541496445023208061}
   - {fileID: -954673796912599633}
-  - {fileID: 5875917871250660236}
   - {fileID: -1283529273737781059}
   - {fileID: -5192775054539516695}
   - {fileID: 5305277695900483419}
@@ -1101,6 +1100,7 @@ MonoBehaviour:
   - {fileID: 7762954784324933968}
   - {fileID: -5179850195164870889}
   - {fileID: -674556526920464439}
+  - {fileID: 905588207662604765}
 --- !u!114 &148982662315466911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1349,6 +1349,50 @@ MonoBehaviour:
     _sentences: "Oh really? That\u2019s awesome."
     _cameraEffect: 0
     _eventsToInvoke: []
+--- !u!114 &905588207662604765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a68762aa58cc082459ffd018c2258b02, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1672, y: 1320}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 905588207662604765}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _responses 0
+        node: {fileID: -954673796912599633}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 905588207662604765}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 6381614389315118759}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _choiceLabel: Break Up
 --- !u!114 &1701927732177546081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1980,52 +2024,6 @@ MonoBehaviour:
     _sentences: "Don\u2019t. I\u2019m done."
     _cameraEffect: 0
     _eventsToInvoke: []
---- !u!114 &5875917871250660236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e5abaecaebe87c4d80a575c0f223782, type: 3}
-  m_Name: Item Choice
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -1672, y: 1320}
-  ports:
-    keys:
-    - _lastNode
-    - _nextNode
-    values:
-    - _fieldName: _lastNode
-      _node: {fileID: 5875917871250660236}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _responses 0
-        node: {fileID: -954673796912599633}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: _nextNode
-      _node: {fileID: 5875917871250660236}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _lastNode
-        node: {fileID: 6381614389315118759}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _lastNode: {fileID: 0}
-  _nextNode: {fileID: 0}
-  _choiceLabel: Break up
-  _requiredItem:
-  - {fileID: 11400000, guid: 8548c9c555b970e48b2171e81d32e34a, type: 2}
 --- !u!114 &6381614389315118759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2050,7 +2048,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: 5875917871250660236}
+        node: {fileID: 905588207662604765}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
