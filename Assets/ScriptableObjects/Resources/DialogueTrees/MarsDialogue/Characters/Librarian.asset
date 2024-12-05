@@ -47,7 +47,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 9fa5dca812236af4ba3641b0d3bde04a, type: 2}
     _portraitID: 
     _sentences: We close at midnight, but Mars is always working away by the time
-      we close
+      we close.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-8827004554464869986
@@ -225,7 +225,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 5371968421943266330}
+        node: {fileID: -2678868257921321269}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -335,7 +335,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9fa5dca812236af4ba3641b0d3bde04a, type: 2}
     _portraitID: 
-    _sentences: So, about needing help
+    _sentences: So, about needing help...
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 3da46b2adafb21a4b9142fd7cdf87a5a, type: 2}
@@ -435,7 +435,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: Yeah, I'm filled with worry
+    _sentences: Yeah, I'm filled with worry.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-6477913563734427013
@@ -627,7 +627,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 9fa5dca812236af4ba3641b0d3bde04a, type: 2}
     _portraitID: 
     _sentences: We got scared something might happen to her, so we made an agreement.
-      She could work here after hours, if she does some work for us in that time
+      She could work here after hours, if she does some work for us in that time.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-5855418445711771454
@@ -725,7 +725,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: I'm not a 'lady' either
+    _sentences: I'm not a 'lady' either.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-5324702297870103370
@@ -824,7 +824,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9fa5dca812236af4ba3641b0d3bde04a, type: 2}
     _portraitID: 
-    _sentences: She just sorts through some books and puts them on the shelves
+    _sentences: She just sorts through some books and puts them on the shelves.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-4652450453654785461
@@ -870,7 +870,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9fa5dca812236af4ba3641b0d3bde04a, type: 2}
     _portraitID: 
-    _sentences: Okay then, I'll just be here if you need anything
+    _sentences: Okay then, I'll just be here if you need anything.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-3824369003943023933
@@ -1069,7 +1069,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _sentences: <i> Incident? </i>
+    _sentences: <i>Incident?</i>
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: af442575fe4aa1849a14b56eb72f666f, type: 2}
@@ -1136,7 +1136,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -5848, y: -760}
+  position: {x: -5528, y: -760}
   ports:
     keys:
     - _lastNode
@@ -1147,7 +1147,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: 5371968421943266330}
+        node: {fileID: -8191181211798568997}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1218,7 +1218,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: Sounds like they're quite friendly with one another
+    _sentences: Sounds like they're quite friendly with one another.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-2250863398267332234
@@ -1414,7 +1414,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: She doesn't like me worrying about her
+    _sentences: She doesn't like me worrying about her.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-1096997474386064524
@@ -1464,7 +1464,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 9fa5dca812236af4ba3641b0d3bde04a, type: 2}
     _portraitID: 
     _sentences: Well, sometimes there is a young lady who comes in and makes sure
-      Mars gets home safely
+      Mars gets home safely.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-1002004500392671744
@@ -1658,7 +1658,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9fa5dca812236af4ba3641b0d3bde04a, type: 2}
     _portraitID: 
-    _sentences: And of course, hearing about a vague incident is quite worrying
+    _sentences: And of course, hearing about a vague incident is quite worrying.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &11400000
@@ -1724,7 +1724,6 @@ MonoBehaviour:
   - {fileID: 4063471079341219032}
   - {fileID: -6808933040349336406}
   - {fileID: -8191181211798568997}
-  - {fileID: 5371968421943266330}
   - {fileID: -2678868257921321269}
   - {fileID: -6274627090344898760}
   - {fileID: 4540115633752460318}
@@ -2024,7 +2023,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 9fa5dca812236af4ba3641b0d3bde04a, type: 2}
     _portraitID: 
     _sentences: She comes in nearly everyday to work on her homework and personal
-      projects
+      projects.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &2116230617216669515
@@ -2174,7 +2173,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: I wouldn't consider myself a...'gentleman'
+    _sentences: I wouldn't consider myself a...'gentleman'.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &2797543581285053776
@@ -2224,7 +2223,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 9fa5dca812236af4ba3641b0d3bde04a, type: 2}
     _portraitID: 
     _sentences: I'm surprised you don't seem to know much about the incident last
-      week
+      week.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &2801666712962431111
@@ -2274,7 +2273,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 9fa5dca812236af4ba3641b0d3bde04a, type: 2}
     _portraitID: 
     _sentences: She looks like an athletic girl. Her and Mars seem very friendly.
-      I think she worries for Mars
+      I think she worries for Mars.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &2856385731564014073
@@ -2339,7 +2338,7 @@ MonoBehaviour:
   m_Name: Intro
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 136, y: -1432}
+  position: {x: 72, y: -1736}
   ports:
     keys:
     - _lastNode
@@ -2625,57 +2624,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: So she's doing unpaid labor
-    _cameraEffect: 0
-    _eventsToInvoke: []
---- !u!114 &5371968421943266330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -5528, y: -760}
-  ports:
-    keys:
-    - _lastNode
-    - _nextNode
-    values:
-    - _fieldName: _lastNode
-      _node: {fileID: 5371968421943266330}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: -8191181211798568997}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: _nextNode
-      _node: {fileID: 5371968421943266330}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _lastNode
-        node: {fileID: -2678868257921321269}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _lastNode: {fileID: 0}
-  _nextNode: {fileID: 0}
-  _dialogue:
-    _talkerData: {fileID: 11400000, guid: 9fa5dca812236af4ba3641b0d3bde04a, type: 2}
-    _portraitID: 
-    _sentences: I really do wish I could tell you more. But unfortunately, I wasn't
-      here when it happened.
+    _sentences: So she's doing unpaid labor.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &6396256606421808838
@@ -2774,7 +2723,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 9fa5dca812236af4ba3641b0d3bde04a, type: 2}
     _portraitID: 
     _sentences: The young lady comes in around once a day, sometimes twice. She never
-      stays for long. Usually she's just dropping off food or escorting Mars home
+      stays for long. Usually she's just dropping off food or escorting Mars home.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &7525029255623908576
@@ -2824,7 +2773,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
     _sentences: <i>I'd almost suspect something happening between Mars and this mystery
-      woman. However, Mars isn't the cheating type</i>
+      woman. However, Mars isn't the cheating type.</i>
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &7937821316944099747
@@ -2873,7 +2822,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 9fa5dca812236af4ba3641b0d3bde04a, type: 2}
     _portraitID: 
-    _sentences: I'm not sure who she is, exactly. I've never actually talked to her
+    _sentences: I'm not sure who she is, exactly. I've never actually talked to her.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &8271340456570267807
@@ -3044,7 +2993,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 9fa5dca812236af4ba3641b0d3bde04a, type: 2}
     _portraitID: 
     _sentences: Everyone here loves her so much. We even gave her a key to the Library
-      so she can lock up when she's done with her work
+      so she can lock up when she's done with her work.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &9040859141960432639
@@ -3140,7 +3089,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 9fa5dca812236af4ba3641b0d3bde04a, type: 2}
     _portraitID: 
     _sentences: I heard she even rushed to the Library during Mars's <b>incident</b>
-      last week
+      last week.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &9060230170123807993
