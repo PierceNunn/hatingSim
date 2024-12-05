@@ -28,7 +28,12 @@ public class MapController : MonoBehaviour
 
     public void ToggleVisibility()
     {
-        _UIContents.SetActive(!_UIContents.activeSelf);
+        SetVisibility(!_UIContents.activeSelf);
+    }
+
+    public void SetVisibility(bool toSet)
+    {
+        _UIContents.SetActive(toSet);
         UpdateTeleportButtons();
     }
 

@@ -123,9 +123,9 @@ public class PlayerMovement : MonoBehaviour
     {
         try
         {
-            menuUI.SetActive(!menuUI.activeSelf);
+            
 
-            if(menuUI.activeSelf)
+            if(!menuUI.activeSelf)
             {
                 FindObjectOfType<PlayerInput>().actions.FindActionMap("UI").Enable();
                 FindObjectOfType<PlayerInput>().actions.FindActionMap("Player").Disable();
@@ -134,7 +134,10 @@ public class PlayerMovement : MonoBehaviour
             {
                 FindObjectOfType<PlayerInput>().actions.FindActionMap("UI").Disable();
                 FindObjectOfType<PlayerInput>().actions.FindActionMap("Player").Enable();
+                FindObjectOfType<PauseMenuUIHandler>().HideAllSubMenus();
             }
+
+            menuUI.SetActive(!menuUI.activeSelf);
         }
         catch
         {
