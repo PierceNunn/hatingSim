@@ -24470,6 +24470,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &355227467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 355227468}
+  - component: {fileID: 355227469}
+  m_Layer: 0
+  m_Name: Day1ConfrontationTeleporter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &355227468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355227467}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.056892, y: 28.96, z: -0.44823167}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4441531500119389789}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &355227469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355227467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de5dcb7aece92b4fa07f3fceeb0c493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogueToGive: {fileID: 0}
+  _giveDialogueOnStart: 0
+  _onlyAllowDialogueOnce: 0
+  _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
+  toArea: {fileID: 355227467}
+  _teleportOnStart: 1
 --- !u!1 &370716646
 GameObject:
   m_ObjectHideFlags: 0
@@ -27496,6 +27547,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &829518860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 829518861}
+  - component: {fileID: 829518862}
+  m_Layer: 0
+  m_Name: Day3ConfrontationTeleporter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &829518861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829518860}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.14571571, y: -2.57312, z: -0.08168767}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6150376168093311944}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &829518862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829518860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de5dcb7aece92b4fa07f3fceeb0c493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogueToGive: {fileID: 0}
+  _giveDialogueOnStart: 0
+  _onlyAllowDialogueOnce: 0
+  _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
+  toArea: {fileID: 829518860}
+  _teleportOnStart: 1
 --- !u!1 &849527537
 GameObject:
   m_ObjectHideFlags: 0
@@ -27695,6 +27797,57 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+--- !u!1 &869559405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 869559406}
+  - component: {fileID: 869559407}
+  m_Layer: 0
+  m_Name: Day2ConfrontationTeleporter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &869559406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869559405}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.4163685, y: -3.5835495, z: 0.037076555}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5070411768451432051}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &869559407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869559405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de5dcb7aece92b4fa07f3fceeb0c493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogueToGive: {fileID: 0}
+  _giveDialogueOnStart: 0
+  _onlyAllowDialogueOnce: 0
+  _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
+  toArea: {fileID: 869559405}
+  _teleportOnStart: 1
 --- !u!1001 &873076396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41837,6 +41990,7 @@ MonoBehaviour:
   _availableAtTime: 1
   _timeDependantEntities:
   - {fileID: 3914277511675437547}
+  - {fileID: 869559405}
 --- !u!114 &1250651497192676615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49191,6 +49345,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2915232401121554282}
+  - {fileID: 355227468}
   m_Father: {fileID: 3819463816183768142}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4506307905789014676
@@ -49394,6 +49549,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2161253774364757298}
+  - {fileID: 869559406}
   m_Father: {fileID: 3819463816183768142}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5109003971463909460
@@ -49686,6 +49842,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5141181675163138907}
+  - {fileID: 829518861}
   m_Father: {fileID: 3819463816183768142}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6150376168093311945
@@ -49705,6 +49862,7 @@ MonoBehaviour:
   _availableAtTime: 1
   _timeDependantEntities:
   - {fileID: 7851246454694057858}
+  - {fileID: 829518860}
 --- !u!1 &6152441399748964479
 GameObject:
   m_ObjectHideFlags: 0
@@ -96887,6 +97045,7 @@ MonoBehaviour:
   _availableAtTime: 1
   _timeDependantEntities:
   - {fileID: 277220000983548851}
+  - {fileID: 355227467}
 --- !u!1 &8785643896859867004
 GameObject:
   m_ObjectHideFlags: 0
