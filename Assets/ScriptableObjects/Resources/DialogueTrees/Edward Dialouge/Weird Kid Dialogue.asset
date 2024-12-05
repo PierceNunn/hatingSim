@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9074040917902868137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a68762aa58cc082459ffd018c2258b02, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 488, y: -440}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: -9074040917902868137}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _responses 1
+        node: {fileID: -8665059846856044467}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: -9074040917902868137}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 3478924233419557485}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _choiceLabel: no talk
 --- !u!114 &-9061793231291175883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,7 +57,7 @@ MonoBehaviour:
   m_Name: Intro
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -689.69006, y: 3147.923}
+  position: {x: 1064, y: -488}
   ports:
     keys:
     - _lastNode
@@ -32,7 +76,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 3478924233419557485}
+        node: {fileID: -8665059846856044467}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -40,7 +84,7 @@ MonoBehaviour:
       _dynamic: 0
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
---- !u!114 &-8381930516634191529
+--- !u!114 &-8665059846856044467
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,47 +93,69 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
-  m_Name: Dialogue
+  m_Script: {fileID: 11500000, guid: 5265981211fa83345b2bb423259b3874, type: 3}
+  m_Name: Auto Dialogue Branch
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -2088, y: 4056}
+  position: {x: 792, y: -472}
   ports:
     keys:
     - _lastNode
-    - _nextNode
+    - _responses
+    - _responses 0
+    - _responses 1
     values:
     - _fieldName: _lastNode
-      _node: {fileID: -8381930516634191529}
+      _node: {fileID: -8665059846856044467}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: -5616010614113813682}
+        node: {fileID: -9061793231291175883}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: _nextNode
-      _node: {fileID: -8381930516634191529}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _lastNode
-        node: {fileID: -4246339624608226918}
-        reroutePoints: []
+    - _fieldName: _responses
+      _node: {fileID: -8665059846856044467}
+      _typeQualifiedName: XNode.Node[], XNode, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: _responses 0
+      _node: {fileID: -8665059846856044467}
+      _typeQualifiedName: XNode.Node[], XNode, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: -3500009182152893089}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: _responses 1
+      _node: {fileID: -8665059846856044467}
+      _typeQualifiedName: XNode.Node[], XNode, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: -9074040917902868137}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
   _lastNode: {fileID: 0}
-  _nextNode: {fileID: 0}
-  _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
-    _portraitID: 
-    _sentences: "You were saying that you\u2019re friend won\u2019t hear the end
-      of it right? Stop lying, you ain\u2019t gonna do Jack!!!"
-    _cameraEffect: 0
-    _eventsToInvoke: []
+  _responses:
+  - {fileID: 0}
+  - {fileID: 0}
+  nextNodes:
+  - {fileID: -3500009182152893089}
+  - {fileID: -9074040917902868137}
 --- !u!114 &-7958091716839672067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,7 +169,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -2392, y: 3336}
+  position: {x: -2424, y: -440}
   ports:
     keys:
     - _lastNode
@@ -140,6 +206,102 @@ MonoBehaviour:
       account?"
     _cameraEffect: 0
     _eventsToInvoke: []
+--- !u!114 &-6608544961274176544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1144, y: -440}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: -6608544961274176544}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: 3119794923473263934}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: -6608544961274176544}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 6526406727932231262}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _portraitID: 
+    _sentences: Well actually,  my name is-
+    _cameraEffect: 0
+    _eventsToInvoke: []
+--- !u!114 &-6590460804446782238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 136, y: -744}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: -6590460804446782238}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -3500009182152893089}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: -6590460804446782238}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
+    _portraitID: 
+    _sentences: <i>A secret handbook account. I wonder if this is tied to Edward
+      in any way.</i>
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-6546943016724476074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,7 +315,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -2088, y: 3672}
+  position: {x: -1448, y: -56}
   ports:
     keys:
     - _lastNode
@@ -203,7 +365,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -2440, y: 3720}
+  position: {x: -1768, y: -56}
   ports:
     keys:
     - _lastNode
@@ -225,7 +387,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 1469245187244652188}
+        node: {fileID: -706184248158178409}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -236,12 +398,12 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _sentences: <i>I hand him a piece of paper with a pen, and after a few seconds
-      of writing, he hands the paper back to me. I can investigate this name before
+    _sentences: <i>I hand them a piece of paper with a pen. After a few seconds of
+      writing, they hand the paper back to me. I can investigate this name before
       my meet-up with Edward.</i>
     _cameraEffect: 0
     _eventsToInvoke: []
---- !u!114 &-5616010614113813682
+--- !u!114 &-5199212064941431168
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -254,29 +416,29 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1736, y: 4008}
+  position: {x: -1784, y: -440}
   ports:
     keys:
     - _lastNode
     - _nextNode
     values:
     - _fieldName: _lastNode
-      _node: {fileID: -5616010614113813682}
+      _node: {fileID: -5199212064941431168}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: 6580637874347222190}
+        node: {fileID: 6526406727932231262}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: _nextNode
-      _node: {fileID: -5616010614113813682}
+      _node: {fileID: -5199212064941431168}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: -8381930516634191529}
+        node: {fileID: 8957003050238111766}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -285,12 +447,12 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 1a3dd8e17ceb56d45a1633d44f47445c, type: 2}
-    _portraitID: shocked
-    _sentences: Yea?
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
+    _portraitID: 
+    _sentences: <i>That's not a saying... is it? Is this a thing people say?</i>
     _cameraEffect: 0
     _eventsToInvoke: []
---- !u!114 &-4246339624608226918
+--- !u!114 &-4112827338244431067
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -303,27 +465,30 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -2424, y: 4088}
+  position: {x: -504, y: -440}
   ports:
     keys:
     - _lastNode
     - _nextNode
     values:
     - _fieldName: _lastNode
-      _node: {fileID: -4246339624608226918}
+      _node: {fileID: -4112827338244431067}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: -8381930516634191529}
+        node: {fileID: 1516221322124733091}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: _nextNode
-      _node: {fileID: -4246339624608226918}
+      _node: {fileID: -4112827338244431067}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 3119794923473263934}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -331,11 +496,57 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 1a3dd8e17ceb56d45a1633d44f47445c, type: 2}
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
-    _sentences: "I know\u2026"
+    _sentences: <i>They jump up, clearly starttled by my sudden presence.</i>
     _cameraEffect: 0
     _eventsToInvoke: []
+--- !u!114 &-3500009182152893089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e5abaecaebe87c4d80a575c0f223782, type: 3}
+  m_Name: Item Choice
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 488, y: -712}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: -3500009182152893089}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _responses 0
+        node: {fileID: -8665059846856044467}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: -3500009182152893089}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: -6590460804446782238}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _choiceLabel: Talked
+  _requiredItem:
+  - {fileID: 11400000, guid: 67fee9d08973a8d438fa102f8fa9d644, type: 2}
 --- !u!114 &-2440220591191788401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,7 +560,7 @@ MonoBehaviour:
   m_Name: Item Giver
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1768, y: 3656}
+  position: {x: -1128, y: -56}
   ports:
     keys:
     - _lastNode
@@ -388,6 +599,56 @@ MonoBehaviour:
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 67fee9d08973a8d438fa102f8fa9d644, type: 2}
   _giveOrTakeItem: 1
+--- !u!114 &-2153215454284594047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -168, y: -56}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: -2153215454284594047}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -1165793214690176168}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: -2153215454284594047}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 1957924301574382468}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 1a3dd8e17ceb56d45a1633d44f47445c, type: 2}
+    _portraitID: 
+    _sentences: Wow you're out of touch! It's a website where people talk to one
+      another! A sort of... social form of media.
+    _cameraEffect: 0
+    _eventsToInvoke: []
 --- !u!114 &-1967322546978749403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,7 +662,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1432, y: 3624}
+  position: {x: -808, y: -56}
   ports:
     keys:
     - _lastNode
@@ -412,7 +673,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: -1165793214690176168}
+        node: {fileID: 1957924301574382468}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -434,7 +695,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 1a3dd8e17ceb56d45a1633d44f47445c, type: 2}
     _portraitID: 
-    _sentences: Well if you must know, there are rumors that a student who goes here
+    _sentences: Yes, if you must know, there are rumors that a student who goes here
       has a secret Handbook account that posts some pretty spicy pictures.
     _cameraEffect: 0
     _eventsToInvoke: []
@@ -451,7 +712,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1064, y: 3560}
+  position: {x: 152, y: -56}
   ports:
     keys:
     - _lastNode
@@ -473,7 +734,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: -1967322546978749403}
+        node: {fileID: -2153215454284594047}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -484,7 +745,53 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: What rumor?
+    _sentences: ...What's a Handbook?
+    _cameraEffect: 0
+    _eventsToInvoke: []
+--- !u!114 &-706184248158178409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -2088, y: -56}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: -706184248158178409}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -6529083572860561868}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: -706184248158178409}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
+    _portraitID: 
+    _sentences: <b>Handbook Profile added to Evidence</b>
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &11400000
@@ -510,62 +817,18 @@ MonoBehaviour:
   - {fileID: -1967322546978749403}
   - {fileID: -6546943016724476074}
   - {fileID: -6529083572860561868}
-  - {fileID: 1469245187244652188}
-  - {fileID: 6580637874347222190}
-  - {fileID: -5616010614113813682}
-  - {fileID: -8381930516634191529}
-  - {fileID: -4246339624608226918}
   - {fileID: -2440220591191788401}
---- !u!114 &1469245187244652188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -1048, y: 3912}
-  ports:
-    keys:
-    - _lastNode
-    - _nextNode
-    values:
-    - _fieldName: _lastNode
-      _node: {fileID: 1469245187244652188}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: -6529083572860561868}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: _nextNode
-      _node: {fileID: 1469245187244652188}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _lastNode
-        node: {fileID: 6580637874347222190}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _lastNode: {fileID: 0}
-  _nextNode: {fileID: 0}
-  _dialogue:
-    _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
-    _portraitID: 
-    _sentences: ' <i>I have a feeling this might be useful. The weird kid starts
-      walking away, without even saying goodbye. Not on my watch</i>'
-    _cameraEffect: 0
-    _eventsToInvoke: []
+  - {fileID: -4112827338244431067}
+  - {fileID: -6608544961274176544}
+  - {fileID: 6526406727932231262}
+  - {fileID: -5199212064941431168}
+  - {fileID: -2153215454284594047}
+  - {fileID: 1957924301574382468}
+  - {fileID: -706184248158178409}
+  - {fileID: -8665059846856044467}
+  - {fileID: -9074040917902868137}
+  - {fileID: -3500009182152893089}
+  - {fileID: -6590460804446782238}
 --- !u!114 &1516221322124733091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,7 +842,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1400, y: 3272}
+  position: {x: -184, y: -440}
   ports:
     keys:
     - _lastNode
@@ -601,7 +864,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 3119794923473263934}
+        node: {fileID: -4112827338244431067}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -612,7 +875,56 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: "No you won\u2019t."
+    _sentences: Secret Handbook account?
+    _cameraEffect: 0
+    _eventsToInvoke: []
+--- !u!114 &1957924301574382468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54af0e1286600f4a807cc60f5890b2a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -488, y: -56}
+  ports:
+    keys:
+    - _lastNode
+    - _nextNode
+    values:
+    - _fieldName: _lastNode
+      _node: {fileID: 1957924301574382468}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _nextNode
+        node: {fileID: -2153215454284594047}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: _nextNode
+      _node: {fileID: 1957924301574382468}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: -1967322546978749403}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _lastNode: {fileID: 0}
+  _nextNode: {fileID: 0}
+  _dialogue:
+    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _portraitID: 
+    _sentences: And there are rumors about this site?
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &3119794923473263934
@@ -628,7 +940,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1736, y: 3288}
+  position: {x: -824, y: -440}
   ports:
     keys:
     - _lastNode
@@ -639,7 +951,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: 1516221322124733091}
+        node: {fileID: -4112827338244431067}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -650,7 +962,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: 8957003050238111766}
+        node: {fileID: -6608544961274176544}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -661,7 +973,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 1a3dd8e17ceb56d45a1633d44f47445c, type: 2}
     _portraitID: shocked
-    _sentences: DAAAAAHHHHH, Jesus!!!!!
+    _sentences: DAAAAAHHHHH, Jesus!
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &3478924233419557485
@@ -677,7 +989,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1064, y: 3224}
+  position: {x: 136, y: -440}
   ports:
     keys:
     - _lastNode
@@ -688,7 +1000,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: -9061793231291175883}
+        node: {fileID: -9074040917902868137}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -711,10 +1023,10 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 1a3dd8e17ceb56d45a1633d44f47445c, type: 2}
     _portraitID: 
     _sentences: "Man, my friend better not be lying about that secret Handbook account,
-      or else I\u2019m not gonna let him hear the end of it"
+      or else I\u2019m not gonna let him hear the end of it."
     _cameraEffect: 0
     _eventsToInvoke: []
---- !u!114 &6580637874347222190
+--- !u!114 &6526406727932231262
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -727,29 +1039,29 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1384, y: 3976}
+  position: {x: -1464, y: -440}
   ports:
     keys:
     - _lastNode
     - _nextNode
     values:
     - _fieldName: _lastNode
-      _node: {fileID: 6580637874347222190}
+      _node: {fileID: 6526406727932231262}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: 1469245187244652188}
+        node: {fileID: -6608544961274176544}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: _nextNode
-      _node: {fileID: 6580637874347222190}
+      _node: {fileID: 6526406727932231262}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _lastNode
-        node: {fileID: -5616010614113813682}
+        node: {fileID: -5199212064941431168}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -758,9 +1070,10 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
+    _talkerData: {fileID: 11400000, guid: 1a3dd8e17ceb56d45a1633d44f47445c, type: 2}
     _portraitID: 
-    _sentences: Yo!!!!!!!!
+    _sentences: I don't care what your name is! You scared the butterflies right
+      out of me!
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &8957003050238111766
@@ -776,7 +1089,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -2056, y: 3320}
+  position: {x: -2104, y: -440}
   ports:
     keys:
     - _lastNode
@@ -787,7 +1100,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: _nextNode
-        node: {fileID: 3119794923473263934}
+        node: {fileID: -5199212064941431168}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -809,7 +1122,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: PC actually. What you were talking about you not gonna let your friend
-      hear the end of it?
+    _sentences: What you were talking about? Something about your friend not hearing
+      the end of "it".
     _cameraEffect: 0
     _eventsToInvoke: []
