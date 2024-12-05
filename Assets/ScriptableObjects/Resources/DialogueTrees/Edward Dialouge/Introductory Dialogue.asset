@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -696, y: 392}
+  position: {x: -792, y: 376}
   ports:
     keys:
     - _lastNode
@@ -351,7 +351,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1720, y: 456}
+  position: {x: -1752, y: 376}
   ports:
     keys:
     - _lastNode
@@ -797,7 +797,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1336, y: 424}
+  position: {x: -1432, y: 376}
   ports:
     keys:
     - _lastNode
@@ -846,7 +846,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -344, y: 376}
+  position: {x: -472, y: 376}
   ports:
     keys:
     - _lastNode
@@ -896,7 +896,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1016, y: 408}
+  position: {x: -1112, y: 376}
   ports:
     keys:
     - _lastNode
@@ -976,6 +976,11 @@ MonoBehaviour:
   - {fileID: -1373557134970727730}
   - {fileID: -4334046026788294842}
   - {fileID: 678324919249305389}
+  - {fileID: -2415544597926742125}
+  - {fileID: 3603378814216297570}
+  - {fileID: 4084205557946400379}
+  - {fileID: -2467731994608658039}
+  - {fileID: -9138365245201020940}
 --- !u!114 &237300307614402492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -989,7 +994,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -680, y: 728}
+  position: {x: -792, y: 696}
   ports:
     keys:
     - _lastNode
@@ -1090,7 +1095,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1352, y: 776}
+  position: {x: -1432, y: 696}
   ports:
     keys:
     - _lastNode
@@ -1127,55 +1132,6 @@ MonoBehaviour:
       and puts away his headphones.</i>
     _cameraEffect: 0
     _eventsToInvoke: []
---- !u!114 &1465098890597900944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7099594b8ff43884ca052fb7144ba301, type: 3}
-  m_Name: Item Giver
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -344, y: 2456}
-  ports:
-    keys:
-    - _lastNode
-    - _nextNode
-    values:
-    - _fieldName: _lastNode
-      _node: {fileID: 1465098890597900944}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _nextNode
-        node: {fileID: 1997081631218893078}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: _nextNode
-      _node: {fileID: 1465098890597900944}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _lastNode: {fileID: 0}
-  _nextNode: {fileID: 0}
-  _dialogue:
-    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
-    _portraitID: 
-    _sentences: "Ed is hiding something, maybe I can ask some of his classmates why
-      he\u2019s so distracted all the time."
-    _cameraEffect: 0
-    _eventsToInvoke: []
-  _itemToGive: {fileID: 11400000, guid: 872911d7cd4921642b0f63f9586e6b17, type: 2}
-  _giveOrTakeItem: 1
 --- !u!114 &1470247682451976998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1222,6 +1178,8 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
+    _sentences: "<i>Just as I\u2019m debating my next course of action, out of the
+      corner of my eye, I spot Edward slouchily walking to class.</i>"
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &2219515565133883313
@@ -1387,7 +1345,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -344, y: 712}
+  position: {x: -472, y: 696}
   ports:
     keys:
     - _lastNode
@@ -1782,7 +1740,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1016, y: 760}
+  position: {x: -1112, y: 696}
   ports:
     keys:
     - _lastNode
