@@ -520,6 +520,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
   toArea: {fileID: 3838204412232242368}
   _teleportOnStart: 0
   _daysWithRequiredItems:
@@ -25907,6 +25908,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
   toArea: {fileID: 4966398330705822133}
   _teleportOnStart: 0
   _daysWithRequiredItems:
@@ -26179,6 +26181,10 @@ PrefabInstance:
       propertyPath: _dialogueToGive
       value: 
       objectReference: {fileID: 7331683600123541223, guid: e641702cdf0bc9f4f8883782b8a190ff, type: 2}
+    - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+      propertyPath: _itemToHideThis
+      value: 
+      objectReference: {fileID: 11400000, guid: 40d0e564380962f4f9ce65b2a344e6c2, type: 2}
     - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
       propertyPath: _giveDialogueOnStart
       value: 1
@@ -29110,6 +29116,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
   toArea: {fileID: 793169624740528607}
   _teleportOnStart: 0
   _daysWithRequiredItems:
@@ -29981,6 +29988,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
   toArea: {fileID: 780346969895616433}
   _teleportOnStart: 0
   _daysWithRequiredItems:
@@ -30334,6 +30342,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
 --- !u!114 &1350187654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31301,6 +31310,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
   toArea: {fileID: 1506377141}
   _teleportOnStart: 1
 --- !u!4 &1506377143
@@ -32916,6 +32926,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
   toArea: {fileID: 8486900361552941642}
   _teleportOnStart: 0
   _daysWithRequiredItems:
@@ -33378,6 +33389,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
   toArea: {fileID: 8346772854709536298}
   _teleportOnStart: 0
   _daysWithRequiredItems:
@@ -33778,6 +33790,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
   toArea: {fileID: 793169624740528607}
   _teleportOnStart: 0
 --- !u!1 &2008441328
@@ -46095,6 +46108,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
 --- !u!4 &2475140197869367682
 Transform:
   m_ObjectHideFlags: 0
@@ -48696,6 +48710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EdwardInvestigation
       objectReference: {fileID: 0}
+    - target: {fileID: 3849175127988677611, guid: 310dfaf2f95b9784d95d4940e7f3ca72, type: 3}
+      propertyPath: _itemToHideThis
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8695239135524936021, guid: 310dfaf2f95b9784d95d4940e7f3ca72, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.9
@@ -48843,6 +48861,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
   toArea: {fileID: 2860096385490039671}
   _teleportOnStart: 0
 --- !u!4 &4541635879731221753
@@ -49086,6 +49105,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
   toArea: {fileID: 6690477501744255972}
   _teleportOnStart: 0
 --- !u!1001 &5676831418935028482
@@ -77975,6 +77995,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
 --- !u!4 &6496454574233775411
 Transform:
   m_ObjectHideFlags: 0
@@ -86549,6 +86570,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
   toArea: {fileID: 1498969254612201759}
   _teleportOnStart: 0
 --- !u!1 &7640165574872420214
@@ -86666,6 +86688,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 22.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3728387068857707532, guid: 847d6b4ef0cd9f74ca6efffde8358c6d, type: 3}
+      propertyPath: _itemToHideThis
+      value: 
+      objectReference: {fileID: 11400000, guid: ffafa0a271f7af24d85ea67c5bb9105d, type: 2}
     - target: {fileID: 4649935610590748430, guid: 847d6b4ef0cd9f74ca6efffde8358c6d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 53.2
@@ -96398,6 +96424,7 @@ MonoBehaviour:
   _giveDialogueOnStart: 0
   _onlyAllowDialogueOnce: 0
   _advanceDayAfterTalk: 0
+  _itemToHideThis: {fileID: 0}
   toArea: {fileID: 5776374869157539789}
   _teleportOnStart: 0
 --- !u!1 &8715181828585890749
