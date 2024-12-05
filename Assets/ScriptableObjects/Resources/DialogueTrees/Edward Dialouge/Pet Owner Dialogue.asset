@@ -301,7 +301,9 @@ MonoBehaviour:
   _responses:
   - {fileID: 0}
   - {fileID: 0}
-  nextNodes: []
+  nextNodes:
+  - {fileID: -2006338435537789521}
+  - {fileID: -3985499830320777556}
 --- !u!114 &-5956921396009796307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -693,7 +695,7 @@ MonoBehaviour:
   _lastNode: {fileID: 0}
   _nextNode: {fileID: 0}
   _dialogue:
-    _talkerData: {fileID: 0}
+    _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
     _sentences: Have you noticed anything odd about him recently?
     _cameraEffect: 0

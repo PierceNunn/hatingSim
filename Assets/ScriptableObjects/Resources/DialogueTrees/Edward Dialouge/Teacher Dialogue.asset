@@ -986,7 +986,9 @@ MonoBehaviour:
   _responses:
   - {fileID: 0}
   - {fileID: 0}
-  nextNodes: []
+  nextNodes:
+  - {fileID: -1515372957483302384}
+  - {fileID: 6988979894929973262}
 --- !u!114 &-318802154002693440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1291,7 +1293,7 @@ MonoBehaviour:
   m_Name: Dialogue Branch
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1064, y: 2504}
+  position: {x: -1128, y: 2376}
   ports:
     keys:
     - _lastNode
@@ -1306,6 +1308,9 @@ MonoBehaviour:
       connections:
       - fieldName: _nextNode
         node: {fileID: -7818391960284216794}
+        reroutePoints: []
+      - fieldName: _nextNode
+        node: {fileID: 7493842686564103567}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1685,7 +1690,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1177.3684, y: 1805.1356}
+  position: {x: -776, y: 1944}
   ports:
     keys:
     - _lastNode
@@ -1714,7 +1719,10 @@ MonoBehaviour:
     - _fieldName: _nextNode
       _node: {fileID: 7493842686564103567}
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: _lastNode
+        node: {fileID: 3768128657144002961}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
