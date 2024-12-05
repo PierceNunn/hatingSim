@@ -47,7 +47,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
     _sentences: Some of my coworkers think we should have a picture of her framed
-      up in here for being the number one drinker of Monstart
+      up in here for being the number one drinker of Monstart.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-9086249461546671242
@@ -144,7 +144,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
     _sentences: Anyways, she comes in here quite often. She's actually our top buyer
-      of Monstart Energy
+      of Monstart Energy.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-8517977842134077366
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: Dialogue Branch
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1496, y: -616}
+  position: {x: -1480, y: -648}
   ports:
     keys:
     - _lastNode
@@ -450,7 +450,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
     _sentences: Oh, absolutely not. Not only is the taste horrendous, but I think
-      it trashes your body
+      it trashes your body.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-4332389878976675247
@@ -571,7 +571,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _sentences: Those are basically the same thing
+    _sentences: Those are basically the same thing.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-3510710121744190214
@@ -621,7 +621,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
     _sentences: <i>If she didn't take her receipt, it's probably in a trash can around
-      here. That could be some good physical evidence</i>
+      here. That could be some good physical evidence.</i>
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: 78a5b6c0caddc6847b7ebefcdca86896, type: 2}
@@ -721,7 +721,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: I'm not here to buy anything
+    _sentences: I'm not here to buy anything.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-2714315435507929413
@@ -817,7 +817,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _sentences: I'll be here until 5, if you need anything else
+    _sentences: I'll be here until 5, if you need anything else.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &-1057215979994943242
@@ -961,7 +961,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: I have some questions I wanted to ask you
+    _sentences: I have some questions I wanted to ask you.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &11400000
@@ -1297,7 +1297,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
     _sentences: She typically buys a case or two of Monstart at a time. Each case
-      has about <b>18 cans</b> in it
+      has about <b>18 cans</b> in it.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &4529668172432244455
@@ -1347,7 +1347,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
     _sentences: I didn't get much of a chance to talk to her. She skipped away with
-      her Monstart before I could even hand her her receipt
+      her Monstart before I could even hand her her receipt.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &5489687814076684746
@@ -1596,7 +1596,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 7acbe4d904f6fa84284ffd0ee1da8044, type: 2}
     _portraitID: 
     _sentences: <i>If she's getting those cases even just once a week, that means
-      she's drinking 2 or 3 cans a day. Otherwise, she's just hoarding Monstart</i>
+      she's drinking 2 or 3 cans a day. Otherwise, she's just hoarding Monstart.</i>
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &6643426322307504247
@@ -1686,7 +1686,7 @@ MonoBehaviour:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
     _sentences: Most people who buy it are either <b>pulling all nighters</b> studying
-      or just <b>no respect for their body</b>
+      or just <b>no respect for their body.</b>
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: c655312415e58c741b029f81edd2271e, type: 2}
@@ -1781,7 +1781,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _sentences: ... You know this is a store, right? Where people buy things
+    _sentences: ... You know this is a store, right? Where people buy things.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &8898071728448324270
@@ -1830,7 +1830,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 4278ea6b7ee41c24ab6609680f3194a1, type: 2}
     _portraitID: 
-    _sentences: Mars is in here at least once a week
+    _sentences: Mars is in here at least once a week.
     _cameraEffect: 0
     _eventsToInvoke: []
 --- !u!114 &9077772169083346760
@@ -1879,7 +1879,7 @@ MonoBehaviour:
   _dialogue:
     _talkerData: {fileID: 11400000, guid: 82a3f8d4f3026134ca2d571d9c3f66a1, type: 2}
     _portraitID: 
-    _sentences: That seems... excessive
+    _sentences: That seems... excessive.
     _cameraEffect: 0
     _eventsToInvoke: []
   _itemToGive: {fileID: 11400000, guid: ed8f4ada77182d04b89769c544aab3a9, type: 2}
