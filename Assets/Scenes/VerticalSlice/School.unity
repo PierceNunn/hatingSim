@@ -26189,6 +26189,10 @@ PrefabInstance:
       propertyPath: _giveDialogueOnStart
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6412511753110262544, guid: 771a9ab9cdb5a3f4f8d89f45a3ba0ae7, type: 3}
+      propertyPath: _onlyAllowDialogueOnce
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48713,6 +48717,10 @@ PrefabInstance:
     - target: {fileID: 3849175127988677611, guid: 310dfaf2f95b9784d95d4940e7f3ca72, type: 3}
       propertyPath: _itemToHideThis
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3849175127988677611, guid: 310dfaf2f95b9784d95d4940e7f3ca72, type: 3}
+      propertyPath: _onlyAllowDialogueOnce
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8695239135524936021, guid: 310dfaf2f95b9784d95d4940e7f3ca72, type: 3}
       propertyPath: m_LocalPosition.x
