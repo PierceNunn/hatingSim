@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
-{
+{ //gold master :3
     [SerializeField] private TMP_Text interactText;
 
     private Rigidbody2D rb;
